@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${TM_SELECTED_TEXT/(^|$|\t)/|/g}</string>
+	<key>name</key>
+	<string>Convert Tabs To Table</string>
+	<key>scope</key>
+	<string>text.html.textile</string>
+	<key>uuid</key>
+	<string>E6DEB8E1-B3F4-45C4-8F3C-C7C0B50DE940</string>
+</dict>
+</plist>

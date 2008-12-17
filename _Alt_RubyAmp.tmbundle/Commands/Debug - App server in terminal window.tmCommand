@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env sh
+cat &lt;&lt;'RUBYEOF' &gt; /tmp/ruby-amp-$$.rb
+require "#{ENV['TM_BUNDLE_SUPPORT']}/lib/ruby_amp.rb"
+
+project_directory = ENV['TM_PROJECT_DIRECTORY']
+rails_script_server = File.join(project_directory, "script/server")
+
+# Try and be smart about which one to start up (merb or rails)
+file_to_load = File.exists?( rails_script_server ) ? rails_script_server : (ENV['MERB_PATH'] || `which merb`)
+
+run_file = RubyAMP::RemoteDebugger.prepare_debug_wrapper &lt;&lt;-EOF
+  load #{file_to_load.inspect}
+EOF
+
+RubyAMP::Launcher.open_debug_process_in_terminal(run_file, " -p #{RubyAMP::Config[:server_port]}")
+sleep 0.25
+RubyAMP::Launcher.open_controller_terminal
+
+RUBYEOF
+
+${TM_RUBY:-ruby} /tmp/ruby-amp-$$.rb; exit_status=$?; rm /tmp/ruby-amp-$$.rb; exit $exit_status</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>name</key>
+	<string>Debug - App server in terminal window</string>
+	<key>output</key>
+	<string>showAsTooltip</string>
+	<key>uuid</key>
+	<string>5D1E4B94-B0F9-4598-A18B-5508B21CBD0E</string>
+</dict>
+</plist>

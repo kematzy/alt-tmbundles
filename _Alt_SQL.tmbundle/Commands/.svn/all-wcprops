@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/Bundles/!svn/ver/8190/trunk/Bundles/SQL.tmbundle/Commands
+END
+Configure.tmCommand
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/Bundles/!svn/ver/7821/trunk/Bundles/SQL.tmbundle/Commands/Configure.tmCommand
+END
+Document for Current Word.tmCommand
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/Bundles/!svn/ver/7730/trunk/Bundles/SQL.tmbundle/Commands/Document%20for%20Current%20Word.tmCommand
+END
+Execute Line : Selection as Query.tmCommand
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/Bundles/!svn/ver/8190/trunk/Bundles/SQL.tmbundle/Commands/Execute%20Line%20:%20Selection%20as%20Query.tmCommand
+END
+Help.tmCommand
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/Bundles/!svn/ver/7876/trunk/Bundles/SQL.tmbundle/Commands/Help.tmCommand
+END
+Completion.tmCommand
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/Bundles/!svn/ver/7698/trunk/Bundles/SQL.tmbundle/Commands/Completion.tmCommand
+END
+Table Browser.tmCommand
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/Bundles/!svn/ver/7698/trunk/Bundles/SQL.tmbundle/Commands/Table%20Browser.tmCommand
+END
+Copy Condensed SQL.tmCommand
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/Bundles/!svn/ver/7698/trunk/Bundles/SQL.tmbundle/Commands/Copy%20Condensed%20SQL.tmCommand
+END

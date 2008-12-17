@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+
+### USAGE INSTRUCTIONS:
+# 1. make a COPY(!!) of a .tmbundle and rename it to -tmbundle instead.
+# 2. open the folder in TextMate, and open the info.plist file.
+# 3. select the top folder (bundle folder) in the project drawer
+# 4. press control + F5
+# 5. see the results output in a new window. Check it through for any ERRORs.
+# 6. click somewhere outside of TM, and then back again, to refresh the file.
+# 7. rename the folder to .tmbundle, and place it in your TM Bundles folder
+# 8. job done!!
+#
+### WHAT IT DOES
+#
+# 1. Looks through the following bundle subdirs:  Commands, DragCommands, 
+#    Snippets, Syntaxes, Preferences, Macros, Templates
+# 2. Renames all .plist file extensions to .tm* file extensions
+# 3. Replaces the uuid in the current file and also in the info.plist file
+# 4. Renames the bundle with '_Alt_' in front of the name in info.plist file and changes the uuid.
+#
+###
+
+require 'fileutils'
+
+@debug = false
+
+# get the current bundle
+# @tm_bundle_dir_path = "/Users/kematzy/Code/TextMate/Dev/_Alt_Apache-tmbundle"
+@tm_bundle_dir_path = ENV['TM_DIRECTORY']
+
+@uuid_regex = /&lt;string&gt;[A-Z0-9]{8}-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{12}&lt;\/string&gt;/
+@uuids = {}
+
+# Read in the main bundle info plist file so that we can replace the data within it easily 
+# (rather than opening the file loads of times)
+@tmbundle_info_plist_contents = IO.read("#{@tm_bundle_dir_path}/info.plist")
+
+print "tmbundle_info_plist_contents = [#{@tmbundle_info_plist_contents}]" if @debug
+
+# 
+def update_file_content(file_path, look_for, replace_with) 
+  print "LOOK_FOR = [#{look_for}] and REPLACE_WITH = [#{replace_with}]"  if @debug
+  File.open("#{file_path}", 'r+') do |f|                              # open file for update
+    file_contents =  f.read                                           # read in the whole file
+    updated_file_contents = file_contents.gsub(look_for,replace_with)
+    f.rewind                                                          # go to start of file
+    f.print updated_file_contents                                     # write content to file
+  end
+  print "\n  [..#{file_path.sub(File.dirname(File.dirname(file_path)),'')}]: replaced \n  [#{look_for}] with \n  [#{replace_with}] \n"
+end
+
+def update_file_content_with_regex(file_path, look_for, replace_with) 
+  File.open("#{file_path}", 'r+') do |f|            # open file for update
+      lines = f.readlines                           # read into array of lines
+      lines.each do |line|                          # modify the server port line
+        if line =~ look_for
+          print "\nMATCH FOUND: line=[#{line.chomp}]\n" if @debug
+          @uuids[:old] = line.strip.chomp
+          print "\n@uuids[:old]: =[#{@uuids[:old]}]\n" if @debug
+          line.gsub!(look_for, @uuids[:new])
+        end
+      end
+      f.pos = 0                                     # rewind to start position
+      f.print lines                                 # write out modified lines
+      f.truncate(f.pos)                             # truncate to new length
+  end
+  print "\n  [..#{file_path.sub(File.dirname(File.dirname(file_path)),'')}]: replaced \n  [#{@uuids[:old]}] with \n  [#{@uuids[:new]}]\n"
+end
+
+def rename_file(original_filename, extension) 
+  if test(?e, "#{@current_dir}/#{original_filename}")
+    FileUtils.mv("#{@current_dir}/#{original_filename}","#{@current_dir}/#{original_filename.sub(/\.plist$/,extension)}" ) 
+    print "RENAMED FILE [#{original_filename}] to  [#{original_filename.sub(/\.plist$/,extension)}]\n"
+  else
+    print "No such file found: [#{@current_dir}/#{original_filename}]"
+  end
+end
+
+def replace_uuid(file_path) 
+  print "\n==replace_uuid(#{file_path}) start\n" if @debug
+  update_file_content_with_regex(file_path, @uuid_regex, @uuids[:new])
+  print "==replace_uuid(#{file_path}) END\n==================\n" if @debug
+end
+
+def replace_old_uuid_in_main_plist_file(uuids) 
+  print "\n+++++++++++++++++++\nUpdating the .../#{File.basename(@tm_bundle_dir_path)}/info.plist file\n with uuids=[#{uuids.inspect}]" if @debug
+  print "tmbundle_info_plist_contents = [#{@tmbundle_info_plist_contents}]"  if @debug
+  print "replace_old_uuid_in_main_plist_file(#{uuids.inspect}) b4 gsub!(old, new)"  if @debug
+  @tmbundle_info_plist_contents.gsub!(uuids[:old],uuids[:new])
+  print "tmbundle_info_plist_contents = [#{@tmbundle_info_plist_contents}]"  if @debug
+  print "\n++++++++++++++++++++++++++++++\n" if @debug
+end
+
+def write_tmbundle_info_plist_contents 
+  File.open("#{@tm_bundle_dir_path}/info.plist", 'r+') do |f|     # open file for update
+    file_contents =  f.read                                       # read in the whole file
+    print " \BEFORE WRITING THE MAIN info.plist FILE WITH file_contents=[#{file_contents}] and \n"  if @debug
+    print "tmbundle_info_plist_contents = [#{@tmbundle_info_plist_contents}]\n"  if @debug
+    file_contents = @tmbundle_info_plist_contents
+    print "file_contents = [#{file_contents}]"  if @debug
+    f.rewind                                                      # go to start of file
+    f.print file_contents                                         # write content to file
+  end
+  print " \nUPDATED THE MAIN info.plist FILE WITH tmbundle_info_plist_contents=[#{@tmbundle_info_plist_contents}]"  if @debug
+end
+
+# this will loop through a particular directory in the TM editor and extract the &lt;ID&gt;'s from each item
+# 1. we open the info.plist file in each bundle in the editor to get the path to the current bundle
+extensions = {
+  'Commands'      =&gt; '.tmCommand', 
+  'DragCommands'  =&gt; '.tmDragCommand', 
+  'Snippets'      =&gt; '.tmSnippet', 
+  'Syntaxes'      =&gt; '.tmLanguage', 
+  'Preferences'   =&gt; ".tmPreferences", 
+  'Macros'        =&gt; '.tmMacro',
+  'Templates'     =&gt; '.tmTemplate'
+}
+
+tm_files_to_rename = []
+
+# now that we have it, let's look for all the folders and loop through them
+extensions.sort.each do |folder, extension|
+  print "\n####### PROCESSING #{folder} ###########\n"
+  # now check if folder is a directory
+  @current_dir = "#{@tm_bundle_dir_path}/#{folder}"
+  print " current_dir=[#{@current_dir}]\n" if @debug
+  
+  if File.directory?(@current_dir)
+  #   # yes it's a directory
+    
+    if folder.to_s == 'Templates'  # handle templates differently
+      
+      dirs_to_process = Dir["#{@current_dir}/*#{extension[folder]}"]
+      print "dirs_to_process = [#{dirs_to_process.inspect}]" if @debug
+      
+      dirs_to_process.each do |dir|
+        @uuids[:new] = "&lt;string&gt;#{`uuidgen`.chomp}&lt;/string&gt;"
+        replace_uuid("#{dir}/info.plist")
+        print "@uuids =[#{@uuids.inspect}] after replace_uuid()" if @debug
+        replace_old_uuid_in_main_plist_file(@uuids)
+      end unless dirs_to_process.nil?
+    else
+      #   # now get the files in the directory
+      tm_files_to_rename = Dir.entries(@current_dir).reject! { |i| i =~ /^(\.DS_Store|\.|\.\.|\.svn|\.git.*)$/ }
+      print "\n  tm_files_to_rename=[#{tm_files_to_rename.inspect}]\n" if @debug
+      
+      tm_files_to_rename.each do |file|
+        @uuids[:new] = "&lt;string&gt;#{`uuidgen`.chomp}&lt;/string&gt;"
+        print "   Looping through the FILE = [#{file}]\n" if @debug
+        replace_uuid("#{@current_dir}/#{file}")
+        replace_old_uuid_in_main_plist_file(@uuids)
+        rename_file(file, extension) if file =~ /\.plist$/
+      end unless tm_files_to_rename.nil?
+    end
+  else
+    print "  Directory [#{folder}] was not present. [#{@tm_bundle_dir_path}/#{folder}]\n\n"
+  end  
+end #/extension loop
+
+# finally, replace the UUID in thie main bundle info.plist file:
+
+uuid_regex = /&lt;key&gt;uuid&lt;\/key&gt;.*&lt;string&gt;([A-Z0-9]{8}-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{12})&lt;\/string&gt;/m
+
+res = uuid_regex.match(@tmbundle_info_plist_contents)
+if res.nil?
+  print "\n####################\n###### ERRROR ########\n res = [#{res.to_s}] ##############\n"
+else
+  print "res = [#{res}]"  if @debug
+  print "res, else b4 tmbundle_info_plist_contents = [#{@tmbundle_info_plist_contents}]"  if @debug
+  @tmbundle_info_plist_contents.sub!(res[1],`uuidgen`.chomp )
+  # print "  UPDATED THE UUID OF THE info.plist\n"
+  print "res else, after tmbundle_info_plist_contents = [#{@tmbundle_info_plist_contents}]"  if @debug
+end
+
+## CHANGE THE NAME OF THE BUNDLE
+name_regex = /&lt;\/dict&gt;\s+&lt;key&gt;name&lt;\/key&gt;\s+(&lt;string&gt;(\s*\w+)+&lt;\/string&gt;)/m
+name = name_regex.match(@tmbundle_info_plist_contents)
+
+if name.nil?
+  print "\n####################\n###### ERRROR ########\n name = [#{name.to_s}] ##############\n"
+else
+  print "\n=== NAME ===\nname = [#{name[1]}]\n===== /NAME =====\n"  if @debug
+  print "name else b4 tmbundle_info_plist_contents = [#{@tmbundle_info_plist_contents}]"  if @debug
+  @tmbundle_info_plist_contents.sub!(name[1],"&lt;string&gt;_Alt_#{name[2].gsub(/ /,'_')}&lt;/string&gt;") unless name[1] =~ /^&lt;string&gt; Alt /
+  # print "  UPDATED THE NAME OF THE FILE: to [ Alt #{name[2]}] \n"
+  print "name else after tmbundle_info_plist_contents = [#{@tmbundle_info_plist_contents}]"  if @debug
+end
+
+# write out the updated info.plist file to disk
+write_tmbundle_info_plist_contents
+
+print "\n+++++++++++++++++++++++++++++++++++++++++++\n Updated the UUID and Name of the main info.plist file\n+++++++++++++++++++++++++++++++++++++++++++\n"</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string>^</string>
+	<key>name</key>
+	<string>Create Alt Bundle</string>
+	<key>output</key>
+	<string>openAsNewDocument</string>
+	<key>uuid</key>
+	<string>931692FC-DF43-4EAF-A9CE-63CE6CFF46BC</string>
+</dict>
+</plist>

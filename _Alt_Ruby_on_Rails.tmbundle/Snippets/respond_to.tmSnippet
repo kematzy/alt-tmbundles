@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>respond_to do |wants|
+	wants.${1:html}${2: { $0 \}}
+end</string>
+	<key>name</key>
+	<string>respond_to</string>
+	<key>scope</key>
+	<string>meta.rails.controller</string>
+	<key>tabTrigger</key>
+	<string>rest</string>
+	<key>uuid</key>
+	<string>3DC13A6D-72C0-4B7F-9EFA-C252C2B1213F</string>
+</dict>
+</plist>

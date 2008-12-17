@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/Bundles/!svn/ver/9069/trunk/Bundles/Ruby%20on%20Rails.tmbundle/Support/test/app_fixtures/app/views/users
+END
+existing_views.js.rjs
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/Bundles/!svn/ver/9069/trunk/Bundles/Ruby%20on%20Rails.tmbundle/Support/test/app_fixtures/app/views/users/existing_views.js.rjs
+END
+existing_views.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/Bundles/!svn/ver/9069/trunk/Bundles/Ruby%20on%20Rails.tmbundle/Support/test/app_fixtures/app/views/users/existing_views.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/Bundles/!svn/ver/9069/trunk/Bundles/Ruby%20on%20Rails.tmbundle/Support/test/app_fixtures/app/views/users/new.html.erb
+END
+existing_views.wacky.erb
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/Bundles/!svn/ver/9069/trunk/Bundles/Ruby%20on%20Rails.tmbundle/Support/test/app_fixtures/app/views/users/existing_views.wacky.erb
+END
+existing_views.xml.builder
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/Bundles/!svn/ver/9069/trunk/Bundles/Ruby%20on%20Rails.tmbundle/Support/test/app_fixtures/app/views/users/existing_views.xml.builder
+END
+create.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/Bundles/!svn/ver/9069/trunk/Bundles/Ruby%20on%20Rails.tmbundle/Support/test/app_fixtures/app/views/users/create.html.erb
+END

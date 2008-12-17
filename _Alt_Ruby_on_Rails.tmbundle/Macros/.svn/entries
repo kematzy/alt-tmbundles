@@ -1,0 +1,196 @@
+8
+
+dir
+10740
+http://macromates.com/svn/Bundles/trunk/Bundles/Ruby%20on%20Rails.tmbundle/Macros
+http://macromates.com/svn/Bundles
+
+
+
+2008-06-19T00:26:15.008538Z
+9952
+drnic
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+dfb7d73b-c2ec-0310-8fea-fb051d288c6d
+
+Add %3A Remove Unique Index.tmMacro
+file
+
+
+
+
+2008-11-01T05:10:49.000000Z
+56dc07e0c1be4f62f78bb3de04fef949
+2008-06-19T00:26:15.008538Z
+9952
+drnic
+
+Rename Table.tmMacro
+file
+
+
+
+
+2008-11-01T05:10:49.000000Z
+2fea3803ddcbe639ac67fe36e283e744
+2008-06-19T00:26:15.008538Z
+9952
+drnic
+
+Add %3A Remove Several Columns.tmMacro
+file
+
+
+
+
+2008-11-01T05:10:49.000000Z
+b3f9cb751287bfd7e07e6a5992444d4b
+2008-06-19T00:26:15.008538Z
+9952
+drnic
+
+Rename Column.tmMacro
+file
+
+
+
+
+2008-11-01T05:10:49.000000Z
+67297875bc190535ec6287111651ca37
+2008-06-19T00:26:15.008538Z
+9952
+drnic
+
+Add %3A Remove Index.tmMacro
+file
+
+
+
+
+2008-11-01T05:10:49.000000Z
+c6381d85c621ef34b7f5191fa6b174e1
+2008-06-19T00:26:15.008538Z
+9952
+drnic
+
+Add %3A Remove Several Columns (marcc).tmMacro
+file
+
+
+
+
+2008-11-01T05:10:49.000000Z
+5a2e31e735f3bea842ae7c4a638b18d2
+2008-06-19T00:26:15.008538Z
+9952
+drnic
+
+Create %3A Drop Table.tmMacro
+file
+
+
+
+
+2008-11-01T05:10:49.000000Z
+f58c35eef9978b41f2c6090702861eec
+2008-06-19T00:26:15.008538Z
+9952
+drnic
+
+Drop %3A Create Table.tmMacro
+file
+
+
+
+
+2008-11-01T05:10:49.000000Z
+4d46a6c10e10a2a9d56358160b040058
+2008-06-19T00:26:15.008538Z
+9952
+drnic
+
+Rename %3A Rename Several Columns.tmMacro
+file
+
+
+
+
+2008-11-01T05:10:49.000000Z
+acb519254ae3b7b31d4107dc7ec60f54
+2008-06-19T00:26:15.008538Z
+9952
+drnic
+
+Add %3A Remove Named Index.tmMacro
+file
+
+
+
+
+2008-11-01T05:10:49.000000Z
+9826f7c355eb418f8996c20abfdf8972
+2008-06-19T00:26:15.008538Z
+9952
+drnic
+
+Add %3A Remove Column.tmMacro
+file
+
+
+
+
+2008-11-01T05:10:49.000000Z
+4be564ce2aee5a185da97fed0a0739b6
+2008-06-19T00:26:15.008538Z
+9952
+drnic
+
+Change : Change Table.tmMacro
+file
+
+
+
+
+2008-11-01T05:10:49.000000Z
+2c8dddb4186800756eacb0b1da1bfe47
+2008-06-19T00:26:15.008538Z
+9952
+drnic
+
+Remove %3A Add Column.tmMacro
+file
+
+
+
+
+2008-11-01T05:10:49.000000Z
+d7dad775d248cc26813dd91cf3a69382
+2008-06-19T00:26:15.008538Z
+9952
+drnic
+
+Rename %3A Rename Several Columns (mncc).tmMacro
+file
+
+
+
+
+2008-11-01T05:10:49.000000Z
+2b1dd9b392d9cd16c8c407c034cf1190
+2008-06-19T00:26:15.008538Z
+9952
+drnic
+

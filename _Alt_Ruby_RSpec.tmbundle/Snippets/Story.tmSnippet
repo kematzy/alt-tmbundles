@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>Story "${1:title}", %{
+  As a${2:role}
+  I want ${3:feature}
+  So that ${4:value}  
+} do
+end</string>
+	<key>name</key>
+	<string>Story</string>
+	<key>scope</key>
+	<string>source.ruby.rspec</string>
+	<key>tabTrigger</key>
+	<string>st</string>
+	<key>uuid</key>
+	<string>3882E229-CACD-4A1B-867B-A008D1281E79</string>
+</dict>
+</plist>

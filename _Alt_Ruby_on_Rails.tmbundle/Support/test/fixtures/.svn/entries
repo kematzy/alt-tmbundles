@@ -1,0 +1,37 @@
+8
+
+dir
+10740
+http://macromates.com/svn/Bundles/trunk/Bundles/Ruby%20on%20Rails.tmbundle/Support/test/fixtures
+http://macromates.com/svn/Bundles
+
+
+
+2008-03-08T16:22:13.833189Z
+9069
+kevin
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+dfb7d73b-c2ec-0310-8fea-fb051d288c6d
+
+test
+dir
+
+app
+dir
+
+vendor
+dir
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>:marker-offset auto$0</string>
+	<key>name</key>
+	<string>:marker-offset auto</string>
+	<key>scope</key>
+	<string>source.sass</string>
+	<key>tabTrigger</key>
+	<string>marker</string>
+	<key>uuid</key>
+	<string>8347A44A-B2FF-41F0-9248-A528B8728FAC</string>
+</dict>
+</plist>

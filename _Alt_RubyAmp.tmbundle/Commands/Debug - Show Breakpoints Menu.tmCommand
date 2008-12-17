@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env sh
+cat &lt;&lt;'RUBYEOF' &gt; /tmp/ruby-amp-$$.rb
+
+  def short_path(path, paths_to_display = 2)
+    path.split("/")[(-1 - paths_to_display)..(-1)] * "/"
+  end
+
+require "#{ENV["TM_BUNDLE_SUPPORT"]}/lib/ruby_amp.rb"
+require "#{ENV["TM_BUNDLE_SUPPORT"]}/lib/ruby_tm_helpers.rb"
+require "#{ENV['TM_SUPPORT_PATH']}/lib/ui.rb"
+
+d = RubyAMP::RemoteDebugger.new
+breakpoints = d.breakpoint.list
+
+if breakpoints.empty?
+  puts "No breakpoints"
+  exit_show_tool_tip
+end
+
+b_index = TextMate::UI.menu(breakpoints.map{|b| "#{b.source}:#{b.line}"})
+
+exit_discard if b_index.nil?
+
+breakpoint = breakpoints[b_index]
+tm_open(breakpoint.source, :line =&gt; breakpoint.line)
+
+RUBYEOF
+
+${TM_RUBY:-ruby} /tmp/ruby-amp-$$.rb; exit_status=$?; rm /tmp/ruby-amp-$$.rb; exit $exit_status</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>^@b</string>
+	<key>name</key>
+	<string>Debug - Show Breakpoints</string>
+	<key>output</key>
+	<string>showAsTooltip</string>
+	<key>scope</key>
+	<string>source.ruby, text.html.ruby</string>
+	<key>uuid</key>
+	<string>1E8CFB33-246C-4D76-ACD3-D84B633F5456</string>
+</dict>
+</plist>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+
+# this will loop through a particular directory in the TM editor and extract the &lt;ID&gt;'s from each item
+# 1. we open the info.plist file in each bundle in the editor to get the path to the current bundle
+
+# get the current bundle
+tm_bundle_dir_path = ENV['TM_DIRECTORY']
+
+tm_files_to_extract = Hash.new
+tm_uuids_originals = Array.new
+tm_uuids_new = Array.new
+
+# now that we have it, let's look for all the folders and loop through them
+['Commands','Macros', 'Snippets','Preferences','Syntaxes'].each do |folder|
+  # now check if folder is a directory
+  # print "folder is #{folder}\n"
+  path_dir = "#{tm_bundle_dir_path}/#{folder}"
+  if File.directory?(path_dir)
+    # yes it's a directory
+    tm_uuids_originals &lt;&lt; "#{path_dir}"
+    tm_uuids_new &lt;&lt; "#{path_dir}"
+    # print "YES, it's #{folder} is there\n"
+    # now get the files in the directory
+    tm_files_to_extract[folder] = Dir.entries(path_dir).reject! { |i| i !~ /(.tmCommand|.tmSnippet|.tmLanguage|.tmPreferences|.tmMacro)/i }
+    # now grep the content within each file that looks like this
+    # &lt;key&gt;uuid&lt;/key&gt;
+  	# &lt;string&gt;EF1F2D38-A71A-4D1D-9B07-B1CBB6D84B81&lt;/string&gt;
+  	tm_files_to_extract[folder].each do |file|
+  	  # looping through each file
+  	  file_contents = IO.read("#{path_dir}/#{file}")
+  	  # # OK, now establish if we are changing the extension of the file
+  	  # case folder
+  	  #   when 'Commands'
+  	  #    file_ext = '.tmCommands'
+  	  #   when 'Snippets'
+  	  #     file_ext = '.tmSnippet'
+  	  #   when 'Preferences'
+  	  #     file_ext = '.tmPreferences'
+  	  #   when 'Syntaxes'
+  	  #     file_ext = '.tmLanguage'
+  	  # end
+  	  # # ok, now rename the file
+  	  # new_file_name = file.gsub(/.plist$/, file_ext)
+	    
+  	  # ok, read in the file contents, so let's create a new uuid for this file
+  	  uuid = `uuidgen`.chomp
+  	    	  
+  	  # now look for regex content
+  	  # regex_txt = file_contents.sub(/.*&lt;key&gt;uuid&lt;\/key&gt;(.*)&lt;\/dict&gt;/mi,'')
+  	  #re = /(&lt;string&gt;[A-Z0-9]{8}-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{12}&lt;\/string&gt;)/
+  	  res = /&lt;string&gt;[A-Z0-9]{8}-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{12}&lt;\/string&gt;/.match(file_contents)
+  	  #res = re.match(file_contents)
+  	  # regex_txt = res[0]
+  	  tm_uuids_originals &lt;&lt; res.to_a
+  	  tm_uuids_new &lt;&lt; uuid
+  	  # print "file = #{file} and contents = \n[#{res.inspect}]\n re = #{res.to_a.inspect}\n\n" 
+	  
+  	  File.open("#{path_dir}/#{file}", 'r+') do |f|     # open file for update
+          lines = f.readlines                           # read into array of lines
+          lines.each do |it|                            # modify the server port line
+              it.gsub!(/&lt;string&gt;[A-Z0-9]{8}-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{12}&lt;\/string&gt;/, "&lt;string&gt;#{uuid}&lt;/string&gt;")
+          end
+          f.pos = 0                                     # rewind to start position
+          f.print lines                                 # write out modified lines
+          f.truncate(f.pos)                             # truncate to new length
+      end
+  	end
+  end
+end  
+
+# print tm_files_to_extract.inspect
+
+print "Originals:\n"
+tm_uuids_originals.each do |x|
+  print "#{x}\n"
+end
+
+print "New:\n&lt;key&gt;ordering&lt;/key&gt;\n&lt;array&gt;\n"
+tm_uuids_new.each do |uuid|
+  print "&lt;string&gt;#{uuid}&lt;/string&gt;\n"
+end
+print "&lt;/array&gt;\n"
+</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string>^</string>
+	<key>name</key>
+	<string>Get &amp; Set Bundle Item IDs</string>
+	<key>output</key>
+	<string>openAsNewDocument</string>
+	<key>uuid</key>
+	<string>2F2F37BD-2331-4D2D-AA7A-D9B8F18109A9</string>
+</dict>
+</plist>

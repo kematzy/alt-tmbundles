@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>set the_choice to choose from list ${1:{"${2:choices}"\}}
+$0 </string>
+	<key>name</key>
+	<string>Item From List</string>
+	<key>scope</key>
+	<string>source.applescript</string>
+	<key>tabTrigger</key>
+	<string>choose</string>
+	<key>uuid</key>
+	<string>6D4AC8E5-A5CE-4F99-BD42-EE711F95C8F6</string>
+</dict>
+</plist>

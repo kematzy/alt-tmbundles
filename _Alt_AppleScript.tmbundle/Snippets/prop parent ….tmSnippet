@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>prop parent : app "${1:TextMate}"</string>
+	<key>name</key>
+	<string>prop parent …</string>
+	<key>scope</key>
+	<string>source.applescript</string>
+	<key>tabTrigger</key>
+	<string>parent</string>
+	<key>uuid</key>
+	<string>CFDCCA61-504E-4186-81C1-D2B60C0530B0</string>
+</dict>
+</plist>

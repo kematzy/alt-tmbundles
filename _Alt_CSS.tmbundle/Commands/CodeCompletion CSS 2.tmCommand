@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>bundleUUID</key>
+	<string>50D8A2E9-4D69-4741-B308-ABC7B812A001</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+require "#{ENV['TM_SUPPORT_PATH']}/lib/codecompletion"
+preference = 'Completions'
+choices = []
+
+parsed_choices = TextmateCompletionsParser.new(nil, :scope =&gt; :css).to_ary
+choices += parsed_choices if parsed_choices
+
+choices += ['--']
+
+plist_choices = TextmateCompletionsPlist.new( "#{ENV['TM_BUNDLE_PATH']}/Preferences/#{preference}.tmPreferences" ).to_ary
+choices += plist_choices if plist_choices
+
+print TextmateCodeCompletion.new(choices,STDIN.read, :scope =&gt; :css).to_snippet
+</string>
+	<key>fallbackInput</key>
+	<string>line</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string>~</string>
+	<key>name</key>
+	<string>CodeCompletion CSS</string>
+	<key>output</key>
+	<string>insertAsSnippet</string>
+	<key>scope</key>
+	<string>source.css -meta.property-list</string>
+	<key>uuid</key>
+	<string>50D8A2E9-4D69-4741-B308-ABC7B812A001</string>
+</dict>
+</plist>

@@ -1,0 +1,593 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/Bundles/!svn/ver/7881/trunk/Bundles/CSS.tmbundle/Snippets
+END
+border-left-width: size (border).plist
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/Bundles/!svn/ver/3666/trunk/Bundles/CSS.tmbundle/Snippets/border-left-width:%20size%20(border).plist
+END
+padding-right: length (margin).plist
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/padding-right:%20length%20(margin).plist
+END
+font:   style variant weight size:line-height font -family (font).plist
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/font:%20%20%20style%20variant%20weight%20size:line-height%20font%20-family%20(font).plist
+END
+text-decoration: none:underline:overline:line-through:blink (text).plist
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/text-decoration:%20none:underline:overline:line-through:blink%20(text).plist
+END
+list-style-type: marker(list).plist
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/list-style-type:%20marker(list).plist
+END
+properties { } ( } ).plist
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/Bundles/!svn/ver/2044/trunk/Bundles/CSS.tmbundle/Snippets/properties%20%7B%20%7D%20(%20%7D%20).plist
+END
+border-width: width (border).plist
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/Bundles/!svn/ver/3666/trunk/Bundles/CSS.tmbundle/Snippets/border-width:%20width%20(border).plist
+END
+Fixed Position Bottom 100% wide IE6.tmSnippet
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/Bundles/!svn/ver/6910/trunk/Bundles/CSS.tmbundle/Snippets/Fixed%20Position%20Bottom%20100%25%20wide%20IE6.tmSnippet
+END
+list-style-position: pos (list).plist
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/list-style-position:%20pos%20(list).plist
+END
+border-style: style (border).plist
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/border-style:%20style%20(border).plist
+END
+color:  color-name (color).plist
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/Bundles/!svn/ver/3666/trunk/Bundles/CSS.tmbundle/Snippets/color:%20%20color-name%20(color).plist
+END
+text-shadow: none (text).plist
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/text-shadow:%20none%20(text).plist
+END
+border-right-width: size (border).plist
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/Bundles/!svn/ver/3666/trunk/Bundles/CSS.tmbundle/Snippets/border-right-width:%20size%20(border).plist
+END
+color:  color-hex (color).plist
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/Bundles/!svn/ver/3666/trunk/Bundles/CSS.tmbundle/Snippets/color:%20%20color-hex%20(color).plist
+END
+scrollbar.tmSnippet
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/Bundles/!svn/ver/7150/trunk/Bundles/CSS.tmbundle/Snippets/scrollbar.tmSnippet
+END
+font-size: size (font).plist
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/font-size:%20size%20(font).plist
+END
+z-index: index (z).plist
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/z-index:%20index%20(z).plist
+END
+selection.tmSnippet
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/Bundles/!svn/ver/7151/trunk/Bundles/CSS.tmbundle/Snippets/selection.tmSnippet
+END
+border-bottom-color: size style color (border).plist
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/Bundles/!svn/ver/3666/trunk/Bundles/CSS.tmbundle/Snippets/border-bottom-color:%20size%20style%20color%20(border).plist
+END
+margin-left: length (margin).plist
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/margin-left:%20length%20(margin).plist
+END
+display: table-types (display).plist
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/display:%20table-types%20(display).plist
+END
+border-bottom-width: size style color (border).plist
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/Bundles/!svn/ver/3666/trunk/Bundles/CSS.tmbundle/Snippets/border-bottom-width:%20size%20style%20color%20(border).plist
+END
+border-right-style: style (border).plist
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/border-right-style:%20style%20(border).plist
+END
+background-position:  position (background).plist
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/background-position:%20%20position%20(background).plist
+END
+list-style-type: numeric (list).plist
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/list-style-type:%20numeric%20(list).plist
+END
+float: left:right:none (float).plist
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/float:%20left:right:none%20(float).plist
+END
+padding-bottom: length (margin).plist
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/padding-bottom:%20length%20(margin).plist
+END
+border-left: size style color (border).plist
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/border-left:%20size%20style%20color%20(border).plist
+END
+margin-bottom: length (margin).plist
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/margin-bottom:%20length%20(margin).plist
+END
+font: size font (font).plist
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/font:%20size%20font%20(font).plist
+END
+font-variant:   normal:small-caps (font).plist
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/font-variant:%20%20%20normal:small-caps%20(font).plist
+END
+border-left-style: style (border).plist
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/border-left-style:%20style%20(border).plist
+END
+background-image:  url (background).plist
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/background-image:%20%20url%20(background).plist
+END
+border-top-width: size (border).plist
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/Bundles/!svn/ver/3666/trunk/Bundles/CSS.tmbundle/Snippets/border-top-width:%20size%20(border).plist
+END
+padding:   all (padding).plist
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/padding:%20%20%20all%20(padding).plist
+END
+border-color: color (border).plist
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/border-color:%20color%20(border).plist
+END
+border-bottom-style: size style color (border).plist
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/Bundles/!svn/ver/3666/trunk/Bundles/CSS.tmbundle/Snippets/border-bottom-style:%20size%20style%20color%20(border).plist
+END
+margin-right: length (margin).plist
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/margin-right:%20length%20(margin).plist
+END
+border-bottom: size style color (border).plist
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/border-bottom:%20size%20style%20color%20(border).plist
+END
+letter-spacing:   length-px (letter).plist
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/Bundles/!svn/ver/3666/trunk/Bundles/CSS.tmbundle/Snippets/letter-spacing:%20%20%20length-px%20(letter).plist
+END
+overflow: type (overflow).plist
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/overflow:%20type%20(overflow).plist
+END
+background-repeat:  r:r-x:r-y:n-r (background).plist
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/background-repeat:%20%20r:r-x:r-y:n-r%20(background).plist
+END
+filter: AlphaImageLoader [for IE PNGs] (background).plist
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/Bundles/!svn/ver/3650/trunk/Bundles/CSS.tmbundle/Snippets/filter:%20AlphaImageLoader%20%5Bfor%20IE%20PNGs%5D%20(background).plist
+END
+position: type (position).plist
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/position:%20type%20(position).plist
+END
+vertical-align: type (vertical).plist
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/vertical-align:%20type%20(vertical).plist
+END
+list-style: type position image (list).plist
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/list-style:%20type%20position%20image%20(list).plist
+END
+marker-offset: auto (marker).plist
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/marker-offset:%20auto%20(marker).plist
+END
+border-right-color: color (border).plist
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/border-right-color:%20color%20(border).plist
+END
+word-spacing:  normal (word).plist
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/word-spacing:%20%20normal%20(word).plist
+END
+background-color:  color-rgb (background).plist
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/Bundles/!svn/ver/3666/trunk/Bundles/CSS.tmbundle/Snippets/background-color:%20%20color-rgb%20(background).plist
+END
+text-shadow: color-hex x y blur (text).plist
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/Bundles/!svn/ver/3666/trunk/Bundles/CSS.tmbundle/Snippets/text-shadow:%20color-hex%20x%20y%20blur%20(text).plist
+END
+white-space:  normal:pre:nowrap (white).plist
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/white-space:%20%20normal:pre:nowrap%20(white).plist
+END
+marker-offset: length (marker).plist
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/marker-offset:%20length%20(marker).plist
+END
+margin: V H (margin).plist
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/margin:%20V%20H%20(margin).plist
+END
+text-align: left:center:right (txt).plist
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/Bundles/!svn/ver/3666/trunk/Bundles/CSS.tmbundle/Snippets/text-align:%20left:center:right%20(txt).plist
+END
+background-color:  color-hex (background).plist
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/Bundles/!svn/ver/3666/trunk/Bundles/CSS.tmbundle/Snippets/background-color:%20%20color-hex%20(background).plist
+END
+margin-top: length (margin).plist
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/margin-top:%20length%20(margin).plist
+END
+background-color:  transparent (background).plist
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/background-color:%20%20transparent%20(background).plist
+END
+cursor: type (cursor).plist
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/Bundles/!svn/ver/5681/trunk/Bundles/CSS.tmbundle/Snippets/cursor:%20type%20(cursor).plist
+END
+border-left-color: color (border).plist
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/border-left-color:%20color%20(border).plist
+END
+opacity: [for Safari, FF and IE] (opacity).plist
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/Bundles/!svn/ver/3650/trunk/Bundles/CSS.tmbundle/Snippets/opacity:%20%5Bfor%20Safari,%20FF%20and%20IE%5D%20(opacity).plist
+END
+padding:   T R B L (padding).plist
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/padding:%20%20%20T%20R%20B%20L%20(padding).plist
+END
+text-transform: none (text).plist
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/text-transform:%20none%20(text).plist
+END
+color:  color-rgb (color).plist
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/Bundles/!svn/ver/3666/trunk/Bundles/CSS.tmbundle/Snippets/color:%20%20color-rgb%20(color).plist
+END
+border-top: size style color (border).plist
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/border-top:%20size%20style%20color%20(border).plist
+END
+border:   size style color (border).plist
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/border:%20%20%20size%20style%20color%20(border).plist
+END
+display: inline (display).plist
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/display:%20inline%20(display).plist
+END
+border-top-style: style (border).plist
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/border-top-style:%20style%20(border).plist
+END
+background-attachment: scroll:fixed (background).plist
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/background-attachment:%20scroll:fixed%20(background).plist
+END
+padding-left: length (margin).plist
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/padding-left:%20length%20(margin).plist
+END
+font-style:   normal:italic:oblique (font).plist
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/font-style:%20%20%20normal:italic:oblique%20(font).plist
+END
+margin: T R B L (margin).plist
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/margin:%20T%20R%20B%20L%20(margin).plist
+END
+visibility: type (visibility).plist
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/visibility:%20type%20(visibility).plist
+END
+margin:   all (margin).plist
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/margin:%20%20%20all%20(margin).plist
+END
+display: common-types (display).plist
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/display:%20common-types%20(display).plist
+END
+display: block (display).plist
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/display:%20block%20(display).plist
+END
+padding-top: length (margin).plist
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/padding-top:%20length%20(margin).plist
+END
+background-color:  color-name (background).plist
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/Bundles/!svn/ver/3666/trunk/Bundles/CSS.tmbundle/Snippets/background-color:%20%20color-name%20(background).plist
+END
+text-indent: length (text).plist
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/Bundles/!svn/ver/5715/trunk/Bundles/CSS.tmbundle/Snippets/text-indent:%20length%20(text).plist
+END
+font-family:   family (font).plist
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/font-family:%20%20%20family%20(font).plist
+END
+background-image:  none (background).plist
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/background-image:%20%20none%20(background).plist
+END
+background:  color image repeat attachment position (background).plist
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/background:%20%20color%20image%20repeat%20attachment%20position%20(background).plist
+END
+direction: ltr|rtl (direction).plist
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/Bundles/!svn/ver/3666/trunk/Bundles/CSS.tmbundle/Snippets/direction:%20ltr%7Crtl%20(direction).plist
+END
+text-transform: capitalize:upper:lower (text).plist
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/text-transform:%20capitalize:upper:lower%20(text).plist
+END
+list-style-type: other (list).plist
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/list-style-type:%20other%20(list).plist
+END
+border-top-color: color (border).plist
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/border-top-color:%20color%20(border).plist
+END
+text-shadow: color-rgb x y blur (text).plist
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/Bundles/!svn/ver/3666/trunk/Bundles/CSS.tmbundle/Snippets/text-shadow:%20color-rgb%20x%20y%20blur%20(text).plist
+END
+font-weight: weight (font).plist
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/font-weight:%20weight%20(font).plist
+END
+clear: value (clear).plist
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/clear:%20value%20(clear).plist
+END
+padding:   V H (padding).plist
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/padding:%20%20%20V%20H%20(padding).plist
+END
+word-spacing:  length (word).plist
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/word-spacing:%20%20length%20(word).plist
+END
+cursor: url (cursor).plist
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/cursor:%20url%20(cursor).plist
+END
+!important CSS (!).plist
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/!important%20CSS%20(!).plist
+END
+list-style-type: roman-alpha-greek (list).plist
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/Bundles/!svn/ver/7881/trunk/Bundles/CSS.tmbundle/Snippets/list-style-type:%20roman-alpha-greek%20(list).plist
+END
+list-style-type: asian (list).plist
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/list-style-type:%20asian%20(list).plist
+END
+border-right: size style color (border).plist
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/border-right:%20size%20style%20color%20(border).plist
+END
+letter-spacing:   length-em (letter).plist
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/Bundles/!svn/ver/3666/trunk/Bundles/CSS.tmbundle/Snippets/letter-spacing:%20%20%20length-em%20(letter).plist
+END
+list-style-image: url (list).plist
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/Bundles/!svn/ver/3648/trunk/Bundles/CSS.tmbundle/Snippets/list-style-image:%20url%20(list).plist
+END

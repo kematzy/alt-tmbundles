@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env sh
+cat &lt;&lt;'RUBYEOF' &gt; /tmp/ruby-amp-$$.rb
+
+require "#{ENV["TM_BUNDLE_SUPPORT"]}/lib/ruby_tm_helpers.rb"
+require "#{ENV['TM_SUPPORT_PATH']}/lib/ui.rb"
+
+open_files = `"$TMTOOLS" get openProjectFiles '{format=plain;}'`.split("\n").sort
+project_directory = ENV['TM_PROJECT_DIRECTORY']
+
+i = TextMate::UI.menu(open_files.map{|of| of.gsub(project_directory, ".")})
+
+exit_discard if i.nil?
+
+%x|open 'txmt://open?url=file://#{open_files[i]}'|
+
+exit_discard
+
+RUBYEOF
+
+${TM_RUBY:-ruby} /tmp/ruby-amp-$$.rb; exit_status=$?; rm /tmp/ruby-amp-$$.rb; exit $exit_status</string>
+	<key>input</key>
+	<string>document</string>
+	<key>keyEquivalent</key>
+	<string>~e</string>
+	<key>name</key>
+	<string>Show Open Windows</string>
+	<key>output</key>
+	<string>showAsTooltip</string>
+	<key>uuid</key>
+	<string>0C7AB40E-1693-455E-807D-F1CD1889B671</string>
+</dict>
+</plist>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env sh
+cat &lt;&lt;'RUBYEOF' &gt; /tmp/ruby-amp-$$.rb
+
+require "#{ENV["TM_BUNDLE_SUPPORT"]}/lib/ruby_tm_helpers.rb"
+require "#{ENV["TM_BUNDLE_SUPPORT"]}/lib/grep_helpers.rb"
+require "#{ENV['TM_SUPPORT_PATH']}/lib/ui.rb"
+project_directory = ENV['TM_PROJECT_DIRECTORY']
+
+filepath = tm_expanded_selection(
+  :backward =&gt; /[\w\/.-]+/,
+  :forward =&gt;  /[\w\/.-]+(:\d+){0,1}/
+).strip
+
+filepath = TextMate::UI.request_string(:title =&gt; "Go to file", :prompt =&gt; "Enter a filename with path", :default =&gt; "" ) if filepath.empty?
+
+if filepath.nil? || filepath.empty?
+  puts "Canceled"
+  exit_show_tool_tip
+end
+
+line = nil
+if /^(.+):(\d+)$/.match(filepath)
+  filepath = $1
+  line = $2
+end
+
+if /^\//.match(filepath) &amp;&amp; File.exists?(filepath)
+  tm_open(filepath, :line =&gt; line)
+  exit_show_tool_tip
+end 
+
+
+filepath.gsub!(/\.{1,2}\//, "")
+filepath.gsub!(/^\//, "") # remove the beginning slash
+
+/^(.*\/){0,1}([^\/]+)$/.match(filepath)
+dir = $1
+file = $2
+regexp = /(^|\/)#{dir}_{0,1}#{file}($|\b[^\/]*$)/
+
+
+Dir.chdir(project_directory)
+results = Finder.new(".").results
+
+matches = []
+
+results.each do |result|
+  matches &lt;&lt; result if regexp.match(result)
+end
+
+if matches.length &gt; 1
+  i = TextMate::UI.menu(matches)
+  exit_discard if i.nil?
+  selected_match = matches[i]
+elsif matches.length==1
+  selected_match = matches.first
+else
+  puts "No filenames matching '#{filepath}'"
+  exit_show_tool_tip
+end
+
+tm_open(selected_match, :line =&gt; line)
+
+exit_discard
+
+RUBYEOF
+
+${TM_RUBY:-ruby} /tmp/ruby-amp-$$.rb; exit_status=$?; rm /tmp/ruby-amp-$$.rb; exit $exit_status</string>
+	<key>fallbackInput</key>
+	<string>word</string>
+	<key>input</key>
+	<string>document</string>
+	<key>keyEquivalent</key>
+	<string>~F</string>
+	<key>name</key>
+	<string>Go to file</string>
+	<key>output</key>
+	<string>showAsTooltip</string>
+	<key>uuid</key>
+	<string>F627B516-CC84-4224-9926-495D67B45004</string>
+</dict>
+</plist>

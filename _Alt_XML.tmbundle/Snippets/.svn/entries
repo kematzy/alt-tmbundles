@@ -1,0 +1,102 @@
+8
+
+dir
+10740
+http://macromates.com/svn/Bundles/trunk/Bundles/XML.tmbundle/Snippets
+http://macromates.com/svn/Bundles
+
+
+
+2007-02-23T20:28:39.473130Z
+6632
+jrus
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+dfb7d73b-c2ec-0310-8fea-fb051d288c6d
+
+XML Processing Instruction.tmSnippet
+file
+
+
+
+
+2008-11-01T05:26:23.000000Z
+ed6a5e8fc061e709cfb6c448f83efb4a
+2006-06-07T20:29:59.870712Z
+3576
+kevin
+
+long tag.plist
+file
+
+
+
+
+2008-11-01T05:26:23.000000Z
+c72eade7c0ed73656fdd11d967e6c61a
+2006-06-14T02:52:10.959006Z
+3648
+duff
+has-props
+
+short tag.plist
+file
+
+
+
+
+2008-11-01T05:26:23.000000Z
+d3aca1c837e5e98e5c9bd6a82ecfb58e
+2006-06-14T02:52:10.959006Z
+3648
+duff
+has-props
+
+long attribute tag.plist
+file
+
+
+
+
+2008-11-01T05:26:23.000000Z
+88186200f41b558a12fab308d30b968c
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+CDATA.tmSnippet
+file
+
+
+
+
+2008-11-01T05:26:23.000000Z
+47519af10c4ed6b4c8a68e5587390f62
+2007-02-23T20:28:39.473130Z
+6632
+jrus
+
+Smart return:indent for tag pairs.plist
+file
+
+
+
+
+2008-11-01T05:26:23.000000Z
+3f3b597ca82c0203c55d29e019b30024
+2005-11-23T22:58:44.923593Z
+2245
+duff
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>contactEmailRot13</key>
+	<string>ora@vapbzhzqrfvta.pbz</string>
+	<key>contactName</key>
+	<string>Benjamin Jackson</string>
+	<key>description</key>
+	<string>&lt;a href="http://www.yaml.org/"&gt;YAML&lt;/a&gt; is a straightforward machine parsable data serialization format designed for human readability and interaction with scripting languages such as Perl and Python.</string>
+	<key>mainMenu</key>
+	<dict>
+		<key>items</key>
+		<array>
+			<string>02345CC5-B797-4FE8-B923-170B02C6C298</string>
+			<string>62657CD3-7D65-4EE9-9B6D-08B984DFA51C</string>
+			<string>------------------------------------</string>
+			<string>4430F7BB-CD6D-4103-A87A-E102FB0540B6</string>
+			<string>F4F8CE5C-860A-46A0-8055-201C93E02ED0</string>
+			<string>------------------------------------</string>
+			<string>C02A8B21-1317-4B0A-AEFA-77F3FFC6D08E</string>
+		</array>
+		<key>submenus</key>
+		<dict/>
+	</dict>
+	<key>name</key>
+	<string> Alt YAML</string>
+	<key>ordering</key>
+	<array>
+		<string>02345CC5-B797-4FE8-B923-170B02C6C298</string>
+		<string>B0127DA0-6BBE-49D5-A24E-C7F81CB203E1</string>
+		<string>35775F5B-52D4-4D57-84E3-D7E83D85B819</string>
+		<string>135AC506-210A-40DA-A488-043E2B8B6C91</string>
+		<string>62657CD3-7D65-4EE9-9B6D-08B984DFA51C</string>
+		<string>4430F7BB-CD6D-4103-A87A-E102FB0540B6</string>
+		<string>F4F8CE5C-860A-46A0-8055-201C93E02ED0</string>
+		<string>C02A8B21-1317-4B0A-AEFA-77F3FFC6D08E</string>
+	</array>
+	<key>uuid</key>
+	<string>E726A464-3E76-4A3E-A426-9BA0E34FD6B8</string>
+</dict>
+</plist>

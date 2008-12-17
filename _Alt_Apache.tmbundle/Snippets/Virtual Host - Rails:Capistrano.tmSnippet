@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;VirtualHost *:80&gt;
+  ServerName ${1:example.org}
+  DocumentRoot "$HOME/Sites/$1/${2:current}/public"
+  ${3:RailsEnv ${4:development}${5:production}}
+  ${6:RailsAllowModRewrite ${7:off}${8:on}}
+  &lt;directory "$HOME/Sites/$1/$2/public"&gt;
+    Order allow,deny
+    Allow from all
+  &lt;/directory&gt;
+&lt;/VirtualHost&gt;
+</string>
+	<key>name</key>
+	<string>Virtual Host - Rails/Capistrano</string>
+	<key>scope</key>
+	<string>source.apache-config</string>
+	<key>tabTrigger</key>
+	<string>vhost</string>
+	<key>uuid</key>
+	<string>18289051-12CF-42C5-900C-50315BD398EE</string>
+</dict>
+</plist>

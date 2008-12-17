@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>named_scope :name, lambda { |${1:param}| { :conditions =&gt; ${3:['${4:${5:field} = ?}', ${6:$1}]} } }
+</string>
+	<key>name</key>
+	<string>named_scope lambda</string>
+	<key>scope</key>
+	<string>source.ruby.rails</string>
+	<key>tabTrigger</key>
+	<string>ncl</string>
+	<key>uuid</key>
+	<string>672A386C-8F3E-45E9-BCB6-A7901BE65E42</string>
+</dict>
+</plist>

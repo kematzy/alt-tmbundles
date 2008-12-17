@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>setProperty( ${1:target}, ${2:property}, ${3:value} );</string>
+	<key>inputPattern</key>
+	<string>MovieClip</string>
+	<key>name</key>
+	<string>setProperty</string>
+	<key>scope</key>
+	<string>source.actionscript</string>
+	<key>tabTrigger</key>
+	<string>sp</string>
+	<key>uuid</key>
+	<string>0C8C41D6-599C-4170-830A-BEAA9B6DAF3F</string>
+</dict>
+</plist>

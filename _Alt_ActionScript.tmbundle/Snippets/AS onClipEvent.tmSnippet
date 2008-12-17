@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>onClipEvent ($1) {
+	$2};</string>
+	<key>inputPattern</key>
+	<string>MovieClip</string>
+	<key>name</key>
+	<string>onClipEvent</string>
+	<key>scope</key>
+	<string>source.actionscript</string>
+	<key>tabTrigger</key>
+	<string>oc</string>
+	<key>uuid</key>
+	<string>639EAFBB-54C0-470A-BEF3-5798AE9D0FC9</string>
+</dict>
+</plist>

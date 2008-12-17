@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>lambda { ${1/(^(?&lt;var&gt;\s*(?:\*|\*?[a-z_])[a-zA-Z0-9_]*\s*)(,\g&lt;var&gt;)*,?\s*$)|.*/(?1:|)/}${1:args}${1/(^(?&lt;var&gt;\s*(?:\*|\*?[a-z_])[a-zA-Z0-9_]*\s*)(,\g&lt;var&gt;)*,?\s*$)|.*/(?1:| )/}$0 }</string>
+	<key>name</key>
+	<string>lambda { |args| .. }</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>tabTrigger</key>
+	<string>lam</string>
+	<key>uuid</key>
+	<string>4D285939-1852-43C6-A40D-04D48F083D07</string>
+</dict>
+</plist>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>t.integer :lock_version, :null =&gt; false, :default =&gt; 0
+$0</string>
+	<key>name</key>
+	<string>Table column lock_version</string>
+	<key>scope</key>
+	<string>meta.rails.migration.create_table, meta.rails.migration.change_table</string>
+	<key>tabTrigger</key>
+	<string>tcl</string>
+	<key>uuid</key>
+	<string>A03184F3-9A74-4140-98DC-0F5C72F3F464</string>
+</dict>
+</plist>

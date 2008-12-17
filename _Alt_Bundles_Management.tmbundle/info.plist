@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>mainMenu</key>
+	<dict>
+		<key>excludedItems</key>
+		<array>
+			<string>4DB30DD9-068B-43D2-8E96-3505DA9168B6</string>
+			<string>2F2F37BD-2331-4D2D-AA7A-D9B8F18109A9</string>
+			<string>46232C7A-6D7C-4F82-8C3C-E52C490A53FE</string>
+			<string>E55971E8-A758-48FF-A9F7-ADD168C4A177</string>
+		</array>
+		<key>items</key>
+		<array>
+			<string>931692FC-DF43-4EAF-A9CE-63CE6CFF46BC</string>
+		</array>
+		<key>submenus</key>
+		<dict/>
+	</dict>
+	<key>name</key>
+	<string>  Bundles Management</string>
+	<key>ordering</key>
+	<array>
+		<string>931692FC-DF43-4EAF-A9CE-63CE6CFF46BC</string>
+		<string>4DB30DD9-068B-43D2-8E96-3505DA9168B6</string>
+		<string>2F2F37BD-2331-4D2D-AA7A-D9B8F18109A9</string>
+		<string>E55971E8-A758-48FF-A9F7-ADD168C4A177</string>
+	</array>
+	<key>uuid</key>
+	<string>F4374753-EFCD-41E1-BA40-4A7C7F2FE5F6</string>
+</dict>
+</plist>

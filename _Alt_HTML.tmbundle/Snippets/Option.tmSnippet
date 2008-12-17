@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleUUID</key>
+	<string>1C0588DD-DC8F-45EF-B0A6-68A2BD500E01</string>
+	<key>content</key>
+	<string>&lt;option${1: value="${2:option}"}&gt;${3:$2}&lt;/option&gt;</string>
+	<key>name</key>
+	<string>Option</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>opt</string>
+	<key>uuid</key>
+	<string>1C0588DD-DC8F-45EF-B0A6-68A2BD500E01</string>
+</dict>
+</plist>

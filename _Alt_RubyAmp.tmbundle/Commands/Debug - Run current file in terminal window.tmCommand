@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>saveActiveFile</string>
+	<key>command</key>
+	<string>#!/usr/bin/env sh
+cat &lt;&lt;'RUBYEOF' &gt; /tmp/ruby-amp-$$.rb
+require "#{ENV['TM_BUNDLE_SUPPORT']}/lib/ruby_amp.rb"
+
+run_file = RubyAMP::RemoteDebugger.prepare_debug_wrapper &lt;&lt;-EOF
+  require #{ENV['TM_FILEPATH'].to_s.inspect}
+EOF
+RubyAMP::Launcher.open_debug_process_in_terminal(run_file)
+sleep 0.25
+RubyAMP::Launcher.open_controller_terminal
+
+
+RUBYEOF
+
+${TM_RUBY:-ruby} /tmp/ruby-amp-$$.rb; exit_status=$?; rm /tmp/ruby-amp-$$.rb; exit $exit_status</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>name</key>
+	<string>Debug - Run current file in terminal window</string>
+	<key>output</key>
+	<string>showAsTooltip</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>uuid</key>
+	<string>D29FF76A-88FF-4B50-9B09-618352E92363</string>
+</dict>
+</plist>

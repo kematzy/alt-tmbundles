@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundlePath</key>
+	<string>/Users/kumar/Library/Application Support/TextMate/Bundles/PHPDoc.tmbundle</string>
+	<key>content</key>
+	<string>/**
+ * $1
+ *
+ * @author ${PHPDOC_AUTHOR:$TM_FULLNAME}
+ * @version \$Id\$
+ * @copyright `echo $TM_ORGANIZATION_NAME`, `date +"%e %B, %Y" | sed 's/^ //'`
+ * @package ${3:default}
+ **/
+
+/**
+ * Define DocBlock
+ **/
+</string>
+	<key>name</key>
+	<string>Header</string>
+	<key>scope</key>
+	<string>source.php</string>
+	<key>tabTrigger</key>
+	<string>doc_h</string>
+	<key>uuid</key>
+	<string>1B4BDC14-56DE-46C9-B3EF-445E92C624DB</string>
+</dict>
+</plist>

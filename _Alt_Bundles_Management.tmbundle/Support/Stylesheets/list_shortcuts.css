@@ -1,0 +1,75 @@
+/* This is here so it's easy to locate */
+.keyEquivalent { display: table-row; }
+.keyEquivalentBlock { display: block; }
+.tabTrigger { display: table-row; }
+.tabTriggerBlock { display: block; }
+.trigger { display: table-row; }
+.triggerBlock { display: block; }
+
+/* general stuff.. */
+body {
+	font-family: "Lucida Grande", sans-serif;
+	color: #E1D5C8;
+	font-size: 12px;
+	background-color: #2D2929;
+}
+
+h1 {
+	font-size: 24px;
+	text-shadow: #000 2px 3px 3px;
+}
+
+/* make horizontal rules slightly less heavy */
+hr {
+color: #ccc;
+background-color: #ccc;
+height: 1px;
+border: 0px;
+}
+
+/* about links.. */
+a:link, a:visited {
+	background-color: transparent;
+	color: #35a;
+	text-decoration: underline;
+	padding-left: 1px;
+	padding-right: 1px;
+}
+
+a:hover, a:active {
+	background-color: #136;
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Table styling */
+
+table { width: 100%; }
+tr {
+}
+td {
+	border-bottom: 1px solid #454040;
+	padding: 2px 6px 2px 2px;
+}
+.name {
+	padding: 0px 0px 0px 10px;
+}
+.type { 
+	width: 10em;
+}
+.shortcut { 
+	width: 9em; 
+	text-align: right;
+	background-color: #454040;
+	color: #ffffff;
+}
+h2 {
+	padding: 5px 15px;
+	margin: 25px 0px 5px 0px;
+	background-color: #322F2F;
+	border-bottom: 2px solid #4F4A4A;
+	text-shadow: #000 2px 3px 3px;
+}
+h3 {
+	font-size: 14px;
+}

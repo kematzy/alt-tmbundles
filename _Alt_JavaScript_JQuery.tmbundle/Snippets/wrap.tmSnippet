@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>.wrap('${1:&amp;lt;div class="extra-wrapper"&amp;gt;&amp;lt;/div&amp;gt;}')$0</string>
+	<key>name</key>
+	<string>wrap</string>
+	<key>scope</key>
+	<string>source.js.jquery</string>
+	<key>tabTrigger</key>
+	<string>.wrap</string>
+	<key>uuid</key>
+	<string>4EF20FE8-A54E-4AA6-8F4C-E10F949E4081</string>
+</dict>
+</plist>

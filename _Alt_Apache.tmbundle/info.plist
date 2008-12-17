@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>contactEmailRot13</key>
+	<string>fvzba@uryirpgbe.bet</string>
+	<key>contactName</key>
+	<string>Simon Gregory</string>
+	<key>deleted</key>
+	<array>
+		<string>63BE6D35-8529-4218-866B-F61C1A877C1B</string>
+		<string>151706D2-A274-4036-8CC0-837B838BAED5</string>
+		<string>FC47B2D5-8116-11D9-B33A-00039398C572</string>
+	</array>
+	<key>description</key>
+	<string>Commands to relaunch &lt;a href="http://apache.org/"&gt;Apache&lt;/a&gt;, edit the &lt;tt&gt;httpd.conf&lt;/tt&gt; file etc.</string>
+	<key>mainMenu</key>
+	<dict>
+		<key>items</key>
+		<array>
+			<string>9073DE9C-C101-46CA-A62D-EB2B21F16530</string>
+			<string>68FF6B3C-7C36-414D-9A4E-5948DB2E55A6</string>
+			<string>------------------------------------</string>
+			<string>964B1BC8-A3C8-443F-B9C9-716A74410E15</string>
+			<string>------------------------------------</string>
+			<string>62B9F410-8CBC-4BB7-B0C5-EE737BA27394</string>
+			<string>34E3E2C3-B83D-4393-9D4C-88CA3674673A</string>
+			<string>------------------------------------</string>
+			<string>C4C4B5DD-BD76-46BF-8465-41E8AF990B38</string>
+			<string>5C97BAC7-8590-43F1-B2E5-8CD07008378A</string>
+			<string>------------------------------------</string>
+			<string>77B31319-8097-4FA9-8C81-BB6E710D188C</string>
+			<string>CC2ACBC2-EC5F-47C9-8BC8-0D701CB365EF</string>
+			<string>18289051-12CF-42C5-900C-50315BD398EE</string>
+			<string>EE1CB561-1CEE-40D7-B2EB-EC5E087B25A3</string>
+		</array>
+		<key>submenus</key>
+		<dict>
+			<key>964B1BC8-A3C8-443F-B9C9-716A74410E15</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>DE281FA7-CD06-4DAE-87DC-56984D283CB3</string>
+					<string>5A17ADEC-B150-480A-89A1-686D6544D0A9</string>
+					<string>481C974B-767F-4B05-9395-423B50EA9404</string>
+					<string>53D30302-9EEA-4A95-AF71-FCE77AB53501</string>
+					<string>------------------------------------</string>
+					<string>0EFC0F39-EDB0-46A1-9128-C76655666110</string>
+				</array>
+				<key>name</key>
+				<string>apachectl</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>name</key>
+	<string> Alt Apache</string>
+	<key>ordering</key>
+	<array>
+		<string>0EFC0F39-EDB0-46A1-9128-C76655666110</string>
+		<string>481C974B-767F-4B05-9395-423B50EA9404</string>
+		<string>53D30302-9EEA-4A95-AF71-FCE77AB53501</string>
+		<string>DE281FA7-CD06-4DAE-87DC-56984D283CB3</string>
+		<string>5A17ADEC-B150-480A-89A1-686D6544D0A9</string>
+		<string>62B9F410-8CBC-4BB7-B0C5-EE737BA27394</string>
+		<string>9073DE9C-C101-46CA-A62D-EB2B21F16530</string>
+		<string>68FF6B3C-7C36-414D-9A4E-5948DB2E55A6</string>
+		<string>34E3E2C3-B83D-4393-9D4C-88CA3674673A</string>
+		<string>C4C4B5DD-BD76-46BF-8465-41E8AF990B38</string>
+		<string>5C97BAC7-8590-43F1-B2E5-8CD07008378A</string>
+		<string>77B31319-8097-4FA9-8C81-BB6E710D188C</string>
+		<string>CC2ACBC2-EC5F-47C9-8BC8-0D701CB365EF</string>
+		<string>18289051-12CF-42C5-900C-50315BD398EE</string>
+		<string>EE1CB561-1CEE-40D7-B2EB-EC5E087B25A3</string>
+		<string>C3EC2B68-6C98-4B01-9022-D5B2FF6FDDE2</string>
+		<string>60480637-B56E-4E11-B08C-6537C0EC4B8D</string>
+		<string>19188F39-3FFC-470B-AFC5-DD0A922BE351</string>
+		<string>ABC86CF3-06DE-4C30-A9C8-A49B044D085D</string>
+		<string>A7A3DC65-378D-45E9-85BB-024D84EA5BAA</string>
+		<string>95E9ED38-7123-4142-8D7F-05272611D44C</string>
+		<string>B1461ACF-5CDF-4C52-A520-F6B566CFAF6F</string>
+		<string>A4AAB0F2-71EA-4595-AECE-B2CEB01CA7AC</string>
+		<string>492A7871-19D3-4A1A-BEFB-F642528AD133</string>
+		<string>5D94E149-F1D7-4781-8D5D-EB42A0C26576</string>
+		<string>E7885B76-4F1B-49E1-94C2-032915FE934F</string>
+		<string>459A9D5C-7349-4C3D-9BD2-4644898214AC</string>
+		<string>C116CBCE-F334-4143-9475-DCB7C98E1A31</string>
+	</array>
+	<key>uuid</key>
+	<string>DD166245-CBA5-4427-8B11-5624FD6F7380</string>
+</dict>
+</plist>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+
+require 'fileutils'
+# this will loop through a particular directory in the TM editor and extract the &lt;ID&gt;'s from each item
+# 1. we open the info.plist file in each bundle in the editor to get the path to the current bundle
+extensions = {
+  :Commands =&gt; '.tmCommand', 
+  :Snippets =&gt; '.tmSnippet', 
+  :Syntaxes =&gt; '.tmLanguage', 
+  :Preferences =&gt; ".tmPreferences", 
+  :Macros =&gt; '.tmMacro'
+}
+
+# get the current bundle
+# tm_bundle_dir_path = "/Users/mats/Library/Application Support/TextMate/Bundles/_Core_YAML.tmbundle"
+tm_bundle_dir_path = ENV['TM_DIRECTORY']
+tm_files_to_rename = []
+
+# now that we have it, let's look for all the folders and loop through them
+extensions.each do |folder, extension|
+  print "folder=[#{folder}], extension=[#{extension}]\n"  
+  # now check if folder is a directory
+  path_dir = "#{tm_bundle_dir_path}/#{folder}"
+  print "path_dir=[#{path_dir}]\n"
+  
+  if File.directory?(path_dir)
+  #   # yes it's a directory
+  #   # now get the files in the directory
+    tm_files_to_rename = Dir.entries(path_dir) #.reject! { |i| i == /(\.DS_Store|\.)/ }
+    print "tm_files_to_rename=[#{tm_files_to_rename.inspect}]\n"
+    # now grep the content within each file that looks like this
+    tm_files_to_rename.each do |file|
+      # looping through each file
+      print "Looping through the FILE = [#{file}]\n"
+      
+      # FileUtils.mv(file, file.sub(/\.plist$/,extensions[folder.to_sym]))
+      print "RENAMED FILE .mv(#{file}, #{file.sub(/\.plist$/,extensions[folder])})\n" if file =~ /\.plist$/
+    end unless tm_files_to_rename.nil?
+  else
+    print "testing DIR = [#{tm_bundle_dir_path}/#{folder}]\n"
+  end
+end  
+</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string>^</string>
+	<key>name</key>
+	<string>Rename .plist files with real TM extensions</string>
+	<key>output</key>
+	<string>openAsNewDocument</string>
+	<key>uuid</key>
+	<string>E55971E8-A758-48FF-A9F7-ADD168C4A177</string>
+</dict>
+</plist>

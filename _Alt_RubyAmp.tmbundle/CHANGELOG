@@ -1,0 +1,21 @@
+[2008-09-27] 
+	* TM_RUBY workaround caused TextMate to run it's bash_init.sh script, which
+	set the RUBYLIBS environment, which caused an incompatibility with rails and
+	the builder gem to surface.  Applied another workaround to fix that.
+	
+[2008-09-25] 
+  * Ability to configure application server port
+  * Now attempts to play well with installed version RSpec.tmbundle, rather than shipping with everything installed
+  * Debugger works with RSpec Story Runner files now (RSpec Story Runner bundle required)
+
+[2008-09-09] Fix: Shrink and trim commands workaround to prevent "indentation" effect when working with multi-line selects.
+
+[2008-07-30] Added shrink selection and trim selection commands
+
+[2008-07-14] Added syntax coloring for Rails log files
+
+[2008-07-14] XML -> Builder::XMLMarkup now understands new-line characters
+
+[2008-06-13] Fixes for pretty-align command, with specs.  (Joe Tanner)
+
+[2008-05-20] Added command to auto-align align snippets (thanks, Joe Tanner (Lead Media Partners))

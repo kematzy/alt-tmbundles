@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>contactEmailRot13</key>
+	<string>gz-ohaqyrf@znpebzngrf.pbz</string>
+	<key>contactName</key>
+	<string>Allan Odgaard</string>
+	<key>deleted</key>
+	<array>
+		<string>34AB30B1-045B-476E-AEAF-5DCA7D6FF186</string>
+	</array>
+	<key>description</key>
+	<string>Support for the &lt;a href="http://www.w3.org/XML/"&gt;eXtensible Markup Language&lt;/a&gt;.</string>
+	<key>mainMenu</key>
+	<dict>
+		<key>excludedItems</key>
+		<array>
+			<string>18157C57-799E-4134-94A5-D853FC509205</string>
+		</array>
+		<key>items</key>
+		<array>
+			<string>1D0FF6FF-E95D-4E6A-BF9C-A7E0F7F13981</string>
+			<string>726AE13D-29D5-4D1D-BC31-FC69248B5E66</string>
+			<string>9659FEAB-4D76-4B47-B9F7-25858E862E2E</string>
+			<string>------------------------------------</string>
+			<string>8A892A29-5E8B-43B2-9091-329BED639367</string>
+			<string>884B9212-46AB-4E49-BE47-A8A7BC14FF4F</string>
+			<string>C9C2012A-BC10-4F59-BF57-58960B3C1E66</string>
+		</array>
+		<key>submenus</key>
+		<dict/>
+	</dict>
+	<key>name</key>
+	<string> Alt XML</string>
+	<key>ordering</key>
+	<array>
+		<string>1D0FF6FF-E95D-4E6A-BF9C-A7E0F7F13981</string>
+		<string>726AE13D-29D5-4D1D-BC31-FC69248B5E66</string>
+		<string>9659FEAB-4D76-4B47-B9F7-25858E862E2E</string>
+		<string>8A892A29-5E8B-43B2-9091-329BED639367</string>
+		<string>938CA4ED-C1AC-42F5-AB6A-768FDB415809</string>
+		<string>884B9212-46AB-4E49-BE47-A8A7BC14FF4F</string>
+		<string>C9C2012A-BC10-4F59-BF57-58960B3C1E66</string>
+		<string>18157C57-799E-4134-94A5-D853FC509205</string>
+		<string>7490FF19-43C7-45D3-82E7-AC15C8B56A6C</string>
+		<string>64BE7B1C-5B19-47EE-88C6-76785870FF54</string>
+		<string>C3C3F0BF-E31E-4C2D-AB52-3C5A62817AA5</string>
+		<string>EE6C844A-CED2-4182-81BB-A178ED4506C3</string>
+		<string>2BBC8DB6-394D-423B-9E61-E63110830F45</string>
+		<string>CBEAD0BA-55F8-492D-815A-7B3FC7416F70</string>
+		<string>99F1646F-FAAF-43D1-A5D8-1B4A30D04080</string>
+	</array>
+	<key>uuid</key>
+	<string>937905F7-8BDD-4C3B-84D3-D5935CE84B33</string>
+</dict>
+</plist>

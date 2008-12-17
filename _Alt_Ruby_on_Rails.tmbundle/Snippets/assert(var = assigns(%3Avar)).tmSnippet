@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>assert(${1:var} = assigns(:${1}), "Cannot find @${1}")
+$0</string>
+	<key>name</key>
+	<string>assert(var = assigns(:var))</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>tabTrigger</key>
+	<string>asg</string>
+	<key>uuid</key>
+	<string>73BC0084-D037-4021-8438-946A14E20086</string>
+</dict>
+</plist>

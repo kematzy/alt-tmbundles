@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>contactEmailRot13</key>
+	<string>evk.ebo@tznvy.pbz</string>
+	<key>contactName</key>
+	<string>Rob Rix</string>
+	<key>description</key>
+	<string>Commands to upload files via &lt;a href="http://www.panic.com/transmit/"&gt;Transmit&lt;/a&gt;.</string>
+	<key>mainMenu</key>
+	<dict>
+		<key>items</key>
+		<array>
+			<string>06D2070C-ABF8-49BA-AD86-2F9F68AE003F</string>
+			<string>------------------------------------</string>
+			<string>E344727D-1EBE-4844-A482-9746B6F28368</string>
+			<string>F240B3C6-4DA0-40AA-BB1E-8A29DB7DB9FB</string>
+			<string>------------------------------------</string>
+			<string>C5AC9A12-8023-4CED-B5CB-36CA3E153E29</string>
+		</array>
+		<key>submenus</key>
+		<dict/>
+	</dict>
+	<key>name</key>
+	<string> Alt Transmit</string>
+	<key>ordering</key>
+	<array>
+		<string>06D2070C-ABF8-49BA-AD86-2F9F68AE003F</string>
+		<string>E344727D-1EBE-4844-A482-9746B6F28368</string>
+		<string>F240B3C6-4DA0-40AA-BB1E-8A29DB7DB9FB</string>
+		<string>C5AC9A12-8023-4CED-B5CB-36CA3E153E29</string>
+	</array>
+	<key>uuid</key>
+	<string>0E93352F-1AF0-4C09-B444-8E25B14A4040</string>
+</dict>
+</plist>

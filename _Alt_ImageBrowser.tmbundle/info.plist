@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>contactEmailRot13</key>
+	<string>evpuonegba@znp.pbz</string>
+	<key>contactName</key>
+	<string>Rich Barton</string>
+	<key>description</key>
+	<string>Finds images in your current project and displays them in an image browser that runs inside TextMate.</string>
+	<key>name</key>
+	<string> Alt ImageBrowser</string>
+	<key>ordering</key>
+	<array>
+		<string>80073CBA-1312-4571-8890-06DC992E7919</string>
+	</array>
+	<key>uuid</key>
+	<string>8FE02CA1-5B85-4F01-81C0-6428A82F5A77</string>
+</dict>
+</plist>

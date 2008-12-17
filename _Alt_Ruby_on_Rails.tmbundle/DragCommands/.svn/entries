@@ -1,0 +1,40 @@
+8
+
+dir
+10740
+http://macromates.com/svn/Bundles/trunk/Bundles/Ruby%20on%20Rails.tmbundle/DragCommands
+http://macromates.com/svn/Bundles
+
+
+
+2008-06-19T00:24:51.371155Z
+9951
+drnic
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+dfb7d73b-c2ec-0310-8fea-fb051d288c6d
+
+Require Rails File.tmDragCommand
+file
+
+
+
+
+2008-11-01T05:10:51.000000Z
+f38970cba1374f8b10bb04218809cf54
+2008-06-19T00:24:51.371155Z
+9951
+drnic
+

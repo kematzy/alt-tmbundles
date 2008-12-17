@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>bundleUUID</key>
+	<string>F8787700-8610-4130-A6AA-B106B1BCA236</string>
+	<key>command</key>
+	<string>#!/usr/bin/env sh
+cat &lt;&lt;'RUBYEOF' &gt; /tmp/ruby-amp-$$.rb
+require "#{ENV['TM_BUNDLE_SUPPORT']}/lib/grep_helpers.rb"
+
+grepper = GrepperMenu.new("Grep for Fixture")
+grepper.run {
+  m = $stdin.read
+
+  m = TextMate::UI.request_string(:title =&gt; "Grep for fixture", :prompt =&gt; "Enter a fixture you'd like to find:", :default =&gt; "" ).strip if m.empty?
+  
+  if m.nil? || m.empty?
+    puts "Canceled"
+    exit_show_tool_tip
+  end
+
+  grepper.include_files &lt;&lt; ["*.yml"]
+  if /^[A-Z]/.match(m)
+    require 'rubygems'
+    require 'activesupport'
+    table_name = m.to_s.tableize
+    grepper.query = /^(#{m}|# Table name: (#{m}[ies]*|#{table_name}))\b/
+  else
+    grepper.query = /^(#{m}|# Table name: #{m}[ies]*)\b/
+  end
+  
+  grepper.query_highlight_regexp = Regexp.new(Regexp.escape(m))
+  grepper.title = "Searching for fixture “#{ m }”"
+  }
+
+RUBYEOF
+
+${TM_RUBY:-ruby} /tmp/ruby-amp-$$.rb; exit_status=$?; rm /tmp/ruby-amp-$$.rb; exit $exit_status</string>
+	<key>fallbackInput</key>
+	<string>word</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string>~X</string>
+	<key>name</key>
+	<string>Grep for Fixture</string>
+	<key>output</key>
+	<string>showAsTooltip</string>
+	<key>scope</key>
+	<string>source.ruby, text.html.ruby, source.yaml</string>
+	<key>uuid</key>
+	<string>F8787700-8610-4130-A6AA-B106B1BCA236</string>
+</dict>
+</plist>

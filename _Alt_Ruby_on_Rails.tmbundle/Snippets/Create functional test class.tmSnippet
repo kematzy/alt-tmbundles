@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>require File.dirname(__FILE__) + '/../test_helper'
+
+class ${1:Model}ControllerTest &lt; ActionController::TestCase
+	deft$0
+end
+</string>
+	<key>name</key>
+	<string>Create functional test class</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>tabTrigger</key>
+	<string>cla</string>
+	<key>uuid</key>
+	<string>45BBAE9E-9410-4AEE-B097-C4215196F9F2</string>
+</dict>
+</plist>

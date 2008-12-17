@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>erbsql</string>
+		<string>sql.erb</string>
+	</array>
+	<key>foldingStartMarker</key>
+	<string>\s*\(\s*$</string>
+	<key>foldingStopMarker</key>
+	<string>^\s*\)</string>
+	<key>keyEquivalent</key>
+	<string>^~R</string>
+	<key>name</key>
+	<string> SQL (Rails)</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>begin</key>
+			<string>&lt;%+(?!&gt;)=?</string>
+			<key>end</key>
+			<string>%&gt;</string>
+			<key>name</key>
+			<string>source.ruby.rails.embedded.sql</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>#.*?(?=%&gt;)</string>
+					<key>name</key>
+					<string>comment.line.number-sign.ruby</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>source.ruby.rails</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>source.sql</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.sql.ruby</string>
+	<key>uuid</key>
+	<string>0D9EE41C-B160-42B8-B7CB-B9270604D5D5</string>
+</dict>
+</plist>

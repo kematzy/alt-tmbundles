@@ -1,0 +1,100 @@
+8
+
+dir
+10740
+http://macromates.com/svn/Bundles/trunk/Bundles/ShellScript.tmbundle/Commands
+http://macromates.com/svn/Bundles
+
+
+
+2008-06-29T22:50:36.920605Z
+10071
+aross
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+dfb7d73b-c2ec-0310-8fea-fb051d288c6d
+
+Open directory in Terminal.plist
+file
+
+
+
+
+2008-11-01T05:26:06.000000Z
+9dd18426aaf0b539bf401556ae48b089
+2008-04-02T01:11:31.620865Z
+9267
+duff
+
+man.plist
+file
+
+
+
+
+2008-11-01T05:26:06.000000Z
+9f7ec16ca82c9dfb3eb579e3b4534285
+2007-09-22T03:58:20.309340Z
+8196
+duff
+
+New Function.plist
+file
+
+
+
+
+2008-11-01T05:26:06.000000Z
+a0c03017e1e549ddc25ff450136fde1d
+2006-07-17T10:05:19.475087Z
+4361
+duff
+
+Toggle Backticks.plist
+file
+
+
+
+
+2008-11-01T05:26:06.000000Z
+4c008cae38fe4ecdd293f3ff95b9f2e1
+2006-07-17T10:05:19.475087Z
+4361
+duff
+
+Make Current File Executable.plist
+file
+
+
+
+
+2008-11-01T05:26:06.000000Z
+4092e6ddbd0fb25f26963df51b2e16f9
+2005-10-26T02:21:51.428200Z
+2012
+duff
+
+Execute Current File in Window.plist
+file
+
+
+
+
+2008-11-01T05:26:06.000000Z
+47649b03486250c4005a21ed60bcf88e
+2008-06-29T22:50:36.920605Z
+10071
+aross
+

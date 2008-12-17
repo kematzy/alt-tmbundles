@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Symbol List: Example</string>
+	<key>scope</key>
+	<string>meta.example.ruby.rspec</string>
+	<key>settings</key>
+	<dict>
+		<key>showInSymbolList</key>
+		<integer>1</integer>
+		<key>symbolTransformation</key>
+		<string>s/^\s*(it)\s+(.+)\s+do\s*$/  $2/</string>
+	</dict>
+	<key>uuid</key>
+	<string>3E6DFF50-2EB6-4B39-A4F8-8525A8F2C2FB</string>
+</dict>
+</plist>

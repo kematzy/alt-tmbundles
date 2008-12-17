@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>mainMenu</key>
+	<dict>
+		<key>items</key>
+		<array>
+			<string>55565477-AA71-4790-A374-B23A0DAA6819</string>
+			<string>------------------------------------</string>
+			<string>5EED4B32-91A5-44C1-A7E3-2CC96213D1E6</string>
+			<string>ECFFA3E5-8232-4848-81A5-B5B5A4F9F837</string>
+			<string>F0101EB6-AE7C-4966-B250-FECDBBF6A6D6</string>
+			<string>7569A969-E6BA-4A1C-BFCA-489F293F208D</string>
+			<string>B666FD17-8182-45AF-BE88-F882318B890E</string>
+		</array>
+		<key>submenus</key>
+		<dict>
+			<key>5EED4B32-91A5-44C1-A7E3-2CC96213D1E6</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>0E89EAB7-4A6B-42C5-B0FD-204CDA1A31D4</string>
+					<string>F275602E-DD9B-4254-9CD5-8C57B4A1263D</string>
+					<string>EFB68418-BBB8-4836-B750-8FFF1883E298</string>
+				</array>
+				<key>name</key>
+				<string>Application Servers</string>
+			</dict>
+			<key>7569A969-E6BA-4A1C-BFCA-489F293F208D</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>3368C8BB-D21B-417B-BB57-E3ED121A3485</string>
+					<string>C9CF5B4E-6770-4263-93E3-77F0939F65E5</string>
+				</array>
+				<key>name</key>
+				<string>Pending Operations</string>
+			</dict>
+			<key>B666FD17-8182-45AF-BE88-F882318B890E</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>FD965A66-9EB7-4521-9D23-78F4746B4A1A</string>
+					<string>DBC2B115-5853-41CD-A34A-F958314792AF</string>
+				</array>
+				<key>name</key>
+				<string>Maintenance</string>
+			</dict>
+			<key>ECFFA3E5-8232-4848-81A5-B5B5A4F9F837</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>9AB47769-FB36-446E-88F8-8D7E62013C2F</string>
+					<string>D7177558-B696-4721-859C-DC58CFBD26D0</string>
+				</array>
+				<key>name</key>
+				<string>Database Servers</string>
+			</dict>
+			<key>F0101EB6-AE7C-4966-B250-FECDBBF6A6D6</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>79155FC0-D39C-4AFD-8B2B-9C4245986DB4</string>
+					<string>E7E2C13D-90E3-4730-A303-09E63E0BB0DB</string>
+				</array>
+				<key>name</key>
+				<string>Web Servers</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>name</key>
+	<string> Alt Capistrano</string>
+	<key>ordering</key>
+	<array>
+		<string>55565477-AA71-4790-A374-B23A0DAA6819</string>
+		<string>9AB47769-FB36-446E-88F8-8D7E62013C2F</string>
+		<string>79155FC0-D39C-4AFD-8B2B-9C4245986DB4</string>
+		<string>E7E2C13D-90E3-4730-A303-09E63E0BB0DB</string>
+		<string>FD965A66-9EB7-4521-9D23-78F4746B4A1A</string>
+		<string>F275602E-DD9B-4254-9CD5-8C57B4A1263D</string>
+		<string>EFB68418-BBB8-4836-B750-8FFF1883E298</string>
+		<string>3368C8BB-D21B-417B-BB57-E3ED121A3485</string>
+		<string>C9CF5B4E-6770-4263-93E3-77F0939F65E5</string>
+		<string>D7177558-B696-4721-859C-DC58CFBD26D0</string>
+		<string>0E89EAB7-4A6B-42C5-B0FD-204CDA1A31D4</string>
+	</array>
+	<key>uuid</key>
+	<string>AFE90EDA-92E2-4CF9-B8AB-546F1369571A</string>
+</dict>
+</plist>

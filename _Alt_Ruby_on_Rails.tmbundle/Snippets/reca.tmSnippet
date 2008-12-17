@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>redirect_to :controller =&gt; "${1:items}", :action =&gt; "${2:list}"</string>
+	<key>name</key>
+	<string>redirect_to (controller, action)</string>
+	<key>scope</key>
+	<string>source.ruby.rails</string>
+	<key>tabTrigger</key>
+	<string>redirect</string>
+	<key>uuid</key>
+	<string>BCFF4E7B-C335-44AA-B676-F5BEB9B7C4AA</string>
+</dict>
+</plist>

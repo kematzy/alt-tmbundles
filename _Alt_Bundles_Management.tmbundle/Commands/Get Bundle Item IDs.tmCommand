@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+
+# this will loop through a particular directory in the TM editor and extract the &lt;ID&gt;'s from each item
+# 1. we open the info.plist file in each bundle in the editor to get the path to the current bundle
+
+# get the current bundle
+tm_bundle_dir_path = ENV['TM_DIRECTORY']
+tm_files_to_extract = Hash.new
+tm_uuids = Array.new
+
+# now that we have it, let's look for all the folders and loop through them
+['Commands','Macros', 'Snippets','Preferences','Syntaxes'].each do |folder|
+  # now check if folder is a directory
+  print "folder is #{folder}\n"
+  path_dir = "#{tm_bundle_dir_path}/#{folder}"
+  if File.directory?(path_dir)
+    # yes it's a directory
+    tm_uuids &lt;&lt; "#{path_dir}"
+    print "YES, it's #{folder} is there\n"
+    # now get the files in the directory
+    tm_files_to_extract[folder] = Dir.entries(path_dir).reject! { |i| i !~ /(.tmCommand|.tmSnippet|.tmLanguage|.tmPreferences|.tmMacro)/i }
+    # now grep the content within each file that looks like this
+    # &lt;key&gt;uuid&lt;/key&gt;
+  	# &lt;string&gt;EF1F2D38-A71A-4D1D-9B07-B1CBB6D84B81&lt;/string&gt;
+  	tm_files_to_extract[folder].each do |file|
+  	  # looping through each file
+  	  file_contents = IO.read("#{path_dir}/#{file}")
+	  # now look for regex content
+  	  res = /&lt;string&gt;[A-Z0-9]{8}-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{12}&lt;\/string&gt;/.match(file_contents)
+  	  tm_uuids &lt;&lt; res.to_a
+  	  # print "file = #{file} and contents = \n[#{res.inspect}]\n re = #{res.to_a.inspect}\n\n" 
+  	end
+  else
+    print "testing DIR = [#{tm_bundle_dir_path}/#{folder}]\n"
+  end
+end  
+
+print tm_files_to_extract.inspect
+
+tm_uuids.each do |value|
+  print "#{value}\n"
+end
+</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string>^</string>
+	<key>name</key>
+	<string>Get Bundle Item IDs</string>
+	<key>output</key>
+	<string>openAsNewDocument</string>
+	<key>uuid</key>
+	<string>4DB30DD9-068B-43D2-8E96-3505DA9168B6</string>
+</dict>
+</plist>

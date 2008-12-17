@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>bundleUUID</key>
+	<string>50AF9093-BA42-4F18-A13A-007D5CB56B24</string>
+	<key>command</key>
+	<string>#!/usr/bin/env sh
+cat &lt;&lt;'RUBYEOF' &gt; /tmp/ruby-amp-$$.rb
+require "#{ENV['TM_BUNDLE_SUPPORT']}/lib/grep_helpers.rb"
+
+grepper = GrepperMenu.new("Grep in Project")
+grepper.run {
+  m = $stdin.read
+
+  m = TextMate::UI.request_string(:title =&gt; "Grep for class", :prompt =&gt; "Enter a class/module/constant you'd like to find:", :default =&gt; "" ).strip if m.empty?
+  
+  if m.nil? || m.empty?
+    puts "Canceled"
+    exit_show_tool_tip
+  end
+
+  if /^[a-z]/.match(m)
+    require 'rubygems'
+    require 'activesupport'
+    m = m.classify
+  end
+  
+  grepper.include_files &lt;&lt; ["*.rb"]
+  grepper.query = /((^|;) *(class|module) ([^&lt;#]+::|)*#{m}\b([^:]|$))|(\b#{m} *=)/
+  grepper.query_highlight_regexp = Regexp.new(Regexp.escape(m))
+  grepper.title = "Searching for Class/Module/Constant “#{ m }”"
+}
+
+
+RUBYEOF
+
+${TM_RUBY:-ruby} /tmp/ruby-amp-$$.rb; exit_status=$?; rm /tmp/ruby-amp-$$.rb; exit $exit_status</string>
+	<key>fallbackInput</key>
+	<string>word</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string>~C</string>
+	<key>name</key>
+	<string>Grep for Class/Module</string>
+	<key>output</key>
+	<string>showAsTooltip</string>
+	<key>scope</key>
+	<string>source.ruby, text.html.ruby</string>
+	<key>uuid</key>
+	<string>50AF9093-BA42-4F18-A13A-007D5CB56B24</string>
+</dict>
+</plist>

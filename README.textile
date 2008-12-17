@@ -1,0 +1,16 @@
+h2. Alternative TextMate Bundles
+
+A collection of copies of the default .tmbundles commonly used by me, but with their uuid's changed.
+
+This enables me to have access to the default TM setup, while still running my own complete setup, and with all the changes that I require. 
+
+Sure, I can use TM's built-in handling for this (with .tmDelta's and so on), but I just prefer it like this. 
+
+Anyway, this is all...
+
+h1(color: red;). WORK IN PROGRESS
+
+...so don't get too excited just yet.
+
+
+Oh, the website link above, that don't have anything either at this time. It will though, one fine day ;-)

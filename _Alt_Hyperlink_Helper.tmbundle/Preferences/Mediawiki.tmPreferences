@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Mediawiki</string>
+	<key>scope</key>
+	<string>text.html.mediawiki</string>
+	<key>settings</key>
+	<dict>
+		<key>shellVariables</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>TM_LINK_FORMAT</string>
+				<key>value</key>
+				<string>[&lt;%= e_sn url %&gt; &lt;%= e_sn input %&gt;]</string>
+			</dict>
+		</array>
+	</dict>
+	<key>uuid</key>
+	<string>B2630DA5-19C3-4A47-94E0-BDD27653887B</string>
+</dict>
+</plist>

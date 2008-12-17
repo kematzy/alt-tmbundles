@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>contactEmailRot13</key>
+	<string>wnzrf@tenlcebqhpgvbaf.arg</string>
+	<key>contactName</key>
+	<string>James Edward Gray II</string>
+	<key>description</key>
+	<string>Syntax highlight for &lt;a href="http://json.org/"&gt;JavaScript Object Notation&lt;/a&gt; files, often used as a lightweight serialization format.</string>
+	<key>name</key>
+	<string> Alt JSON</string>
+	<key>ordering</key>
+	<array>
+		<string>2D60C4CC-70DD-42F8-9F01-AA121706B652</string>
+		<string>3378ECF3-015A-4462-97A4-373A92032C05</string>
+	</array>
+	<key>uuid</key>
+	<string>71DF2882-606D-48AC-B895-BEB931882F5F</string>
+</dict>
+</plist>

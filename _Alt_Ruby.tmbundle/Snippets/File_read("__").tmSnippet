@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>File.read(${1:"${2:path/to/file}"})</string>
+	<key>name</key>
+	<string>File.read("..")</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>tabTrigger</key>
+	<string>File</string>
+	<key>uuid</key>
+	<string>0286FD2F-760E-4947-B7BB-9DE4B6852006</string>
+</dict>
+</plist>

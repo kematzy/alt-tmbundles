@@ -1,0 +1,69 @@
+8
+
+dir
+10740
+http://macromates.com/svn/Bundles/trunk/Bundles/ActionScript.tmbundle/Support/bin/XTrace.app/Contents/Resources
+http://macromates.com/svn/Bundles
+
+
+
+2006-11-27T11:53:12.208004Z
+6253
+ale
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+dfb7d73b-c2ec-0310-8fea-fb051d288c6d
+
+TraceServer.jar
+file
+
+
+
+
+2008-11-01T05:01:19.000000Z
+416ce369245f8d29afb104b74889b403
+2006-11-27T11:53:12.208004Z
+6253
+ale
+has-props
+
+icon.icns
+file
+
+
+
+
+2008-11-01T05:01:19.000000Z
+0662c9fc88cf99e2cb7a3ab2a26c200c
+2006-11-26T19:03:02.935197Z
+6247
+ale
+has-props
+
+XTraceIcon.ai
+file
+
+
+
+
+2008-11-01T05:01:19.000000Z
+ec945d1bf1d13c874b608c7cf7ee3c39
+2006-11-26T19:03:02.935197Z
+6247
+ale
+
+English.lproj
+dir
+

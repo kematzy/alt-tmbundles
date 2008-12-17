@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>contactEmailRot13</key>
+	<string>qnivq@tenlfxvrf.arg</string>
+	<key>contactName</key>
+	<string>David Powers</string>
+	<key>description</key>
+	<string>Experimental bundle with some navigation commands, like jump to closing parenthesis, etc.</string>
+	<key>name</key>
+	<string> Alt Navigation</string>
+	<key>ordering</key>
+	<array>
+		<string>56CADBAE-BB8B-4696-A9F9-CC7EB4E612FF</string>
+		<string>DB45670C-F05D-4149-956B-556A20676627</string>
+	</array>
+	<key>uuid</key>
+	<string>FA717243-C0C3-41EB-AA17-0BBF568F62F1</string>
+</dict>
+</plist>

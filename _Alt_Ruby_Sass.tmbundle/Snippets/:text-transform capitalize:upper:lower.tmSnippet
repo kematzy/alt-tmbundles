@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>:text-transform ${1:capitalize/uppercase/lowercase}$0</string>
+	<key>name</key>
+	<string>:text-transform capitalize/upper/lower</string>
+	<key>scope</key>
+	<string>source.sass</string>
+	<key>tabTrigger</key>
+	<string>text</string>
+	<key>uuid</key>
+	<string>9D982D02-9B55-4FBE-99D1-FC325E535606</string>
+</dict>
+</plist>

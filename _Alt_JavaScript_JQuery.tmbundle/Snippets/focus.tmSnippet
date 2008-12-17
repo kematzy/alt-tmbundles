@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>.focus(${1:function() {
+	${0:// Act on the event}
+\}});</string>
+	<key>name</key>
+	<string>focus</string>
+	<key>scope</key>
+	<string>source.js.jquery</string>
+	<key>tabTrigger</key>
+	<string>.focus</string>
+	<key>uuid</key>
+	<string>2A864CF2-7DDA-41A8-8E0A-9499D1C80CD8</string>
+</dict>
+</plist>

@@ -1,0 +1,136 @@
+8
+
+dir
+10740
+http://macromates.com/svn/Bundles/trunk/Bundles/ShellScript.tmbundle/Snippets
+http://macromates.com/svn/Bundles
+
+
+
+2008-05-03T19:55:48.480930Z
+9495
+duff
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+dfb7d73b-c2ec-0310-8fea-fb051d288c6d
+
+here document (here).plist
+file
+
+
+
+
+2008-11-01T05:26:06.000000Z
+4eae3e200733553fad6c6a0f4d4d02cf
+2007-03-09T20:27:50.526431Z
+6762
+duff
+
+if ... then (if).plist
+file
+
+
+
+
+2008-11-01T05:26:06.000000Z
+d6e0c8565b23f7c64434632126754961
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+while … (done).plist
+file
+
+
+
+
+2008-11-01T05:26:06.000000Z
+d72786fa63914850fd0fb8c7cf19d0db
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+#!:usr:bin:env (!env).plist
+file
+
+
+
+
+2008-11-01T05:26:06.000000Z
+2ac3fef2303ccd7d59e7ca5eacdcfb91
+2006-10-22T13:37:55.067889Z
+5556
+duff
+
+until … (done).plist
+file
+
+
+
+
+2008-11-01T05:26:06.000000Z
+24099eb316954dd9d1108ef355bdb1ce
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+elif .. (elif).plist
+file
+
+
+
+
+2008-11-01T05:26:06.000000Z
+4e97aad8aa6873a46f4ae46539146ff3
+2006-06-14T03:05:40.540191Z
+3650
+duff
+
+for ... done (for).plist
+file
+
+
+
+
+2008-11-01T05:26:06.000000Z
+4bcb230aaf70a5f1032b634cad30fe36
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+case .. esac (case).plist
+file
+
+
+
+
+2008-11-01T05:26:06.000000Z
+45a38774acf95dbd459fc97ce64fc051
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+for … in … done (forin).plist
+file
+
+
+
+
+2008-11-01T05:26:06.000000Z
+a8e0d3197186be8f72ed6223244721c7
+2006-06-14T02:52:10.959006Z
+3648
+duff
+

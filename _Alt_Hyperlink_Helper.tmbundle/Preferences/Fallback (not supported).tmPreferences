@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Fallback (not supported)</string>
+	<key>settings</key>
+	<dict>
+		<key>shellVariables</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>TM_LINK_FORMAT</string>
+				<key>value</key>
+				<string>(this language is not supported, see … for more info)</string>
+			</dict>
+		</array>
+	</dict>
+	<key>uuid</key>
+	<string>FE840864-FCD6-4317-A83E-40B729CE5046</string>
+</dict>
+</plist>

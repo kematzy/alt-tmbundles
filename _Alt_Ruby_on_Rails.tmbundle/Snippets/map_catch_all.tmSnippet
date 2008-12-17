@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1:map}.catch_all "*${2:anything}", :controller =&gt; "${3:default}", :action =&gt; "${4:error}"
+</string>
+	<key>name</key>
+	<string>map.catch_all</string>
+	<key>scope</key>
+	<string>meta.rails.routes</string>
+	<key>tabTrigger</key>
+	<string>mapca</string>
+	<key>uuid</key>
+	<string>F0EEE4E8-E7F5-4ED0-BD7A-288C1708A048</string>
+</dict>
+</plist>

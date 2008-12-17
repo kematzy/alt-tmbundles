@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/Bundles/!svn/ver/8375/trunk/Bundles/SQL.tmbundle/Support/bin
+END
+db_browser_lib.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/Bundles/!svn/ver/8375/trunk/Bundles/SQL.tmbundle/Support/bin/db_browser_lib.rb
+END
+configure.sh
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/Bundles/!svn/ver/7717/trunk/Bundles/SQL.tmbundle/Support/bin/configure.sh
+END
+db_browser.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/Bundles/!svn/ver/8234/trunk/Bundles/SQL.tmbundle/Support/bin/db_browser.rb
+END
+completion.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/Bundles/!svn/ver/7728/trunk/Bundles/SQL.tmbundle/Support/bin/completion.rb
+END

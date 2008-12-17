@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>rjs</string>
+	</array>
+	<key>keyEquivalent</key>
+	<string>^~R</string>
+	<key>name</key>
+	<string> RJS</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>include</key>
+			<string>source.ruby</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.ruby.rails.rjs</string>
+	<key>uuid</key>
+	<string>4BB13746-E25B-4FDC-A828-8EB53E80BBE8</string>
+</dict>
+</plist>

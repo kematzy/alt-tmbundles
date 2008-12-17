@@ -1,0 +1,1204 @@
+8
+
+dir
+10740
+http://macromates.com/svn/Bundles/trunk/Bundles/CSS.tmbundle/Snippets
+http://macromates.com/svn/Bundles
+
+
+
+2007-08-01T13:17:23.744700Z
+7881
+duff
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+dfb7d73b-c2ec-0310-8fea-fb051d288c6d
+
+border-left-width: size (border).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+1e929bb8ff05c24c9c9eb0bd30243878
+2006-06-14T16:17:47.449571Z
+3666
+duff
+
+padding-right: length (margin).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+19deae44a0f69c636c41e73e44a03aad
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+font:   style variant weight size:line-height font -family (font).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+9552db0329d1690039461e7fe1474f00
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+text-decoration: none:underline:overline:line-through:blink (text).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+40ae58daba5a25f782925c23dc4968c2
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+list-style-type: marker(list).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+7b99598195dc44d6d3d694416168f906
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+properties { } ( } ).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+00f67486d7a88edb4d59cbbf59ff0676
+2005-10-30T07:20:49.005196Z
+2044
+duff
+
+border-width: width (border).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+2e329b07fce9bc5c8cc77f59eec26c90
+2006-06-14T16:17:47.449571Z
+3666
+duff
+
+Fixed Position Bottom 100% wide IE6.tmSnippet
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+655059dd35f363ebdc8b85cf7fdf60a8
+2007-03-29T00:59:33.736178Z
+6910
+subtlegradient
+
+list-style-position: pos (list).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+c8eb4d9c8d8b3b965a1ffc4707a3bb61
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+border-style: style (border).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+0ccadc7899aa9bb2cd7a848ee1796703
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+color:  color-name (color).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+79cffd6fa55458d81263e7d6457838e8
+2006-06-14T16:17:47.449571Z
+3666
+duff
+
+text-shadow: none (text).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+6dea97a38941b08408ac8310693cd28d
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+border-right-width: size (border).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+ef4a6bc7a2f4868763ec3b9bd23f757f
+2006-06-14T16:17:47.449571Z
+3666
+duff
+
+color:  color-hex (color).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+71ba7b589ff8a1c3f36519f4ef2327ec
+2006-06-14T16:17:47.449571Z
+3666
+duff
+
+font-size: size (font).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+c5417c043ae3e924e3aff57d1835f38e
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+scrollbar.tmSnippet
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+d64142c0bc3c9ea579c91c98e486c4a5
+2007-05-06T13:18:28.021037Z
+7150
+subtlegradient
+
+z-index: index (z).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+7fea1efc51dc1805186f25a9d5e6e216
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+selection.tmSnippet
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+9f25c7936f965b33e8b3b15b76aaa07c
+2007-05-06T13:19:30.664661Z
+7151
+subtlegradient
+
+border-bottom-color: size style color (border).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+bcef7ff7f5701227322d61f061d0b35c
+2006-06-14T16:17:47.449571Z
+3666
+duff
+
+margin-left: length (margin).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+0033603704e9e9a351a51a146f1b4c68
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+display: table-types (display).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+2131e6c081fb0cb48137f57cd05cb961
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+border-bottom-width: size style color (border).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+24a47c3aa79e55aaab0dfe88a37a5a93
+2006-06-14T16:17:47.449571Z
+3666
+duff
+
+border-right-style: style (border).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+a0544cfd7e2509aa6cf9454e8c27c840
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+background-position:  position (background).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+cadc55dd3bc47677023858cc07ba796e
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+list-style-type: numeric (list).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+61e675310a3f6a34f01824924b48b7fd
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+float: left:right:none (float).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+1844c39c669a486cfc4ce751398b8bb9
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+padding-bottom: length (margin).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+c01eb916598dbf688242e5310f5e407a
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+border-left: size style color (border).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+df63eb84655919ca4cf3f8bdecd95f2c
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+margin-bottom: length (margin).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+94379f4eae1a410833b74d517c11c4fd
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+font: size font (font).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+acd244f9e0ec4ef8ad2939a4eea9214d
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+font-variant:   normal:small-caps (font).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+abf071616890a517b2a6690ff8f08e45
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+border-left-style: style (border).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+b841368bfc75133ee283498931cdcc1b
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+background-image:  url (background).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+b42495624ee6116bfe3b0fd43effeeb8
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+border-top-width: size (border).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+84d10feecf1e931ae57475e2986896d7
+2006-06-14T16:17:47.449571Z
+3666
+duff
+
+padding:   all (padding).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+135d1bb3bbe8719cce18c91c3527eec2
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+border-color: color (border).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+ab6886af36e61e4f2dbb0dbb53598865
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+border-bottom-style: size style color (border).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+9388d4b14caafa07619285bd989198fc
+2006-06-14T16:17:47.449571Z
+3666
+duff
+
+margin-right: length (margin).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+7000c96ede2e0885904a49e576edacb6
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+border-bottom: size style color (border).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+cfc527cc2ed65063e8b745220083bfcb
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+letter-spacing:   length-px (letter).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+e6d28e242db464c8d406c498856fff2f
+2006-06-14T16:17:47.449571Z
+3666
+duff
+
+overflow: type (overflow).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+88f6334ed91c5e76ee3edf1a10c03268
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+background-repeat:  r:r-x:r-y:n-r (background).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+70aed3d7dd32e28eda9c603ae420acc0
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+filter: AlphaImageLoader [for IE PNGs] (background).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+de20fe02eeceaf103f9b20d335b1617c
+2006-06-14T03:05:40.540191Z
+3650
+duff
+
+position: type (position).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+602f3d7433638570795453f6b71919e9
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+vertical-align: type (vertical).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+5edad29a74e494d52afb6a6b40a9b9c2
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+list-style: type position image (list).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+cf798ba31dad1211ac0a6042db65b12b
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+marker-offset: auto (marker).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+5c7852d3568727456cb11391d2b4d358
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+border-right-color: color (border).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+4b7ddb7ec64775de81066abc9c036869
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+word-spacing:  normal (word).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+cd9bd7f8aeb6f94fce15b13ba3820c12
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+background-color:  color-rgb (background).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+2a272f7663c6695e08ceae54d76218b7
+2006-06-14T16:17:47.449571Z
+3666
+duff
+
+text-shadow: color-hex x y blur (text).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+a56cb94d01ad1df395bd9047f975d0c5
+2006-06-14T16:17:47.449571Z
+3666
+duff
+
+white-space:  normal:pre:nowrap (white).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+098fe6220156dadc2002a6e17d5ddfcf
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+marker-offset: length (marker).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+b36cb4b7f8ea4b5d8db5f300f5c86a46
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+margin: V H (margin).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+5c15a7e2b7a5e573ee9c6a1aa7ec8805
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+text-align: left:center:right (txt).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+d9af2628882e8c9c7f2ac7c7928c7715
+2006-06-14T16:17:47.449571Z
+3666
+duff
+
+background-color:  color-hex (background).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+cf064fa86234eae87beb61aef13ded72
+2006-06-14T16:17:47.449571Z
+3666
+duff
+
+margin-top: length (margin).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+418ca3904ae579e160b539e974b1daa9
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+background-color:  transparent (background).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+772824419fabe3a71d7d9830f392e0ce
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+cursor: type (cursor).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+7481f999b55243f152655f7d8df4be42
+2006-10-29T04:41:46.252239Z
+5681
+cskiadas
+
+border-left-color: color (border).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+f107d4fd303aa841a7c63acbe624cbfa
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+opacity: [for Safari, FF and IE] (opacity).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+0667dfefca75d67c7135046ef804dd2b
+2006-06-14T03:05:40.540191Z
+3650
+duff
+
+padding:   T R B L (padding).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+c5dbe1470b7585cb99fd259fb2638f2c
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+text-transform: none (text).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+7a5e2a8086cb2949c9d895189e1bb34d
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+color:  color-rgb (color).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+942750e7c15b2cc0d50693ae990983f9
+2006-06-14T16:17:47.449571Z
+3666
+duff
+
+border-top: size style color (border).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+6939541d357199fbf815cfd3db034d78
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+border:   size style color (border).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+0fcb9750e5372cdba2fb75c1c141a8f1
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+display: inline (display).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+2f4e7c3b77b0223f1f7bc4a8c0359942
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+border-top-style: style (border).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+9ad28d2ed6ef96e77b94828596f58cca
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+background-attachment: scroll:fixed (background).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+36b14ef939b48cbcbddc7a2058bad377
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+padding-left: length (margin).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+9fc399e1d7c46880b311e047e84298dd
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+font-style:   normal:italic:oblique (font).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+d5a287f6c81617b8b76216d8ed879938
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+margin: T R B L (margin).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+3b7ba6bdd282aa0b395477f41098dbce
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+visibility: type (visibility).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+d3673b7859f5cb62aee2dd503cd5a25f
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+margin:   all (margin).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+b54700af773397be7d01a70bd5da4749
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+display: common-types (display).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+63d4c2b5f8a8821aa7f45fad14dc79dd
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+display: block (display).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+86da589c6bc80eb4791cb0deeb06de3c
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+padding-top: length (margin).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+b79a16d877864a00ba84ab4fdb9677ad
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+background-color:  color-name (background).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+8c8d7470f863182555069eea6f3f4733
+2006-06-14T16:17:47.449571Z
+3666
+duff
+
+text-indent: length (text).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+3f7a45becb09bd37b3c3c556a65985d9
+2006-10-29T11:54:27.075770Z
+5715
+duff
+
+font-family:   family (font).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+3d70ebb1066d5c824fb9a9ee7637f539
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+background-image:  none (background).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+c5c1c596000e2e675ea97417e638c7f0
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+background:  color image repeat attachment position (background).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+a6df0be0242c2bfe4a8de62e883af49d
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+direction: ltr|rtl (direction).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+0e84000c90a50c59e22726327f3e5ac8
+2006-06-14T16:17:47.449571Z
+3666
+duff
+
+text-transform: capitalize:upper:lower (text).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+abcfc38125a02e5b66a353dcb862a174
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+list-style-type: other (list).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+3e04edfb3e1010c691d51274a6764553
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+border-top-color: color (border).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+7500d53f0e90a914eaeef1f22377dd17
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+text-shadow: color-rgb x y blur (text).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+8875449bff047dc7abdbfca5b577fa0c
+2006-06-14T16:17:47.449571Z
+3666
+duff
+
+font-weight: weight (font).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+9f2dc97148d788a7676f0831173ddae0
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+clear: value (clear).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+92983fac1fc535ba1058fd2c0ae9d741
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+padding:   V H (padding).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+50eb3ef52c8ce80e1c80d79a1314fed7
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+word-spacing:  length (word).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+270a0e6699abf81fc3ef5efbbe5bf46c
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+cursor: url (cursor).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+242c1694d733a2ee9cd9e9ae0a1368a9
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+!important CSS (!).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+9ebed41b7d6f9730105c7d0cacfa9533
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+list-style-type: roman-alpha-greek (list).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+1806abf96c3e6f44e446d346cc7c7c9e
+2007-08-01T13:17:23.744700Z
+7881
+duff
+
+list-style-type: asian (list).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+c6c69deeff5c01153885f64ee97dfd11
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+border-right: size style color (border).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+24fd96005128c22e66a76fe7c1b39e46
+2006-06-14T02:52:10.959006Z
+3648
+duff
+
+letter-spacing:   length-em (letter).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+c66e3cbd5e0075c2a3c5ec91e7f6836b
+2006-06-14T16:17:47.449571Z
+3666
+duff
+
+list-style-image: url (list).plist
+file
+
+
+
+
+2008-11-01T05:08:23.000000Z
+6bdd3366f4057f60fa84df1bbac0cfff
+2006-06-14T02:52:10.959006Z
+3648
+duff
+

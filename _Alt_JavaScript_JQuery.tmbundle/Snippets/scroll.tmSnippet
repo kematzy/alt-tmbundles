@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>.scroll(${1:function() {
+	${0:// Act on the event}
+\}});</string>
+	<key>name</key>
+	<string>scroll</string>
+	<key>scope</key>
+	<string>source.js.jquery</string>
+	<key>tabTrigger</key>
+	<string>.scroll</string>
+	<key>uuid</key>
+	<string>C3931BC1-8111-4366-9A7C-65348636C4A9</string>
+</dict>
+</plist>

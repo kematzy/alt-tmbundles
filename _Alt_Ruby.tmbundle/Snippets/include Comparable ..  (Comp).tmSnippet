@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>include Comparable
+
+def &lt;=&gt;(other)
+	$0
+end</string>
+	<key>name</key>
+	<string>include Comparable ..</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>tabTrigger</key>
+	<string>Comp</string>
+	<key>uuid</key>
+	<string>1C8F581E-1674-4D8C-9C8E-C1B214C641B7</string>
+</dict>
+</plist>

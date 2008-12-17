@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>prevFrame();</string>
+	<key>inputPattern</key>
+	<string>MovieClip</string>
+	<key>name</key>
+	<string>prevFrame</string>
+	<key>scope</key>
+	<string>source.actionscript</string>
+	<key>tabTrigger</key>
+	<string>pf</string>
+	<key>uuid</key>
+	<string>1C32CD9C-E8ED-48AB-9339-B025E4DB386C</string>
+</dict>
+</plist>

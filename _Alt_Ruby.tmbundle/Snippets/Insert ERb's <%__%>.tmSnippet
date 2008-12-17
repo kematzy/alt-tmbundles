@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;% ${0:$TM_SELECTED_TEXT} %&gt;</string>
+	<key>keyEquivalent</key>
+	<string>^x</string>
+	<key>name</key>
+	<string>Insert ERb's &lt;%..%&gt;</string>
+	<key>scope</key>
+	<string>text.html, source.yaml, meta.erb</string>
+	<key>uuid</key>
+	<string>6D225B67-2833-4C8B-836D-8CE9C05E9827</string>
+</dict>
+</plist>

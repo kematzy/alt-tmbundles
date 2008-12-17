@@ -1,0 +1,40 @@
+8
+
+dir
+10740
+http://macromates.com/svn/Bundles/trunk/Bundles/HTML.tmbundle/Macros
+http://macromates.com/svn/Bundles
+
+
+
+2005-11-17T04:13:23.535274Z
+2167
+duff
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+dfb7d73b-c2ec-0310-8fea-fb051d288c6d
+
+Delete whitespace between tags.plist
+file
+
+
+
+
+2008-11-01T05:16:18.000000Z
+ff2fddfba6a543e7d19f4389fa325190
+2005-10-31T06:06:38.056663Z
+2049
+duff
+

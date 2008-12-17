@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env sh
+cat &lt;&lt;'RUBYEOF' &gt; /tmp/ruby-amp-$$.rb
+
+require "#{ENV["TM_BUNDLE_SUPPORT"]}/lib/ruby_amp.rb"
+
+d = RubyAMP::RemoteDebugger.new
+exit unless d.connected?
+
+source = ENV['TM_FILEPATH']
+line = ENV['TM_LINE_NUMBER']
+
+if d.breakpoint.add(source, line)
+  puts "Set breakpoint at #{source}:#{line}"
+else
+  puts "Failed to set breakpoint."
+  end
+
+RUBYEOF
+
+${TM_RUBY:-ruby} /tmp/ruby-amp-$$.rb; exit_status=$?; rm /tmp/ruby-amp-$$.rb; exit $exit_status</string>
+	<key>fallbackInput</key>
+	<string>line</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string>^b</string>
+	<key>name</key>
+	<string>Debug - Set Breakpoint at Current Line</string>
+	<key>output</key>
+	<string>showAsTooltip</string>
+	<key>scope</key>
+	<string>source.ruby, text.html.ruby</string>
+	<key>uuid</key>
+	<string>07D5181A-CEA0-4CB8-9C1E-B0DB65DCADBF</string>
+</dict>
+</plist>

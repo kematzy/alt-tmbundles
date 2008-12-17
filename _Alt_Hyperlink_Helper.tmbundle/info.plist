@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>contactEmailRot13</key>
+	<string>oergg@pvepyrfvkqrfvta.pbz</string>
+	<key>contactName</key>
+	<string>Brett Terpstra</string>
+	<key>description</key>
+	<string>The commands in this bundle makes it easy to create hyper links for example by searching for the current word or using the clipboard contents. This bundle is much more useful than it sounds!</string>
+	<key>mainMenu</key>
+	<dict>
+		<key>items</key>
+		<array>
+			<string>4C511AB3-8966-40F0-A8DD-43FB840724B5</string>
+			<string>------------------------------------</string>
+			<string>375A546F-EB18-44E0-BD5A-5B092D22E82A</string>
+			<string>E7F32A8B-D4B4-4BB2-AE85-96A3126F892F</string>
+			<string>------------------------------------</string>
+			<string>09A3FAB0-C861-4C0E-9D1E-0EB490F88362</string>
+			<string>BDE952E1-F5A2-44F8-9133-CEF7241AD99C</string>
+			<string>43DECB36-B48D-494E-BD68-EE62FFC382E7</string>
+			<string>9F5D5E36-89B7-40E2-8AC3-2A16B66F4AD1</string>
+			<string>------------------------------------</string>
+			<string>4BD4644E-8AC3-4F34-8D87-9AACAD3227B8</string>
+		</array>
+		<key>submenus</key>
+		<dict/>
+	</dict>
+	<key>name</key>
+	<string> Alt Hyperlink_Helper</string>
+	<key>ordering</key>
+	<array>
+		<string>4BD4644E-8AC3-4F34-8D87-9AACAD3227B8</string>
+		<string>375A546F-EB18-44E0-BD5A-5B092D22E82A</string>
+		<string>E7F32A8B-D4B4-4BB2-AE85-96A3126F892F</string>
+		<string>43DECB36-B48D-494E-BD68-EE62FFC382E7</string>
+		<string>BDE952E1-F5A2-44F8-9133-CEF7241AD99C</string>
+		<string>9F5D5E36-89B7-40E2-8AC3-2A16B66F4AD1</string>
+		<string>09A3FAB0-C861-4C0E-9D1E-0EB490F88362</string>
+		<string>4C511AB3-8966-40F0-A8DD-43FB840724B5</string>
+		<string>FE840864-FCD6-4317-A83E-40B729CE5046</string>
+		<string>33F22CC7-BCB7-4B00-B734-A5C1B73103B5</string>
+		<string>3A10D2AC-69EF-4EE7-B988-BE30A6408503</string>
+		<string>455E8FF5-33D0-4CE7-B5AA-B2CAE17DB941</string>
+		<string>E0CFF227-B1C2-412E-A0E6-3F14AD51AB5B</string>
+		<string>B2630DA5-19C3-4A47-94E0-BDD27653887B</string>
+		<string>616F4084-308B-4979-8709-0571B88B2C49</string>
+		<string>18EED9B5-A0F2-4833-82A0-5003B544464E</string>
+		<string>AF3BCC1B-DA6B-48DE-8D5F-DEA27C9002CE</string>
+		<string>30AA0D0C-27C1-4971-8FF0-38116CDDC90A</string>
+	</array>
+	<key>uuid</key>
+	<string>3949DA1F-E5D9-4EB4-A10C-334AE8C70E75</string>
+</dict>
+</plist>

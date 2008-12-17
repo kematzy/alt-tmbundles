@@ -1,0 +1,58 @@
+8
+
+dir
+10740
+http://macromates.com/svn/Bundles/trunk/Bundles/ActionScript.tmbundle/Support/bin/XTrace.app/Contents
+http://macromates.com/svn/Bundles
+
+
+
+2006-11-27T11:53:12.208004Z
+6253
+ale
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+dfb7d73b-c2ec-0310-8fea-fb051d288c6d
+
+MacOS
+dir
+
+Info.plist
+file
+
+
+
+
+2008-11-01T05:01:19.000000Z
+a4a484a86b70f910ccd8e38beb3de3b3
+2006-11-26T19:03:02.935197Z
+6247
+ale
+
+Resources
+dir
+
+PkgInfo
+file
+
+
+
+
+2008-11-01T05:01:19.000000Z
+23b7d7d024abb0f558420e098800bf27
+2006-11-26T19:03:02.935197Z
+6247
+ale
+

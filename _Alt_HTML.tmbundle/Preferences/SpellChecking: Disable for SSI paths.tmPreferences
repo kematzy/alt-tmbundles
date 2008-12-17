@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>SpellChecking: Disable for SSI's</string>
+	<key>scope</key>
+	<string>text.html.basic comment.block.html comment.line.server-side-include.html</string>
+	<key>settings</key>
+	<dict>
+		<key>spellChecking</key>
+		<string>0</string>
+	</dict>
+	<key>uuid</key>
+	<string>82942EB6-6C05-4944-94E9-62F44DAF8628</string>
+</dict>
+</plist>

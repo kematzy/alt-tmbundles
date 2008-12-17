@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1:ABC}(${2:Always Be Closing})</string>
+	<key>name</key>
+	<string>Acronym</string>
+	<key>scope</key>
+	<string>text.html.textile</string>
+	<key>tabTrigger</key>
+	<string>acr</string>
+	<key>uuid</key>
+	<string>A7C60418-11D8-4841-8E9D-2A61887982AA</string>
+</dict>
+</plist>

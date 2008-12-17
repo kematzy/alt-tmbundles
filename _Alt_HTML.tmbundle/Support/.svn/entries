@@ -1,0 +1,56 @@
+8
+
+dir
+10740
+http://macromates.com/svn/Bundles/trunk/Bundles/HTML.tmbundle/Support
+http://macromates.com/svn/Bundles
+
+
+
+2007-10-19T12:59:42.524166Z
+8309
+duff
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+dfb7d73b-c2ec-0310-8fea-fb051d288c6d
+
+entities.txt
+file
+
+
+
+
+2008-11-01T05:16:21.000000Z
+ca6eb8a46657fd5846d53d801c97d329
+2007-08-19T03:00:36.211561Z
+7997
+duff
+
+tminclude.rb
+file
+
+
+
+
+2008-11-01T05:16:21.000000Z
+db88552913e336049a2d4f5561b775f3
+2007-10-19T12:59:42.524166Z
+8309
+duff
+has-props
+
+nibs
+dir
+
