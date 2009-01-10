@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>REFACTOR:: ${1:message}</string>
+	<key>name</key>
+	<string>REFACTOR:: (inside comment block)</string>
+	<key>scope</key>
+	<string>comment.block</string>
+	<key>tabTrigger</key>
+	<string>refactor</string>
+	<key>uuid</key>
+	<string>5B34658A-CD31-4F3B-98D2-FF7A93B3AAAB</string>
+</dict>
+</plist>

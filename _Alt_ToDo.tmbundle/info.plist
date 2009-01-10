@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>contactEmailRot13</key>
+	<string>Fbelh@freravgl.qr</string>
+	<key>contactName</key>
+	<string>Stanley Rost</string>
+	<key>description</key>
+	<string>If you tag your comments with &lt;tt&gt;TODO&lt;/tt&gt;, &lt;tt&gt;FIXME&lt;/tt&gt;, or similar, this bundle provides functionality to list all your tagged items, with the ability to jump to either of them.</string>
+	<key>mainMenu</key>
+	<dict>
+		<key>items</key>
+		<array>
+			<string>6E9AD1C9-2288-4F15-AA84-F3A7CC916E92</string>
+			<string>F2A9CC6F-202D-491F-BF39-A2D993F2799B</string>
+			<string>------------------------------------</string>
+			<string>BAFB3ABB-D84A-4426-ABCE-403000EED130</string>
+		</array>
+		<key>submenus</key>
+		<dict/>
+	</dict>
+	<key>name</key>
+	<string> Alt TODO</string>
+	<key>ordering</key>
+	<array>
+		<string>F2A9CC6F-202D-491F-BF39-A2D993F2799B</string>
+		<string>F7FAE68F-516A-43FA-AAAD-02EF7EC24FCD</string>
+		<string>B92BC2E2-EA8B-4760-BE83-66560CFDB29A</string>
+		<string>693D7FC9-85FC-4F4E-9684-6636D510DF3E</string>
+		<string>CC8D1FDB-AF71-451C-AC69-4B773728489F</string>
+		<string>8A356A23-69CC-4AD8-96E3-804F85DC6BF5</string>
+		<string>5B34658A-CD31-4F3B-98D2-FF7A93B3AAAB</string>
+		<string>1954FDCB-9B95-49BB-AAFC-37C125AB7B02</string>
+		<string>EA13B7AA-6B69-414C-8CC3-28692AF78759</string>
+		<string>881A8C3F-4503-4748-9EF8-4E491161519B</string>
+		<string>3FD45155-51C8-4B86-B828-11D1D4E24EFD</string>
+		<string>6E49DCEB-E1DE-47A7-9C26-3C969AED667A</string>
+		<string>23BF3A66-96F7-45BB-B612-B73F1F89F024</string>
+	</array>
+	<key>uuid</key>
+	<string>8A7C6AA2-6BB7-45A0-9672-D5577F8F2BC0</string>
+</dict>
+</plist>

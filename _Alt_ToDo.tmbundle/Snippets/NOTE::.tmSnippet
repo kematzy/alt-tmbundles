@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>$TM_COMMENT_START NOTE:: ${1:message} $TM_COMMENT_END</string>
+	<key>name</key>
+	<string>NOTE::</string>
+	<key>scope</key>
+	<string>-comment</string>
+	<key>tabTrigger</key>
+	<string>note</string>
+	<key>uuid</key>
+	<string>6E49DCEB-E1DE-47A7-9C26-3C969AED667A</string>
+</dict>
+</plist>
