@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>// &lt;!--[if lt IE 7] --&gt;
+  // correctly handle PNG transparency in Win IE 5.5 &amp; 6.
+  function MSIE_PNGfix() { 
+    var arVersion = navigator.appVersion.split("MSIE");
+    var version = parseFloat(arVersion[1]);
+    
+    if ((version &gt;= 5.5) &amp;&amp; (document.body.filters)){ 
+      for(var i=0; i&lt;document.images.length; i++) { 
+        var img = document.images[i];
+        var imgName = img.src.toUpperCase();
+        if (imgName.substring(imgName.length-3, imgName.length) == "PNG"){ 
+          var imgID = (img.id) ? "id='" + img.id + "' " : "";
+          var imgClass = (img.className) ? "class='" + img.className + "' " : "";
+          var imgTitle = (img.title) ? "title='" + img.title + "' " : "title='" + img.alt + "' ";
+          var imgStyle = "display:inline-block;" + img.style.cssText;
+          if (img.align == "left"){ imgStyle = "float:left;" + imgStyle };
+          if (img.align == "right"){ imgStyle = "float:right;" + imgStyle };
+          if (img.parentElement.href){ imgStyle = "cursor:hand;" + imgStyle };
+          var strNewHTML = "&lt;span " + imgID + imgClass + imgTitle 
+            + " style=\"" + "width:" + img.width + "px; height:" + img.height + "px;" + imgStyle + ";"
+            + "filter:progid:DXImageTransform.Microsoft.AlphaImageLoader"
+            + "(src=\'" + img.src + "\', sizingMethod='scale');\"&gt;&lt;/span&gt;";
+          img.outerHTML = strNewHTML;
+          i = i-1;
+        }
+      }
+    }
+  }
+  window.attachEvent("onload", MSIE_PNGfix);
+// &lt;/script&gt;
+// &lt;![endif]--&gt;</string>
+	<key>name</key>
+	<string>MSIE PNGfix (JS)</string>
+	<key>scope</key>
+	<string>source.js.jquery</string>
+	<key>tabTrigger</key>
+	<string>msie.pngfix</string>
+	<key>uuid</key>
+	<string>61EDC93F-E76B-403E-9885-BA4B8E95A81D</string>
+</dict>
+</plist>

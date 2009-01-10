@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>// open all external links in a separate window...
+\$("a[href^=http://]").attr("target","_blank");
+\$("a[rel~='external']").attr("target","_blank");</string>
+	<key>name</key>
+	<string>Links.External in New Window</string>
+	<key>scope</key>
+	<string>source.js.jquery</string>
+	<key>tabTrigger</key>
+	<string>links.external</string>
+	<key>uuid</key>
+	<string>3AB86478-AAE6-4139-BCB5-A17F247E60FB</string>
+</dict>
+</plist>

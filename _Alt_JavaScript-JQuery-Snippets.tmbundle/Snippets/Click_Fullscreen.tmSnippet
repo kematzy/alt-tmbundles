@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>// enable viewing the website in fullscreen mode
+\$('#fullscreen').click(function() { 
+  window.moveTo(0,0);
+  window.resizeTo(screen.availWidth,screen.availHeight); 
+  return false; 
+});
+</string>
+	<key>name</key>
+	<string>Click.Fullscreen</string>
+	<key>scope</key>
+	<string>source.js.jquery</string>
+	<key>tabTrigger</key>
+	<string>click.fullscreen</string>
+	<key>uuid</key>
+	<string>FA4531C0-B7A5-48FE-BE13-0EEDFD263644</string>
+</dict>
+</plist>

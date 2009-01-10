@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>// Cycle Plugin: onBefore method that handles 
+function cycle_onBefore(curr, next, opts, fwd) {
+   // look for the slides_arr object and loop through it
+   if(typeof(slides_arr) != "undefined"){
+     // handle looping around
+     var num_slides = slides_arr.length;
+     if(fwd){ // going forwards
+       var curr_slide_num = opts.nextSlide + 1;
+       if(curr_slide_num == num_slides){ curr_slide_num = '0'; }
+     }else{ // going backwards, cycle knows num of slides since they are in DOM already only loading in the .src image file
+       var curr_slide_num = opts.nextSlide; 
+     }
+     \$('#' + slides_arr[curr_slide_num].id).attr('src', slides_arr[curr_slide_num].src);
+   }
+   // ensure the image is centered correctly.
+   \$(this).css({left: '50%', marginLeft: -\$(this).width()/2}); // \$(this).css({top: '50%', marginTop: -\$(this).height()/2});
+   // resize the containing slideshow box
+   \$('#slideshow').css({height: \$(this).height() + 1});
+}; 
+</string>
+	<key>name</key>
+	<string>Cycle.Fn.onBefore</string>
+	<key>scope</key>
+	<string>source.js.jquery</string>
+	<key>tabTrigger</key>
+	<string>cycle.fn.onb4</string>
+	<key>uuid</key>
+	<string>CDB6FB9C-C0B5-46A2-8A5C-EADF5145D48D</string>
+</dict>
+</plist>

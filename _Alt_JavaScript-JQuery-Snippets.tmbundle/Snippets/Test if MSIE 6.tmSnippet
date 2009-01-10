@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>var ie6 = $.browser.msie &amp;&amp; /MSIE 6.0/.test(navigator.userAgent);</string>
+	<key>name</key>
+	<string>Test if MSIE 6</string>
+	<key>scope</key>
+	<string>source.js.jquery</string>
+	<key>tabTrigger</key>
+	<string>test.msie</string>
+	<key>uuid</key>
+	<string>253D46AC-F773-4D1B-A0B5-7BD69A0CD782</string>
+</dict>
+</plist>

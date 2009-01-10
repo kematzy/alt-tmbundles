@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>// Cycle Plugin: enable toggle slideshow mechanism
+\$('#pause_play').click( function() {
+  // need to use RegExp here, since M\$IE somehow makes the HTML uppercase.
+  var btn_rgx = /&lt;span&gt;P&lt;\/span&gt;AUSE/i; // NB! the i flag on the regex
+  if (\$('#pause_play').html().match(btn_rgx)){
+     \$('#slideshow .pics').cycle('pause'); \$('#pause_play').html("&lt;span&gt;P&lt;/span&gt;LAY"); return false;
+   }else{ // with instant resume =&gt; true
+     \$('#slideshow .pics').cycle('resume',true); \$('#pause_play').html("&lt;span&gt;P&lt;/span&gt;AUSE"); return false; 
+   };
+});
+</string>
+	<key>name</key>
+	<string>Cycle.Click.PausePlay</string>
+	<key>scope</key>
+	<string>source.js.jquery</string>
+	<key>tabTrigger</key>
+	<string>cycle.click.pauseplay</string>
+	<key>uuid</key>
+	<string>F8ACDE30-B6B6-4CFA-89DC-20C1FE92F9C5</string>
+</dict>
+</plist>

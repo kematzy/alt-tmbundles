@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>// Cycle Plugin: turn off the slideshow when clicking the next/prev buttons 
+\$("#next,#prev").click(function() {
+   $('#slideshow .pics').cycle('pause'); \$('#pause_play').html("&lt;span&gt;P&lt;/span&gt;LAY"); return false;
+});
+</string>
+	<key>name</key>
+	<string>Cycle.Click.NextPrev</string>
+	<key>scope</key>
+	<string>source.js.jquery</string>
+	<key>tabTrigger</key>
+	<string>cycle.click.nextprev</string>
+	<key>uuid</key>
+	<string>FB317C34-75BC-451F-ADB6-85562BB54366</string>
+</dict>
+</plist>

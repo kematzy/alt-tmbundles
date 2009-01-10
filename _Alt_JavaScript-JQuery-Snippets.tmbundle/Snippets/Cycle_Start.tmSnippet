@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>// Cycle Plugin: start the slideshow
+var ss = \$('#slideshow .pics').cycle(cycle_opts);</string>
+	<key>name</key>
+	<string>Cycle.Start</string>
+	<key>scope</key>
+	<string>source.js.jquery</string>
+	<key>tabTrigger</key>
+	<string>cycle.start</string>
+	<key>uuid</key>
+	<string>66722206-124A-41FF-BABC-D2B1F24A2165</string>
+</dict>
+</plist>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>// undefined links alert on the given page
+\$("${1:#where} a[href=#]").click(function() {
+  alert("This link is not yet defined."); return false;
+});
+</string>
+	<key>name</key>
+	<string>Links.Undefined with Alert</string>
+	<key>scope</key>
+	<string>source.js.jquery</string>
+	<key>tabTrigger</key>
+	<string>links.undef</string>
+	<key>uuid</key>
+	<string>C0FAC80C-4663-451B-AEAC-D74BEB140697</string>
+</dict>
+</plist>

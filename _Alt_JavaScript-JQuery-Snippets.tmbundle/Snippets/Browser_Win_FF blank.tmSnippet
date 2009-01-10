@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>// Do something special with Windows Firefox...
+if((\$.browser.mozilla) &amp;&amp; (navigator.appVersion.indexOf("Win")!=-1) ){ 
+  ${1://do something}
+};
+</string>
+	<key>name</key>
+	<string>Browser.Win.FF blank</string>
+	<key>scope</key>
+	<string>source.js.jquery</string>
+	<key>tabTrigger</key>
+	<string>browser.win.ff</string>
+	<key>uuid</key>
+	<string>81640C08-EE95-4178-9148-1B2B20C9C947</string>
+</dict>
+</plist>

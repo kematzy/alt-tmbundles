@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>// we have to identify those pesky Windoze browsers, with all their bugs/issues
+if(navigator.appVersion.indexOf("Win")!=-1){
+  if(\$.browser.mozilla){ var is_win_moz   = true; }else{ var is_win_moz   = false; }
+  if(\$.browser.msie)   { var is_win_msie  = true; }else{ var is_win_msie  = false; }
+  if(\$.browser.opera)  { var is_win_opera = true; }else{ var is_win_opera = false; }
+} 
+</string>
+	<key>name</key>
+	<string>Browser.Win.Identify</string>
+	<key>scope</key>
+	<string>source.js.jquery</string>
+	<key>tabTrigger</key>
+	<string>browser.win.identify</string>
+	<key>uuid</key>
+	<string>1BEA3F08-65C9-4BCE-8369-2F6E6F550538</string>
+</dict>
+</plist>
