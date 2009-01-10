@@ -12,7 +12,7 @@ $0</string>
 	<key>name</key>
 	<string>RSpec-validates_associated when nil...</string>
 	<key>scope</key>
-	<string>source.core.ruby.rails, source.core.ruby.rspec</string>
+	<string>source.ruby.rails, source.ruby.rspec</string>
 	<key>tabTrigger</key>
 	<string>rval</string>
 	<key>uuid</key>

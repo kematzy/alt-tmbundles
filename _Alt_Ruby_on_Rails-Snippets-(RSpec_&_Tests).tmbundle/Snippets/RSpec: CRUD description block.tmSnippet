@@ -43,7 +43,7 @@ end
 	<key>name</key>
 	<string>RSpec: CRUD description block</string>
 	<key>scope</key>
-	<string>source.core.ruby.rails, source.core.ruby.rspec</string>
+	<string>source.ruby.rails, source.ruby.rspec</string>
 	<key>tabTrigger</key>
 	<string>crud</string>
 	<key>uuid</key>

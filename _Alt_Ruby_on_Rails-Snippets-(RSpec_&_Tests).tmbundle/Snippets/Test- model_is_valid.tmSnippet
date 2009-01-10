@@ -12,7 +12,7 @@ $0</string>
 	<key>name</key>
 	<string>Test- model_is_valid</string>
 	<key>scope</key>
-	<string>source.core.ruby.rails</string>
+	<string>source.ruby.rails</string>
 	<key>tabTrigger</key>
 	<string>tvalid</string>
 	<key>uuid</key>

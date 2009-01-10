@@ -15,7 +15,7 @@ end
 	<key>name</key>
 	<string>Test-validates_uniqueness_of :field_name</string>
 	<key>scope</key>
-	<string>source.core.ruby.rails</string>
+	<string>source.ruby.rails</string>
 	<key>tabTrigger</key>
 	<string>tval</string>
 	<key>uuid</key>

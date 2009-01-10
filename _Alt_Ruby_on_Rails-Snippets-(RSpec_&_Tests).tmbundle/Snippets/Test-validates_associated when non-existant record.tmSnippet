@@ -14,7 +14,7 @@ $0</string>
 	<key>name</key>
 	<string>Test-validates_associated when non-existant record</string>
 	<key>scope</key>
-	<string>source.core.ruby.rails</string>
+	<string>source.ruby.rails</string>
 	<key>tabTrigger</key>
 	<string>tval</string>
 	<key>uuid</key>

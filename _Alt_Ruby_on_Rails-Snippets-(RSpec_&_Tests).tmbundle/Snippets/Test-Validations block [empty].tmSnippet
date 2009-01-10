@@ -10,7 +10,7 @@ end #/$1ValidationsTest &lt; $1Test</string>
 	<key>name</key>
 	<string>Test-Validations block [empty]</string>
 	<key>scope</key>
-	<string>source.core.ruby.rails</string>
+	<string>source.ruby.rails</string>
 	<key>tabTrigger</key>
 	<string>de</string>
 	<key>uuid</key>

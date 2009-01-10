@@ -14,7 +14,7 @@ end
 	<key>name</key>
 	<string>RSpec-model_destroy</string>
 	<key>scope</key>
-	<string>source.core.ruby.rails, source.core.ruby.rspec</string>
+	<string>source.ruby.rails, source.ruby.rspec</string>
 	<key>tabTrigger</key>
 	<string>delete</string>
 	<key>uuid</key>

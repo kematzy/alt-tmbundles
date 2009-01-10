@@ -13,7 +13,7 @@ end
 	<key>name</key>
 	<string>Test-validates_presence_of :field_name =&gt; [empty]</string>
 	<key>scope</key>
-	<string>source.core.ruby.rails</string>
+	<string>source.ruby.rails</string>
 	<key>tabTrigger</key>
 	<string>tval</string>
 	<key>uuid</key>

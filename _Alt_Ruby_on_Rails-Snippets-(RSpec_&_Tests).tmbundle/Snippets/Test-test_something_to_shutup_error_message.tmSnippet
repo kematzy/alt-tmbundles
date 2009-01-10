@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>Test-test_something_to_shutup_error_message</string>
 	<key>scope</key>
-	<string>source.core.ruby.rails</string>
+	<string>source.ruby.rails</string>
 	<key>tabTrigger</key>
 	<string>shutup</string>
 	<key>uuid</key>

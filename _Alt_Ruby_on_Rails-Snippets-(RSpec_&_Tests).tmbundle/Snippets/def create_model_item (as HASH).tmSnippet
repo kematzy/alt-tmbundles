@@ -16,7 +16,7 @@ end
 	<key>name</key>
 	<string>def create_model_item (as HASH)</string>
 	<key>scope</key>
-	<string>source.core.ruby.rails, source.core.ruby.rspec</string>
+	<string>source.ruby.rails, source.ruby.rspec</string>
 	<key>tabTrigger</key>
 	<string>model</string>
 	<key>uuid</key>
