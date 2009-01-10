@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;%= core_page_title :site =&gt; '${1:Site Name}', ${2::reverse =&gt; true} %&gt;</string>
+	<key>name</key>
+	<string>core_page_title :site =&gt; 'Site Name'</string>
+	<key>scope</key>
+	<string>text.core.html.ruby</string>
+	<key>tabTrigger</key>
+	<string>cpt</string>
+	<key>uuid</key>
+	<string>D13E73DE-1D07-4063-8966-63D727D44000</string>
+</dict>
+</plist>

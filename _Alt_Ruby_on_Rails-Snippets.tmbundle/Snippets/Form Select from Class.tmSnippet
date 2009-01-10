@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;p&gt;&lt;label for="snippets_category_id"&gt;Snippets Category&lt;/label&gt;&lt;br /&gt;
+&lt;%= select("snippet", "snippet_category_id", SnippetCategory.find(:all).collect {|sc| [ sc.name, sc.id ] }) %&gt;
+&lt;/p&gt;
+</string>
+	<key>name</key>
+	<string>Form Select from Class</string>
+	<key>uuid</key>
+	<string>B99C8B3D-8144-49B7-BA4E-0B9DA9642D81</string>
+</dict>
+</plist>

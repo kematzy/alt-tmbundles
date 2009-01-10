@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string># Routes
+map.with_options(:controller =&gt; '${1:admin/base}') do |url|
+  url.${2:admin}                '$2',                              :action =&gt; 'index'
+  url.$2_login          '$2/login',                        :action =&gt; 'login'
+  url.$2_logout         '$2/logout',                       :action =&gt; 'logout'
+  url.$2_register       '$2/register',                     :action =&gt; 'register'
+end
+</string>
+	<key>name</key>
+	<string>Routes-map.with.. Dynamic</string>
+	<key>uuid</key>
+	<string>38EAB377-5BAA-462F-8145-749D0494A3CD</string>
+</dict>
+</plist>

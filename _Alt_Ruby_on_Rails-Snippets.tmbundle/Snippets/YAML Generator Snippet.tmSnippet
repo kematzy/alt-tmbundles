@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>#!/usr/bin/env ruby -w
+incr = 53
+type = 'Other'
+1.upto(4) do |i|
+puts %{#
+beverages_#{type.downcase}_#{i}:
+  id: #{i+incr}
+  type: Beverage
+  menu_section_id: 15
+  name: 'Dummy #{type} Beverage #{i}'
+  desc: 'Description of Dummy #{type} Beverage #{i}'
+  desc_html: 'Description of &lt;b&gt;Dummy #{type} Beverage #{i}&lt;/b&gt;'
+  position: #{i}
+  price: #{rand(10).to_s}
+  status: 'on'
+  created_on: &lt;%= 2.day.from_now.strftime('%Y-%m-%d %H:%M:%S') %&gt;
+  updated_on: &lt;%= 1.day.from_now.strftime('%Y-%m-%d %H:%M:%S') %&gt;
+  allergy: 
+  size: 250ml
+  vintage: }
+end
+</string>
+	<key>name</key>
+	<string>YAML Generator Snippet</string>
+	<key>uuid</key>
+	<string>34294B24-1281-4E42-8A4D-CE5E02F5C890</string>
+</dict>
+</plist>

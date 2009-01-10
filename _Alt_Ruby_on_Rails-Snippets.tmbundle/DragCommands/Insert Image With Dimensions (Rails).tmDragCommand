@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>command</key>
+	<string>img="$TM_DROPPED_FILE"
+img_src=`echo "$TM_DROPPED_FILE" | sed -e 's/\(..\/\)*public//g'`
+# echo "img_src=[$img_src]"
+echo -n "&lt;img src=\"$img_src\" "
+
+sips -g pixelWidth -g pixelHeight "$img" \
+|awk '/pixelWidth/  { printf("width=\"%d\" ",  $2) }
+      /pixelHeight/ { printf("height=\"%d\" ", $2) }'
+
+base=${img##*/}
+alt=$(tr &lt;&lt;&lt;${base%.*} '[_-]' ' '|perl -pe 's/(\w+)/\u$1/g')
+echo -n "alt=\"$alt\"${TM_XHTML}&gt;"
+</string>
+	<key>draggedFileExtensions</key>
+	<array>
+		<string>png</string>
+		<string>jpeg</string>
+		<string>jpg</string>
+		<string>gif</string>
+	</array>
+	<key>name</key>
+	<string>Insert Image With Dimensions (Rails)</string>
+	<key>output</key>
+	<string>insertAsSnippet</string>
+	<key>scope</key>
+	<string>text.core.html.ruby</string>
+	<key>uuid</key>
+	<string>F76652BF-EC05-48E7-9176-F4BC5985D292</string>
+</dict>
+</plist>

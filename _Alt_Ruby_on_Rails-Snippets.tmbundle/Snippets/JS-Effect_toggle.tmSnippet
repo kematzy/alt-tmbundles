@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;a href="#" onclick="Effect.toggle('${1:targted_div_name}'); return false"&gt;${2:View}&lt;/a&gt;$0</string>
+	<key>name</key>
+	<string>JS-Effect.toggle</string>
+	<key>scope</key>
+	<string>text.core.html</string>
+	<key>tabTrigger</key>
+	<string>jstoggle</string>
+	<key>uuid</key>
+	<string>CDF0FB86-4CF6-4596-ADF6-6FF5AB2B5ADE</string>
+</dict>
+</plist>

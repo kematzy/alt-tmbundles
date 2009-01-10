@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1:# example: README[link:files/README.html]}
+${2:label}[link:${3:path/to/rdoc/file.html}]$0</string>
+	<key>name</key>
+	<string>RDoc-LinkToInternalFile</string>
+	<key>scope</key>
+	<string>source.core.ruby comment.documentation</string>
+	<key>tabTrigger</key>
+	<string>link</string>
+	<key>uuid</key>
+	<string>4CC8ADD7-EF38-417F-A0CE-4ABF133A3D44</string>
+</dict>
+</plist>

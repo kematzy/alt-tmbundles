@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>validates_format_of :email, 
+                    :with =&gt; /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i, 
+                    :on =&gt; :create, 
+                    :message=&gt;"has an invalid format"
+</string>
+	<key>name</key>
+	<string>AR: validates_format_of :email</string>
+	<key>scope</key>
+	<string>source.core.ruby.rails</string>
+	<key>tabTrigger</key>
+	<string>vfo</string>
+	<key>uuid</key>
+	<string>67A663A1-4E60-4B71-A58A-81F957C9AC65</string>
+</dict>
+</plist>

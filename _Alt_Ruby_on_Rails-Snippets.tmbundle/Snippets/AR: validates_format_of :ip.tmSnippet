@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>validates_format_of :ip, :with =&gt; /^((\d|[1-9]\d|2[0-4]\d|25[0-5]|1\d\d) (?:.(\d|[1-9]\d|2[0-4]\d|25[0-5]|1\d\d)){3})$/</string>
+	<key>name</key>
+	<string>AR: validates_format_of :ip</string>
+	<key>scope</key>
+	<string>source.core.ruby.rails</string>
+	<key>tabTrigger</key>
+	<string>vfo</string>
+	<key>uuid</key>
+	<string>8CEDABE0-FF4C-46BD-9C3D-58CFFCD09982</string>
+</dict>
+</plist>

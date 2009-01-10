@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>cycle("odd", "even")</string>
+	<key>name</key>
+	<string>cycle('odd','even')</string>
+	<key>scope</key>
+	<string>text.core.html.ruby</string>
+	<key>tabTrigger</key>
+	<string>cycle</string>
+	<key>uuid</key>
+	<string>30E2B60B-5E7D-4E67-8C66-46F98FD6D425</string>
+</dict>
+</plist>

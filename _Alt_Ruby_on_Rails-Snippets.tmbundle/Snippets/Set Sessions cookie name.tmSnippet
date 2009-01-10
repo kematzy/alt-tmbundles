@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>  # Pick a unique cookie name to distinguish our session data from others'
+  session :session_key =&gt; '0${0:appname}_session_id'
+</string>
+	<key>name</key>
+	<string>Set Sessions cookie name</string>
+	<key>uuid</key>
+	<string>75A3E18E-6E24-4CE0-B367-AB661FB6D295</string>
+</dict>
+</plist>

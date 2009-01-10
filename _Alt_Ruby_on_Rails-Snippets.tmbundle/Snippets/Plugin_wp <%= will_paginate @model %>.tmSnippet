@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;%= will_paginate @${1:model_name} %&gt;$0</string>
+	<key>name</key>
+	<string>Plugin.wp &lt;%= will_paginate @model %&gt;</string>
+	<key>scope</key>
+	<string>text.html.ruby</string>
+	<key>tabTrigger</key>
+	<string>wp</string>
+	<key>uuid</key>
+	<string>48EB827C-78B1-456B-98CD-E9CBD19B3D4D</string>
+</dict>
+</plist>

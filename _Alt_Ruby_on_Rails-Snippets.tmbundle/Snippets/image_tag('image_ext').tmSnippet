@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>image_tag('${1:image.ext}')$0</string>
+	<key>name</key>
+	<string>image_tag('image.ext')</string>
+	<key>scope</key>
+	<string>source.core.ruby.rails</string>
+	<key>tabTrigger</key>
+	<string>image</string>
+	<key>uuid</key>
+	<string>BE1D7972-A73E-4AF9-B57E-97DAC4136FC9</string>
+</dict>
+</plist>

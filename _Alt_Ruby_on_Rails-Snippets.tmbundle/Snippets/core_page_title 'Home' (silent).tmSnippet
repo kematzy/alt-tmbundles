@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;% core_page_title '${1:Home}' %&gt;</string>
+	<key>name</key>
+	<string>core_page_title 'Home' (silent)</string>
+	<key>scope</key>
+	<string>text.core.html.ruby</string>
+	<key>tabTrigger</key>
+	<string>cpt</string>
+	<key>uuid</key>
+	<string>F184B9EB-CBE9-4A6C-83A1-6065FA25EFD7</string>
+</dict>
+</plist>

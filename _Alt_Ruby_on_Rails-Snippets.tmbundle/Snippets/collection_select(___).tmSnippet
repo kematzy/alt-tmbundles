@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>collection_select("${1:menu_item}", "${2:menu_category_id}", ${3:MenuCategory.find(:all)},:id,:name)</string>
+	<key>name</key>
+	<string>collection_select(...)</string>
+	<key>scope</key>
+	<string>source.core.ruby.rails</string>
+	<key>tabTrigger</key>
+	<string>collection_select</string>
+	<key>uuid</key>
+	<string>81ED6A08-7811-4EA1-AADB-29631DC2BC74</string>
+</dict>
+</plist>

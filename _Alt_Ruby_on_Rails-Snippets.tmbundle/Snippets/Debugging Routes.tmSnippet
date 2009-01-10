@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>ActionController::Routing::Routes.named_routes.sort_by {|n,_| n.to_s}.each do |n, r|
+  puts "#{n}:"
+  puts r
+  puts
+end</string>
+	<key>name</key>
+	<string>Debugging Routes</string>
+	<key>uuid</key>
+	<string>9049E7AF-96E3-4496-8FA2-05832ADE8B29</string>
+</dict>
+</plist>

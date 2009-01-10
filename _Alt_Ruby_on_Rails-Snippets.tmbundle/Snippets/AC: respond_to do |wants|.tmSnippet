@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>respond_to do |wants|
+  # basic HTML scenario # renders index.rhtml
+  wants.html
+  # RJS functions # renders index.rjs
+  wants.js
+  # XML
+  wants.xml {render :xml =&gt; @${1:products}.to_xml }
+  # add other formats below here...$0     
+end   </string>
+	<key>name</key>
+	<string>AC: respond_to do |wants|</string>
+	<key>scope</key>
+	<string>source.core.ruby.rails</string>
+	<key>tabTrigger</key>
+	<string>respond_to</string>
+	<key>uuid</key>
+	<string>65725EAD-DC5E-44C0-A677-E67AC746B60C</string>
+</dict>
+</plist>

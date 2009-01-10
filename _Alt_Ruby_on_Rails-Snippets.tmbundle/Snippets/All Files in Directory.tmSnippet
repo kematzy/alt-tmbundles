@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>  # returns an array of files with the given extension regex
+  def files_in_directory(path=nil, ext='.jpg')
+    dirpath = path ? "#{RAILS_IMAGES_ROOT}/#{path}" : RAILS_IMAGES_ROOT
+    @files = Dir.entries(dirpath).reject! { |i| i !~ /#{Regexp.quote(ext)}$/i }
+  end
+</string>
+	<key>name</key>
+	<string>All Files in Directory</string>
+	<key>scope</key>
+	<string></string>
+	<key>uuid</key>
+	<string>FACA3A28-097A-42B0-AA44-A8FC77FBCCF6</string>
+</dict>
+</plist>

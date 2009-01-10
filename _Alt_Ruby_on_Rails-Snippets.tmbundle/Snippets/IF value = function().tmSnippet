@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>def dummy_function
+  nil
+end
+if value = dummy_function()
+  # nil
+  puts "NOPE not NIl"
+else
+  puts "YES, IT IS NIL"
+end</string>
+	<key>name</key>
+	<string>IF value = function()</string>
+	<key>uuid</key>
+	<string>3D23D5CD-1F6D-43E9-9A64-B848C3BEA1CA</string>
+</dict>
+</plist>

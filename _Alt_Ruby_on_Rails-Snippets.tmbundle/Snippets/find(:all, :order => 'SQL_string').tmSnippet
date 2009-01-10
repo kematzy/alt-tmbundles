@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>find(:all, :order =&gt; '${1:SQL_fragment}')</string>
+	<key>name</key>
+	<string>find(:all, :order =&gt; 'SQL_string')</string>
+	<key>scope</key>
+	<string>source.core.ruby.rails</string>
+	<key>tabTrigger</key>
+	<string>find</string>
+	<key>uuid</key>
+	<string>BA0D0526-07F7-450A-92D4-A873FA8BA475</string>
+</dict>
+</plist>

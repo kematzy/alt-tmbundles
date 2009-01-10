@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>observe_form(  '${1:form_name}',
+    	          :frequency  =&gt;  1,
+    	          :url =&gt;  { :action =&gt;  :${2:action_name} },
+               :submit     =&gt;  '$1')</string>
+	<key>name</key>
+	<string>observe_form(...)</string>
+	<key>scope</key>
+	<string>source.core.ruby.rails</string>
+	<key>tabTrigger</key>
+	<string>obf</string>
+	<key>uuid</key>
+	<string>12164F76-2E97-4A18-A87D-73422B1018EF</string>
+</dict>
+</plist>

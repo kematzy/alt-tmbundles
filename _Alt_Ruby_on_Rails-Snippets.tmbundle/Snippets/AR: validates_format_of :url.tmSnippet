@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>validates_format_of :url, :with =&gt; /^(ftp|https?):\/\/((?:[-a-z0-9]+\.)+[a-z]{2,})/
+</string>
+	<key>name</key>
+	<string>AR: validates_format_of :url</string>
+	<key>scope</key>
+	<string>source.core.ruby.rails</string>
+	<key>tabTrigger</key>
+	<string>vfo</string>
+	<key>uuid</key>
+	<string>D8EF4A7F-0C65-446B-81A7-CD0153A7054E</string>
+</dict>
+</plist>

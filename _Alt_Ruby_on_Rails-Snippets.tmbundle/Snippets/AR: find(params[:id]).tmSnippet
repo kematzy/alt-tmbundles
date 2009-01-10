@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>find(params[:${1:id}])$0	</string>
+	<key>name</key>
+	<string>AR: find(params[:id])</string>
+	<key>scope</key>
+	<string>source.core.ruby.rails</string>
+	<key>tabTrigger</key>
+	<string>find</string>
+	<key>uuid</key>
+	<string>208BABB8-4D6D-41BB-B8B0-7B4F5F2544E9</string>
+</dict>
+</plist>

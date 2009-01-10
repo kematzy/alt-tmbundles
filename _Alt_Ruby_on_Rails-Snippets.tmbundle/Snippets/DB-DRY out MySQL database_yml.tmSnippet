@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string># DRY out your database.ym
+# From: http://blog.bleything.net/articles/2006/06/27/dry-out-your-database-yml
+
+login: &amp;login
+  adapter: mysql
+  username: ${1:username}
+  password: ${2:password}
+  host: ${3:mysql.example.com}
+  port: 3306
+  
+development:
+  &lt;&lt;: *login
+  database: ${4:app_name}_dev
+
+test:
+  &lt;&lt;: *login
+  database: $4_test
+
+production:
+  &lt;&lt;: *login
+  database: $4_prod
+</string>
+	<key>name</key>
+	<string>DB-DRY out MySQL database.yml</string>
+	<key>scope</key>
+	<string>source.core.yaml</string>
+	<key>tabTrigger</key>
+	<string>db</string>
+	<key>uuid</key>
+	<string>542CF960-D049-43A8-8E5E-4190224E1B4B</string>
+</dict>
+</plist>
