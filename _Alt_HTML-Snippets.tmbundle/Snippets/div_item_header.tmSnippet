@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;!-- div.item_header --&gt;
+&lt;div class="span-${1:24} last item_header"&gt;
+  &lt;div class="span-1"&gt;
+    item_image$0
+  &lt;/div&gt;
+  &lt;div class="span-${2:19}"&gt;
+    header
+  &lt;/div&gt;
+  &lt;div class="span-${3:4} last"&gt;
+    actions
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- div.item_header --&gt;</string>
+	<key>name</key>
+	<string>div.item_header</string>
+	<key>scope</key>
+	<string>text.core.html</string>
+	<key>tabTrigger</key>
+	<string>item_header</string>
+	<key>uuid</key>
+	<string>6A55EEE6-6927-48EE-BDA5-368614508CD4</string>
+</dict>
+</plist>

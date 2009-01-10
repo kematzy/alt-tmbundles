@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;!-- div.container --&gt;
+&lt;div class="container${1: showgrid}"&gt;
+  
+  header$2
+  
+  main-content$3
+  
+  footer$4
+  
+&lt;/div&gt;
+&lt;!-- /div.container --&gt;
+$0</string>
+	<key>name</key>
+	<string>div.container</string>
+	<key>scope</key>
+	<string>text.core.html</string>
+	<key>tabTrigger</key>
+	<string>container</string>
+	<key>uuid</key>
+	<string>27F149E1-5F7A-4EEC-9F38-1579A2402946</string>
+</dict>
+</plist>

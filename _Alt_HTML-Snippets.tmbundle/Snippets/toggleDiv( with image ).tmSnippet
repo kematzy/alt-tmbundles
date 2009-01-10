@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;a href="javascript:void(0);" title="show/hide the information below" onclick="toggleDiv(this,{div:'${1:name_of_div_to_toggle}',theme:'${2:black}',on:'${3:plus}',off:'${4:minus}'});"&gt;
+  &lt;%= image_tag('btns/$2/$3.gif') %&gt;
+&lt;/a&gt;</string>
+	<key>name</key>
+	<string>toggleDiv( with image )</string>
+	<key>scope</key>
+	<string>text.core.html.ruby</string>
+	<key>tabTrigger</key>
+	<string>toggle</string>
+	<key>uuid</key>
+	<string>92BE9870-76CB-43D1-911E-73892DD868B3</string>
+</dict>
+</plist>

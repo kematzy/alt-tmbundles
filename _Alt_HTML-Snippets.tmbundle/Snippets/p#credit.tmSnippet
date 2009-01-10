@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;!-- p#credit --&gt;
+&lt;p id="credit"&gt;
+&lt;a href="http://kematzy.com/" title="designed and developed by kematzy.com" rel="external" onclick="this.target='_blank'"&gt;developed by &lt;strong&gt;kematzy&lt;/strong&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;!-- /p#credit --&gt;
+$0</string>
+	<key>name</key>
+	<string>p#credit</string>
+	<key>scope</key>
+	<string>text.core.html</string>
+	<key>tabTrigger</key>
+	<string>pcredit</string>
+	<key>uuid</key>
+	<string>B4A38488-0FFE-455B-A09D-3F827E799BF7</string>
+</dict>
+</plist>

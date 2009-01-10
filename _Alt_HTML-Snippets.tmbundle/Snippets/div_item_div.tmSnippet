@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;!-- div#$1 --&gt;
+&lt;div id="${1:div_id}" class="span-${2:24} last item_div"&gt;
+  $0
+&lt;/div&gt;
+&lt;!-- div#$1 --&gt;</string>
+	<key>name</key>
+	<string>div.item_div</string>
+	<key>scope</key>
+	<string>text.core.html</string>
+	<key>tabTrigger</key>
+	<string>item_div</string>
+	<key>uuid</key>
+	<string>904B6E03-D2CE-41C7-9C35-BB98D10E2586</string>
+</dict>
+</plist>

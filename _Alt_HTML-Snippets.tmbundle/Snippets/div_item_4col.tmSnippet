@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;!-- div.item_4col --&gt;
+&lt;div class="prepend-1 span-4 append-1"&gt;
+  $1
+&lt;/div&gt;
+&lt;div class="prepend-1 span-4 append-1"&gt;
+  $2
+&lt;/div&gt;
+&lt;div class="prepend-1 span-4 append-1"&gt;
+  $3
+&lt;/div&gt;
+&lt;div class="prepend-1 span-4 append-1 last"&gt;
+  $0
+&lt;/div&gt;
+&lt;!-- /div.item_4col --&gt;</string>
+	<key>name</key>
+	<string>div.item_4col</string>
+	<key>scope</key>
+	<string>text.core.html</string>
+	<key>tabTrigger</key>
+	<string>item_4col</string>
+	<key>uuid</key>
+	<string>0F3D1BD6-8CE7-403B-AC80-C8A542A19B8D</string>
+</dict>
+</plist>
