@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>page.visual_effect :${1:toggle_slide}, ${2:"${3:DOM ID}"}</string>
 	<key>name</key>
-	<string>page.visual_effect (effect, id)</string>
+	<string>RJS: page.visual_effect (effect, id)</string>
 	<key>scope</key>
 	<string>source.ruby.rails.rjs</string>
 	<key>tabTrigger</key>

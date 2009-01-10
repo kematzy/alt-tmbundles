@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -wKU
+require 'erb'
+
+f = open(ENV["TM_NEW_FILE"], 'w')
+template = open("generator_template.txt").read
+
+# hot_flaming_cats -&gt; HotFlamingCats
+def underscore_to_camelcase(word)
+  word.sub(word[0].chr, word[0].chr.upcase).gsub(/\_(.)/) {|c| c[1].chr.upcase}
+end
+
+@tm_generator_class_name = underscore_to_camelcase(File.basename(ENV["TM_NEW_FILE"], ".rb"))
+
+# ENV["TM_YEAR"] = `date +%Y`.chomp
+# ENV["TM_DATE"] = `date +%Y-%m-%d`.chomp
+
+# handle tab setups correctly
+if ENV["TM_SOFT_TABS"] == "YES"
+	tab_size = ENV["TM_TAB_SIZE"].to_i
+	tab_size = tab_size ? tab_size : 4
+	template = template.gsub(/\t/, " "*tab_size)
+end
+
+# now output the erb tags
+erb = ERB.new(template) 
+erb.run
+
+f.write erb.result
+f.close</string>
+	<key>extension</key>
+	<string>rb</string>
+	<key>name</key>
+	<string> CoreRails-Generator</string>
+	<key>uuid</key>
+	<string>DD4D3FE5-FE86-483E-89BD-A9CFFF119D72</string>
+</dict>
+</plist>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+# 
+# class String
+#   def escape(char)
+#     gsub(/\\.|#{Regexp.quote(char)}/) { |match| match == char ? "\\#{char}" : match }
+#   end
+# 
+#   def unescape(char)
+#     gsub(/\\./) { |match| match == "\\#{char}" ? char : match }
+#   end
+# end
+# 
+# print case str = STDIN.read
+#   # Handle standard quotes
+#   when /\A'(.*)'\z/m: ":" + $1.unescape("'").escape("}") + ""
+#   when /\A"(.*)"\z/m: ":" + $1.unescape('"').escape("}") + ""
+#   when /\A:(.*)\z/m: "'" + $1.unescape('"').escape("}") + "'"
+# 
+#   # Default case
+#   else str
+# end
+
+print case str = STDIN.read
+  # Handle standard quotes
+  when /\A["'](\w+)["']\z/: ":" + $1
+  when /\A:(\w+)\z/: '"' + $1 + '"'
+  # Default case
+  else str
+end
+</string>
+	<key>fallbackInput</key>
+	<string>line</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string>~'</string>
+	<key>name</key>
+	<string>Toggle String / Symbol</string>
+	<key>output</key>
+	<string>replaceSelectedText</string>
+	<key>scope</key>
+	<string>source.ruby string.quoted.double, source.ruby string.quoted.single, source.ruby string, source.ruby constant.other.symbol</string>
+	<key>uuid</key>
+	<string>AED99328-2281-4E2C-BA66-ABB7D530C88D</string>
+</dict>
+</plist>

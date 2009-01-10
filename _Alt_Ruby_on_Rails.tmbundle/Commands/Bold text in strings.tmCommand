@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+s = STDIN.read
+case s
+when /^\w+$/
+  print "*#{s}*$0"
+when ""
+  print "*$1*$0"
+else
+  print "&lt;strong&gt;#{s}&lt;/strong&gt;"
+end</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string>@b</string>
+	<key>name</key>
+	<string>Bold text in strings</string>
+	<key>output</key>
+	<string>insertAsSnippet</string>
+	<key>scope</key>
+	<string>source.ruby string.quoted</string>
+	<key>uuid</key>
+	<string>08770D07-E9B6-41DE-A219-9B26CEBFAEA3</string>
+</dict>
+</plist>

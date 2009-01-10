@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>### A simple script that opens up a new iTerm terminal window and then activates four sessions
+### for use with Rails development.
+## 1: COMMANDS Session = for basic Rails commands (script/generate...)
+## 2: SERVER Session = for WeBrick/Lighttpd script/server sessions
+## 3: AUTOTEST Session = for Zentest autotest functionality
+## 4: CONSOLE Session = for working with the console
+##
+###	The syntax below is fairly simple so you can change this easily to fit your requirements.
+##	Created 2006-08-25 by Mats Persson  (mats-at-imediatec.co.uk)
+##	With help from Caius Durling (#textmate IRC) to import the TM variable into AppleScript
+
+osascript &lt;&lt;-APPLESCRIPT
+
+set rails_root to (do shell script "echo $TM_PROJECT_DIRECTORY")
+
+tell application "iTerm"
+	activate
+	-- make a new terminal 
+	set myterm to (make new terminal)
+	-- talk to the new terminal 
+	tell myterm
+		-- now open up the SERVER session
+		-- launch a default shell in a new tab in the same terminal 
+		launch session "Default Session"
+		-- talk to the session 
+		tell the last session
+			-- set some attributes 
+			set name to "Server"
+			-- execute a command 
+			write text "cd " &amp; rails_root
+			-- uncomment the next line to automatically start the rails server
+			write text "script/server webrick -p 3000"
+		end tell -- we are done talking to the session 
+				
+	end tell
+	
+end tell
+APPLESCRIPT</string>
+	<key>input</key>
+	<string>none</string>
+	<key>name</key>
+	<string>Launch Script/Server webrick</string>
+	<key>output</key>
+	<string>discard</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>uuid</key>
+	<string>06E9BF21-1DF6-47A6-9970-5A1368A51EEE</string>
+</dict>
+</plist>

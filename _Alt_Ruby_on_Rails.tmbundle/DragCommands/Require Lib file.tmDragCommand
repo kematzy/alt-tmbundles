@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+title = ENV['TM_DROPPED_FILE'].gsub(/^(lib\/)?(.*?)(\..*)$/, '\2')
+comment=[]
+title.split('/').each do |word|
+  comment &lt;&lt; "#{word.sub(word[0].chr, word[0].chr.upcase).gsub(/\_(.)/) {|c| c[1].chr.upcase}}"
+end
+print "## #{comment.join('::')}\nrequire \"#{title}\""
+
+# testing on file "lib/active_record/extensions.rb"
+# title=`echo $TM_DROPPED_FILE | perl -pe 's/^(lib\/)?(.*?)(\..*)$/$2/g'`
+# echo "require \"$title\""
+# =&gt; require "active_record/extensions"
+
+# title=`echo $TM_DROPPED_FILE | perl -pe 's/^(.*\/)?(.*?)(\..*)?$/$1/g'`
+# echo "require \"$title\""
+# =&gt; require "lib/active_record/"
+
+# title=`echo $TM_DROPPED_FILE`
+# echo "require \"$title\""
+# =&gt; require "lib/active_record/extensions.rb"
+
+# title=`echo $TM_DROPPED_FILE | perl -pe 's/^(lib\/)?(.*?)(\..*)$/[$1][$2]/g'`
+# echo "require \"$title\""
+# require "[lib/][active_record/extensions]"</string>
+	<key>draggedFileExtensions</key>
+	<array>
+		<string>rb</string>
+	</array>
+	<key>name</key>
+	<string>Require Lib file</string>
+	<key>output</key>
+	<string>insertAsSnippet</string>
+	<key>scope</key>
+	<string>source.ruby.rails</string>
+	<key>uuid</key>
+	<string>B7AB2B32-D9B6-4AFD-869D-631A0C69EEEC</string>
+</dict>
+</plist>

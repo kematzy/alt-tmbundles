@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>##	looks for the Rails API Documentation Online only for now
+# yes we have documentation
+echo "&lt;html&gt;&lt;head&gt;&lt;title&gt;Rails API Documentation&lt;/title&gt;&lt;style type=\"text/css\"&gt; body { backgroundcolor: #333; margin: 5px; padding: 0px; font-size: 90%; font-family: \"Lucida Grande\", Helvetica, Arial; }&lt;/style&gt;&lt;/head&gt;&lt;body background=\"#333\"&gt;"
+echo "&lt;iframe src=\"tm-file:///Users/mats/Rails/Docs/api.rubyonrails.org/index.html\" width=\"100%\" height=\"95%\" scrolling=\"auto\"&gt;&lt;/iframe&gt;&lt;/body&gt;&lt;/html&gt;"</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>@</string>
+	<key>name</key>
+	<string>Show Rails API Docs in TM</string>
+	<key>output</key>
+	<string>showAsHTML</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>uuid</key>
+	<string>DB62F597-9DE3-488F-B6BE-3950FAAE7347</string>
+</dict>
+</plist>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>##	looks for the Rails API Documentation Online only for now
+# yes we have documentation
+open /Users/mats/Rails/Docs/api.rubyonrails.org/index.html</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>@</string>
+	<key>name</key>
+	<string>Show Rails API Docs in Browser</string>
+	<key>output</key>
+	<string>discard</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>uuid</key>
+	<string>D4897470-C09E-4C5A-BB90-252F24E886ED</string>
+</dict>
+</plist>

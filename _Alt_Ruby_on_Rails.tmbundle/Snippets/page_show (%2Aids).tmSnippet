@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>page.show ${1:"${2:id(s)}"}</string>
 	<key>name</key>
-	<string>page.show (*ids)</string>
+	<string>RJS: page.show (*ids)</string>
 	<key>scope</key>
 	<string>source.ruby.rails.rjs</string>
 	<key>tabTrigger</key>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>commands</key>
+	<array>
+		<dict>
+			<key>command</key>
+			<string>selectWord:</string>
+		</dict>
+		<dict>
+			<key>argument</key>
+			<dict>
+				<key>beforeRunningCommand</key>
+				<string>saveActiveFile</string>
+				<key>command</key>
+				<string>#!/usr/bin/env ruby
+
+# [hH]otFlamingCats -&gt; hot_flaming_cats
+def camelcase_to_underscore(word)
+	word[0] = word[0].chr.downcase
+	word.gsub(/([A-Z])/, "_\\1").downcase
+end
+
+# hot_flaming_cats -&gt; HotFlamingCats
+def underscore_to_camelcase(word)
+  word.gsub(word[0].chr, word[0].chr.upcase).gsub(/\_(.)/) {|c| c[1].chr.upcase}
+end
+
+word = $stdin.gets
+is_camel = word.match(/[A-Z]/) ? true : false
+
+if is_camel then
+	print camelcase_to_underscore(word) 
+else
+	print underscore_to_camelcase(word)
+end
+</string>
+				<key>fallbackInput</key>
+				<string>word</string>
+				<key>input</key>
+				<string>selection</string>
+				<key>keyEquivalent</key>
+				<string>^_</string>
+				<key>name</key>
+				<string>Toggle CamelCase / underscore_delimited</string>
+				<key>output</key>
+				<string>replaceSelectedText</string>
+				<key>scope</key>
+				<string>source.core</string>
+				<key>uuid</key>
+				<string>47C806B7-033B-456A-835B-C80E5BBE167C</string>
+			</dict>
+			<key>command</key>
+			<string>executeCommandWithOptions:</string>
+		</dict>
+		<dict>
+			<key>command</key>
+			<string>moveLeft:</string>
+		</dict>
+		<dict>
+			<key>argument</key>
+			<string>:</string>
+			<key>command</key>
+			<string>insertText:</string>
+		</dict>
+	</array>
+	<key>keyEquivalent</key>
+	<string>^:</string>
+	<key>name</key>
+	<string>Convert Model to :model (sym)</string>
+	<key>scope</key>
+	<string>source.ruby variable.other.constant.ruby</string>
+	<key>uuid</key>
+	<string>9CEE0221-74D2-4AA7-92FD-B2054B72A839</string>
+</dict>
+</plist>

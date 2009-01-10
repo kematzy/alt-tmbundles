@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>page.hide ${1:"${2:id(s)}"}</string>
 	<key>name</key>
-	<string>page.hide (*ids)</string>
+	<string>RJS: page.hide (*ids)</string>
 	<key>scope</key>
 	<string>source.ruby.rails.rjs</string>
 	<key>tabTrigger</key>

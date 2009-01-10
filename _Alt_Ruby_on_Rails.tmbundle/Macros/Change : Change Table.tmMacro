@@ -31,7 +31,7 @@
 		</dict>
 	</array>
 	<key>name</key>
-	<string>Change / Change Table</string>
+	<string>M: Change / Change Table</string>
 	<key>scope</key>
 	<string>meta.rails.migration - meta.rails.migration.create_table - meta.rails.migration.change_table</string>
 	<key>scopeType</key>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>##	looks for the Rails &lt;project&gt;/doc/app/index.html file based on the current TM_PROJECT_DIRECTORY.
+
+if [[ -f "$TM_PROJECT_DIRECTORY/doc/app/index.html" ]]; then
+	# yes we have documentation
+	echo "&lt;html&gt;&lt;head&gt;&lt;title&gt;Project Documentation&lt;/title&gt;&lt;/head&gt;&lt;body&gt;"
+	echo "&lt;iframe src=\"tm-file://"
+	echo "${TM_PROJECT_DIRECTORY}/doc/app/index.html"
+	echo "\" width=\"100%\" height=\"95%\" scrolling=\"auto\"&gt;&lt;/iframe&gt;&lt;/body&gt;&lt;/html&gt;"
+else
+	# no, we do not have docs
+	echo "&lt;h1&gt;No Documentation available for this project&lt;/h1&gt;"
+fi</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>@</string>
+	<key>name</key>
+	<string>Show Project Docs</string>
+	<key>output</key>
+	<string>showAsHTML</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>uuid</key>
+	<string>20EAE230-CF40-4187-B05C-9CA4DE399EC3</string>
+</dict>
+</plist>

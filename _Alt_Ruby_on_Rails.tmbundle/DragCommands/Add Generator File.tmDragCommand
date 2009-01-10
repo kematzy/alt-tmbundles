@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+title = ENV['TM_DROPPED_FILE'].gsub(/^(templates\/)?(.*)$/, '\2')
+case title
+when /\.r(b|html)/
+  print "m.template \"#{title}\", \"#{title}\"\n"
+when /\.yml/
+  print "m.template \"#{title}\", \"#{title}\"\n"
+when /migrate/
+  print "m.migration_template \"#{title}\", \"db/migrate\"\n"  
+else
+  print "m.file \"#{title}\", \"#{title}\"\n"  
+end</string>
+	<key>draggedFileExtensions</key>
+	<array>
+		<string>js</string>
+		<string>css</string>
+		<string>rhtml</string>
+		<string>rb</string>
+		<string>png</string>
+		<string>jpg</string>
+		<string>gif</string>
+		<string>yml</string>
+		<string>erb</string>
+	</array>
+	<key>name</key>
+	<string>Add Generator File</string>
+	<key>output</key>
+	<string>insertAsSnippet</string>
+	<key>scope</key>
+	<string>source.ruby.rails</string>
+	<key>uuid</key>
+	<string>33CFE0C7-7546-493B-BA06-27DE96C13A31</string>
+</dict>
+</plist>
