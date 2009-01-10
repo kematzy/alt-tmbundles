@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>def test_something_to_shutup_error_message; assert true; end</string>
+	<key>name</key>
+	<string>Test-test_something_to_shutup_error_message</string>
+	<key>scope</key>
+	<string>source.core.ruby.rails</string>
+	<key>tabTrigger</key>
+	<string>shutup</string>
+	<key>uuid</key>
+	<string>1AAFDBAC-8B2A-4347-99EA-BBAD295C6F21</string>
+</dict>
+</plist>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>it "should create a model" do 
+  x = create_model_item
+  x.save.should == true
+end
+</string>
+	<key>name</key>
+	<string>RSpec-model_create</string>
+	<key>scope</key>
+	<string>source.core.ruby.rails, source.core.ruby.rspec</string>
+	<key>tabTrigger</key>
+	<string>create</string>
+	<key>uuid</key>
+	<string>BF2BAF05-7767-41F3-89A2-0F608483CD03</string>
+</dict>
+</plist>

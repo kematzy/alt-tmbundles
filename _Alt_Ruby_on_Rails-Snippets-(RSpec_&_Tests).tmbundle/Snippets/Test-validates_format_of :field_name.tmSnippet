@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>def test_validates_format_of_${1:field_name}
+  x = create_model_item(:$1 =&gt; 'allowed value')
+  assert x.save
+end
+
+def test_validates_format_of_${1:field_name}_with_invalid
+  x = create_model_item(:$1 =&gt; '()dis*allowed|Value')
+  assert !x.save
+  assert_equal "${2:only these characters are allowed: a-zA-Z0-9 - _}", x.errors.on(:$1)
+end
+$0
+</string>
+	<key>name</key>
+	<string>Test-validates_format_of :field_name</string>
+	<key>scope</key>
+	<string>source.core.ruby.rails</string>
+	<key>tabTrigger</key>
+	<string>tval</string>
+	<key>uuid</key>
+	<string>88448FCD-2EAE-44E2-BED7-A903303F47CA</string>
+</dict>
+</plist>

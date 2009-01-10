@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>it "validates_format_of :${1:field_name}" do
+  x = create_model_item(:$1 =&gt; 'abc_DEF-0129')
+  x.save.should == true
+end
+
+it "validates_format_of :${1:field_name} with invalid value" do
+  y = create_model_item(:$1 =&gt; "a0(23£4$*)")
+  y.save.should == false
+  y.errors.on(:$1).should == "${2:only these characters are allowed: a-zA-Z0-9 - _}"
+end
+$0
+</string>
+	<key>name</key>
+	<string>RSpec-validates_format_of :field_name</string>
+	<key>scope</key>
+	<string>source.core.ruby.rails, source.core.ruby.rspec</string>
+	<key>tabTrigger</key>
+	<string>rval</string>
+	<key>uuid</key>
+	<string>FABBCB52-3361-44F6-ADD9-B082A6DE8F77</string>
+</dict>
+</plist>

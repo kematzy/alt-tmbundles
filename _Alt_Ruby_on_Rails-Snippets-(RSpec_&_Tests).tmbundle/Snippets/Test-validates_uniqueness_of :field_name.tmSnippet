@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>def test_validates_uniqueness_of_${1:field_name}
+  $1 = 'the-same-value'
+  x = create_model_item(:$1 =&gt; $1)
+  assert x.save
+  y = create_model_item(:$1 =&gt; $1)
+  assert !y.save
+  assert_equal "${2:Another category is using that URL tag}", y.errors.on(:$1)
+end
+</string>
+	<key>name</key>
+	<string>Test-validates_uniqueness_of :field_name</string>
+	<key>scope</key>
+	<string>source.core.ruby.rails</string>
+	<key>tabTrigger</key>
+	<string>tval</string>
+	<key>uuid</key>
+	<string>26DA1AE3-1247-4CC2-8F00-8676714BAD48</string>
+</dict>
+</plist>

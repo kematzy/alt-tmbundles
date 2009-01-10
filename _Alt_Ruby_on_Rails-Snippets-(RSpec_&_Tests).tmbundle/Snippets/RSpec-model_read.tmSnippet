@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>  it "should read a created model" do 
+    x = create_model_item
+    x.save.should == true
+    x.${2:name}.should == ${1:ModelName}.find(x.id).$2
+  end
+</string>
+	<key>name</key>
+	<string>RSpec-model_read</string>
+	<key>scope</key>
+	<string>source.core.ruby.rails, source.core.ruby.rspec</string>
+	<key>tabTrigger</key>
+	<string>read</string>
+	<key>uuid</key>
+	<string>1D6C8616-79F3-4AF7-8F65-5CAA48073B1F</string>
+</dict>
+</plist>

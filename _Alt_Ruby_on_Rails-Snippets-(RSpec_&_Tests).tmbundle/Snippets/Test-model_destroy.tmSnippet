@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>def test_model_destroy
+  x = ${1:ModelName}.find(1)
+  assert_equal x, x.destroy
+  assert_raise(ActiveRecord::RecordNotFound) { $1.find(1) }
+end
+$0</string>
+	<key>name</key>
+	<string>Test-model_destroy</string>
+	<key>scope</key>
+	<string>source.core.ruby.rails</string>
+	<key>tabTrigger</key>
+	<string>tdelete</string>
+	<key>uuid</key>
+	<string>F2C6080A-1CB1-4E12-B8F7-4651E1713D9B</string>
+</dict>
+</plist>

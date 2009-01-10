@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>it "validates_associated on :${1:association_name} when :$1_id is non existant and throws an ActiveRecord::RecordNotFound" do 
+  lambda { 
+    x = create_model_item(:${1:association_name}_id =&gt; ${2:ModelName}.find(999))
+  }.should raise_error(ActiveRecord::RecordNotFound)
+end
+</string>
+	<key>name</key>
+	<string>RSpec-validates_associated when non-existant record</string>
+	<key>scope</key>
+	<string>source.core.ruby.rails, source.core.ruby.rspec</string>
+	<key>tabTrigger</key>
+	<string>rval</string>
+	<key>uuid</key>
+	<string>24FD7B62-78A8-455E-B9D6-EB87D33ADECE</string>
+</dict>
+</plist>

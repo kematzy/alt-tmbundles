@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>it "should destroy a created model" do 
+  x = ${1:ModelName}.find(1)
+  x.should == x.destroy
+  lambda { 
+    $1.find(1)
+  }.should raise_error(ActiveRecord::RecordNotFound)
+end
+</string>
+	<key>name</key>
+	<string>RSpec-model_destroy</string>
+	<key>scope</key>
+	<string>source.core.ruby.rails, source.core.ruby.rspec</string>
+	<key>tabTrigger</key>
+	<string>delete</string>
+	<key>uuid</key>
+	<string>59FA1A62-CF83-46B9-B97E-EDE29731C7D8</string>
+</dict>
+</plist>

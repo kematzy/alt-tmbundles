@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>it "should update the created model" do 
+  x = create_model_item
+  x.save.should == true
+  x.${2:name} = 'updated $2'
+  x.save.should == true
+  ${1:ModelName}.find(x.id).$2.should == 'updated $2'
+end
+$0</string>
+	<key>name</key>
+	<string>RSpec-model_update</string>
+	<key>scope</key>
+	<string>source.core.ruby.rails, source.core.ruby.rspec</string>
+	<key>tabTrigger</key>
+	<string>update</string>
+	<key>uuid</key>
+	<string>21B4E717-43C0-47FA-85B9-DFFD36AB2815</string>
+</dict>
+</plist>

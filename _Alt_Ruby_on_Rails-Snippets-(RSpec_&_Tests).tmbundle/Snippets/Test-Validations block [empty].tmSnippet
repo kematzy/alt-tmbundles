@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${2:# this needs to be nested within a default test block}
+class ${1:ModelName}ValidationsTest &lt; $1Test
+  $0
+end #/$1ValidationsTest &lt; $1Test</string>
+	<key>name</key>
+	<string>Test-Validations block [empty]</string>
+	<key>scope</key>
+	<string>source.core.ruby.rails</string>
+	<key>tabTrigger</key>
+	<string>de</string>
+	<key>uuid</key>
+	<string>247E8407-0786-41B5-AD8F-2CAB82528EF1</string>
+</dict>
+</plist>

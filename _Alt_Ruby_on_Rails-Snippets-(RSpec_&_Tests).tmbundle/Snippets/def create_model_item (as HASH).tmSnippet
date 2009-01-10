@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>def create_model_item(options={})
+  {
+      :foreign_key_id =&gt; 1,$0
+      :name =&gt; "Dummy",
+      :desc =&gt; 'Dummy description',
+      :publish_status =&gt; 'on',
+      :url_slug =&gt; 'dummy'
+  }.merge(options)
+end
+</string>
+	<key>name</key>
+	<string>def create_model_item (as HASH)</string>
+	<key>scope</key>
+	<string>source.core.ruby.rails, source.core.ruby.rspec</string>
+	<key>tabTrigger</key>
+	<string>model</string>
+	<key>uuid</key>
+	<string>13849CA7-0ADA-44E9-8915-B6C1028A76B6</string>
+</dict>
+</plist>

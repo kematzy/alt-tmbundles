@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>it "validates_presence_of :${1:field_name} =&gt; nil" do 
+  x = create_model_item(:$1 =&gt; nil)
+  x.save.should == false
+  x.errors.on(:$1).should == "${2:are required}"
+  # x.errors.on(:$1).should include("$2")
+end
+</string>
+	<key>name</key>
+	<string>RSpec-validates_presence_of :field_name =&gt; nil</string>
+	<key>scope</key>
+	<string>source.core.ruby.rails, source.core.ruby.rspec</string>
+	<key>tabTrigger</key>
+	<string>rval</string>
+	<key>uuid</key>
+	<string>B7921D63-B873-4782-B297-B917F076294E</string>
+</dict>
+</plist>

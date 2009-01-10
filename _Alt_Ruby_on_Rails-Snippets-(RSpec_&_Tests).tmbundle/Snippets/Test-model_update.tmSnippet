@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>def test_model_update
+  x = create_model_item
+  assert x.save
+  x.${2:name} = 'updated $2'
+  assert x.save
+  assert_equal 'updated $2', ${1:ModelName}.find(x.id).$2
+end
+$0</string>
+	<key>name</key>
+	<string>Test-model_update</string>
+	<key>scope</key>
+	<string>source.core.ruby.rails</string>
+	<key>tabTrigger</key>
+	<string>tupdate</string>
+	<key>uuid</key>
+	<string>AC353EC6-DD08-42BD-AA35-C7F735214951</string>
+</dict>
+</plist>

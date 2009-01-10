@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>it "validates_associated on :${1:association_name} when :$1_id =&gt; nil" do 
+  x = create_model_item(:$1_id =&gt; nil)
+  x.save.should == false
+  x.errors.on(:$1_id).should == "${2:are required}"
+end
+$0</string>
+	<key>name</key>
+	<string>RSpec-validates_associated when nil...</string>
+	<key>scope</key>
+	<string>source.core.ruby.rails, source.core.ruby.rspec</string>
+	<key>tabTrigger</key>
+	<string>rval</string>
+	<key>uuid</key>
+	<string>7E92D60B-E1E0-4BC9-87D4-E1BB56962A79</string>
+</dict>
+</plist>

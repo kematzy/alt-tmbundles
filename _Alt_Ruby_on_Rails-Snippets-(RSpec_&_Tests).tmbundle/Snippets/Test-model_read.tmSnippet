@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>def test_model_read
+  x = create_model_item
+  assert x.save
+  assert_equal x.${2:name}, ${1:ModelName}.find(x.id).$2
+end
+$0</string>
+	<key>name</key>
+	<string>Test-model_read</string>
+	<key>scope</key>
+	<string>source.core.ruby.rails</string>
+	<key>tabTrigger</key>
+	<string>tread</string>
+	<key>uuid</key>
+	<string>14E76706-E7B3-424B-9F80-1B00D76D8F28</string>
+</dict>
+</plist>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>def test_validates_numericality_of_${1:field_name}
+  x = create_model_item(:$1 =&gt; 'a')
+  assert !x.save
+  assert_equal "${2:is not a number}", x.errors.on(:$1)
+end
+$0</string>
+	<key>name</key>
+	<string>Test-validates_numericality_of :field_name</string>
+	<key>scope</key>
+	<string>source.core.ruby.rails</string>
+	<key>tabTrigger</key>
+	<string>tval</string>
+	<key>uuid</key>
+	<string>9E87C8C9-E809-4288-B0FC-64FF90D59AAA</string>
+</dict>
+</plist>

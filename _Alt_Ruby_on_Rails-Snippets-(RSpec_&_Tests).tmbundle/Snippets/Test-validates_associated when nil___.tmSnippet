@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>def test_validates_associated_on_${1:field_name}_id_is_nil 
+  x = create_model_item(:$1_id =&gt; nil)
+  assert !x.save
+  assert_equal "are required", x.errors.on(:$1_id)
+end
+$0</string>
+	<key>name</key>
+	<string>Test-validates_associated when nil...</string>
+	<key>scope</key>
+	<string>source.core.ruby.rails</string>
+	<key>tabTrigger</key>
+	<string>tval</string>
+	<key>uuid</key>
+	<string>5CED8C25-77D6-4172-9CA6-459BBB6B3DE2</string>
+</dict>
+</plist>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>def test_model_is_valid
+  x = create_model_item
+  assert x.save
+  assert x.valid?
+end
+$0</string>
+	<key>name</key>
+	<string>Test- model_is_valid</string>
+	<key>scope</key>
+	<string>source.core.ruby.rails</string>
+	<key>tabTrigger</key>
+	<string>tvalid</string>
+	<key>uuid</key>
+	<string>FCA66FF8-6E4A-4F28-82E4-D5BBB9B3945D</string>
+</dict>
+</plist>

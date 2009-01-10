@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>def test_validates_presence_of_${1:field_name}_is_empty
+  x = create_model_item(:$1 =&gt; '')
+  assert !x.save
+  assert x.errors.on(:$1).include?("${2:are required}")
+  assert_equal "${2:are required}", x.errors.on(:$1)
+end
+</string>
+	<key>name</key>
+	<string>Test-validates_presence_of :field_name =&gt; [empty]</string>
+	<key>scope</key>
+	<string>source.core.ruby.rails</string>
+	<key>tabTrigger</key>
+	<string>tval</string>
+	<key>uuid</key>
+	<string>3D81A659-C311-4D1F-9EF1-9418B7532A54</string>
+</dict>
+</plist>

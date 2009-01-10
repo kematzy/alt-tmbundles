@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${3:# this needs to be nested within a default test block}
+class ${1:ModelName}CrudTest &lt; $1Test
+  
+  def test_model_is_valid
+    x = create_model_item
+    assert x.save
+    assert x.valid?
+  end
+  
+  def test_model_create
+    x = create_model_item
+    assert x.save
+  end
+  
+  def test_model_read
+    x = create_model_item
+    assert x.save
+    assert_equal x.${2:name}, $1.find(x.id).$2
+  end
+  
+  def test_model_update
+    x = create_model_item
+    assert x.save
+    x.$2 = 'updated $2'
+    assert x.save
+    assert_equal 'updated $2', $1.find(x.id).$2
+  end
+  
+  def test_model_destroy
+    x = $1.find(1)
+    assert_equal x, x.destroy
+    assert_raise(ActiveRecord::RecordNotFound) { $1.find(1) }
+  end
+  
+end
+$0</string>
+	<key>name</key>
+	<string>Test- CRUD test block</string>
+	<key>scope</key>
+	<string>source.core.ruby.rails</string>
+	<key>tabTrigger</key>
+	<string>tcrud</string>
+	<key>uuid</key>
+	<string>17BA555E-0236-4D53-9A18-C80803D6330B</string>
+</dict>
+</plist>

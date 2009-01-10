@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>describe "ensuring all basic crud operations works" do
+  
+  it "should be valid" do
+    x = create_model_item
+    x.save.should == true
+    x.should be_valid
+  end
+  
+  it "should create a model" do 
+    x = create_model_item
+    x.save.should == true
+  end
+  
+  it "should read a created model" do 
+    x = create_model_item
+    x.save.should == true
+    x.${2:name}.should == ${1:ModelName}.find(x.id).$2
+  end
+  
+  it "should update the created model" do 
+    x = create_model_item
+    x.save.should == true
+    x.$2 = 'updated $2'
+    x.save.should == true
+    $1.find(x.id).$2.should == 'updated $2'
+  end
+  
+  it "should destroy a created model" do 
+    x = $1.find(1)
+    x.should == x.destroy
+    lambda { 
+      $1.find(1)
+    }.should raise_error(ActiveRecord::RecordNotFound)
+  end
+  
+end
+</string>
+	<key>name</key>
+	<string>RSpec: CRUD description block</string>
+	<key>scope</key>
+	<string>source.core.ruby.rails, source.core.ruby.rspec</string>
+	<key>tabTrigger</key>
+	<string>crud</string>
+	<key>uuid</key>
+	<string>28AF9C2E-A2A1-4588-8AEE-DDB77BDC5DA8</string>
+</dict>
+</plist>

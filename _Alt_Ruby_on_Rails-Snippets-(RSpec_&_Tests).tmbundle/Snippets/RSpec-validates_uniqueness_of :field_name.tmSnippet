@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>it "validates_uniqueness_of :${1:field_name} not allow two equal values" do 
+  $1 = 'the-same-value'
+  x = create_model_item(:$1 =&gt; $1)
+  x.save.should == true
+  y = create_model_item(:$1 =&gt; $1)
+  y.save.should == false
+  y.errors.on(:$1).should == "${2:Another category is using that URL tag}"
+end
+$0
+</string>
+	<key>name</key>
+	<string>RSpec-validates_uniqueness_of :field_name</string>
+	<key>scope</key>
+	<string>source.core.ruby.rails, source.core.ruby.rspec</string>
+	<key>tabTrigger</key>
+	<string>rval</string>
+	<key>uuid</key>
+	<string>C7EFB323-072F-4812-BEAB-A62C36C05ED0</string>
+</dict>
+</plist>
