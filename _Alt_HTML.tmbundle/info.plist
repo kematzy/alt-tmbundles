@@ -79,6 +79,9 @@
 				<array>
 					<string>33F83092-6706-4B9C-9DA2-33543E777E96</string>
 					<string>------------------------------------</string>
+					<string>D3D90212-87B1-486A-9566-E95375CD7953</string>
+					<string>D4F4A082-E11B-47EB-9FF2-EA9465C2BA27</string>
+					<string>FB131154-078A-46CA-AF95-DCAE1C683083</string>
 					<string>E3FF0ECA-B6E5-468B-AD20-5845F64A424D</string>
 					<string>D457CBF9-84B1-4CC5-B7EC-10EF219399FA</string>
 					<string>91C28FA1-4552-47C1-85F8-02588E03F141</string>
@@ -86,13 +89,11 @@
 					<string>EEA8B5FC-8C2A-4D8E-ABA1-76468B703E79</string>
 					<string>AA19AA8D-C3A2-458E-84D4-77896C974BE7</string>
 					<string>CF2CFFF6-09A3-4758-9109-208441FCB751</string>
-					<string>D4F4A082-E11B-47EB-9FF2-EA9465C2BA27</string>
 					<string>6993DF95-6DD0-4A35-A410-6BE25FB4EDB9</string>
 					<string>82848D7E-2152-489D-B7F2-3D5D280D8DB0</string>
 					<string>AF3D8115-2191-46A4-8C6A-179E054C2547</string>
 					<string>90CCB277-FB35-431E-984C-7D37A8F3CA10</string>
 					<string>1DB27A73-9E47-4D7C-BC3A-799F621E85FF</string>
-					<string>FB131154-078A-46CA-AF95-DCAE1C683083</string>
 					<string>1C0588DD-DC8F-45EF-B0A6-68A2BD500E01</string>
 					<string>116B5719-3DAF-41B6-B6B8-93D65669EDFE</string>
 					<string>AE073002-A6A8-44FD-BAF3-BD7643A408CE</string>
@@ -101,6 +102,7 @@
 					<string>623129A0-4D20-4B8C-AEED-AA0A534DB263</string>
 					<string>9996CEB0-EC72-422E-A605-9DA52BE99960</string>
 					<string>2AA7D707-8664-452D-9E5A-95EA214A6C7B</string>
+					<string>1F14EC7E-19D0-4B13-B82A-F451CC499B6F</string>
 				</array>
 				<key>name</key>
 				<string>Insert Tag</string>
