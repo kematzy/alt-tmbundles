@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>mainMenu</key>
+	<dict>
+		<key>items</key>
+		<array>
+			<string>061ED763-DDFC-4A3E-BEED-F4493ED130B6</string>
+			<string>9A2CDE06-7C8B-4219-B5E4-90869B3613C3</string>
+			<string>------------------------------------</string>
+			<string>6B744322-25F5-4F3D-BA10-527E77B50022</string>
+		</array>
+		<key>submenus</key>
+		<dict>
+			<key>061ED763-DDFC-4A3E-BEED-F4493ED130B6</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>D104599F-975F-49EB-A6AC-9A6A84D45DFF</string>
+					<string>5E26B21E-93D8-400D-AE47-9E19BE315EFE</string>
+					<string>E5BC1F5B-9204-4FFD-90FA-EF8CD4560398</string>
+				</array>
+				<key>name</key>
+				<string>Common</string>
+			</dict>
+			<key>6B744322-25F5-4F3D-BA10-527E77B50022</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>70F0CEE3-187A-4759-9D2B-9EB543847677</string>
+				</array>
+				<key>name</key>
+				<string>Functions (definitions)</string>
+			</dict>
+			<key>9A2CDE06-7C8B-4219-B5E4-90869B3613C3</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>D9681831-C627-41BD-BE49-96EDA8CF9762</string>
+				</array>
+				<key>name</key>
+				<string>Functions (usage)</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>name</key>
+	<string> Alt JavaScript-Snippets</string>
+	<key>ordering</key>
+	<array>
+		<string>70F0CEE3-187A-4759-9D2B-9EB543847677</string>
+		<string>D9681831-C627-41BD-BE49-96EDA8CF9762</string>
+		<string>D104599F-975F-49EB-A6AC-9A6A84D45DFF</string>
+		<string>5E26B21E-93D8-400D-AE47-9E19BE315EFE</string>
+		<string>E5BC1F5B-9204-4FFD-90FA-EF8CD4560398</string>
+	</array>
+	<key>uuid</key>
+	<string>C69378BB-9233-484F-85F2-73AA6DA6B955</string>
+</dict>
+</plist>

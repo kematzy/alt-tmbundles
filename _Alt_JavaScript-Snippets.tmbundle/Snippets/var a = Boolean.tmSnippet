@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>var ${1:name_of_var} = ${2:true}${3:false};</string>
+	<key>name</key>
+	<string>var a = Boolean</string>
+	<key>scope</key>
+	<string>source.js</string>
+	<key>tabTrigger</key>
+	<string>var</string>
+	<key>uuid</key>
+	<string>5E26B21E-93D8-400D-AE47-9E19BE315EFE</string>
+</dict>
+</plist>
