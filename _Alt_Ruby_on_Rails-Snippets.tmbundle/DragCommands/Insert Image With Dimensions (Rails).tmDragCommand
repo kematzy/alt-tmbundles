@@ -28,7 +28,7 @@ echo -n "alt=\"$alt\"${TM_XHTML}&gt;"
 	<key>output</key>
 	<string>insertAsSnippet</string>
 	<key>scope</key>
-	<string>text.core.html.ruby</string>
+	<string>text.html.ruby</string>
 	<key>uuid</key>
 	<string>F76652BF-EC05-48E7-9176-F4BC5985D292</string>
 </dict>

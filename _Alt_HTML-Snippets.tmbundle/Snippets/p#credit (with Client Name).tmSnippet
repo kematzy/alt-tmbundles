@@ -13,9 +13,9 @@ $0</string>
 	<key>name</key>
 	<string>p#credit (with Client Name)</string>
 	<key>scope</key>
-	<string>text.core.html</string>
+	<string>text.html</string>
 	<key>tabTrigger</key>
-	<string>pcredit</string>
+	<string>p.credit</string>
 	<key>uuid</key>
 	<string>BC3A3AB7-A763-404B-BA1B-871CBB42B625</string>
 </dict>

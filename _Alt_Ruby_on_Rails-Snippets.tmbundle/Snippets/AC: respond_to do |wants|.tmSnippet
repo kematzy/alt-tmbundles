@@ -15,7 +15,7 @@ end   </string>
 	<key>name</key>
 	<string>AC: respond_to do |wants|</string>
 	<key>scope</key>
-	<string>source.core.ruby.rails</string>
+	<string>source.ruby.rails</string>
 	<key>tabTrigger</key>
 	<string>respond_to</string>
 	<key>uuid</key>

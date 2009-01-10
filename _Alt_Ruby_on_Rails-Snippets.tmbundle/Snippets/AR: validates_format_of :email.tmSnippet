@@ -11,9 +11,9 @@
 	<key>name</key>
 	<string>AR: validates_format_of :email</string>
 	<key>scope</key>
-	<string>source.core.ruby.rails</string>
+	<string>source.ruby.rails</string>
 	<key>tabTrigger</key>
-	<string>vfo</string>
+	<string>val</string>
 	<key>uuid</key>
 	<string>67A663A1-4E60-4B71-A58A-81F957C9AC65</string>
 </dict>

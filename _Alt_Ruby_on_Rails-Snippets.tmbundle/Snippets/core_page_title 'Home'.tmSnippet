@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>core_page_title 'Home'</string>
 	<key>scope</key>
-	<string>text.core.html.ruby</string>
+	<string>text.html.ruby</string>
 	<key>tabTrigger</key>
 	<string>cpt</string>
 	<key>uuid</key>

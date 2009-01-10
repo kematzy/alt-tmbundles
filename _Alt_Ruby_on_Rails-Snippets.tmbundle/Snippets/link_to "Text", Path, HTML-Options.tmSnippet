@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>link_to "Text", Path, HTML-Options</string>
 	<key>scope</key>
-	<string>source.core.ruby.rails</string>
+	<string>source.ruby.rails</string>
 	<key>tabTrigger</key>
 	<string>link_to</string>
 	<key>uuid</key>

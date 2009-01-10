@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>JS-Effect.toggle blind</string>
 	<key>scope</key>
-	<string>text.core.html</string>
+	<string>text.html</string>
 	<key>tabTrigger</key>
 	<string>jstoggle</string>
 	<key>uuid</key>

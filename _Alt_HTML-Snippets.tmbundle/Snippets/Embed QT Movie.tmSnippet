@@ -17,7 +17,7 @@
 	<key>name</key>
 	<string>Embed QT Movie</string>
 	<key>scope</key>
-	<string>text.core.html</string>
+	<string>text.html</string>
 	<key>tabTrigger</key>
 	<string>movie</string>
 	<key>uuid</key>

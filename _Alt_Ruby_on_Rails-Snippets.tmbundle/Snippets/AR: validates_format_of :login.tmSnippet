@@ -7,9 +7,9 @@
 	<key>name</key>
 	<string>AR: validates_format_of :login</string>
 	<key>scope</key>
-	<string>source.core.ruby.rails</string>
+	<string>source.ruby.rails</string>
 	<key>tabTrigger</key>
-	<string>vfo</string>
+	<string>val</string>
 	<key>uuid</key>
 	<string>AFAA6DCC-0C53-4A6E-B912-48D4FD9D5A78</string>
 </dict>

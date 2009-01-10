@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>&lt;%= cycle('odd','even') %&gt;</string>
 	<key>scope</key>
-	<string>text.core.html.ruby</string>
+	<string>text.html.ruby</string>
 	<key>tabTrigger</key>
 	<string>cycle</string>
 	<key>uuid</key>

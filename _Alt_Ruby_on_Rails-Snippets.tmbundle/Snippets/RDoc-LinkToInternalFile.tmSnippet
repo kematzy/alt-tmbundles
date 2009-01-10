@@ -8,7 +8,7 @@ ${2:label}[link:${3:path/to/rdoc/file.html}]$0</string>
 	<key>name</key>
 	<string>RDoc-LinkToInternalFile</string>
 	<key>scope</key>
-	<string>source.core.ruby comment.documentation</string>
+	<string>source.ruby comment.documentation</string>
 	<key>tabTrigger</key>
 	<string>link</string>
 	<key>uuid</key>

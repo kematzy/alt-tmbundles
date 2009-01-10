@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>hr.space</string>
 	<key>scope</key>
-	<string>text.core.html</string>
+	<string>text.html</string>
 	<key>tabTrigger</key>
 	<string>hr.space</string>
 	<key>uuid</key>

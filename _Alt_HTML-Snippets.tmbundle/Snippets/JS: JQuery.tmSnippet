@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>&lt;script src="/javascript/jquery-1.2.3.js" type="text/javascript" charset="utf-8"&gt;&lt;/script&gt;
+	<string>&lt;script src="/javascript/jquery.js" type="text/javascript" charset="utf-8"&gt;&lt;/script&gt;
 &lt;script src="/javascript/application.js" type="text/javascript" charset="utf-8"&gt;&lt;/script&gt;</string>
 	<key>name</key>
 	<string>JS: JQuery</string>
 	<key>scope</key>
-	<string>text.core.html</string>
+	<string>text.html</string>
 	<key>tabTrigger</key>
 	<string>jquery</string>
 	<key>uuid</key>

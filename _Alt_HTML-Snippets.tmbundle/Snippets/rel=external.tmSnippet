@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>&lt;%= debug(${1:something}) %&gt;$0</string>
+	<string>rel="external"$0</string>
 	<key>name</key>
-	<string>&lt;%= debug(something) %&gt;</string>
+	<string>rel=external</string>
 	<key>scope</key>
-	<string>text.html.ruby</string>
+	<string>text.html meta.tag.html</string>
 	<key>tabTrigger</key>
-	<string>debug</string>
+	<string>rel</string>
 	<key>uuid</key>
-	<string>D8E46727-C362-4E0C-9303-F6AF6CFC305C</string>
+	<string>D0AAF6A7-C97A-454B-B9B8-F5D706A1D155</string>
 </dict>
 </plist>

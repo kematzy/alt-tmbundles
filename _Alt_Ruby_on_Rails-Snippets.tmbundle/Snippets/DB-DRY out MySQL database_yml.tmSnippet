@@ -28,7 +28,7 @@ production:
 	<key>name</key>
 	<string>DB-DRY out MySQL database.yml</string>
 	<key>scope</key>
-	<string>source.core.yaml</string>
+	<string>source.yaml</string>
 	<key>tabTrigger</key>
 	<string>db</string>
 	<key>uuid</key>

@@ -21,7 +21,7 @@ end</string>
 	<key>name</key>
 	<string>Cache Sweeper</string>
 	<key>scope</key>
-	<string>source.core.ruby.rails</string>
+	<string>source.ruby.rails</string>
 	<key>tabTrigger</key>
 	<string>sweeper</string>
 	<key>uuid</key>

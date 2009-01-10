@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>&lt;li id="thumb_2" class="li_thumb"&gt;
+	<string>&lt;li id="${1:thumb.id}" class="thumb"&gt;
   &lt;table&gt;
     	&lt;tr&gt;
 	  &lt;td class="slide"&gt;
-	    	&lt;div class="img_frame"&gt;&lt;a href="" title=""&gt;&lt;img src="photos/thumbs/image.ref.jpg" border="0" alt="" /&gt;&lt;/a&gt;&lt;/div&gt;
+	    	&lt;div class="img_frame"&gt;&lt;a href="${2:href}" title="${3:link_tooltip}"&gt;&lt;img src="${4:img.src}" border="0" alt="${5:img.caption}"${TM_XHTML}&gt;&lt;/a&gt;&lt;/div&gt;
       &lt;/td&gt;
 	&lt;/tr&gt;
   &lt;/table&gt;
@@ -16,9 +16,9 @@
 	<key>name</key>
 	<string>&lt;li&gt;-Thumbnail</string>
 	<key>scope</key>
-	<string>text.core.html</string>
+	<string>text.html</string>
 	<key>tabTrigger</key>
-	<string>lit</string>
+	<string>li.thumb</string>
 	<key>uuid</key>
 	<string>DE7B515D-FCA7-4839-8055-793DB78656C3</string>
 </dict>

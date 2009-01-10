@@ -10,7 +10,7 @@
 	<key>name</key>
 	<string>observe_form(...)</string>
 	<key>scope</key>
-	<string>source.core.ruby.rails</string>
+	<string>source.ruby.rails</string>
 	<key>tabTrigger</key>
 	<string>obf</string>
 	<key>uuid</key>

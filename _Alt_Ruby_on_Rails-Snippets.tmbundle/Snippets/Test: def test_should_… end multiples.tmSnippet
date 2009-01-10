@@ -11,7 +11,7 @@ deftt$0</string>
 	<key>name</key>
 	<string>Test: def test_should_… end multiples</string>
 	<key>scope</key>
-	<string>source.core.ruby</string>
+	<string>source.ruby</string>
 	<key>tabTrigger</key>
 	<string>deftt</string>
 	<key>uuid</key>

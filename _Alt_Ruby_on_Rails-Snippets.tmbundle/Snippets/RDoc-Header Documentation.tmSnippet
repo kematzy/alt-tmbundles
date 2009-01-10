@@ -54,7 +54,7 @@
 	<key>name</key>
 	<string>RDoc-Header Documentation</string>
 	<key>scope</key>
-	<string>source.core.ruby</string>
+	<string>source.ruby</string>
 	<key>tabTrigger</key>
 	<string>docs</string>
 	<key>uuid</key>

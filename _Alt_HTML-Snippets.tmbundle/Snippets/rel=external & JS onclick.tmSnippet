@@ -7,9 +7,9 @@
 	<key>name</key>
 	<string>rel=external &amp; JS onclick</string>
 	<key>scope</key>
-	<string>text.core.html meta.tag.html</string>
+	<string>text.html meta.tag.html</string>
 	<key>tabTrigger</key>
-	<string>ext</string>
+	<string>rel</string>
 	<key>uuid</key>
 	<string>1173917A-2C20-4D7B-980F-9870FAE7C7A9</string>
 </dict>

@@ -10,7 +10,7 @@ end
 	<key>name</key>
 	<string>Test: Rails Version</string>
 	<key>scope</key>
-	<string>source.core.ruby.rails</string>
+	<string>source.ruby.rails</string>
 	<key>tabTrigger</key>
 	<string>rails</string>
 	<key>uuid</key>

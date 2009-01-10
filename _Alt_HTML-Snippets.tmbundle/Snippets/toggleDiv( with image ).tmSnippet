@@ -9,7 +9,7 @@
 	<key>name</key>
 	<string>toggleDiv( with image )</string>
 	<key>scope</key>
-	<string>text.core.html.ruby</string>
+	<string>text.html.ruby</string>
 	<key>tabTrigger</key>
 	<string>toggle</string>
 	<key>uuid</key>

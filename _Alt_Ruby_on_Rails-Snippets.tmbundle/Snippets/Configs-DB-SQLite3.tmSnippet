@@ -26,7 +26,7 @@ production:
 	<key>name</key>
 	<string>Configs-DB-SQLite3</string>
 	<key>scope</key>
-	<string>source.core.yaml</string>
+	<string>source.yaml</string>
 	<key>tabTrigger</key>
 	<string>db-sqlite3</string>
 	<key>uuid</key>

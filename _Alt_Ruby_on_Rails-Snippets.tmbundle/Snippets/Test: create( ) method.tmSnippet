@@ -11,7 +11,7 @@ end</string>
 	<key>name</key>
 	<string>Test: create( ) method</string>
 	<key>scope</key>
-	<string>source.core.ruby.rails</string>
+	<string>source.ruby.rails</string>
 	<key>tabTrigger</key>
 	<string>cre</string>
 	<key>uuid</key>

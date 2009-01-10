@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>puts __FILE__ __LINE__ message</string>
 	<key>scope</key>
-	<string>source.core.ruby</string>
+	<string>source.ruby</string>
 	<key>tabTrigger</key>
 	<string>puts</string>
 	<key>uuid</key>

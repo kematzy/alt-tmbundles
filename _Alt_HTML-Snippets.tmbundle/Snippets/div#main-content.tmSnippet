@@ -16,7 +16,7 @@ $0</string>
 	<key>name</key>
 	<string>div#main-content</string>
 	<key>scope</key>
-	<string>text.core.html</string>
+	<string>text.html</string>
 	<key>tabTrigger</key>
 	<string>main-content</string>
 	<key>uuid</key>

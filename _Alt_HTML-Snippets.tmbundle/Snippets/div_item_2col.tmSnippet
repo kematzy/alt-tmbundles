@@ -15,7 +15,7 @@
 	<key>name</key>
 	<string>div.item_2col</string>
 	<key>scope</key>
-	<string>text.core.html</string>
+	<string>text.html</string>
 	<key>tabTrigger</key>
 	<string>item_2col</string>
 	<key>uuid</key>

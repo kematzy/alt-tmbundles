@@ -49,7 +49,7 @@ production:
 	<key>name</key>
 	<string>Configs-DB-MySQL</string>
 	<key>scope</key>
-	<string>source.core.yaml</string>
+	<string>source.yaml</string>
 	<key>tabTrigger</key>
 	<string>db-mysql</string>
 	<key>uuid</key>

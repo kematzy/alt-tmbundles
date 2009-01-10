@@ -12,7 +12,7 @@ $0</string>
 	<key>name</key>
 	<string>div#footer</string>
 	<key>scope</key>
-	<string>text.core.html</string>
+	<string>text.html</string>
 	<key>tabTrigger</key>
 	<string>footer</string>
 	<key>uuid</key>

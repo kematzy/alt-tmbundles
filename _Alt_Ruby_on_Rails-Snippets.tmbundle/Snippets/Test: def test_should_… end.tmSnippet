@@ -9,7 +9,7 @@ end</string>
 	<key>name</key>
 	<string>Test: def test_should_… end</string>
 	<key>scope</key>
-	<string>source.core.ruby</string>
+	<string>source.ruby</string>
 	<key>tabTrigger</key>
 	<string>deft</string>
 	<key>uuid</key>
