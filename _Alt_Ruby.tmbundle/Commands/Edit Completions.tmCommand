@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string># get the path to the file
+cc_file="${TM_BUNDLE_SUPPORT}/CC/Ruby.cc.txt"
+open -a TextMate "$cc_file"</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>name</key>
+	<string>Edit Completions</string>
+	<key>output</key>
+	<string>replaceSelectedText</string>
+	<key>uuid</key>
+	<string>82CFD988-F4F1-47CB-B706-458DA1641CB5</string>
+</dict>
+</plist>
