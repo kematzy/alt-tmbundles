@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>assert_sent_email${1: do |email|
+  email.${2:subject|from|to|body} ${3:==} ${4:'${5:anything}'}$0
+end}</string>
+	<key>name</key>
+	<string>assert_sent_email</string>
+	<key>scope</key>
+	<string>source.ruby.rails.shoulda</string>
+	<key>tabTrigger</key>
+	<string>assemail</string>
+	<key>uuid</key>
+	<string>E3FBB2EF-D4AD-4770-BA53-C1356E37FDF8</string>
+</dict>
+</plist>

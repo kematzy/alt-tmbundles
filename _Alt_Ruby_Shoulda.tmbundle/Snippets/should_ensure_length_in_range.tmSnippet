@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>should_ensure_length_in_range :${1:attribute}, (${2:range})</string>
+	<key>name</key>
+	<string>should_ensure_length_in_range</string>
+	<key>scope</key>
+	<string>source.ruby.rails.shoulda</string>
+	<key>tabTrigger</key>
+	<string>shel</string>
+	<key>uuid</key>
+	<string>2DFE9547-9C93-468B-8597-F07AFE4FBC4F</string>
+</dict>
+</plist>

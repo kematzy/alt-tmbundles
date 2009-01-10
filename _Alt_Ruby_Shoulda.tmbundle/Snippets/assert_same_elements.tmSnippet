@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>assert_same_elements(${1:array1}, ${2:array2}${3:, "${4:message}"})</string>
+	<key>name</key>
+	<string>assert_same_elements</string>
+	<key>scope</key>
+	<string>source.ruby.rails.shoulda</string>
+	<key>tabTrigger</key>
+	<string>asse</string>
+	<key>uuid</key>
+	<string>51B058F0-E26E-423B-A300-AE7558465010</string>
+</dict>
+</plist>

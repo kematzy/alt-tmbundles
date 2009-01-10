@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>should_be_restful do |resource|
+  resource.formats = [:html]
+  ${1:resource.${2:something}}
+end
+$0</string>
+	<key>name</key>
+	<string>should_be_restful</string>
+	<key>scope</key>
+	<string>source.ruby.rails.shoulda</string>
+	<key>tabTrigger</key>
+	<string>shbr</string>
+	<key>uuid</key>
+	<string>83AC06F7-4AA7-473D-8422-BB68D8A2B570</string>
+</dict>
+</plist>
