@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string># Keep [ ${1:demo.example.com} ] alive every 10 minutes
+/usr/bin/wget -q -O /dev/null http://$1/ &gt;/dev/null</string>
+	<key>name</key>
+	<string>CRON: DH: Keep website alive</string>
+	<key>uuid</key>
+	<string>D3BAED14-B4FC-44E8-A8FF-E6FBCF58FB15</string>
+</dict>
+</plist>

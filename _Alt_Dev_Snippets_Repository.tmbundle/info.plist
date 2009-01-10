@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string> Alt Dev-Snippets-Repository</string>
+	<key>ordering</key>
+	<array>
+		<string>FAC6548A-F3B1-4EA6-BA91-ED7C42BC565D</string>
+		<string>D3BAED14-B4FC-44E8-A8FF-E6FBCF58FB15</string>
+		<string>912A5360-CADA-42BC-A738-961570C58830</string>
+	</array>
+	<key>uuid</key>
+	<string>E3B69FBA-8C78-4CE9-B5E7-23FD63C7F41A</string>
+</dict>
+</plist>

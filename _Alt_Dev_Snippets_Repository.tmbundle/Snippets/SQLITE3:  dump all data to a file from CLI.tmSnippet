@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string># run from current directory where the db is
+echo '.dump' | sqlite3 ${1:name_of_database.sqlite3} &gt; `date +%Y-%m-%d`-$1-dump.sql</string>
+	<key>name</key>
+	<string>SQLITE3:  dump all data to a file from CLI</string>
+	<key>uuid</key>
+	<string>912A5360-CADA-42BC-A738-961570C58830</string>
+</dict>
+</plist>
