@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>open "http://pleac.sourceforge.net/pleac_ruby/index.html"</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>name</key>
+	<string>Ruby CookBook</string>
+	<key>output</key>
+	<string>discard</string>
+	<key>uuid</key>
+	<string>EB640C04-5792-4A96-A00E-E4AA733E3524</string>
+</dict>
+</plist>

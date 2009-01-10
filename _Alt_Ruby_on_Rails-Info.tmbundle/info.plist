@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>mainMenu</key>
+	<dict>
+		<key>items</key>
+		<array>
+			<string>6FF41FE6-A7F3-418A-AE5E-5669955D7457</string>
+			<string>CA66B554-577A-46A9-B251-C389DDDC7BF8</string>
+			<string>EB640C04-5792-4A96-A00E-E4AA733E3524</string>
+			<string>F81A33BF-B4AC-4F68-A5C3-D42359C9478B</string>
+		</array>
+		<key>submenus</key>
+		<dict>
+			<key>6FF41FE6-A7F3-418A-AE5E-5669955D7457</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>15CA40D7-2498-4F62-B9F8-A550FBC295FE</string>
+					<string>043B3512-235B-445C-81B6-34FBA9D76BDB</string>
+				</array>
+				<key>name</key>
+				<string>Ruby Docs</string>
+			</dict>
+			<key>CA66B554-577A-46A9-B251-C389DDDC7BF8</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>452C1E5E-139E-4DDD-BD0E-2591A50307C8</string>
+					<string>562EAF04-5A85-4E91-89F0-8346533D4AC4</string>
+					<string>52667FDB-1FAD-489D-B855-F656C9946539</string>
+					<string>4A03CF12-3120-4CC0-A381-C5365E1B5FEE</string>
+					<string>028DA024-D44A-41DC-8534-8C134BA44D70</string>
+				</array>
+				<key>name</key>
+				<string>Raaum's Rails Reader</string>
+			</dict>
+			<key>F81A33BF-B4AC-4F68-A5C3-D42359C9478B</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>608906C2-B12D-4B44-AC0C-140FF41363FB</string>
+				</array>
+				<key>name</key>
+				<string>Engines</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>name</key>
+	<string> Alt Ruby on Rails-Info</string>
+	<key>ordering</key>
+	<array>
+		<string>452C1E5E-139E-4DDD-BD0E-2591A50307C8</string>
+		<string>562EAF04-5A85-4E91-89F0-8346533D4AC4</string>
+		<string>52667FDB-1FAD-489D-B855-F656C9946539</string>
+		<string>4A03CF12-3120-4CC0-A381-C5365E1B5FEE</string>
+		<string>028DA024-D44A-41DC-8534-8C134BA44D70</string>
+		<string>EB640C04-5792-4A96-A00E-E4AA733E3524</string>
+		<string>15CA40D7-2498-4F62-B9F8-A550FBC295FE</string>
+		<string>043B3512-235B-445C-81B6-34FBA9D76BDB</string>
+		<string>608906C2-B12D-4B44-AC0C-140FF41363FB</string>
+		<string>12985A82-0872-42CC-A526-D34FBF8FA0F9</string>
+	</array>
+	<key>uuid</key>
+	<string>3FB63BAA-237F-4E39-B8CB-A2B6437A6542</string>
+</dict>
+</plist>

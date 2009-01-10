@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>open "http://ruby-doc.org/core/"</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>name</key>
+	<string>Ruby Core Manuals</string>
+	<key>output</key>
+	<string>discard</string>
+	<key>uuid</key>
+	<string>15CA40D7-2498-4F62-B9F8-A550FBC295FE</string>
+</dict>
+</plist>

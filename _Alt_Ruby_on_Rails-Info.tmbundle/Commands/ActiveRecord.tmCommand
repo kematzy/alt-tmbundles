@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>open "http://rails.raaum.org/activerecord.html"</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>name</key>
+	<string>ActiveRecord</string>
+	<key>output</key>
+	<string>discard</string>
+	<key>uuid</key>
+	<string>562EAF04-5A85-4E91-89F0-8346533D4AC4</string>
+</dict>
+</plist>

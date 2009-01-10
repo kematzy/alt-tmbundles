@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>open "http://rails.raaum.org/database-conventions.html"</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>name</key>
+	<string>Database Conventions</string>
+	<key>output</key>
+	<string>discard</string>
+	<key>uuid</key>
+	<string>028DA024-D44A-41DC-8534-8C134BA44D70</string>
+</dict>
+</plist>
