@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>bundleUUID</key>
@@ -12,155 +12,475 @@
 	<dict>
 		<key>completions</key>
 		<array>
-			<string>a</string>
+			<string>APOP</string>
+			<string>Array</string>
+			<string>Complex</string>
+			<string>CurrentContext</string>
+			<string>DelegateClass</string>
+			<string>Fail</string>
+			<string>Float</string>
+			<string>Integer</string>
+			<string>JavaDSOCompatible</string>
+			<string>JavaDSOCompatible=</string>
+			<string>JobManager</string>
+			<string>Pathname</string>
+			<string>PermaLink?</string>
+			<string>Proxy</string>
+			<string>Raise</string>
+			<string>Rational</string>
+			<string>String</string>
+			<string>TO_PATH</string>
+			<string>Token</string>
+			<string>URI</string>
+			<string>XMLDocument</string>
+			<string>XMLDocument=</string>
+			<string>__add_xmlele_value</string>
+			<string>__attr_proxy</string>
+			<string>__drbref</string>
+			<string>__drburi</string>
+			<string>__getobj__</string>
+			<string>__id__</string>
+			<string>__init__</string>
+			<string>__send__</string>
+			<string>__setobj__</string>
+			<string>__xmlattr</string>
+			<string>__xmlele</string>
+			<string>_basic_auth</string>
+			<string>_dump</string>
+			<string>_escape</string>
+			<string>_getproperty</string>
+			<string>_id2ref</string>
+			<string>_invoke</string>
+			<string>_load</string>
+			<string>_make_regex</string>
+			<string>_make_regex!</string>
+			<string>_obj2soap</string>
+			<string>_parse</string>
+			<string>_setproperty</string>
+			<string>_soap2obj</string>
+			<string>_strptime</string>
+			<string>_unescape</string>
+			<string>abbreviate</string>
 			<string>abbrev</string>
-			<string>abort</string>
 			<string>abort_on_exception</string>
 			<string>abort_on_exception=</string>
-			<string>abs</string>
+			<string>abort</string>
 			<string>abs2</string>
-			<string>absolute</string>
 			<string>absolute?</string>
 			<string>absoluteChildNumber</string>
-			<string>acos</string>
-			<string>acos!</string>
+			<string>absolute</string>
+			<string>abs</string>
+			<string>accept_blank_line</string>
+			<string>accept_encoding_gzip=</string>
+			<string>accept_heading</string>
+			<string>accept_list_end</string>
+			<string>accept_list_item</string>
+			<string>accept_list_start</string>
+			<string>accept_nonblock</string>
+			<string>accept_paragraph</string>
+			<string>accept_rule</string>
+			<string>accept_verbatim</string>
+			<string>access_log</string>
+			<string>accept</string>
+			<string>acct</string>
 			<string>acosh</string>
-			<string>acosh!</string>
-			<string>add</string>
+			<string>acos</string>
+			<string>activate</string>
+			<string>active?</string>
+			<string>active_job?</string>
+			<string>active_jobs_exist?</string>
+			<string>active_jobs</string>
 			<string>add!</string>
 			<string>add?</string>
+			<string>add_additional</string>
+			<string>add_alias</string>
+			<string>add_answer</string>
+			<string>add_assertion</string>
+			<string>add_attachment</string>
+			<string>add_attribute</string>
+			<string>add_attributes</string>
+			<string>add_authenticator</string>
+			<string>add_authority</string>
 			<string>add_builtin_type</string>
+			<string>add_class</string>
+			<string>add_class_or_module</string>
+			<string>add_constant</string>
+			<string>add_delegate_command_to_shell</string>
+			<string>add_dependency</string>
+			<string>add_document_method</string>
+			<string>add_document_operation</string>
+			<string>add_document_request_operation</string>
 			<string>add_domain_type</string>
+			<string>add_element</string>
+			<string>add_error</string>
+			<string>add_event_to_arry</string>
+			<string>add_factory</string>
+			<string>add_failure</string>
+			<string>add_fault</string>
+			<string>add_field</string>
+			<string>add_filter</string>
 			<string>add_finalizer</string>
+			<string>add_handler</string>
+			<string>add_headerhandler</string>
+			<string>add_hook</string>
+			<string>add_html</string>
+			<string>add_include</string>
+			<string>add_line_numbers</string>
+			<string>add_listener</string>
+			<string>add_maker</string>
+			<string>add_method</string>
+			<string>add_method_as</string>
+			<string>add_method_with_namespace</string>
+			<string>add_method_with_namespace_as</string>
+			<string>add_method_with_soapaction</string>
+			<string>add_method_with_soapaction_as</string>
+			<string>add_module</string>
+			<string>add_namespace</string>
 			<string>add_observer</string>
+			<string>add_part</string>
+			<string>add_path</string>
 			<string>add_private_type</string>
+			<string>add_protocol</string>
+			<string>add_question</string>
+			<string>add_reftarget</string>
+			<string>add_request_headerhandler</string>
+			<string>add_require</string>
+			<string>add_response_handler</string>
+			<string>add_row</string>
+			<string>add_rpc_headerhandler</string>
+			<string>add_rpc_method</string>
+			<string>add_rpc_method_as</string>
+			<string>add_rpc_method_with_namespace</string>
+			<string>add_rpc_method_with_namespace_as</string>
+			<string>add_rpc_method_with_soapaction</string>
+			<string>add_rpc_method_with_soapaction_as</string>
+			<string>add_rpc_operation</string>
+			<string>add_rpc_request_operation</string>
+			<string>add_rpc_request_servant</string>
+			<string>add_rpc_servant</string>
 			<string>add_ruby_type</string>
+			<string>add_run</string>
+			<string>add_schedule</string>
+			<string>add_servant</string>
+			<string>add_special</string>
+			<string>add_suite</string>
+			<string>add_table_of_sections</string>
+			<string>add_tag</string>
+			<string>add_test</string>
+			<string>add_text</string>
+			<string>add_to</string>
+			<string>add_token</string>
+			<string>add_tokens</string>
+			<string>add_type</string>
+			<string>add_tz</string>
+			<string>add_word_pair</string>
+			<string>addr</string>
+			<string>add</string>
 			<string>adler</string>
 			<string>adler32</string>
 			<string>ajd</string>
 			<string>ajd_to_amjd</string>
 			<string>ajd_to_jd</string>
+			<string>alias_command</string>
+			<string>alias_extension</string>
+			<string>alias_map</string>
+			<string>alias_method</string>
+			<string>aliases</string>
 			<string>alive?</string>
+			<string>all</string>
 			<string>all?</string>
-			<string>allocate</string>
+			<string>all_classes_and_modules</string>
+			<string>all_elements=</string>
+			<string>all_method_names</string>
+			<string>all_methods</string>
+			<string>all_names</string>
 			<string>all_symbols</string>
 			<string>all_waits</string>
+			<string>allocate</string>
+			<string>allow_addr?</string>
+			<string>allow_content_encoding_gzip=</string>
+			<string>allow_socket?</string>
+			<string>alternate=</string>
 			<string>amjd</string>
 			<string>amjd_to_ajd</string>
 			<string>ancestorChildNumber</string>
 			<string>ancestors</string>
 			<string>angle</string>
+			<string>annotate</string>
 			<string>any?</string>
+			<string>apop?</string>
+			<string>app_scope_router</string>
+			<string>append</string>
 			<string>appendChild</string>
 			<string>appendData</string>
+			<string>append_data</string>
 			<string>append_features</string>
+			<string>append_library</string>
+			<string>apply</string>
+			<string>aref</string>
+			<string>aref_to</string>
 			<string>arg</string>
+			<string>arg_config</string>
 			<string>args</string>
 			<string>arity</string>
+			<string>array_complextype</string>
+			<string>ary2md</string>
+			<string>ary2soap</string>
+			<string>as_element</string>
+			<string>as_href</string>
+			<string>as_nil</string>
+			<string>as_string</string>
+			<string>as_struct</string>
+			<string>as_text</string>
+			<string>as_xsd</string>
+			<string>ascend</string>
 			<string>asctime</string>
 			<string>asin</string>
-			<string>asin!</string>
 			<string>asinh</string>
-			<string>asinh!</string>
+			<string>assert</string>
+			<string>assert_block</string>
+			<string>assert_equal</string>
+			<string>assert_equal_float</string>
+			<string>assert_equals</string>
+			<string>assert_exception</string>
+			<string>assert_fail</string>
+			<string>assert_in_delta</string>
+			<string>assert_instance_of</string>
+			<string>assert_kind_of</string>
+			<string>assert_match</string>
+			<string>assert_matches</string>
+			<string>assert_nil</string>
+			<string>assert_no_exception</string>
+			<string>assert_no_match</string>
+			<string>assert_not_equal</string>
+			<string>assert_not_match</string>
+			<string>assert_not_nil</string>
+			<string>assert_not_same</string>
+			<string>assert_nothing_raised</string>
+			<string>assert_nothing_thrown</string>
+			<string>assert_operator</string>
+			<string>assert_raise</string>
+			<string>assert_raises</string>
+			<string>assert_respond_to</string>
+			<string>assert_same</string>
+			<string>assert_send</string>
+			<string>assert_throws</string>
+			<string>assign</string>
+			<string>assign_ns</string>
+			<string>assigned?</string>
+			<string>assigned_tag?</string>
+			<string>assigner=</string>
 			<string>assoc</string>
 			<string>async</string>
 			<string>async=</string>
 			<string>at</string>
+			<string>at_exit</string>
 			<string>atan</string>
-			<string>atan!</string>
 			<string>atan2</string>
-			<string>atan2!</string>
 			<string>atanh</string>
-			<string>atanh!</string>
 			<string>atime</string>
+			<string>attach_to_mediator</string>
+			<string>attlistdecl</string>
+			<string>attlistdecl?</string>
+			<string>attr</string>
+			<string>attr_accessor</string>
+			<string>attr_overridable</string>
+			<string>attr_reader</string>
+			<string>attr_reader_ref</string>
+			<string>attr_writer</string>
+			<string>attribute</string>
+			<string>attribute_of</string>
 			<string>attributes</string>
 			<string>attributes=</string>
-			<string>at_exit</string>
+			<string>attributes_of</string>
+			<string>auth_only</string>
+			<string>authenticate</string>
 			<string>autoload</string>
 			<string>autoload?</string>
 			<string>avail_in</string>
 			<string>avail_out</string>
 			<string>avail_out=</string>
+			<string>available_tags</string>
+			<string>axe</string>
+			<string>a</string>
 			<string>b64encode</string>
 			<string>backtrace</string>
+			<string>banner</string>
 			<string>base</string>
 			<string>baseName</string>
 			<string>basename</string>
+			<string>basetype</string>
+			<string>basetype_mapped_class</string>
+			<string>basic_auth</string>
+			<string>begin</string>
 			<string>beginning_of_line?</string>
 			<string>benchmark</string>
 			<string>between?</string>
+			<string>binary_base64</string>
 			<string>bind</string>
 			<string>binding</string>
+			<string>bindings</string>
 			<string>binmode</string>
+			<string>binmode=</string>
+			<string>bitmap_for</string>
+			<string>blankline</string>
 			<string>blksize</string>
+			<string>block_given?</string>
+			<string>block_scanf</string>
+			<string>block_yield</string>
 			<string>blockdev?</string>
 			<string>blockquote</string>
 			<string>blocks</string>
-			<string>block_given?</string>
 			<string>bm</string>
 			<string>bmbm</string>
-			<string>bol?</string>
+			<string>body</string>
+			<string>body=</string>
+			<string>body_exist?</string>
+			<string>body_permitted?</string>
+			<string>body_stream=</string>
+			<string>bold_print</string>
+			<string>boolean</string>
+			<string>bottom</string>
+			<string>boundary</string>
+			<string>break</string>
+			<string>break?</string>
+			<string>break_outmost_groups</string>
+			<string>break_points</string>
+			<string>break_to_newline</string>
+			<string>breakable</string>
 			<string>broadcast</string>
 			<string>build</string>
 			<string>build2</string>
+			<string>build_alias_summary_list</string>
+			<string>build_attribute_list</string>
+			<string>build_class_list</string>
+			<string>build_constants_summary_list</string>
+			<string>build_include_list</string>
+			<string>build_indices</string>
+			<string>build_message</string>
+			<string>build_method_detail_list</string>
+			<string>build_method_summary_list</string>
+			<string>build_requires_list</string>
+			<string>bytes</string>
 			<string>call</string>
-			<string>callcc</string>
-			<string>caller</string>
 			<string>call_finalizer</string>
+			<string>call_seq</string>
+			<string>callcc</string>
+			<string>called_internally?</string>
+			<string>caller</string>
+			<string>can_parse</string>
+			<string>cancel</string>
+			<string>canceled?</string>
+			<string>canonical_each</string>
+			<string>capability</string>
 			<string>capitalize</string>
 			<string>capitalize!</string>
 			<string>caption</string>
 			<string>captures</string>
 			<string>casecmp</string>
 			<string>casefold?</string>
+			<string>cat</string>
+			<string>catch</string>
+			<string>catname</string>
+			<string>cc_command</string>
 			<string>cd</string>
+			<string>cdata</string>
+			<string>cdata?</string>
+			<string>cdatas</string>
 			<string>ceil</string>
+			<string>ceiling</string>
 			<string>center</string>
+			<string>cert</string>
+			<string>cert_from_file</string>
+			<string>challenge</string>
+			<string>change_attribute</string>
+			<string>change_privilege</string>
+			<string>change_tab</string>
+			<string>change_workspace</string>
 			<string>changed</string>
 			<string>changed?</string>
-			<string>change_privilege</string>
+			<string>changed_attribute_by_name</string>
+			<string>char_no</string>
+			<string>character</string>
+			<string>characters</string>
 			<string>chardev?</string>
 			<string>charset</string>
 			<string>charset=</string>
+			<string>charset_label</string>
 			<string>charset_map</string>
+			<string>charset_str</string>
 			<string>chdir</string>
 			<string>check</string>
+			<string>check_break_points</string>
+			<string>check_encoding</string>
+			<string>check_fault</string>
+			<string>check_for_html_help_workshop</string>
+			<string>check_insecure_method</string>
+			<string>check_lexical_format</string>
+			<string>check_point</string>
+			<string>check_sizeof</string>
+			<string>check_suspend</string>
+			<string>check_type</string>
+			<string>check_until</string>
+			<string>check_uri</string>
 			<string>checkbox</string>
 			<string>checkbox_group</string>
-			<string>check_until</string>
+			<string>checking_for</string>
+			<string>checking_message</string>
 			<string>childNodes</string>
 			<string>childNumber</string>
+			<string>child_defined_complextype</string>
+			<string>child_type</string>
 			<string>children</string>
+			<string>children_with_index</string>
 			<string>chmod</string>
 			<string>chmod_R</string>
 			<string>chomp</string>
 			<string>chomp!</string>
+			<string>choose_header</string>
 			<string>chop</string>
 			<string>chop!</string>
 			<string>chown</string>
 			<string>chown_R</string>
 			<string>chr</string>
 			<string>chroot</string>
+			<string>chunked=</string>
+			<string>chunked?</string>
+			<string>cipher</string>
 			<string>civil</string>
 			<string>civil_to_jd</string>
 			<string>class</string>
-			<string>classify</string>
+			<string>class2element</string>
+			<string>class2qname</string>
+			<string>class_attribute_values</string>
+			<string>class_desc_path</string>
 			<string>class_eval</string>
+			<string>class_from_name</string>
 			<string>class_name</string>
-			<string>class_variables</string>
+			<string>class_variable_defined?</string>
 			<string>class_variable_get</string>
 			<string>class_variable_set</string>
+			<string>class_variables</string>
+			<string>classes</string>
+			<string>classes_and_modules</string>
+			<string>classify</string>
 			<string>cleanpath</string>
 			<string>clear</string>
+			<string>clear_fault</string>
+			<string>clear_suspend</string>
+			<string>client_error?</string>
 			<string>clone</string>
 			<string>cloneNode</string>
+			<string>clone_ns</string>
 			<string>close</string>
 			<string>close!</string>
+			<string>close_on_terminate</string>
+			<string>close_read</string>
+			<string>close_write</string>
 			<string>closed?</string>
 			<string>closed_read?</string>
 			<string>closed_write?</string>
-			<string>close_read</string>
-			<string>close_write</string>
+			<string>cmd</string>
 			<string>cmp</string>
 			<string>codepage</string>
 			<string>codepage=</string>
@@ -168,69 +488,171 @@
 			<string>collect</string>
 			<string>collect!</string>
 			<string>collect2</string>
+			<string>collect_attributes</string>
+			<string>collect_complextypes</string>
+			<string>collect_documentparameter</string>
+			<string>collect_elements</string>
+			<string>collect_faulttypes</string>
+			<string>collect_file</string>
+			<string>collect_methods</string>
+			<string>collect_rpcparameter</string>
+			<string>collect_simpletypes</string>
 			<string>column</string>
-			<string>columns</string>
 			<string>column_size</string>
 			<string>column_vector</string>
 			<string>column_vectors</string>
+			<string>columns</string>
+			<string>comma_breakable</string>
+			<string>command</string>
+			<string>command=</string>
 			<string>comment</string>
 			<string>comment=</string>
+			<string>comment?</string>
+			<string>comments</string>
 			<string>commercial</string>
 			<string>commercial_to_jd</string>
 			<string>commit</string>
 			<string>compact</string>
 			<string>compact!</string>
+			<string>compare</string>
 			<string>compare_by</string>
 			<string>compare_by_row_vectors</string>
 			<string>compare_file</string>
+			<string>compare_language</string>
 			<string>compare_stream</string>
 			<string>compile</string>
+			<string>compile_project</string>
+			<string>complete</string>
 			<string>component</string>
 			<string>component_ary</string>
+			<string>compoundtype</string>
 			<string>concat</string>
+			<string>conf</string>
+			<string>config</string>
+			<string>config_string</string>
+			<string>configuration</string>
 			<string>conj</string>
 			<string>conjugate</string>
 			<string>connect</string>
-			<string>constants</string>
+			<string>connect_nonblock</string>
+			<string>connecting</string>
+			<string>connections</string>
 			<string>const_defined?</string>
+			<string>const_from_name</string>
 			<string>const_get</string>
 			<string>const_load</string>
 			<string>const_missing</string>
 			<string>const_set</string>
+			<string>constants</string>
+			<string>consume</string>
+			<string>contained_class_named</string>
+			<string>contained_modules_matching</string>
+			<string>contains</string>
+			<string>content</string>
+			<string>content_encoding</string>
+			<string>content_length</string>
+			<string>content_length=</string>
+			<string>content_range</string>
+			<string>content_str</string>
+			<string>content_type</string>
+			<string>content_type=</string>
+			<string>contentid</string>
+			<string>contentid=</string>
+			<string>context</string>
+			<string>context=</string>
 			<string>conv</string>
+			<string>conv_html</string>
+			<string>conv_markup</string>
+			<string>convert</string>
+			<string>convert_attrs</string>
+			<string>convert_html</string>
+			<string>convert_specials</string>
+			<string>converter=</string>
+			<string>cookie</string>
 			<string>copy</string>
 			<string>copy_entry</string>
 			<string>copy_file</string>
 			<string>copy_stream</string>
+			<string>copy_string</string>
 			<string>coredump?</string>
 			<string>cos</string>
-			<string>cos!</string>
 			<string>cosh</string>
-			<string>cosh!</string>
 			<string>count</string>
 			<string>count_observers</string>
+			<string>count_space?</string>
+			<string>count_test_cases</string>
+			<string>count_waiters</string>
 			<string>covector</string>
 			<string>cp</string>
 			<string>cp_r</string>
+			<string>cpp_command</string>
+			<string>cpp_include</string>
 			<string>crc</string>
 			<string>crc32</string>
 			<string>crc_table</string>
+			<string>create</string>
 			<string>createAttribute</string>
 			<string>createCDATASection</string>
 			<string>createComment</string>
 			<string>createDocumentFragment</string>
+			<string>createDriver</string>
 			<string>createElement</string>
 			<string>createEntityReference</string>
 			<string>createNode</string>
 			<string>createProcessingInstruction</string>
 			<string>createTextNode</string>
+			<string>create_application</string>
+			<string>create_button</string>
+			<string>create_class_name</string>
+			<string>create_contents_and_index</string>
+			<string>create_detail_panel</string>
+			<string>create_doc_param_def</string>
 			<string>create_docfile</string>
+			<string>create_driver</string>
+			<string>create_empty_object</string>
+			<string>create_entry</string>
+			<string>create_fault_list</string>
+			<string>create_fault_response</string>
+			<string>create_finalizer</string>
+			<string>create_from</string>
+			<string>create_header</string>
+			<string>create_help_project</string>
+			<string>create_info_panel</string>
+			<string>create_label</string>
+			<string>create_list_panel</string>
+			<string>create_listeners</string>
+			<string>create_main_panel</string>
+			<string>create_makefile</string>
+			<string>create_media_type</string>
+			<string>create_mediator</string>
+			<string>create_method_response</string>
+			<string>create_parser</string>
+			<string>create_progress_bar</string>
+			<string>create_project_file</string>
+			<string>create_refid</string>
+			<string>create_request</string>
+			<string>create_result</string>
+			<string>create_rpc_driver</string>
+			<string>create_rpc_param_def</string>
+			<string>create_self_signed_cert</string>
+			<string>create_source_code_file</string>
+			<string>create_subnode</string>
+			<string>create_suite_panel</string>
+			<string>create_text</string>
+			<string>create_tmpsrc</string>
+			<string>create_tooltip</string>
 			<string>create_win32ole_makefile</string>
+			<string>create_window</string>
 			<string>critical</string>
 			<string>critical=</string>
 			<string>crypt</string>
 			<string>ctime</string>
 			<string>current</string>
+			<string>current_element</string>
+			<string>current_group</string>
+			<string>current_line</string>
+			<string>current_server</string>
+			<string>cvs_url</string>
 			<string>cwday</string>
 			<string>cweek</string>
 			<string>cwyear</string>
@@ -244,43 +666,159 @@
 			<string>day</string>
 			<string>day_fraction</string>
 			<string>day_fraction_to_time</string>
+			<string>dclone</string>
+			<string>deafen</string>
 			<string>debug</string>
+			<string>debug=</string>
 			<string>debug?</string>
+			<string>debug_command</string>
+			<string>debug_eval</string>
+			<string>debug_funcname</string>
+			<string>debug_level=</string>
+			<string>debug_method_info</string>
+			<string>debug_print_help</string>
+			<string>debug_silent_eval</string>
+			<string>debug_thread_info</string>
+			<string>debug_variable_info</string>
 			<string>decode</string>
 			<string>decode64</string>
+			<string>decode_ascii</string>
+			<string>decode_attrs</string>
 			<string>decode_b</string>
+			<string>decode_cp1252</string>
+			<string>decode_epilogue</string>
+			<string>decode_eucjp</string>
+			<string>decode_iconv</string>
+			<string>decode_parent</string>
+			<string>decode_prologue</string>
+			<string>decode_rdata</string>
+			<string>decode_sjis</string>
+			<string>decode_tag</string>
+			<string>decode_tag_end</string>
+			<string>decode_text</string>
+			<string>decode_typemap=</string>
+			<string>decode_unile</string>
+			<string>decode_utf16</string>
+			<string>decode_utf7</string>
+			<string>decode_utf8</string>
+			<string>deep_clone</string>
+			<string>deep_map</string>
+			<string>def_attr</string>
+			<string>def_builtin_commands</string>
+			<string>def_classvar</string>
+			<string>def_code</string>
+			<string>def_const</string>
+			<string>def_convert</string>
+			<string>def_delegator</string>
+			<string>def_delegators</string>
+			<string>def_e2message</string>
+			<string>def_else_enc</string>
+			<string>def_exception</string>
+			<string>def_extend_command</string>
+			<string>def_head_option</string>
+			<string>def_iconv_convert</string>
+			<string>def_instance_delegator</string>
+			<string>def_instance_delegators</string>
+			<string>def_method</string>
+			<string>def_notifier</string>
+			<string>def_option</string>
+			<string>def_post_proc</string>
+			<string>def_pre_proc</string>
+			<string>def_privatemethod</string>
+			<string>def_protectedmethod</string>
+			<string>def_publicmethod</string>
+			<string>def_require</string>
+			<string>def_rule</string>
+			<string>def_rules</string>
+			<string>def_same_enc</string>
+			<string>def_singleton_delegator</string>
+			<string>def_singleton_delegators</string>
+			<string>def_system_command</string>
+			<string>def_tail_option</string>
+			<string>def_to_euc_jp_from_iso_2022_jp</string>
+			<string>def_to_euc_jp_from_shift_jis</string>
+			<string>def_to_euc_jp_from_utf_8</string>
+			<string>def_to_iso_2022_jp_from_euc_jp</string>
+			<string>def_to_iso_8859_1_from_utf_8</string>
+			<string>def_to_shift_jis_from_euc_jp</string>
+			<string>def_to_shift_jis_from_utf_8</string>
+			<string>def_to_utf_8_from_euc_jp</string>
+			<string>def_to_utf_8_from_iso_8859_1</string>
+			<string>def_to_utf_8_from_shift_jis</string>
+			<string>def_token</string>
+			<string>def_uconv_convert_if_can</string>
 			<string>default</string>
 			<string>default=</string>
+			<string>default_acl</string>
+			<string>default_argc_limit</string>
+			<string>default_config_hash</string>
 			<string>default_handler</string>
+			<string>default_id_conv</string>
+			<string>default_load_limit</string>
+			<string>default_parser</string>
+			<string>default_parser=</string>
+			<string>default_parser_option</string>
+			<string>default_parser_option=</string>
 			<string>default_port</string>
 			<string>default_proc</string>
+			<string>default_record_separator</string>
+			<string>default_record_separator=</string>
+			<string>default_safe_level</string>
+			<string>default_system_path</string>
+			<string>default_system_path=</string>
+			<string>default_test</string>
+			<string>define</string>
+			<string>define_aliases</string>
+			<string>define_attr_accessor</string>
 			<string>define_class</string>
-			<string>define_define_define_instance_variables</string>
 			<string>define_finalizer</string>
+			<string>define_head</string>
+			<string>define_include</string>
+			<string>define_initialize</string>
+			<string>define_instance_variables</string>
 			<string>define_method</string>
 			<string>define_method_missing</string>
 			<string>define_module</string>
+			<string>define_singleton_method</string>
+			<string>define_tail</string>
+			<string>defined_in?</string>
+			<string>defined_methods</string>
 			<string>definition</string>
 			<string>deflate</string>
-			<string>def_delegator</string>
-			<string>def_delegators</string>
-			<string>def_instance_delegator</string>
-			<string>def_instance_delegators</string>
-			<string>def_singleton_delegator</string>
-			<string>def_singleton_delegators</string>
 			<string>delete</string>
 			<string>delete!</string>
 			<string>delete?</string>
 			<string>deleteData</string>
+			<string>delete_all</string>
+			<string>delete_all_by_dependant</string>
+			<string>delete_all_dependency</string>
 			<string>delete_at</string>
+			<string>delete_attribute</string>
+			<string>delete_by_dependant</string>
+			<string>delete_caller</string>
+			<string>delete_dependency</string>
+			<string>delete_element</string>
+			<string>delete_field</string>
 			<string>delete_if</string>
+			<string>delete_namespace</string>
 			<string>delete_observer</string>
 			<string>delete_observers</string>
+			<string>delete_passwd</string>
+			<string>delete_unless_alive</string>
+			<string>deleted?</string>
 			<string>denominator</string>
 			<string>depth</string>
 			<string>deq</string>
+			<string>dequote</string>
+			<string>deref_key</string>
+			<string>derive_rpc_param_def</string>
+			<string>descend</string>
+			<string>description</string>
+			<string>deserialize</string>
 			<string>det</string>
 			<string>detach</string>
+			<string>detail</string>
+			<string>detail=</string>
 			<string>detect</string>
 			<string>detect_implicit</string>
 			<string>determinant</string>
@@ -288,68 +826,210 @@
 			<string>dev_major</string>
 			<string>dev_minor</string>
 			<string>diagonal</string>
+			<string>diagram_reference</string>
 			<string>difference</string>
+			<string>dir</string>
+			<string>dir_config</string>
+			<string>dir_foreach</string>
+			<string>dir_re</string>
 			<string>directory?</string>
 			<string>dirname</string>
-			<string>dir_foreach</string>
 			<string>disable</string>
+			<string>disconnect</string>
+			<string>disconnected?</string>
+			<string>disconnecting</string>
 			<string>dispid</string>
 			<string>display</string>
+			<string>display_attributes</string>
+			<string>display_class_info</string>
+			<string>display_class_list</string>
+			<string>display_expression</string>
+			<string>display_expressions</string>
+			<string>display_flow</string>
+			<string>display_flow_item</string>
+			<string>display_frames</string>
+			<string>display_heading</string>
+			<string>display_list</string>
+			<string>display_method_info</string>
+			<string>display_method_list</string>
+			<string>display_name</string>
+			<string>display_usage</string>
+			<string>display_verbatim_flow_item</string>
+			<string>displayer</string>
 			<string>div</string>
+			<string>divert_read_from</string>
 			<string>divide</string>
 			<string>divmod</string>
 			<string>dn</string>
 			<string>dn=</string>
+			<string>do_GET</string>
+			<string>do_HEAD</string>
+			<string>do_OPTIONS</string>
+			<string>do_POST</string>
+			<string>do_parse</string>
+			<string>do_reply</string>
+			<string>do_validate</string>
+			<string>do_validate=</string>
+			<string>do_write</string>
 			<string>doctype</string>
+			<string>doctype?</string>
+			<string>doctype_end</string>
+			<string>document</string>
 			<string>documentElement</string>
+			<string>document_children=</string>
+			<string>document_self</string>
+			<string>document_self=</string>
+			<string>document_send</string>
+			<string>done?</string>
+			<string>double</string>
 			<string>downcase</string>
 			<string>downcase!</string>
 			<string>downto</string>
+			<string>dowrite</string>
+			<string>dq</string>
+			<string>dqname</string>
+			<string>draw</string>
+			<string>draw_line</string>
+			<string>drop</string>
 			<string>dst?</string>
+			<string>dummy_makefile</string>
 			<string>dump</string>
+			<string>dump_method_signature</string>
 			<string>dump_stream</string>
 			<string>dup</string>
+			<string>dup_name</string>
+			<string>e2mm_message</string>
 			<string>each</string>
 			<string>each2</string>
+			<string>each_active_object</string>
+			<string>each_additional</string>
+			<string>each_address</string>
+			<string>each_answer</string>
+			<string>each_attribute</string>
+			<string>each_authority</string>
 			<string>each_byte</string>
+			<string>each_capitalized</string>
+			<string>each_capitalized_name</string>
+			<string>each_char</string>
+			<string>each_child</string>
+			<string>each_classmodule</string>
 			<string>each_cons</string>
+			<string>each_constant</string>
+			<string>each_data</string>
 			<string>each_document</string>
+			<string>each_element</string>
+			<string>each_element_with_attribute</string>
+			<string>each_element_with_text</string>
 			<string>each_entry</string>
 			<string>each_filename</string>
+			<string>each_header</string>
 			<string>each_index</string>
 			<string>each_key</string>
 			<string>each_line</string>
+			<string>each_mail</string>
+			<string>each_method</string>
+			<string>each_name</string>
+			<string>each_name_of</string>
 			<string>each_node</string>
+			<string>each_ns</string>
 			<string>each_object</string>
+			<string>each_option</string>
+			<string>each_option_pair</string>
 			<string>each_pair</string>
+			<string>each_path</string>
+			<string>each_port</string>
+			<string>each_question</string>
+			<string>each_recursive</string>
+			<string>each_resource</string>
 			<string>each_slice</string>
+			<string>each_strongly_connected_component</string>
+			<string>each_strongly_connected_component_from</string>
+			<string>each_top_level_statement</string>
 			<string>each_value</string>
 			<string>each_with_index</string>
+			<string>echo</string>
+			<string>edit</string>
+			<string>egid</string>
 			<string>egid=</string>
+			<string>egrep_cpp</string>
 			<string>eid</string>
-			<string>eid=</string>
+			<string>element=</string>
+			<string>element_initialize_arguments?</string>
+			<string>element_local?</string>
+			<string>element_qualified?</string>
+			<string>elementdecl</string>
+			<string>elementdecl?</string>
+			<string>elementform</string>
+			<string>elementformdefault</string>
 			<string>elements</string>
+			<string>elements=</string>
+			<string>elename2name</string>
+			<string>emit</string>
 			<string>emitter</string>
 			<string>empty?</string>
 			<string>enable</string>
+			<string>enable_config</string>
 			<string>enclose</string>
 			<string>enclosed?</string>
 			<string>encode</string>
 			<string>encode64</string>
+			<string>encode_ascii</string>
+			<string>encode_child</string>
+			<string>encode_cp1252</string>
+			<string>encode_data</string>
+			<string>encode_data_end</string>
+			<string>encode_element</string>
+			<string>encode_epilogue</string>
+			<string>encode_eucjp</string>
+			<string>encode_iconv</string>
+			<string>encode_name</string>
+			<string>encode_name_end</string>
+			<string>encode_prologue</string>
+			<string>encode_rawstring</string>
+			<string>encode_rdata</string>
+			<string>encode_sjis</string>
+			<string>encode_string</string>
+			<string>encode_tag</string>
+			<string>encode_tag_end</string>
+			<string>encode_unile</string>
+			<string>encode_utf16</string>
+			<string>encode_utf7</string>
+			<string>encode_utf8</string>
+			<string>encoding</string>
+			<string>encoding=</string>
+			<string>encoding_conv</string>
+			<string>encoding_from_xml</string>
+			<string>encoding_method</string>
+			<string>encoding_to_xml</string>
 			<string>end</string>
 			<string>end?</string>
+			<string>endElement</string>
+			<string>end_accepting</string>
+			<string>end_document</string>
+			<string>end_element</string>
+			<string>end_element?</string>
+			<string>end_prefix_mapping</string>
+			<string>end_regexp</string>
 			<string>ended?</string>
+			<string>endpoint_url</string>
+			<string>endpoint_url=</string>
 			<string>england</string>
 			<string>enq</string>
 			<string>entities</string>
+			<string>entity</string>
+			<string>entity?</string>
+			<string>entitydecl</string>
+			<string>entitydecl?</string>
 			<string>entries</string>
 			<string>enum_cons</string>
 			<string>enum_for</string>
 			<string>enum_slice</string>
 			<string>enum_with_index</string>
+			<string>environment</string>
 			<string>eof</string>
 			<string>eof?</string>
 			<string>eos?</string>
+			<string>epilogue</string>
 			<string>eql?</string>
 			<string>eqn?</string>
 			<string>equal?</string>
@@ -359,191 +1039,444 @@
 			<string>error</string>
 			<string>error?</string>
 			<string>errorCode</string>
+			<string>error_count</string>
+			<string>error_message</string>
+			<string>error_size</string>
 			<string>escape</string>
+			<string>escape8bit</string>
 			<string>escapeElement</string>
 			<string>escapeHTML</string>
+			<string>escape_form</string>
+			<string>escape_path</string>
+			<string>esmtp</string>
+			<string>esmtp=</string>
+			<string>esmtp?</string>
 			<string>euid</string>
 			<string>euid=</string>
 			<string>eval</string>
+			<string>eval_history=</string>
+			<string>eval_input</string>
+			<string>evaluate</string>
 			<string>event?</string>
 			<string>event_interface</string>
+			<string>event_type</string>
+			<string>examine</string>
 			<string>exception</string>
+			<string>exception_complextype</string>
 			<string>exclude_end?</string>
 			<string>exclusive</string>
 			<string>exclusive_unlock</string>
+			<string>excn_handle</string>
 			<string>exec</string>
+			<string>exec_if</string>
 			<string>executable?</string>
 			<string>executable_real?</string>
+			<string>execute</string>
 			<string>exist?</string>
 			<string>exists?</string>
 			<string>exit</string>
 			<string>exit!</string>
+			<string>exit_value</string>
 			<string>exited?</string>
 			<string>exitstatus</string>
-			<string>exit_value</string>
 			<string>exp</string>
-			<string>exp!</string>
+			<string>expand</string>
+			<string>expand_line</string>
 			<string>expand_path</string>
-			<string>extended</string>
+			<string>expand_ref_in</string>
+			<string>expanded_name</string>
+			<string>expected</string>
+			<string>expired?</string>
+			<string>expires</string>
+			<string>expires=</string>
+			<string>expunge</string>
+			<string>extend</string>
 			<string>extend_object</string>
+			<string>extend_to</string>
+			<string>extended</string>
 			<string>extensions</string>
 			<string>extensions=</string>
+			<string>external_to_internal</string>
 			<string>extname</string>
 			<string>extract</string>
+			<string>extract_resources</string>
+			<string>factory</string>
 			<string>fail</string>
 			<string>failed</string>
+			<string>failure_count</string>
+			<string>failure_size</string>
+			<string>false</string>
 			<string>fatal</string>
 			<string>fatal?</string>
+			<string>fault</string>
+			<string>fault2exception</string>
+			<string>fault=</string>
+			<string>fault_complextype</string>
+			<string>faultactor</string>
+			<string>faultactor=</string>
+			<string>faultcode</string>
+			<string>faultcode=</string>
+			<string>faultstring</string>
+			<string>faultstring=</string>
 			<string>fcntl</string>
 			<string>fetch</string>
+			<string>fetch_server</string>
 			<string>file?</string>
+			<string>file_attribute_values</string>
+			<string>file_field</string>
+			<string>file_input?</string>
+			<string>filename_to_label</string>
+			<string>filename_to_version</string>
 			<string>fileno</string>
 			<string>filepos</string>
-			<string>file_field</string>
 			<string>fill</string>
+			<string>fill_breakable</string>
 			<string>filter</string>
 			<string>filter=</string>
+			<string>filter_backtrace</string>
+			<string>filter_ns</string>
+			<string>finalize_all</string>
+			<string>finalize_all_by_dependant</string>
+			<string>finalize_all_dependency</string>
+			<string>finalize_by_dependant</string>
+			<string>finalize_dependency</string>
 			<string>finalizers</string>
 			<string>find</string>
 			<string>find_all</string>
+			<string>find_all_template</string>
+			<string>find_aryelement</string>
+			<string>find_arytype</string>
+			<string>find_binding</string>
+			<string>find_class_by_name</string>
+			<string>find_class_named</string>
+			<string>find_class_or_module_named</string>
+			<string>find_element</string>
+			<string>find_element_by_name</string>
+			<string>find_enclosing_module_named</string>
+			<string>find_executable</string>
+			<string>find_executable0</string>
+			<string>find_first_recursive</string>
+			<string>find_header</string>
+			<string>find_library</string>
+			<string>find_local_symbol</string>
+			<string>find_mapped_obj_class</string>
+			<string>find_mapped_soap_class</string>
+			<string>find_message</string>
+			<string>find_methods</string>
+			<string>find_module_named</string>
+			<string>find_name</string>
+			<string>find_operation</string>
+			<string>find_part</string>
+			<string>find_proxy</string>
+			<string>find_scalar</string>
+			<string>find_symbol</string>
+			<string>find_system_command</string>
+			<string>find_test_cases</string>
+			<string>finger</string>
 			<string>finish</string>
+			<string>finish_all_jobs</string>
+			<string>finished</string>
 			<string>finished?</string>
 			<string>finite?</string>
 			<string>first</string>
+			<string>first?</string>
 			<string>firstChild</string>
+			<string>fixup</string>
 			<string>flatten</string>
 			<string>flatten!</string>
 			<string>flatten_merge</string>
 			<string>flock</string>
 			<string>floor</string>
+			<string>flow</string>
+			<string>flunk</string>
 			<string>flush</string>
 			<string>flush_next_in</string>
 			<string>flush_next_out</string>
 			<string>fnmatch</string>
 			<string>fnmatch?</string>
+			<string>fold</string>
+			<string>foo</string>
+			<string>for</string>
+			<string>for_fd</string>
 			<string>foreach</string>
 			<string>foreachline</string>
 			<string>fork</string>
 			<string>form</string>
+			<string>form_data=</string>
 			<string>format</string>
 			<string>formatDate</string>
 			<string>formatIndex</string>
 			<string>formatNumber</string>
 			<string>formatTime</string>
-			<string>for_fd</string>
+			<string>format_frame</string>
 			<string>fragment=</string>
+			<string>fragment_for</string>
+			<string>frame_set_pos</string>
 			<string>freeze</string>
 			<string>frexp</string>
+			<string>from_iso_8859_15</string>
+			<string>from_obj</string>
+			<string>from_prime_division</string>
+			<string>front</string>
 			<string>frozen?</string>
 			<string>fsync</string>
 			<string>ftype</string>
 			<string>fu_have_symlink?</string>
 			<string>fu_world_writable?</string>
+			<string>full_class_name</string>
+			<string>full_class_names</string>
+			<string>full_name</string>
+			<string>fully_expanded_name</string>
+			<string>function</string>
 			<string>garbage_collect</string>
 			<string>gcd</string>
+			<string>gcd2</string>
 			<string>gcdlcm</string>
+			<string>gen_an_index</string>
+			<string>gen_class_index</string>
+			<string>gen_file_index</string>
+			<string>gen_into</string>
+			<string>gen_method_index</string>
+			<string>gen_url</string>
 			<string>generate</string>
 			<string>generate_args</string>
 			<string>generate_argtype</string>
 			<string>generate_argtypes</string>
+			<string>generate_candidates</string>
 			<string>generate_class</string>
+			<string>generate_class_info</string>
 			<string>generate_constants</string>
+			<string>generate_event</string>
+			<string>generate_explicit_type</string>
+			<string>generate_explicit_type=</string>
 			<string>generate_func_methods</string>
+			<string>generate_line</string>
 			<string>generate_method</string>
-			<string>generate_methods</string>
 			<string>generate_method_args_help</string>
 			<string>generate_method_body</string>
 			<string>generate_method_help</string>
+			<string>generate_method_info</string>
+			<string>generate_methods</string>
 			<string>generate_properties_with_args</string>
 			<string>generate_propget_methods</string>
-			<string>generate_propputref_methods</string>
 			<string>generate_propput_methods</string>
+			<string>generate_propputref_methods</string>
+			<string>generate_row</string>
+			<string>generate_timeouts</string>
+			<string>generate_xml</string>
 			<string>generic_parser</string>
+			<string>get</string>
+			<string>get2</string>
 			<string>getAllResponseHeaders</string>
 			<string>getAttribute</string>
 			<string>getAttributeNode</string>
+			<string>getElementsByTagName</string>
+			<string>getNamedItem</string>
+			<string>getQualifiedItem</string>
+			<string>getResponseHeader</string>
+			<string>get_attribute</string>
+			<string>get_attribute_ns</string>
+			<string>get_attributes</string>
+			<string>get_byte</string>
+			<string>get_bytes</string>
+			<string>get_class</string>
+			<string>get_content</string>
+			<string>get_elements</string>
+			<string>get_fault</string>
+			<string>get_fields</string>
+			<string>get_file_and_line_from_caller</string>
+			<string>get_first</string>
+			<string>get_info_for</string>
+			<string>get_instance</string>
+			<string>get_label</string>
+			<string>get_labels</string>
+			<string>get_length16</string>
+			<string>get_line</string>
+			<string>get_line_types</string>
+			<string>get_method</string>
+			<string>get_name</string>
+			<string>get_namespace</string>
+			<string>get_option</string>
+			<string>get_passwd</string>
+			<string>get_print</string>
+			<string>get_question</string>
+			<string>get_read</string>
+			<string>get_readed</string>
+			<string>get_response</string>
+			<string>get_rr</string>
+			<string>get_string</string>
+			<string>get_string_list</string>
+			<string>get_text</string>
+			<string>get_thread</string>
+			<string>get_thread_no</string>
+			<string>get_unpack</string>
+			<string>getacl</string>
+			<string>getaddress</string>
+			<string>getaddresses</string>
+			<string>getaddrinfo</string>
+			<string>getbinaryfile</string>
 			<string>getbyte</string>
 			<string>getc</string>
+			<string>getc_already_read</string>
+			<string>getc_of_rests</string>
 			<string>getch</string>
+			<string>getdir</string>
 			<string>getegid</string>
-			<string>getElementsByTagName</string>
+			<string>getenv</string>
 			<string>geteuid</string>
 			<string>getgid</string>
 			<string>getgm</string>
+			<string>gethostbyname</string>
 			<string>getlocal</string>
-			<string>getNamedItem</string>
+			<string>getname</string>
+			<string>getnames</string>
+			<string>getopts</string>
 			<string>getpgid</string>
-			<string>getpgrp</string>
 			<string>getpriority</string>
-			<string>getQualifiedItem</string>
-			<string>getResponseHeader</string>
+			<string>getquota</string>
+			<string>getquotaroot</string>
+			<string>getresource</string>
+			<string>getresources</string>
+			<string>getrlimit</string>
 			<string>gets</string>
+			<string>getservbyname</string>
+			<string>getservername</string>
+			<string>getsockopt</string>
+			<string>gettextfile</string>
 			<string>getuid</string>
 			<string>getutc</string>
 			<string>getwd</string>
-			<string>get_byte</string>
 			<string>gid</string>
 			<string>gid=</string>
 			<string>glob</string>
 			<string>global_variables</string>
 			<string>gm</string>
 			<string>gmt?</string>
+			<string>gmt_offset</string>
 			<string>gmtime</string>
 			<string>gmtoff</string>
-			<string>gmt_offset</string>
 			<string>grant_privilege</string>
 			<string>gregorian</string>
+			<string>gregorian?</string>
 			<string>gregorian_leap?</string>
 			<string>grep</string>
 			<string>group</string>
+			<string>group_sub</string>
 			<string>groups</string>
 			<string>groups=</string>
 			<string>grpowned?</string>
 			<string>gsub</string>
 			<string>gsub!</string>
+			<string>guard_inspect_key</string>
 			<string>guess</string>
 			<string>guess1</string>
 			<string>guess2</string>
 			<string>guess_old</string>
 			<string>guid</string>
 			<string>h</string>
+			<string>handle</string>
+			<string>handle_special_CROSSREF</string>
+			<string>handle_special_HYPERLINK</string>
+			<string>handle_special_TIDYLINK</string>
+			<string>handler</string>
 			<string>handler1</string>
 			<string>handler2</string>
 			<string>handler3</string>
 			<string>hasChildNodes</string>
 			<string>hasFeature</string>
-			<string>hash</string>
+			<string>has_attributes?</string>
+			<string>has_elements?</string>
+			<string>has_expires?</string>
 			<string>has_key?</string>
+			<string>has_name?</string>
+			<string>has_next?</string>
+			<string>has_parts?</string>
+			<string>has_text?</string>
 			<string>has_value?</string>
+			<string>hash</string>
+			<string>have_children_elements</string>
+			<string>have_func</string>
+			<string>have_header</string>
+			<string>have_library</string>
+			<string>have_macro</string>
+			<string>have_outparam?</string>
+			<string>have_required_values?</string>
+			<string>have_struct_member</string>
+			<string>have_type</string>
+			<string>have_var</string>
+			<string>head</string>
+			<string>head2</string>
+			<string>head_level</string>
 			<string>header</string>
+			<string>header=</string>
+			<string>headerhandler</string>
 			<string>headers=</string>
+			<string>headers_str</string>
+			<string>hello</string>
+			<string>help</string>
+			<string>help_output</string>
 			<string>helpcontext</string>
 			<string>helpfile</string>
 			<string>helpstring</string>
+			<string>here?</string>
 			<string>hex</string>
 			<string>hidden</string>
 			<string>hierarchical?</string>
+			<string>history_file</string>
+			<string>history_file=</string>
+			<string>home_workspace</string>
 			<string>host=</string>
 			<string>hour</string>
+			<string>href</string>
+			<string>href=</string>
 			<string>html</string>
 			<string>html_escape</string>
+			<string>hton</string>
+			<string>http_default_port</string>
+			<string>http_url</string>
 			<string>httpdate</string>
+			<string>httpproxy</string>
+			<string>httpproxy=</string>
+			<string>https_default_port</string>
 			<string>hypot</string>
 			<string>iconv</string>
 			<string>id</string>
 			<string>id2name</string>
 			<string>identical?</string>
+			<string>identify_comment</string>
+			<string>identify_gvar</string>
+			<string>identify_here_document</string>
+			<string>identify_identifier</string>
+			<string>identify_number</string>
+			<string>identify_quotation</string>
+			<string>identify_string</string>
 			<string>identity</string>
+			<string>ignore_unknown_element</string>
+			<string>ignore_unknown_element=</string>
+			<string>ignore_whitespace_nodes</string>
 			<string>im</string>
 			<string>imag</string>
 			<string>image</string>
 			<string>image_button</string>
+			<string>image_size=</string>
 			<string>img</string>
 			<string>implementation</string>
+			<string>import</string>
+			<string>in_service?</string>
+			<string>inactivate</string>
+			<string>inc</string>
+			<string>include</string>
 			<string>include?</string>
+			<string>include_attr?</string>
 			<string>included</string>
 			<string>included_modules</string>
+			<string>incompatible_argument_styles</string>
+			<string>indent</string>
+			<string>indent!</string>
+			<string>indent_text</string>
 			<string>index</string>
+			<string>index_in_parent</string>
+			<string>index_name</string>
 			<string>indexes</string>
 			<string>indices</string>
 			<string>induced_from</string>
@@ -552,27 +1485,76 @@
 			<string>info</string>
 			<string>info?</string>
 			<string>inherited</string>
-			<string>initgroups</string>
-			<string>initialize_copy</string>
+			<string>init</string>
+			<string>init_config</string>
 			<string>init_elements</string>
+			<string>init_error</string>
+			<string>init_mkmf</string>
+			<string>init_save_history</string>
+			<string>init_tags</string>
+			<string>initgroups</string>
+			<string>initialize</string>
+			<string>initialize_classes_and_modules</string>
+			<string>initialize_copy</string>
+			<string>initialize_http_header</string>
+			<string>initialize_input</string>
+			<string>initialize_methods_etc</string>
+			<string>initialize_tracer</string>
 			<string>inject</string>
 			<string>inner_product</string>
 			<string>ino</string>
+			<string>input=</string>
 			<string>input?</string>
+			<string>input_info</string>
+			<string>input_params</string>
+			<string>inputname</string>
+			<string>inputoperation_map</string>
+			<string>inputparts</string>
 			<string>insert</string>
 			<string>insertBefore</string>
 			<string>insertData</string>
+			<string>insert_after</string>
+			<string>insert_before</string>
 			<string>inspect</string>
+			<string>inspect?</string>
+			<string>inspect_mode=</string>
 			<string>install</string>
+			<string>install_acl</string>
+			<string>install_alias_method</string>
+			<string>install_builtin_commands</string>
+			<string>install_class_name</string>
+			<string>install_date_element</string>
+			<string>install_dirs</string>
+			<string>install_dublin_core</string>
+			<string>install_extend_commands</string>
+			<string>install_files</string>
+			<string>install_get_text_element</string>
+			<string>install_have_attribute_element</string>
+			<string>install_have_child_element</string>
+			<string>install_have_children_element</string>
+			<string>install_id_conv</string>
+			<string>install_list</string>
+			<string>install_ns</string>
+			<string>install_rb</string>
+			<string>install_system_commands</string>
+			<string>install_taxo_topic</string>
+			<string>install_taxo_topics</string>
+			<string>install_text_element</string>
 			<string>instance_eval</string>
 			<string>instance_method</string>
 			<string>instance_methods</string>
 			<string>instance_of?</string>
-			<string>instance_variables</string>
+			<string>instance_variable_defined?</string>
 			<string>instance_variable_get</string>
 			<string>instance_variable_set</string>
+			<string>instance_variables</string>
+			<string>instruction</string>
+			<string>instruction?</string>
+			<string>instructions</string>
 			<string>integer?</string>
 			<string>intern</string>
+			<string>internal_to_external</string>
+			<string>interrupt</string>
 			<string>intersection</string>
 			<string>inv</string>
 			<string>inverse</string>
@@ -582,6 +1564,33 @@
 			<string>invoke</string>
 			<string>invoke_kind</string>
 			<string>ioctl</string>
+			<string>ip6_arpa</string>
+			<string>ip6_int</string>
+			<string>ipv4?</string>
+			<string>ipv4_compat</string>
+			<string>ipv4_compat?</string>
+			<string>ipv4_mapped</string>
+			<string>ipv4_mapped?</string>
+			<string>ipv6?</string>
+			<string>irb</string>
+			<string>irb_abort</string>
+			<string>irb_context</string>
+			<string>irb_exit</string>
+			<string>irb_level</string>
+			<string>irb_load</string>
+			<string>irb_original_method_name</string>
+			<string>irb_require</string>
+			<string>isBlank?</string>
+			<string>is_a?</string>
+			<string>is_binary_data?</string>
+			<string>is_ces</string>
+			<string>is_complex_yaml?</string>
+			<string>is_eos?</string>
+			<string>is_euc</string>
+			<string>is_module?</string>
+			<string>is_sjis</string>
+			<string>is_us_ascii</string>
+			<string>is_utf8</string>
 			<string>isatty</string>
 			<string>isdst</string>
 			<string>iseuc</string>
@@ -589,10 +1598,11 @@
 			<string>issetugid</string>
 			<string>issjis</string>
 			<string>isutf8</string>
-			<string>is_a?</string>
 			<string>italy</string>
 			<string>item</string>
+			<string>items</string>
 			<string>iterator?</string>
+			<string>jcount</string>
 			<string>jd</string>
 			<string>jd_to_ajd</string>
 			<string>jd_to_civil</string>
@@ -601,36 +1611,66 @@
 			<string>jd_to_mjd</string>
 			<string>jd_to_ordinal</string>
 			<string>jd_to_wday</string>
+			<string>jlength</string>
+			<string>jobs</string>
+			<string>jobs_exist?</string>
 			<string>join</string>
 			<string>join_nowait</string>
+			<string>jsize</string>
 			<string>julian</string>
+			<string>julian?</string>
 			<string>julian_leap?</string>
 			<string>kcode</string>
 			<string>kconv</string>
+			<string>keep_alive?</string>
 			<string>key?</string>
+			<string>key_from_file</string>
 			<string>keys</string>
+			<string>keyword?</string>
 			<string>kill</string>
+			<string>kill!</string>
+			<string>kill_job</string>
 			<string>kind_of?</string>
+			<string>l</string>
 			<string>lambda</string>
+			<string>lang</string>
 			<string>last</string>
 			<string>lastChild</string>
 			<string>last_match</string>
+			<string>last_modified</string>
+			<string>last_spec</string>
+			<string>lazy_initialize</string>
 			<string>lchmod</string>
 			<string>lchown</string>
 			<string>lcm</string>
 			<string>ld</string>
-			<string>ldexp</string>
 			<string>ld_to_jd</string>
+			<string>ldexp</string>
 			<string>leap?</string>
 			<string>length</string>
+			<string>letter</string>
 			<string>level</string>
 			<string>level=</string>
+			<string>level_notifier=</string>
+			<string>lex</string>
+			<string>lex_init</string>
+			<string>lex_int2</string>
+			<string>libpathflag</string>
 			<string>line</string>
+			<string>line_at</string>
+			<string>line_no</string>
+			<string>line_types</string>
 			<string>lineno</string>
 			<string>lineno=</string>
 			<string>linepos</string>
 			<string>link</string>
+			<string>link_command</string>
 			<string>list</string>
+			<string>list_known_classes</string>
+			<string>list_known_names</string>
+			<string>listen</string>
+			<string>listener</string>
+			<string>listener=</string>
 			<string>listup</string>
 			<string>ljust</string>
 			<string>ln</string>
@@ -640,257 +1680,654 @@
 			<string>loadXML</string>
 			<string>load_documents</string>
 			<string>load_file</string>
+			<string>load_from</string>
+			<string>load_history</string>
+			<string>load_mime_types</string>
+			<string>load_modules</string>
 			<string>load_stream</string>
+			<string>loadproperty</string>
 			<string>local</string>
-			<string>localtime</string>
+			<string>local_assign</string>
+			<string>local_assign_hook</string>
+			<string>local_hook</string>
+			<string>local_name</string>
+			<string>local_name=</string>
+			<string>local_referent</string>
 			<string>local_variables</string>
+			<string>localtime</string>
+			<string>location</string>
+			<string>location=</string>
+			<string>locations</string>
 			<string>lock</string>
 			<string>locked?</string>
 			<string>log</string>
-			<string>log!</string>
 			<string>log10</string>
-			<string>log10!</string>
 			<string>log=</string>
+			<string>log_src</string>
+			<string>logfile</string>
+			<string>login</string>
+			<string>logout</string>
+			<string>long_display</string>
+			<string>lookup</string>
+			<string>lookup_namespace_in</string>
+			<string>lookup_ring</string>
+			<string>lookup_ring_any</string>
+			<string>lookup_server</string>
+			<string>loop</string>
+			<string>ls</string>
 			<string>lstat</string>
 			<string>lstrip</string>
 			<string>lstrip!</string>
+			<string>lsub</string>
+			<string>macro_defined?</string>
+			<string>mail</string>
+			<string>mails</string>
 			<string>main</string>
+			<string>main_irb</string>
+			<string>main_thread</string>
+			<string>main_type</string>
 			<string>major_version</string>
-			<string>makedirs</string>
+			<string>make</string>
+			<string>make_expires</string>
 			<string>make_link</string>
+			<string>make_partial_content</string>
+			<string>make_passwd</string>
+			<string>make_stream</string>
+			<string>make_switch</string>
 			<string>make_symlink</string>
+			<string>make_thread_list</string>
+			<string>make_tuple</string>
+			<string>makedirs</string>
+			<string>maker</string>
+			<string>maker_target</string>
+			<string>mandatorycharset</string>
+			<string>mandatorycharset=</string>
 			<string>map</string>
 			<string>map!</string>
 			<string>map2</string>
+			<string>map_as_array?</string>
+			<string>map_dir</string>
+			<string>mapping_registry</string>
+			<string>mapping_registry=</string>
+			<string>mark_marshalled_obj</string>
+			<string>mark_unmarshalled_obj</string>
+			<string>markup</string>
+			<string>markup_code</string>
+			<string>marshal</string>
 			<string>marshal_dump</string>
 			<string>marshal_load</string>
+			<string>mask</string>
+			<string>mask!</string>
+			<string>mask_protected_sequences</string>
 			<string>match</string>
 			<string>match?</string>
+			<string>match_io</string>
+			<string>match_path</string>
+			<string>match_segment</string>
+			<string>match_to</string>
+			<string>match_to_consume</string>
 			<string>matched</string>
 			<string>matched?</string>
-			<string>matchedsize</string>
 			<string>matched_size</string>
+			<string>matchedsize</string>
+			<string>matches?</string>
+			<string>math_mode=</string>
 			<string>max</string>
 			<string>max=</string>
 			<string>maxgroups</string>
 			<string>maxgroups=</string>
+			<string>mbchar?</string>
 			<string>mday</string>
+			<string>mdtm</string>
 			<string>measure</string>
+			<string>media_subtype</string>
 			<string>member?</string>
 			<string>members</string>
 			<string>memberwise</string>
 			<string>merge</string>
 			<string>merge!</string>
-			<string>message_message</string>
+			<string>merge_in</string>
+			<string>merge_libs</string>
+			<string>message</string>
+			<string>message_loop</string>
+			<string>messages</string>
+			<string>meta_vars</string>
 			<string>method</string>
-			<string>methods</string>
 			<string>method_added</string>
 			<string>method_defined?</string>
 			<string>method_missing</string>
 			<string>method_removed</string>
 			<string>method_undefined</string>
+			<string>methods</string>
+			<string>methods_matching</string>
+			<string>mid_match?</string>
+			<string>mime_contentid</string>
+			<string>mime_type</string>
 			<string>min</string>
 			<string>minor</string>
 			<string>minor_version</string>
 			<string>mjd</string>
 			<string>mjd_to_jd</string>
+			<string>mkcol</string>
 			<string>mkdir</string>
 			<string>mkdir_p</string>
+			<string>mkmf_failed</string>
 			<string>mkpath</string>
 			<string>mktime</string>
 			<string>mode</string>
+			<string>models</string>
+			<string>modified?</string>
 			<string>module_eval</string>
+			<string>module_from_name</string>
+			<string>module_function</string>
+			<string>module_named</string>
+			<string>modules</string>
 			<string>modulo</string>
 			<string>mon</string>
+			<string>mon_enter</string>
+			<string>mon_exit</string>
+			<string>mon_synchronize</string>
+			<string>mon_try_enter</string>
 			<string>month</string>
+			<string>mount</string>
+			<string>mount_proc</string>
 			<string>mountpoint?</string>
 			<string>move</string>
 			<string>mtime</string>
 			<string>mtime=</string>
+			<string>mu_extended</string>
+			<string>mu_lock</string>
+			<string>mu_locked?</string>
+			<string>mu_synchronize</string>
+			<string>mu_try_lock</string>
+			<string>mu_unlock</string>
 			<string>multipart?</string>
 			<string>multipart_form</string>
 			<string>must_C_version</string>
+			<string>must_call_validators</string>
 			<string>mv</string>
+			<string>n_bytes</string>
+			<string>n_jobs</string>
+			<string>n_mails</string>
 			<string>name</string>
+			<string>name2elename</string>
+			<string>name=</string>
+			<string>namespace</string>
+			<string>namespace=</string>
 			<string>namespaceURI</string>
+			<string>namespace_context</string>
+			<string>namespace_context=</string>
+			<string>namespace_uri</string>
+			<string>namespaces</string>
+			<string>namespaces=</string>
 			<string>nan?</string>
+			<string>native</string>
 			<string>navigate</string>
+			<string>ndq</string>
+			<string>need_initialize_variables</string>
+			<string>nest</string>
 			<string>nesting</string>
+			<string>new</string>
 			<string>new!</string>
 			<string>new2</string>
+			<string>new_about</string>
+			<string>new_alias_name</string>
+			<string>new_category</string>
+			<string>new_cond</string>
+			<string>new_day</string>
+			<string>new_hour</string>
+			<string>new_item</string>
+			<string>new_ntoh</string>
+			<string>new_ostruct_member</string>
 			<string>new_start</string>
+			<string>new_taxo_topic</string>
+			<string>new_with</string>
+			<string>new_with_uri</string>
+			<string>new_with_value_if_need</string>
+			<string>new_xml_stylesheet</string>
 			<string>next</string>
 			<string>next!</string>
 			<string>next?</string>
 			<string>nextNode</string>
 			<string>nextSibling</string>
+			<string>next_current</string>
+			<string>next_element</string>
+			<string>next_sibling=</string>
+			<string>next_sibling_node</string>
 			<string>next_wait</string>
+			<string>next_word</string>
 			<string>nil?</string>
 			<string>nitems</string>
 			<string>nkf</string>
 			<string>nlink</string>
+			<string>nlst</string>
+			<string>node</string>
+			<string>node=</string>
 			<string>nodeFromID</string>
 			<string>nodeName</string>
 			<string>nodeType</string>
+			<string>nodeTypeString</string>
 			<string>nodeTypedValue</string>
 			<string>nodeTypedValue=</string>
-			<string>nodeTypeString</string>
 			<string>nodeValue</string>
 			<string>nodeValue=</string>
+			<string>node_text</string>
+			<string>node_type</string>
 			<string>nonzero?</string>
+			<string>noop</string>
 			<string>normalize</string>
 			<string>normalize!</string>
+			<string>normalize_path</string>
+			<string>normalize_space</string>
+			<string>normalized</string>
+			<string>not</string>
+			<string>not_modified?</string>
+			<string>notation</string>
 			<string>notationName</string>
+			<string>notationdecl</string>
+			<string>notationdecl?</string>
 			<string>notations</string>
+			<string>notify</string>
+			<string>notify?</string>
+			<string>notify_listeners</string>
 			<string>notify_observers</string>
 			<string>now</string>
-			<string>ns?</string>
-			<string>numerator</string>
+			<string>nowrite</string>
+			<string>ntop</string>
 			<string>num_waiting</string>
+			<string>number</string>
+			<string>numerator</string>
+			<string>o_chmod</string>
+			<string>obj2element</string>
+			<string>obj2soap</string>
+			<string>obj2xml</string>
+			<string>object_address_group</string>
+			<string>object_group</string>
 			<string>object_id</string>
 			<string>object_maker</string>
 			<string>oct</string>
+			<string>of2tz</string>
+			<string>off</string>
 			<string>offset</string>
+			<string>offset=</string>
 			<string>offset_vtbl</string>
-			<string>oletypelib_name</string>
+			<string>old</string>
 			<string>ole_classes</string>
 			<string>ole_free</string>
 			<string>ole_func_methods</string>
 			<string>ole_get_methods</string>
 			<string>ole_method</string>
-			<string>ole_methods</string>
 			<string>ole_method_help</string>
+			<string>ole_methods</string>
 			<string>ole_obj_help</string>
 			<string>ole_put_methods</string>
 			<string>ole_reference_count</string>
 			<string>ole_show_help</string>
 			<string>ole_type</string>
 			<string>ole_type_detail</string>
+			<string>oletypelib_name</string>
+			<string>on</string>
+			<string>on_attr_charref</string>
+			<string>on_attr_charref_hex</string>
+			<string>on_attr_entityref</string>
+			<string>on_attr_value</string>
+			<string>on_attribute</string>
+			<string>on_chardata</string>
+			<string>on_charref</string>
+			<string>on_charref_hex</string>
+			<string>on_entityref</string>
+			<string>on_etag</string>
+			<string>on_event</string>
+			<string>on_event_with_outargs</string>
+			<string>on_head</string>
+			<string>on_inbound</string>
+			<string>on_inbound_headeritem</string>
+			<string>on_init</string>
+			<string>on_outbound</string>
+			<string>on_outbound_headeritem</string>
+			<string>on_simple_inbound</string>
+			<string>on_simple_outbound</string>
+			<string>on_stag</string>
+			<string>on_stag_end</string>
+			<string>on_stag_end_empty</string>
+			<string>on_tail</string>
+			<string>on_xmldecl_encoding</string>
+			<string>on_xmldecl_end</string>
+			<string>on_xmldecl_standalone</string>
+			<string>on_xmldecl_version</string>
 			<string>ondataavailable</string>
 			<string>ondataavailable=</string>
+			<string>ongoing_visibility=</string>
 			<string>onreadystatechange</string>
 			<string>onreadystatechange=</string>
 			<string>ontransformnode=</string>
-			<string>on_event</string>
-			<string>on_event_with_outargs</string>
 			<string>opaque=</string>
 			<string>open</string>
+			<string>open_message_stream</string>
+			<string>open_server</string>
+			<string>open_server_inaddr_any</string>
 			<string>opendir</string>
+			<string>operation_style</string>
 			<string>optional?</string>
 			<string>options</string>
+			<string>options=</string>
+			<string>order</string>
+			<string>order!</string>
+			<string>ordering=</string>
 			<string>ordinal</string>
 			<string>ordinal_to_jd</string>
+			<string>orig_meta_vars</string>
 			<string>orig_name</string>
 			<string>orig_name=</string>
-			<string>os?</string>
+			<string>orig_parse</string>
+			<string>orig_parse_uri</string>
 			<string>os_code</string>
 			<string>out</string>
+			<string>outparams</string>
+			<string>output</string>
 			<string>output?</string>
+			<string>output_encoding=</string>
+			<string>output_info</string>
+			<string>output_params</string>
+			<string>output_status</string>
+			<string>output_value</string>
+			<string>outputname</string>
+			<string>outputoperation_map</string>
+			<string>outputparts</string>
 			<string>owned?</string>
 			<string>ownerDocument</string>
 			<string>p</string>
 			<string>pack</string>
+			<string>param_count</string>
+			<string>param_seq</string>
 			<string>params</string>
 			<string>params=</string>
 			<string>parent</string>
+			<string>parent=</string>
+			<string>parent?</string>
 			<string>parentNode</string>
+			<string>parent_name</string>
 			<string>parse</string>
-			<string>parsed</string>
+			<string>parse!</string>
+			<string>parseArgs</string>
 			<string>parseError</string>
-			<string>parser</string>
+			<string>parse_args</string>
+			<string>parse_attr</string>
 			<string>parse_documents</string>
+			<string>parse_element</string>
+			<string>parse_epilogue</string>
+			<string>parse_error</string>
 			<string>parse_file</string>
+			<string>parse_files_matching</string>
+			<string>parse_form_data</string>
+			<string>parse_header</string>
+			<string>parse_helper</string>
+			<string>parse_line</string>
+			<string>parse_local</string>
+			<string>parse_media_type</string>
+			<string>parse_opts</string>
+			<string>parse_printf_format</string>
+			<string>parse_query</string>
+			<string>parse_qvalues</string>
+			<string>parse_range_header</string>
+			<string>parse_resolv_conf</string>
+			<string>parse_rhs</string>
+			<string>parse_row</string>
+			<string>parse_set_cookie</string>
+			<string>parse_set_cookies</string>
+			<string>parse_source</string>
+			<string>parse_stream</string>
+			<string>parse_uri</string>
+			<string>parsed</string>
+			<string>parsedate</string>
+			<string>parser</string>
+			<string>parser_for</string>
 			<string>partition</string>
 			<string>pass</string>
+			<string>passed?</string>
 			<string>password</string>
 			<string>password=</string>
 			<string>password_field</string>
 			<string>path</string>
 			<string>path=</string>
+			<string>pattern</string>
 			<string>peek</string>
+			<string>peek_equal</string>
+			<string>peek_equal?</string>
+			<string>peek_match?</string>
 			<string>peep</string>
+			<string>peer_cert</string>
+			<string>peer_cert_chain</string>
+			<string>peeraddr</string>
+			<string>perform_with_block</string>
+			<string>permute</string>
+			<string>permute!</string>
 			<string>pid</string>
+			<string>pingecho</string>
 			<string>pipe</string>
 			<string>pipe?</string>
+			<string>pkg_config</string>
+			<string>plural_forms</string>
 			<string>pointer</string>
 			<string>pointer=</string>
 			<string>polar</string>
 			<string>pop</string>
+			<string>pop_token</string>
+			<string>pop_workspace</string>
+			<string>popd</string>
+			<string>popdir</string>
 			<string>popen</string>
+			<string>popen3</string>
 			<string>popup_menu</string>
 			<string>port=</string>
+			<string>porttype</string>
+			<string>porttype_binding</string>
+			<string>porttypes</string>
 			<string>pos</string>
 			<string>pos=</string>
+			<string>position</string>
+			<string>post</string>
+			<string>post2</string>
+			<string>post_form</string>
 			<string>post_match</string>
+			<string>postpone</string>
+			<string>postproc</string>
+			<string>potentially_referenced_list</string>
 			<string>power!</string>
+			<string>power2</string>
+			<string>pp</string>
+			<string>pp_hash</string>
+			<string>pp_object</string>
 			<string>ppid</string>
+			<string>ppx</string>
+			<string>pre_match</string>
 			<string>prec</string>
 			<string>prec_f</string>
 			<string>prec_i</string>
+			<string>predicate</string>
+			<string>predicate_to_string</string>
 			<string>prefix</string>
+			<string>prefixes</string>
+			<string>prepare_backtrace</string>
+			<string>prepare_range</string>
+			<string>prepend</string>
+			<string>preproc</string>
+			<string>preprocess</string>
 			<string>preserveWhiteSpace</string>
 			<string>preserveWhiteSpace=</string>
 			<string>pretty</string>
+			<string>pretty_inspect</string>
+			<string>pretty_print</string>
+			<string>pretty_print_cycle</string>
+			<string>pretty_print_inspect</string>
+			<string>pretty_print_instance_variables</string>
+			<string>previous=</string>
 			<string>previousSibling</string>
-			<string>pre_match</string>
+			<string>previous_element</string>
+			<string>previous_sibling=</string>
+			<string>previous_sibling_node</string>
+			<string>primary</string>
+			<string>prime_division</string>
 			<string>print</string>
+			<string>printUsageAndExit</string>
+			<string>print_profile</string>
+			<string>print_usage</string>
 			<string>printf</string>
+			<string>printn</string>
 			<string>priority</string>
 			<string>priority=</string>
+			<string>private</string>
 			<string>private_class_method</string>
 			<string>private_instance_methods</string>
-			<string>private_methods</string>
 			<string>private_method_defined?</string>
+			<string>private_methods</string>
 			<string>proc</string>
+			<string>process</string>
+			<string>process_args</string>
+			<string>process_class</string>
+			<string>process_controllers_exclusive</string>
+			<string>processingInstruction</string>
+			<string>processing_instruction</string>
 			<string>progid</string>
 			<string>progids</string>
+			<string>program_name</string>
+			<string>progress</string>
+			<string>progress_panel</string>
+			<string>prompt</string>
+			<string>prompt_mode=</string>
+			<string>prompting?</string>
 			<string>proper_subset?</string>
 			<string>proper_superset?</string>
+			<string>propfind</string>
+			<string>proppatch</string>
+			<string>protected</string>
 			<string>protected_instance_methods</string>
-			<string>protected_methods</string>
 			<string>protected_method_defined?</string>
+			<string>protected_methods</string>
+			<string>provide</string>
+			<string>proxy=</string>
+			<string>proxy?</string>
+			<string>proxy_address</string>
+			<string>proxy_auth</string>
+			<string>proxy_basic_auth</string>
+			<string>proxy_class?</string>
+			<string>proxy_connect</string>
+			<string>proxy_pass</string>
+			<string>proxy_port</string>
+			<string>proxy_service</string>
+			<string>proxy_uri</string>
+			<string>proxy_user</string>
+			<string>proxyaddr</string>
+			<string>proxyport</string>
 			<string>prune</string>
+			<string>public</string>
 			<string>publicId</string>
 			<string>public_class_method</string>
 			<string>public_instance_methods</string>
-			<string>public_methods</string>
 			<string>public_method_defined?</string>
+			<string>public_methods</string>
+			<string>pull</string>
 			<string>push</string>
+			<string>push_workspace</string>
+			<string>pushd</string>
+			<string>pushdir</string>
+			<string>put</string>
+			<string>put_bytes</string>
+			<string>put_label</string>
+			<string>put_labels</string>
+			<string>put_length16</string>
+			<string>put_name</string>
+			<string>put_pack</string>
+			<string>put_string</string>
+			<string>put_string_list</string>
+			<string>putbinaryfile</string>
 			<string>putc</string>
 			<string>puts</string>
+			<string>puttextfile</string>
 			<string>pwd</string>
+			<string>query</string>
 			<string>query=</string>
 			<string>quick_emit</string>
+			<string>quiet_mode=</string>
+			<string>quit</string>
 			<string>quo</string>
 			<string>quote</string>
 			<string>r</string>
+			<string>racc_runtime_type</string>
 			<string>radio_button</string>
 			<string>radio_group</string>
+			<string>raise</string>
+			<string>raise_fault</string>
+			<string>raise_for_undefined_entity?</string>
 			<string>rand</string>
+			<string>random_string</string>
+			<string>range</string>
+			<string>range=</string>
+			<string>range_length</string>
 			<string>rank</string>
 			<string>rassoc</string>
+			<string>raw</string>
 			<string>raw_cookie</string>
 			<string>raw_cookie2</string>
+			<string>raw_path</string>
+			<string>raw_print_line</string>
+			<string>raw_show_fault</string>
+			<string>rc_file</string>
+			<string>rc_file_generators</string>
 			<string>rdev</string>
 			<string>rdev_major</string>
 			<string>rdev_minor</string>
 			<string>rdiv</string>
+			<string>re_exchange</string>
+			<string>re_exchangeable?</string>
 			<string>read</string>
+			<string>read_all</string>
+			<string>read_body</string>
+			<string>read_escape</string>
+			<string>read_from_cmdline</string>
+			<string>read_nonblock</string>
+			<string>read_timeout=</string>
+			<string>read_type_class</string>
+			<string>read_up_to</string>
+			<string>read_with_substitution</string>
 			<string>readable?</string>
+			<string>readable_atfer_eof?</string>
 			<string>readable_real?</string>
+			<string>readbytes</string>
 			<string>readchar</string>
 			<string>readline</string>
 			<string>readlines</string>
 			<string>readlink</string>
 			<string>readpartial</string>
+			<string>ready</string>
 			<string>readyState</string>
-			<string>read_type_class</string>
 			<string>real</string>
+			<string>realdir</string>
 			<string>realpath</string>
 			<string>realtime</string>
 			<string>reason</string>
+			<string>reason_phrase</string>
+			<string>receive</string>
+			<string>record_location</string>
+			<string>recover</string>
+			<string>recursive_collect</string>
+			<string>recursively_find_methods_matching</string>
+			<string>recv</string>
+			<string>recv_nonblock</string>
+			<string>recv_reply</string>
+			<string>recv_request</string>
+			<string>recvfrom</string>
+			<string>recvfrom_nonblock</string>
+			<string>redirect?</string>
 			<string>reduce</string>
+			<string>refelement</string>
+			<string>referred</string>
+			<string>refidstr</string>
 			<string>regexp</string>
+			<string>regist</string>
+			<string>regist_server</string>
+			<string>register</string>
+			<string>register_uri</string>
 			<string>registry=</string>
 			<string>regular?</string>
 			<string>rehash</string>
@@ -898,6 +2335,8 @@
 			<string>reject!</string>
 			<string>relative?</string>
 			<string>relative_path_from</string>
+			<string>release</string>
+			<string>reload</string>
 			<string>remainder</string>
 			<string>remove</string>
 			<string>removeAttribute</string>
@@ -905,47 +2344,90 @@
 			<string>removeChild</string>
 			<string>removeNamedItem</string>
 			<string>removeQualifiedItem</string>
+			<string>remove_class</string>
 			<string>remove_class_variable</string>
+			<string>remove_classes_and_modules</string>
 			<string>remove_const</string>
 			<string>remove_dir</string>
 			<string>remove_entry</string>
 			<string>remove_entry_secure</string>
 			<string>remove_file</string>
 			<string>remove_finalizer</string>
+			<string>remove_handler</string>
 			<string>remove_instance_variable</string>
+			<string>remove_listener</string>
 			<string>remove_method</string>
+			<string>remove_methods_etc</string>
+			<string>remove_private_comments</string>
+			<string>remove_response_handler</string>
+			<string>remove_server</string>
 			<string>rename</string>
+			<string>renew</string>
 			<string>reopen</string>
 			<string>replace</string>
 			<string>replaceChild</string>
 			<string>replaceData</string>
+			<string>replace_child</string>
+			<string>replace_node</string>
+			<string>replace_with</string>
+			<string>reply_service</string>
+			<string>report_class_stuff</string>
+			<string>report_method_stuff</string>
+			<string>report_missing_documentation</string>
+			<string>request</string>
+			<string>request_body</string>
+			<string>request_body_permitted?</string>
+			<string>request_default_encodingstyle</string>
+			<string>request_get</string>
+			<string>request_head</string>
+			<string>request_post</string>
 			<string>request_uri</string>
 			<string>require</string>
+			<string>require_from_name</string>
+			<string>require_path_info?</string>
+			<string>required_prefix</string>
+			<string>required_uri</string>
+			<string>required_variable_names</string>
 			<string>reset</string>
+			<string>reset_all</string>
+			<string>reset_stream</string>
+			<string>reset_ui</string>
+			<string>resolv</string>
 			<string>resolveExternals</string>
 			<string>resolveExternals=</string>
 			<string>resolver</string>
+			<string>resources</string>
 			<string>respond_to?</string>
+			<string>response</string>
 			<string>responseBody</string>
 			<string>responseStream</string>
 			<string>responseText</string>
 			<string>responseXML</string>
+			<string>response_body_permitted?</string>
+			<string>response_default_encodingstyle</string>
+			<string>response_obj</string>
 			<string>rest</string>
 			<string>rest?</string>
+			<string>rest_size</string>
 			<string>restore</string>
 			<string>restsize</string>
-			<string>rest_size</string>
 			<string>result</string>
+			<string>result_changed</string>
+			<string>resume</string>
+			<string>resume_all</string>
+			<string>retrbinary</string>
+			<string>retrlines</string>
+			<string>return_code</string>
+			<string>return_code=</string>
 			<string>return_type</string>
 			<string>return_type_detail</string>
 			<string>return_vtype</string>
+			<string>retval=</string>
 			<string>retval?</string>
 			<string>reverse</string>
 			<string>reverse!</string>
 			<string>reverse_each</string>
 			<string>rewind</string>
-			<string>re_exchange</string>
-			<string>re_exchangeable?</string>
 			<string>rfc1123_date</string>
 			<string>rfc2822</string>
 			<string>rfc822</string>
@@ -953,195 +2435,432 @@
 			<string>rindex</string>
 			<string>rjust</string>
 			<string>rm</string>
-			<string>rmdir</string>
-			<string>rmtree</string>
 			<string>rm_f</string>
 			<string>rm_r</string>
 			<string>rm_rf</string>
+			<string>rmdir</string>
+			<string>rmtree</string>
 			<string>root</string>
 			<string>root?</string>
+			<string>root_node</string>
+			<string>rootnode</string>
 			<string>roots</string>
 			<string>round</string>
+			<string>route</string>
 			<string>route_from</string>
 			<string>route_to</string>
 			<string>row</string>
-			<string>rows</string>
 			<string>row_size</string>
 			<string>row_vector</string>
 			<string>row_vectors</string>
+			<string>rows</string>
+			<string>rpc_call</string>
 			<string>rpower</string>
+			<string>rsqrt</string>
+			<string>rss</string>
 			<string>rstrip</string>
 			<string>rstrip!</string>
 			<string>run</string>
 			<string>run=</string>
 			<string>run?</string>
+			<string>run_asserts</string>
+			<string>run_button</string>
+			<string>run_config</string>
+			<string>run_suite</string>
+			<string>run_tests</string>
+			<string>safe</string>
+			<string>safe_iconv</string>
 			<string>safe_level</string>
 			<string>safe_unlink</string>
+			<string>safeconstname</string>
+			<string>safeconstname?</string>
+			<string>safemethodname</string>
+			<string>safemethodname?</string>
+			<string>safevarname</string>
+			<string>safevarname?</string>
 			<string>save</string>
+			<string>save_cookie_store</string>
+			<string>save_history</string>
+			<string>save_history=</string>
 			<string>scalar</string>
+			<string>scalar_ptr_type?</string>
+			<string>scalar_type?</string>
 			<string>scan</string>
 			<string>scan_full</string>
 			<string>scan_until</string>
+			<string>scanf</string>
+			<string>scanner_kcode=</string>
+			<string>schema_attribute_definition</string>
+			<string>schema_element_definition</string>
+			<string>schema_ns_definition</string>
+			<string>schema_type_definition</string>
 			<string>scheme=</string>
 			<string>scope</string>
 			<string>scope=</string>
+			<string>screen_data</string>
 			<string>scrolling_list</string>
+			<string>search</string>
+			<string>search_file_from_ruby_path</string>
 			<string>search_full</string>
+			<string>search_servlet</string>
 			<string>sec</string>
+			<string>section</string>
 			<string>secure=</string>
 			<string>seek</string>
 			<string>select</string>
+			<string>select!</string>
 			<string>selectNodes</string>
 			<string>selectSingleNode</string>
+			<string>select_message</string>
 			<string>send</string>
+			<string>send_body</string>
+			<string>send_header</string>
+			<string>send_mail</string>
+			<string>send_message</string>
+			<string>send_reply</string>
+			<string>send_request</string>
+			<string>send_response</string>
+			<string>sendcmd</string>
+			<string>sender</string>
+			<string>sendmail</string>
+			<string>separator</string>
+			<string>seplist</string>
+			<string>seq</string>
+			<string>seq_map_shortcut</string>
+			<string>sequence_elements=</string>
+			<string>serialize</string>
+			<string>serve</string>
+			<string>server_error?</string>
+			<string>service</string>
+			<string>services</string>
+			<string>set</string>
 			<string>setAttribute</string>
 			<string>setAttributeNode</string>
-			<string>setegid</string>
-			<string>seteuid</string>
-			<string>setgid</string>
-			<string>setgid?</string>
+			<string>setExpression</string>
 			<string>setNamedItem</string>
-			<string>setpgid</string>
-			<string>setpgrp</string>
-			<string>setpriority</string>
-			<string>setproperty</string>
-			<string>setregid</string>
+			<string>setOrAnd</string>
+			<string>setParenthesis</string>
 			<string>setRequestHeader</string>
-			<string>setresgid</string>
-			<string>setresuid</string>
-			<string>setreuid</string>
-			<string>setrgid</string>
-			<string>setruid</string>
-			<string>setsid</string>
-			<string>setuid</string>
-			<string>setuid?</string>
-			<string>setup</string>
 			<string>set_attributes</string>
+			<string>set_attrs</string>
 			<string>set_backtrace</string>
+			<string>set_basic_auth</string>
+			<string>set_close_on_exec</string>
+			<string>set_content_type</string>
+			<string>set_cookie</string>
+			<string>set_cookie_store</string>
+			<string>set_current_section</string>
+			<string>set_debug_output</string>
 			<string>set_dictionary</string>
 			<string>set_dn</string>
+			<string>set_encoded</string>
 			<string>set_eoutvar</string>
+			<string>set_error</string>
 			<string>set_extensions</string>
+			<string>set_fcgi_request</string>
 			<string>set_filter</string>
+			<string>set_form_data</string>
 			<string>set_fragment</string>
+			<string>set_get_line_procs</string>
 			<string>set_headers</string>
 			<string>set_host</string>
+			<string>set_input</string>
+			<string>set_last_thread</string>
+			<string>set_last_value</string>
 			<string>set_log</string>
+			<string>set_non_blocking</string>
 			<string>set_opaque</string>
+			<string>set_option</string>
+			<string>set_options</string>
+			<string>set_outparam</string>
+			<string>set_param</string>
+			<string>set_passwd</string>
 			<string>set_password</string>
 			<string>set_path</string>
 			<string>set_port</string>
+			<string>set_prompt</string>
 			<string>set_query</string>
+			<string>set_range</string>
+			<string>set_redirect</string>
 			<string>set_registry</string>
 			<string>set_scheme</string>
 			<string>set_scope</string>
+			<string>set_socket</string>
+			<string>set_sockopt</string>
+			<string>set_ssl_config</string>
+			<string>set_style</string>
+			<string>set_suspend</string>
+			<string>set_text</string>
 			<string>set_to</string>
+			<string>set_token_position</string>
+			<string>set_trace</string>
+			<string>set_trace_all</string>
 			<string>set_trace_func</string>
 			<string>set_typecode</string>
 			<string>set_user</string>
 			<string>set_userinfo</string>
+			<string>set_via</string>
+			<string>set_visibility_for</string>
+			<string>set_wiredump_file_base</string>
+			<string>setacl</string>
+			<string>setegid</string>
+			<string>seteuid</string>
+			<string>setgid</string>
+			<string>setgid?</string>
+			<string>setiv2obj</string>
+			<string>setiv2soap</string>
+			<string>setpgid</string>
+			<string>setpgrp</string>
+			<string>setpriority</string>
+			<string>setproperty</string>
+			<string>setquota</string>
+			<string>setregid</string>
+			<string>setresgid</string>
+			<string>setresuid</string>
+			<string>setreuid</string>
+			<string>setrgid</string>
+			<string>setrlimit</string>
+			<string>setruid</string>
+			<string>setsid</string>
+			<string>setsockopt</string>
+			<string>setter</string>
+			<string>setuid</string>
+			<string>setuid?</string>
+			<string>setup</string>
+			<string>setup_assert</string>
+			<string>setup_certificate</string>
+			<string>setup_header</string>
+			<string>setup_maker</string>
+			<string>setup_maker_elements</string>
+			<string>setup_mediator</string>
+			<string>setup_params</string>
+			<string>setup_ssl_context</string>
+			<string>setup_ui</string>
+			<string>sfork</string>
 			<string>shellwords</string>
 			<string>shift</string>
+			<string>short_display</string>
+			<string>show_fault</string>
+			<string>show_version</string>
+			<string>shutdown</string>
 			<string>sid_available?</string>
 			<string>signal</string>
+			<string>signal_handle</string>
+			<string>signal_status</string>
 			<string>signaled?</string>
+			<string>simple</string>
 			<string>sin</string>
-			<string>sin!</string>
-			<string>singleton_methods</string>
+			<string>single</string>
+			<string>single?</string>
+			<string>single_character_display</string>
+			<string>singleline_format</string>
+			<string>singleline_pp</string>
+			<string>singleton</string>
 			<string>singleton_method_added</string>
 			<string>singleton_method_removed</string>
 			<string>singleton_method_undefined</string>
+			<string>singleton_methods</string>
 			<string>singular?</string>
 			<string>sinh</string>
-			<string>sinh!</string>
+			<string>site</string>
 			<string>size</string>
+			<string>size=</string>
 			<string>size?</string>
 			<string>size_opt_params</string>
 			<string>size_params</string>
 			<string>skip</string>
+			<string>skip_inner_expression</string>
 			<string>skip_until</string>
 			<string>sleep</string>
 			<string>slice</string>
 			<string>slice!</string>
+			<string>soap2array</string>
+			<string>soap2obj</string>
+			<string>soap_rpc_complextypes</string>
+			<string>soapaction</string>
+			<string>soapbody_use</string>
+			<string>soapoperation_name</string>
+			<string>soapoperation_style</string>
 			<string>socket?</string>
 			<string>sort</string>
 			<string>sort!</string>
 			<string>sort_by</string>
 			<string>source</string>
+			<string>source_file</string>
+			<string>spec_count</string>
 			<string>specified</string>
 			<string>split</string>
 			<string>splitText</string>
+			<string>split_field</string>
+			<string>split_header_value</string>
+			<string>split_into_flow</string>
 			<string>sprintf</string>
 			<string>sqrt</string>
-			<string>sqrt!</string>
 			<string>square?</string>
 			<string>squeeze</string>
 			<string>squeeze!</string>
 			<string>srand</string>
 			<string>srcText</string>
 			<string>src_type</string>
+			<string>ssl_config_int</string>
+			<string>ssl_context</string>
+			<string>ssl_context_accessor</string>
+			<string>ssl_timeout</string>
+			<string>ssl_timeout=</string>
+			<string>stamp</string>
+			<string>stand_alone?</string>
+			<string>standalone?</string>
 			<string>start</string>
+			<string>startElement</string>
+			<string>start_accepting</string>
+			<string>start_collecting_tokens</string>
+			<string>start_command_line_test</string>
+			<string>start_doc</string>
+			<string>start_document</string>
+			<string>start_element</string>
+			<string>start_element?</string>
+			<string>start_export</string>
+			<string>start_import</string>
+			<string>start_job</string>
+			<string>start_prefix_mapping</string>
+			<string>start_profile</string>
+			<string>start_service</string>
+			<string>start_ui</string>
+			<string>started</string>
+			<string>started?</string>
+			<string>starting</string>
+			<string>starts_with</string>
 			<string>stat</string>
 			<string>status</string>
+			<string>status=</string>
 			<string>statusText</string>
+			<string>status_line</string>
+			<string>stdout</string>
+			<string>stdout=</string>
 			<string>step</string>
 			<string>sticky?</string>
 			<string>stop</string>
 			<string>stop?</string>
+			<string>stop_doc</string>
+			<string>stop_msg_loop</string>
+			<string>stop_next</string>
+			<string>stop_profile</string>
+			<string>stop_service</string>
 			<string>stopped?</string>
-			<string>stop_msg_stopsig</string>
+			<string>stopping</string>
+			<string>stopsig</string>
+			<string>storbinary</string>
 			<string>store</string>
+			<string>store=</string>
+			<string>storlines</string>
+			<string>stream</string>
+			<string>stream=</string>
 			<string>stream_end?</string>
+			<string>streamhandler</string>
 			<string>strftime</string>
 			<string>string</string>
 			<string>string=</string>
+			<string>string_length</string>
+			<string>string_value</string>
 			<string>strip</string>
 			<string>strip!</string>
+			<string>strip_attributes</string>
+			<string>strip_leading</string>
+			<string>strip_output</string>
+			<string>strongly_connected_components</string>
 			<string>strptime</string>
+			<string>style_url</string>
+			<string>su</string>
 			<string>sub</string>
 			<string>sub!</string>
+			<string>sub_type</string>
+			<string>subdomain_of?</string>
 			<string>submit</string>
+			<string>subscribe</string>
 			<string>subset?</string>
+			<string>substitute_into</string>
+			<string>substring</string>
 			<string>substringData</string>
+			<string>substring_after</string>
+			<string>substring_before</string>
 			<string>subtract</string>
 			<string>succ</string>
 			<string>succ!</string>
+			<string>succeed?</string>
 			<string>success</string>
 			<string>success?</string>
+			<string>suite</string>
 			<string>sum</string>
+			<string>summarize</string>
 			<string>superclass</string>
+			<string>superclass_string</string>
 			<string>superset?</string>
+			<string>suspend</string>
+			<string>suspend_all</string>
+			<string>suspend_context</string>
+			<string>suspend_input_method</string>
+			<string>suspend_name</string>
+			<string>suspend_workspace</string>
 			<string>swapcase</string>
 			<string>swapcase!</string>
 			<string>switch</string>
+			<string>switch_name</string>
+			<string>sy_updatePeriod=</string>
+			<string>sym</string>
 			<string>symlink</string>
 			<string>symlink?</string>
 			<string>sync</string>
 			<string>sync=</string>
-			<string>synchronize</string>
+			<string>sync_exclusive?</string>
+			<string>sync_extended</string>
+			<string>sync_lock</string>
+			<string>sync_locked?</string>
 			<string>sync_point?</string>
+			<string>sync_shared?</string>
+			<string>sync_synchronize</string>
+			<string>sync_try_lock</string>
+			<string>sync_unlock</string>
+			<string>synchronize</string>
+			<string>sysaccept</string>
 			<string>syscall</string>
+			<string>syscopy</string>
 			<string>sysopen</string>
 			<string>sysread</string>
 			<string>sysseek</string>
 			<string>system</string>
 			<string>systemId</string>
+			<string>system_path=</string>
 			<string>syswrite</string>
 			<string>t</string>
+			<string>tag</string>
 			<string>tagName</string>
+			<string>tag_class</string>
+			<string>tag_end</string>
+			<string>tag_name</string>
+			<string>tag_start</string>
+			<string>tag_subclasses?</string>
+			<string>tagged_classes</string>
 			<string>tagurize</string>
 			<string>taint</string>
 			<string>tainted?</string>
+			<string>take</string>
 			<string>tan</string>
-			<string>tan!</string>
 			<string>tanh</string>
-			<string>tanh!</string>
 			<string>target</string>
+			<string>targetnamespace</string>
+			<string>targetnamespace=</string>
 			<string>teardown</string>
+			<string>tee</string>
 			<string>tell</string>
+			<string>telnetmode</string>
+			<string>telnetmode=</string>
 			<string>terminate</string>
+			<string>terminate!</string>
+			<string>terminate_job</string>
+			<string>terminated?</string>
 			<string>termsig</string>
 			<string>test</string>
+			<string>test__invoke</string>
 			<string>test_bracket_equal_with_arg</string>
 			<string>test_class_to_s</string>
 			<string>test_const_CP_ACP</string>
@@ -1156,6 +2875,7 @@
 			<string>test_each</string>
 			<string>test_event</string>
 			<string>test_event_interface</string>
+			<string>test_finished</string>
 			<string>test_get_win32ole_object</string>
 			<string>test_helpcontext</string>
 			<string>test_helpfile</string>
@@ -1163,6 +2883,7 @@
 			<string>test_input</string>
 			<string>test_invoke</string>
 			<string>test_invoke_kind</string>
+			<string>test_loopback_response</string>
 			<string>test_name</string>
 			<string>test_no_exist_property</string>
 			<string>test_offset_vtbl</string>
@@ -1170,8 +2891,8 @@
 			<string>test_ole_get_methods</string>
 			<string>test_ole_invoke_with_named_arg</string>
 			<string>test_ole_invoke_with_named_arg_last</string>
-			<string>test_ole_methods</string>
 			<string>test_ole_method_help</string>
+			<string>test_ole_methods</string>
 			<string>test_ole_put_methods</string>
 			<string>test_ole_type</string>
 			<string>test_ole_type_detail</string>
@@ -1185,104 +2906,187 @@
 			<string>test_return_type</string>
 			<string>test_return_type_detail</string>
 			<string>test_return_vtype</string>
-			<string>test_setproperty</string>
-			<string>test_setproperty_bracket</string>
-			<string>test_setproperty_with_equal</string>
-			<string>test_src_type</string>
 			<string>test_s_codepage</string>
 			<string>test_s_codepage_changed</string>
 			<string>test_s_codepage_set</string>
 			<string>test_s_connect</string>
 			<string>test_s_const_load</string>
+			<string>test_s_new</string>
+			<string>test_s_new_DCOM</string>
 			<string>test_s_new_from_clsid</string>
 			<string>test_s_ole_classes</string>
 			<string>test_s_progids</string>
-			<string>test_s_test_s_new_DCOM</string>
 			<string>test_s_typelibs</string>
+			<string>test_sapi</string>
+			<string>test_setproperty</string>
+			<string>test_setproperty_bracket</string>
+			<string>test_setproperty_with_equal</string>
+			<string>test_src_type</string>
+			<string>test_started</string>
 			<string>test_to_s</string>
 			<string>test_typekind</string>
 			<string>test_value</string>
 			<string>test_variables</string>
 			<string>test_variant</string>
 			<string>test_visible</string>
-			<string>test__invoke</string>
 			<string>text</string>
 			<string>text=</string>
-			<string>textarea</string>
+			<string>text?</string>
 			<string>text_field</string>
-			<string>timeout</string>
-			<string>times</string>
+			<string>textarea</string>
+			<string>textinput</string>
+			<string>texts</string>
+			<string>thnum</string>
+			<string>thread</string>
+			<string>thread_list</string>
+			<string>thread_list_all</string>
+			<string>throw</string>
 			<string>time_to_day_fraction</string>
+			<string>timeout</string>
+			<string>timeout=</string>
+			<string>times</string>
+			<string>title</string>
+			<string>title=</string>
 			<string>tmpdir</string>
 			<string>to=</string>
+			<string>to_a</string>
+			<string>to_ary</string>
+			<string>to_class_name</string>
+			<string>to_date</string>
+			<string>to_datetime</string>
+			<string>to_e</string>
+			<string>to_element_methods</string>
+			<string>to_elename</string>
+			<string>to_enum</string>
+			<string>to_f</string>
+			<string>to_hash</string>
+			<string>to_i</string>
+			<string>to_id</string>
+			<string>to_int</string>
+			<string>to_io</string>
+			<string>to_iso_8859_15</string>
+			<string>to_mailtext</string>
+			<string>to_name</string>
+			<string>to_obj</string>
+			<string>to_proc</string>
+			<string>to_r</string>
+			<string>to_re</string>
+			<string>to_rfc822text</string>
+			<string>to_rss</string>
+			<string>to_s</string>
+			<string>to_set</string>
+			<string>to_str</string>
+			<string>to_string</string>
+			<string>to_sym</string>
+			<string>to_time</string>
+			<string>to_xml</string>
+			<string>to_yaml</string>
+			<string>to_yaml_properties</string>
+			<string>to_yaml_style</string>
 			<string>today</string>
 			<string>toeuc</string>
 			<string>tojis</string>
+			<string>token</string>
+			<string>token_stream</string>
+			<string>top</string>
+			<string>top_level_namespace</string>
+			<string>toplevel</string>
 			<string>tosjis</string>
 			<string>total_in</string>
 			<string>total_out</string>
 			<string>touch</string>
 			<string>toutf16</string>
 			<string>toutf8</string>
-			<string>to_a</string>
-			<string>to_ary</string>
-			<string>to_enum</string>
-			<string>to_f</string>
-			<string>to_hash</string>
-			<string>to_i</string>
-			<string>to_int</string>
-			<string>to_io</string>
-			<string>to_mailtext</string>
-			<string>to_proc</string>
-			<string>to_r</string>
-			<string>to_rfc822text</string>
-			<string>to_s</string>
-			<string>to_set</string>
-			<string>to_str</string>
-			<string>to_sym</string>
 			<string>tr</string>
 			<string>tr!</string>
-			<string>trace</string>
-			<string>trace_var</string>
-			<string>transaction</string>
-			<string>transfer</string>
-			<string>transformNode</string>
-			<string>transformNodeToObject</string>
-			<string>transpose</string>
-			<string>trap</string>
-			<string>truncate</string>
-			<string>try_implicit</string>
-			<string>try_lock</string>
 			<string>tr_s</string>
 			<string>tr_s!</string>
+			<string>trace</string>
+			<string>trace?</string>
+			<string>trace_func</string>
+			<string>trace_var</string>
+			<string>transact</string>
+			<string>transaction</string>
+			<string>transfer</string>
+			<string>transform</string>
+			<string>transformNode</string>
+			<string>transformNodeToObject</string>
+			<string>translate</string>
+			<string>transpose</string>
+			<string>trap</string>
+			<string>traverse</string>
+			<string>true</string>
+			<string>truncate</string>
+			<string>try_compile</string>
+			<string>try_constant</string>
+			<string>try_cpp</string>
+			<string>try_do</string>
+			<string>try_func</string>
+			<string>try_implicit</string>
+			<string>try_link</string>
+			<string>try_link0</string>
+			<string>try_lock</string>
+			<string>try_mon_enter</string>
+			<string>try_run</string>
+			<string>try_static_assert</string>
+			<string>try_var</string>
+			<string>tsort</string>
+			<string>tsort_each</string>
+			<string>tsort_each_child</string>
+			<string>tsort_each_node</string>
 			<string>tty?</string>
 			<string>tv_sec</string>
 			<string>tv_usec</string>
 			<string>type</string>
+			<string>type_name</string>
+			<string>type_params</string>
 			<string>typecode=</string>
 			<string>typekind</string>
 			<string>typelibs</string>
+			<string>types</string>
+			<string>tz2of</string>
 			<string>u</string>
 			<string>uid</string>
 			<string>uid=</string>
+			<string>uid_copy</string>
+			<string>uid_fetch</string>
+			<string>uid_search</string>
+			<string>uid_sort</string>
+			<string>uid_store</string>
+			<string>uid_thread</string>
+			<string>uidl</string>
 			<string>umask</string>
+			<string>umount</string>
+			<string>unalias_command</string>
 			<string>unbind</string>
-			<string>undefine_finalizer</string>
+			<string>uncapitalize</string>
 			<string>undef_method</string>
+			<string>undef_system_command</string>
+			<string>undefine_finalizer</string>
 			<string>unescape</string>
 			<string>unescapeElement</string>
 			<string>unescapeHTML</string>
+			<string>unescape_form</string>
+			<string>unget</string>
 			<string>ungetc</string>
 			<string>union</string>
 			<string>uniq</string>
 			<string>uniq!</string>
 			<string>uniqueID</string>
+			<string>unique_id</string>
 			<string>unknown</string>
 			<string>unlink</string>
 			<string>unlock</string>
+			<string>unmarshal</string>
+			<string>unmask_protected_sequences</string>
+			<string>unmount</string>
+			<string>unnormalize</string>
+			<string>unnormalized</string>
 			<string>unpack</string>
+			<string>unregist</string>
 			<string>unscan</string>
 			<string>unshift</string>
+			<string>unsubscribe</string>
 			<string>untaint</string>
 			<string>untrace_var</string>
 			<string>unused</string>
@@ -1291,51 +3095,142 @@
 			<string>update</string>
 			<string>upto</string>
 			<string>uptodate?</string>
+			<string>uri</string>
+			<string>uri_option</string>
+			<string>uri_registered?</string>
 			<string>url</string>
 			<string>url=</string>
 			<string>url_encode</string>
+			<string>usage</string>
+			<string>usage_no_exit</string>
+			<string>use_loader</string>
+			<string>use_loader=</string>
+			<string>use_loader?</string>
+			<string>use_pp=</string>
+			<string>use_readline=</string>
+			<string>use_registry</string>
+			<string>use_ssl</string>
+			<string>use_ssl=</string>
+			<string>use_ssl?</string>
+			<string>use_tracer=</string>
 			<string>usec</string>
 			<string>user</string>
 			<string>user=</string>
 			<string>userinfo</string>
 			<string>userinfo=</string>
-			<string>use_registry</string>
 			<string>utc</string>
 			<string>utc?</string>
 			<string>utc_offset</string>
 			<string>utime</string>
-			<string>validateOnParse</string>
-			<string>validateOnParse=</string>
+			<string>valid?</string>
 			<string>valid_civil?</string>
 			<string>valid_commercial?</string>
+			<string>valid_error</string>
 			<string>valid_jd?</string>
 			<string>valid_ordinal?</string>
 			<string>valid_time?</string>
+			<string>validate</string>
+			<string>validateOnParse</string>
+			<string>validateOnParse=</string>
+			<string>validate_for_stream</string>
+			<string>validate_one_tag_name</string>
 			<string>value</string>
 			<string>value=</string>
 			<string>value?</string>
+			<string>value_hash</string>
 			<string>values</string>
 			<string>values_at</string>
-			<string>variables</string>
+			<string>var_list</string>
 			<string>variable_kind</string>
+			<string>variables</string>
+			<string>variables=</string>
 			<string>varkind</string>
+			<string>ver</string>
+			<string>verbose</string>
+			<string>verbose=</string>
+			<string>verbose?</string>
 			<string>version</string>
+			<string>version_1_1</string>
+			<string>version_1_1?</string>
+			<string>version_1_2</string>
+			<string>version_1_2?</string>
+			<string>virtual_host</string>
+			<string>visibility</string>
 			<string>visible?</string>
+			<string>voidcmd</string>
+			<string>w3cdtf</string>
 			<string>wait</string>
 			<string>wait2</string>
+			<string>wait?</string>
+			<string>wait_all_jobs_execution</string>
+			<string>wait_until</string>
+			<string>wait_while</string>
 			<string>waitall</string>
+			<string>waitfor</string>
+			<string>waiting</string>
+			<string>waiting_job?</string>
+			<string>waiting_jobs</string>
+			<string>waiting_jobs_exist?</string>
 			<string>waitpid</string>
 			<string>waitpid2</string>
 			<string>wakeup</string>
 			<string>warn</string>
 			<string>warn?</string>
+			<string>warning</string>
 			<string>wday</string>
+			<string>weakref_alive?</string>
+			<string>wellformed_error</string>
+			<string>what_type?</string>
+			<string>whitespace</string>
+			<string>width</string>
+			<string>winsep</string>
+			<string>wiredump_dev</string>
+			<string>wiredump_dev=</string>
+			<string>wiredump_file_base</string>
+			<string>wiredump_file_base=</string>
+			<string>with</string>
+			<string>with_cflags</string>
+			<string>with_config</string>
+			<string>with_cppflags</string>
+			<string>with_destdir</string>
+			<string>with_friend</string>
+			<string>with_ldflags</string>
+			<string>workspaces</string>
+			<string>world_readable?</string>
+			<string>world_writable?</string>
 			<string>wrap</string>
 			<string>writable?</string>
 			<string>writable_real?</string>
 			<string>write</string>
+			<string>write_attribute_text</string>
+			<string>write_cdata</string>
+			<string>write_comment</string>
+			<string>write_document</string>
+			<string>write_element</string>
+			<string>write_extra_pages</string>
+			<string>write_html_on</string>
+			<string>write_instruction</string>
+			<string>write_nonblock</string>
+			<string>write_on</string>
+			<string>write_service</string>
+			<string>write_text</string>
+			<string>write_with_substitution</string>
 			<string>xml</string>
+			<string>xml2obj</string>
+			<string>xmlDecl</string>
+			<string>xml_decl</string>
+			<string>xml_encoding_label</string>
+			<string>xmldecl</string>
+			<string>xmldecl?</string>
 			<string>xmlschema</string>
+			<string>xmp</string>
+			<string>xpath</string>
+			<string>xpopen</string>
+			<string>xsystem</string>
+			<string>yaml_initialize</string>
+			<string>yaml_new</string>
+			<string>yaml_tag_class_name</string>
+			<string>yaml_tag_read_class</string>
 			<string>yday</string>
 			<string>year</string>
 			<string>yield</string>
@@ -1345,17 +3240,6 @@
 			<string>zlib_version</string>
 			<string>zone</string>
 			<string>zone_offset</string>
-			<string>_dump</string>
-			<string>_getproperty</string>
-			<string>_id2ref</string>
-			<string>_invoke</string>
-			<string>_load</string>
-			<string>_setproperty</string>
-			<string>__getobj__</string>
-			<string>__id__</string>
-			<string>__init__</string>
-			<string>__send__</string>
-			<string>__setobj__</string>
 		</array>
 	</dict>
 	<key>uuid</key>
