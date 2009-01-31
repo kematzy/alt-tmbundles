@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;script src="http://kematzy.com/delay_js_query.php?action=delay&amp;amp;sleep=${1:1}" type="text/javascript"&gt;&lt;/script&gt;$0</string>
+	<key>name</key>
+	<string>HTML: delay_js_query</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>js.delay</string>
+	<key>uuid</key>
+	<string>66503DCA-6028-4880-807C-07B14A98249B</string>
+</dict>
+</plist>
