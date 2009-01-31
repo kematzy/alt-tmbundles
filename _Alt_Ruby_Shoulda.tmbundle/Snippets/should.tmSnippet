@@ -5,7 +5,8 @@
 	<key>content</key>
 	<string>should "$1" do 
   $0
-end #/$1</string>
+end ${2:#/$1}
+</string>
 	<key>name</key>
 	<string>should block</string>
 	<key>scope</key>

@@ -3,23 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>context "${1:description}" do 
-  ${2:setup do 
-    $3
-  end
-  
-  ${4:td}	
-  
-  }sh$0
-end #/$1
-</string>
+	<string>teardown do 
+	$0
+end</string>
 	<key>name</key>
-	<string>context block with setup</string>
+	<string>teardown</string>
 	<key>scope</key>
 	<string>source.ruby.rails.shoulda, source.ruby</string>
 	<key>tabTrigger</key>
-	<string>cont</string>
+	<string>td</string>
 	<key>uuid</key>
-	<string>5EEB016C-352B-4A99-91D1-56D9953CE7C8</string>
+	<string>056EA474-8AB2-4F8B-AB96-35CCD0CFE4EA</string>
 </dict>
 </plist>
