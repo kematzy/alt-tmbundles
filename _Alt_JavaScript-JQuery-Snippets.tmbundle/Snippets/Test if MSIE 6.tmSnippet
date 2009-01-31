@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>var ie6 = $.browser.msie &amp;&amp; /MSIE 6.0/.test(navigator.userAgent);</string>
+	<string>var ie6 = \$.browser.msie &amp;&amp; /MSIE 6.0/.test(navigator.userAgent);</string>
 	<key>name</key>
 	<string>Test if MSIE 6</string>
 	<key>scope</key>
