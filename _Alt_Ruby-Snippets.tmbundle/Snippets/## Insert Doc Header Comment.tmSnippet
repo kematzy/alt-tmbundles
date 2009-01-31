@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>##  Filename:     `ruby -e "puts (ENV['TM_PROJECT_DIRECTORY'].nil?) ? ENV['TM_FILEPATH'] : ENV['TM_FILEPATH'].gsub(File.dirname(ENV['TM_PROJECT_DIRECTORY']),'')"`::  
+#   Project:      ${2:${TM_PROJECT_NAME:Un-named_Project}}
+#   Created by:   ${3:$TM_USER_NAME} $TM_USER_EMAIL
+#   Version:      v01 - `date +%Y-%m-%d`
+#   Copyright:    (c) ${3:$TM_USER_NAME} `date +%Y`
+#   Licence:	    MIT
+#   
+# ----------------------------------------------------------- ##
+
+# ${4: Description of file contents here}
+#
+
+${5:# code here }$0 
+
+# [/EOF] ----------------------------------------------------- #</string>
+	<key>name</key>
+	<string>## Insert Doc Header Comment</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>tabTrigger</key>
+	<string>head</string>
+	<key>uuid</key>
+	<string>62A0AD16-3D39-435E-8E3C-F67DE33AA0AA</string>
+</dict>
+</plist>

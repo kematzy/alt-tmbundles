@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>---- ${1:ruler delete me}
+$0</string>
+	<key>name</key>
+	<string>RDoc: --- (ruler)</string>
+	<key>scope</key>
+	<string>source.ruby comment.documentation</string>
+	<key>tabTrigger</key>
+	<string>line</string>
+	<key>uuid</key>
+	<string>B752BABE-5002-473E-A592-151110272AD1</string>
+</dict>
+</plist>

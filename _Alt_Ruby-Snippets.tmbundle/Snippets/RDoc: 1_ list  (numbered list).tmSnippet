@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>  ${1:1}. ${2:list item}$0</string>
+	<key>keyEquivalent</key>
+	<string>^1</string>
+	<key>name</key>
+	<string>RDoc: 1. list  (numbered list)</string>
+	<key>scope</key>
+	<string>source.ruby comment</string>
+	<key>uuid</key>
+	<string>EB376A88-43AA-4C9D-AB7C-98EFA71E600D</string>
+</dict>
+</plist>

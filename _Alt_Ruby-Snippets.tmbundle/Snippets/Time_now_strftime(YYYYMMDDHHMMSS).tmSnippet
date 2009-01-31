@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>Time.now.strftime("${1:%Y%d%m%H%M%S}")$0</string>
+	<key>name</key>
+	<string>Time.now.strftime(YYYYMMDDHHMMSS)</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>tabTrigger</key>
+	<string>now</string>
+	<key>uuid</key>
+	<string>D799245F-1887-49D6-B128-81C7910D8562</string>
+</dict>
+</plist>

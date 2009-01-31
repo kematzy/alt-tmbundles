@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>"#{$TM_SELECTED_TEXT}"</string>
+	<key>name</key>
+	<string>wrap variable in double quotes with "#{var}"</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>tabTrigger</key>
+	<string>Æ</string>
+	<key>uuid</key>
+	<string>4A7995B3-ADA1-49E6-B26D-755F7987BD6F</string>
+</dict>
+</plist>

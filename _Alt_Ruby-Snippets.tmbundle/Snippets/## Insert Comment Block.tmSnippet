@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>##/ ${1:${TM_SELECTED_TEXT:SECTION_NAME}}::  
+# ---------------------------------------------------------------$2
+
+${4:# code here }
+
+# [/$1] --------------------------------------------$3 /##</string>
+	<key>keyEquivalent</key>
+	<string>^B</string>
+	<key>name</key>
+	<string>## Insert Comment Block</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>uuid</key>
+	<string>66EE0962-3533-434A-B8EA-335F4FD2FF13</string>
+</dict>
+</plist>

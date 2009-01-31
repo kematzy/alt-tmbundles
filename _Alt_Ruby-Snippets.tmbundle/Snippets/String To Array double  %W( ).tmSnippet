@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>%W(${TM_SELECTED_TEXT:$TM_CURRENT_WORD})</string>
+	<key>keyEquivalent</key>
+	<string>~a</string>
+	<key>name</key>
+	<string>String To Array double  %W( )</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>uuid</key>
+	<string>75422EE5-CE93-4C55-88A7-01B513F2D964</string>
+</dict>
+</plist>
