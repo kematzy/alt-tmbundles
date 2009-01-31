@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;input name="$1" id="$2" type="file" accept="${3:list_of_mime_types}" tabindex="$4"${TM_XHTML}&gt;</string>
+	<key>name</key>
+	<string>&lt;input file&gt;</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>input</string>
+	<key>uuid</key>
+	<string>6CAF5F60-3DDE-43BB-BEF6-D69813CACD49</string>
+</dict>
+</plist>

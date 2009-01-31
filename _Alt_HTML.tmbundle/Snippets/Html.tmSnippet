@@ -7,7 +7,7 @@
 	$0
 &lt;/html&gt;</string>
 	<key>name</key>
-	<string>Html</string>
+	<string>&lt;html&gt;</string>
 	<key>scope</key>
 	<string>text.html</string>
 	<key>tabTrigger</key>

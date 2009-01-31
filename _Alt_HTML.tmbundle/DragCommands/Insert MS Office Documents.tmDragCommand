@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+file_name = ENV['TM_DROPPED_FILE'].gsub(/^(.*\/)?(.*\.(doc|xls|ppt))$/, '\2')
+print "&lt;a href=\"#{ENV['TM_DROPPED_FILE']}\" title=\"right click to download this document\" &gt;#{file_name}&lt;/a&gt;"
+</string>
+	<key>draggedFileExtensions</key>
+	<array>
+		<string>doc</string>
+		<string>xls</string>
+		<string>ppt</string>
+	</array>
+	<key>name</key>
+	<string>Insert MS Office Documents</string>
+	<key>output</key>
+	<string>insertAsSnippet</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>uuid</key>
+	<string>151F4F4B-6211-4746-8407-A2FEE961953C</string>
+</dict>
+</plist>

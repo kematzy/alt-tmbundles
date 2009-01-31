@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;meta name="Copyright" content="(c) `date +%Y` Copyright content: ${1:__CLIENT_NAME__}; Copyright design: ${2:kematzy.com}"${TM_XHTML}&gt;
+&lt;!-- (c) `date +%Y` Copyright content: $1; Copyright design: $2 All Rights Reserved. --&gt;$0</string>
+	<key>name</key>
+	<string>&lt;meta&gt; Copyright</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>meta</string>
+	<key>uuid</key>
+	<string>CD817982-DF45-4EC8-AFC3-2AD2D3DA9A7A</string>
+</dict>
+</plist>

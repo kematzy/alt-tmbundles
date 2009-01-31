@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+file_name = ENV['TM_DROPPED_FILE'].gsub(/^(.*\/)?(.*\.(pdf))$/, '\2')
+print "&lt;a href=\"#{ENV['TM_DROPPED_FILE']}\" title=\"right click to download this PDF document\" &gt;#{file_name}&lt;/a&gt;"</string>
+	<key>draggedFileExtensions</key>
+	<array>
+		<string>zip</string>
+	</array>
+	<key>name</key>
+	<string>Insert .PDF file</string>
+	<key>output</key>
+	<string>insertAsSnippet</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>uuid</key>
+	<string>3DF1F2BA-CA39-472D-BB44-FA26071E2645</string>
+</dict>
+</plist>

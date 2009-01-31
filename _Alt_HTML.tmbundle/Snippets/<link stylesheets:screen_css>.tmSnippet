@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;link rel="${1:stylesheet}" href="${2:/stylesheets/screen.css}" type="text/css" media="${3:screen}" title="${4:no title}" charset="${5:utf-8}"${TM_XHTML}&gt;$0</string>
+	<key>name</key>
+	<string>&lt;link stylesheets/screen.css&gt;</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>link</string>
+	<key>uuid</key>
+	<string>C2735DCE-7B06-46F4-9E33-C43D54CE463C</string>
+</dict>
+</plist>
