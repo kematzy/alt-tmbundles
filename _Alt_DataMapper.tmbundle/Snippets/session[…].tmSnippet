@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>session[:${1:user}]</string>
+	<key>keyEquivalent</key>
+	<string>^j</string>
+	<key>name</key>
+	<string>session[…]</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>uuid</key>
+	<string>A50D9A02-8C3E-4842-8012-575E977F7761</string>
+</dict>
+</plist>

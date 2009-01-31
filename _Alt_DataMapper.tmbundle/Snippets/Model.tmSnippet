@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>class ${1:ModelName}
+  include DataMapper::Resource
+  property :id,                   Integer, :serial =&gt; true
+  $0
+  ## ASSOCIATIONS
+  
+  ## VALIDATIONS
+  
+  ## CALLBACKS
+  
+  ## CLASS METHODS
+  
+  ## INSTANCE METHODS
+  
+end #/ $1
+</string>
+	<key>name</key>
+	<string>DM-Model</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>tabTrigger</key>
+	<string>dm-model</string>
+	<key>uuid</key>
+	<string>429DED6E-24A6-462F-ACDF-AA0DEE2C8D1B</string>
+</dict>
+</plist>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>DataMapper.setup(:default, {
+  :adapter  =&gt; 'mysql',
+  :host     =&gt; 'db.${1:client_name}.com',
+  :username =&gt; '$1_dev',
+  :password =&gt; '${2:long_complicated_password}',
+  :database =&gt; '$3{:demo}_$1_com'
+})
+$0</string>
+	<key>name</key>
+	<string>DM.Setup (MySQL) Dreamhost</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>tabTrigger</key>
+	<string>dm-setup</string>
+	<key>uuid</key>
+	<string>B4E297D5-9069-4BE2-B776-E70611B3EBAB</string>
+</dict>
+</plist>

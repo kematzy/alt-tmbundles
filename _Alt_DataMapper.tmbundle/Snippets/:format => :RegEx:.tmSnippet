@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>, :format =&gt; /^[A-Za-z0-9._-]*$/</string>
+	<key>name</key>
+	<string>:format =&gt; /RegEx/</string>
+	<key>scope</key>
+	<string>source.ruby.datamapper</string>
+	<key>tabTrigger</key>
+	<string>format</string>
+	<key>uuid</key>
+	<string>662E7392-8D29-4FF9-AFE4-6F1742A24DDA</string>
+</dict>
+</plist>

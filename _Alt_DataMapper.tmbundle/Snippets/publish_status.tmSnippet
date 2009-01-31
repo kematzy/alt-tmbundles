@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string># is the ${1:collection} available, suspended, or hidden
+property :publish_status,       Enum[:on, :off,:hidden], :default =&gt; "on"
+</string>
+	<key>name</key>
+	<string>publish_status</string>
+	<key>scope</key>
+	<string>source.ruby.datamapper</string>
+	<key>tabTrigger</key>
+	<string>pubst</string>
+	<key>uuid</key>
+	<string>B67404C9-E699-4863-BBC2-BB61B69B6C03</string>
+</dict>
+</plist>

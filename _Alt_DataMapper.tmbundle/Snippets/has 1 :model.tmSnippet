@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>has 1, :${:model_name_singular}</string>
+	<key>name</key>
+	<string>has 1 :model (HasOne)</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>tabTrigger</key>
+	<string>ho</string>
+	<key>uuid</key>
+	<string>FCB3B40D-3835-48E9-93E3-601E1F050012</string>
+</dict>
+</plist>

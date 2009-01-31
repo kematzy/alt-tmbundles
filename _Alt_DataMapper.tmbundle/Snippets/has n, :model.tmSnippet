@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>has n, :${1:model_name_plural}</string>
+	<key>name</key>
+	<string>has n, :model  (Has Many)</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>tabTrigger</key>
+	<string>hm</string>
+	<key>uuid</key>
+	<string>531178FB-4248-48A9-BEC3-BE1C183695E3</string>
+</dict>
+</plist>

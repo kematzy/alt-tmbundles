@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>%w(dm-core dm-validations dm-types dm-timestamps dm-userstamp $1).each {|lib| require lib }$0</string>
+	<key>name</key>
+	<string>Require (All Common)</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>tabTrigger</key>
+	<string>req</string>
+	<key>uuid</key>
+	<string>E17096F5-BAD1-43FC-B217-52326D915239</string>
+</dict>
+</plist>

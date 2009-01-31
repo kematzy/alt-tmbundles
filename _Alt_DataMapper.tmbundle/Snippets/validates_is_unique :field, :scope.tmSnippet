@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>validates_is_unique 	:${1:field_name},
+					:scope =&gt; :${2:section_id},
+    					:message =&gt; "${3:There's already a $1 with that value in this $2}"</string>
+	<key>name</key>
+	<string>validates_is_unique :field, :scope</string>
+	<key>scope</key>
+	<string>source.ruby.datamapper</string>
+	<key>tabTrigger</key>
+	<string>val</string>
+	<key>uuid</key>
+	<string>A11D5329-8035-4BB3-951E-BB25D6FB6C9B</string>
+</dict>
+</plist>

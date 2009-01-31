@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string># the id of the $1 within this ${2:collection}
+property :${1:model_name}_id,             Integer
+</string>
+	<key>name</key>
+	<string>property: model_id</string>
+	<key>scope</key>
+	<string>source.ruby.datamapper</string>
+	<key>tabTrigger</key>
+	<string>dm-id</string>
+	<key>uuid</key>
+	<string>7A05C8B7-8A6A-4A38-B807-49748C25C789</string>
+</dict>
+</plist>

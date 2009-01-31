@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string># where is the file stored
+property :path,                 FilePath, :nullable =&gt; false
+</string>
+	<key>name</key>
+	<string>property: path FilePath</string>
+	<key>scope</key>
+	<string>source.ruby.datamapper</string>
+	<key>tabTrigger</key>
+	<string>prop</string>
+	<key>uuid</key>
+	<string>FFB689E7-D500-4849-836F-62A25F2FB393</string>
+</dict>
+</plist>

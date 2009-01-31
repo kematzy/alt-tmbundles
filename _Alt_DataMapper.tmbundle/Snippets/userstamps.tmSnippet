@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string># track who created/updated this record
+property :created_by_id,        Integer
+property :updated_by_id,        Integer
+</string>
+	<key>name</key>
+	<string>userstamps</string>
+	<key>scope</key>
+	<string>source.ruby.datamapper</string>
+	<key>tabTrigger</key>
+	<string>userstamps</string>
+	<key>uuid</key>
+	<string>1ED44F2D-222C-4858-B3DF-6CEB39C89114</string>
+</dict>
+</plist>
