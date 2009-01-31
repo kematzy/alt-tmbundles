@@ -1,0 +1,48 @@
+/** Filename: 		styling.css 
+		Project:			${TM_PROJECT_NAME}
+		Created by: 	${TM_USERNAME}
+		Version:			01 - ${TM_DATE}
+		Copyright:		Please feel free to learn from this as I have from others.
+---------------------------------------------- **/
+
+/** REMEMBER! 
+		We have undone all (X)HTML browser style implementation to start off on a common ground
+
+/*  ------------------------------------------ **/
+
+/** 2. STYLING 
+-------------------------------------------------- */
+
+html {
+	/* IE WORKAROUND */
+	font-size: 100%;
+}
+body {
+	/* main body styling	*/
+	margin:20px 0;
+	padding:0;
+	color: #6C6B60;
+	text-align:center;
+	font:16px/100% "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+div#wrapper {
+	/* Main site content wrapper */
+	margin: 20px auto;
+	padding: 0;
+	width: 800px;	
+	border: 1px solid #333;
+}
+div#header {
+	/* main header on site */
+	height: 50px;
+}
+div#content {
+	/* main content section */
+	
+}
+#footer {
+	/* the main poge footer */
+	
+}
+
+/* [/2] ------------------------------------------ **/

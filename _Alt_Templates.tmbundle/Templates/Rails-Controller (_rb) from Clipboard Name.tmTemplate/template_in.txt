@@ -1,0 +1,3 @@
+class ${TM_CONTROLLER}Controller < ActionController::Base
+
+end

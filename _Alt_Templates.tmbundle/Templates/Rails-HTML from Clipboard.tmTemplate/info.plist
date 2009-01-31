@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>command</key>
+	<string>if [[ ! -f "$TM_NEW_FILE" ]]; then
+   __CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 \
+   pbpaste &gt; "$TM_NEW_FILE"
+fi</string>
+	<key>extension</key>
+	<string>rhtml</string>
+	<key>name</key>
+	<string>Rails-HTML from Clipboard</string>
+	<key>uuid</key>
+	<string>A0F37672-3C2E-49FE-8043-303B6951B968</string>
+</dict>
+</plist>
