@@ -23,6 +23,25 @@ htmlHeader "$title" '&lt;style type="text/css"&gt;
 		border: 1px #888 solid;
 		padding: 0 1em;
 	}
+	pre {
+		background: #eee;
+		border: 1px dashed #666;
+		padding: 10px 10px 5px 10px;
+		overflow: auto;
+		margin-bottom: 25px;
+	}
+	code{ font-family; Monaco, sans-serif; }
+	div.note {
+		background: #DEF0F5;
+		border: 1px dashed #999;
+		margin: 10px 20px;
+		padding: 5px 10px 10px 10px;
+	}
+	div.note h4 { padding: 0 0 0 0; margin: 0 0 0 0; }
+	div.note pre { margin-bottom: 5px; padding-bottom: 5px; }
+	div.note pre code { }
+	a, a:link, a:visited, a:active { color: #000; text-decoration: underline; }
+	a:hover { color: #284; }
 	&lt;/style&gt;'
 beginTag div 'contents'
 	"$TM_BUNDLE_SUPPORT/bin/Textile.rb"
