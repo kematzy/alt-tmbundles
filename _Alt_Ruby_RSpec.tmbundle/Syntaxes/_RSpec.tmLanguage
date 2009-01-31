@@ -45,7 +45,7 @@
 	<key>keyEquivalent</key>
 	<string>^~R</string>
 	<key>name</key>
-	<string> RSpec</string>
+	<string> Ruby RSpec</string>
 	<key>patterns</key>
 	<array>
 		<dict>
