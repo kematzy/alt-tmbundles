@@ -1,0 +1,136 @@
+8
+
+dir
+10740
+http://macromates.com/svn/Bundles/trunk/Bundles/Source.tmbundle/Commands
+http://macromates.com/svn/Bundles
+
+
+
+2008-08-29T16:09:43.564925Z
+10503
+JEG2
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+dfb7d73b-c2ec-0310-8fea-fb051d288c6d
+
+Insert Block Comment.tmCommand
+file
+
+
+
+
+2008-11-01T05:26:19.000000Z
+8edfa3200823f0427bc97612d6824ef4
+2008-05-29T11:58:32.210236Z
+9779
+duff
+
+Reformat Comment.tmCommand
+file
+
+
+
+
+2008-11-01T05:26:19.000000Z
+06b7bd4d3da1c2ed0eb738e68612200c
+2008-03-25T21:45:45.942134Z
+9209
+JEG2
+
+Toggle CamelCase vs Underscore.tmCommand
+file
+
+
+
+
+2008-11-01T05:26:19.000000Z
+f3f4fb426586cc5a5fca5422db6c3835
+2008-05-24T01:10:30.669585Z
+9669
+msheets
+
+Align Assignments.tmCommand
+file
+
+
+
+
+2008-11-01T05:26:19.000000Z
+a221024efa4230b31fe12fb8ea481d02
+2008-02-11T11:53:36.514019Z
+8856
+msheets
+
+Tabify.plist
+file
+
+
+
+
+2008-11-01T05:26:19.000000Z
+2ecbe0673451de1c3ec1ab84242dc3e9
+2006-03-08T01:50:52.068298Z
+2835
+dpowers
+
+Move to EOL and Insert ";".plist
+file
+
+
+
+
+2008-11-01T05:26:19.000000Z
+ad1a665023c4656e944cb39242058245
+2006-05-21T11:06:01.455220Z
+3383
+duff
+
+Toggle Single:Double String Quotes.plist
+file
+
+
+
+
+2008-11-01T05:26:19.000000Z
+cbe4b2b30dc390fd6e812f29ee88042c
+2006-08-17T00:05:16.998812Z
+4821
+torsten
+
+Insert Source Header.tmCommand
+file
+
+
+
+
+2008-11-01T05:26:19.000000Z
+89e6bfad18fe5f77c2a7c745a92baba4
+2007-10-19T12:59:42.524166Z
+8309
+duff
+
+Toggle comment.plist
+file
+
+
+
+
+2008-11-01T05:26:19.000000Z
+cbe0a9e2b48b6bb2738646058fcdb459
+2008-08-29T16:09:43.564925Z
+10503
+JEG2
+

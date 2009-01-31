@@ -1,0 +1,53 @@
+8
+
+dir
+10740
+http://macromates.com/svn/Bundles/trunk/Bundles/Source.tmbundle/Support/bin
+http://macromates.com/svn/Bundles
+
+
+
+2008-03-25T21:45:45.942134Z
+9209
+JEG2
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+dfb7d73b-c2ec-0310-8fea-fb051d288c6d
+
+reindent.rb
+file
+
+
+
+
+2008-11-01T05:26:22.000000Z
+0375bd02826b423c21ad1f547f8066fe
+2005-10-24T23:08:16.724845Z
+2005
+duff
+has-props
+
+rubywrap.rb
+file
+
+
+
+
+2008-11-01T05:26:22.000000Z
+15ce1ba3321eaf4a9fefc23e76f87d47
+2008-03-25T21:45:45.942134Z
+9209
+JEG2
+

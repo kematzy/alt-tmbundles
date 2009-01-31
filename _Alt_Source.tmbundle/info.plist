@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>contactEmailRot13</key>
+	<string>gz-ohaqyrf@znpebzngrf.pbz</string>
+	<key>contactName</key>
+	<string>Allan Odgaard</string>
+	<key>deleted</key>
+	<array>
+		<string>A72CB89A-5F10-11D9-9B72-000D93589AF6</string>
+		<string>A72CBBCA-5F10-11D9-9B72-000D93589AF6</string>
+		<string>D9DFD434-17FE-4491-A182-1B8F8491B3F7</string>
+		<string>88FEF123-77CA-11D9-AC33-000D93B6E43C</string>
+		<string>3DBAEC85-7D09-11D9-A1F6-000D93B6E43C</string>
+		<string>E8D80809-0CDE-4E57-AC2A-8C22DFF353EE</string>
+		<string>3C615C30-0BE1-43D5-896D-74372479FCD1</string>
+		<string>4990588E-CB98-4524-AA4E-4B8AD12EBE52</string>
+	</array>
+	<key>description</key>
+	<string>Miscellaneous support for working with source code. This bundle is essential, e.g. it allows you to toggle comments on ⌘/.</string>
+	<key>mainMenu</key>
+	<dict>
+		<key>excludedItems</key>
+		<array>
+			<string>70AC1B6D-698C-44AA-AF47-620DE0C6934A</string>
+			<string>9531B7D0-5F09-4BAB-A945-4F25D6F83115</string>
+			<string>D3CA8FEC-295E-4D48-838B-0BC5EC99D234</string>
+			<string>DD088C75-76B3-4538-A222-70392AEF0EB2</string>
+		</array>
+		<key>items</key>
+		<array>
+			<string>760ECECF-8108-4D4E-8936-8386FEA7A156</string>
+			<string>C93B4223-D82D-4DCE-A64A-C6969D303E3C</string>
+			<string>------------------------------------</string>
+			<string>3EADA773-B3B3-4BCA-AB65-8624BB0ADBDA</string>
+			<string>BB2EDEFB-8FBF-4997-B5B7-12C1C9DEAB67</string>
+			<string>------------------------------------</string>
+			<string>6C601F8C-15B2-43DA-8C39-5DCAD2240424</string>
+			<string>------------------------------------</string>
+			<string>AF1A1199-2884-44AC-A1C4-EE3724597FB0</string>
+		</array>
+		<key>submenus</key>
+		<dict>
+			<key>6C601F8C-15B2-43DA-8C39-5DCAD2240424</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>9BA39EEB-FFE8-4E6D-8ACC-E3A05CE03272</string>
+					<string>DC0B58B8-A7E3-4414-A1A1-BD17A3DB791A</string>
+					<string>538E6198-AC32-4980-91B8-B0124063EB9C</string>
+				</array>
+				<key>name</key>
+				<string>Move to EOL</string>
+			</dict>
+			<key>760ECECF-8108-4D4E-8936-8386FEA7A156</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>8195F3F0-C1C7-4A92-AE3E-3A921F82358D</string>
+					<string>6BB535FE-C73C-46E1-8872-05808D0F93AD</string>
+					<string>------------------------------------</string>
+					<string>5C0E51B6-A542-40FC-AAC0-90239E60CFD1</string>
+					<string>1775E716-7D72-4E4E-A4D4-1EE18A002907</string>
+				</array>
+				<key>name</key>
+				<string>Comments</string>
+			</dict>
+			<key>C93B4223-D82D-4DCE-A64A-C6969D303E3C</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>958D5DE1-2FAB-4E38-BD3D-497729B16947</string>
+					<string>E1AE0703-EE52-4C18-83FE-8C19E705BC92</string>
+					<string>25E5A0E8-764E-40A8-86B8-91286E9A15FA</string>
+				</array>
+				<key>name</key>
+				<string>Insert Escaped</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>name</key>
+	<string> Alt Source</string>
+	<key>ordering</key>
+	<array>
+		<string>AF1A1199-2884-44AC-A1C4-EE3724597FB0</string>
+		<string>8195F3F0-C1C7-4A92-AE3E-3A921F82358D</string>
+		<string>9531B7D0-5F09-4BAB-A945-4F25D6F83115</string>
+		<string>6BB535FE-C73C-46E1-8872-05808D0F93AD</string>
+		<string>1775E716-7D72-4E4E-A4D4-1EE18A002907</string>
+		<string>D3CA8FEC-295E-4D48-838B-0BC5EC99D234</string>
+		<string>3EADA773-B3B3-4BCA-AB65-8624BB0ADBDA</string>
+		<string>BB2EDEFB-8FBF-4997-B5B7-12C1C9DEAB67</string>
+		<string>DC0B58B8-A7E3-4414-A1A1-BD17A3DB791A</string>
+		<string>70AC1B6D-698C-44AA-AF47-620DE0C6934A</string>
+		<string>9BA39EEB-FFE8-4E6D-8ACC-E3A05CE03272</string>
+		<string>538E6198-AC32-4980-91B8-B0124063EB9C</string>
+		<string>DD088C75-76B3-4538-A222-70392AEF0EB2</string>
+		<string>E1AE0703-EE52-4C18-83FE-8C19E705BC92</string>
+		<string>5C0E51B6-A542-40FC-AAC0-90239E60CFD1</string>
+		<string>25E5A0E8-764E-40A8-86B8-91286E9A15FA</string>
+		<string>958D5DE1-2FAB-4E38-BD3D-497729B16947</string>
+		<string>1E02987E-5184-483F-BB91-E4CCF573CAB0</string>
+		<string>30FB6036-2CBD-4DEE-8AF4-1EAFCC4B10DC</string>
+		<string>DA2CFD68-853B-42DB-8F4E-EE913422D0F2</string>
+		<string>66A86CC1-22AB-426F-A410-4505D110A86C</string>
+		<string>0365677D-38E3-4524-81FE-ED13F0EBF787</string>
+		<string>21437E65-4FED-48FA-A909-80546FE2D658</string>
+	</array>
+	<key>uuid</key>
+	<string>9A830B13-77F8-4507-96E3-CFCCBA779E39</string>
+</dict>
+</plist>

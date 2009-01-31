@@ -1,0 +1,55 @@
+8
+
+dir
+10740
+http://macromates.com/svn/Bundles/trunk/Bundles/Source.tmbundle
+http://macromates.com/svn/Bundles
+
+
+
+2008-09-25T12:51:00.836238Z
+10637
+jeroen
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+dfb7d73b-c2ec-0310-8fea-fb051d288c6d
+
+Commands
+dir
+
+Preferences
+dir
+
+Macros
+dir
+
+Snippets
+dir
+
+info.plist
+file
+
+
+
+
+2008-11-01T05:26:22.000000Z
+c00e2bb1e9c14309ffae47139dd54ac0
+2007-11-04T00:58:40.574909Z
+8398
+duff
+
+Support
+dir
+
