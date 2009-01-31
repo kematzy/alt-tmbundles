@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>require "$0"</string>
+	<string>:yields: ${0:arguments}</string>
 	<key>name</key>
-	<string>require_gem ".." gem</string>
+	<string>RDoc :yields: (in comment)</string>
 	<key>scope</key>
-	<string>source.ruby</string>
+	<string>source.ruby comment</string>
 	<key>tabTrigger</key>
-	<string>reqg-gem</string>
+	<string>y</string>
 	<key>uuid</key>
-	<string>771F4865-11B9-4F3A-A453-73BF78E55CE4</string>
+	<string>46683FFF-B055-4386-A815-DD9CF89AAB9C</string>
 </dict>
 </plist>

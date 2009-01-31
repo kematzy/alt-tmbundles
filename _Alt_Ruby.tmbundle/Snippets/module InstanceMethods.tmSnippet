@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>module ${1:${TM_FILENAME/(?:\A|_)([A-Za-z0-9]+)(?:\.rb)?/(?2::\u$1)/g}}
-	module_function
-	
+	<string># 
+# 
+module InstanceMethods
 	$0
-end #/module $1</string>
+end #/module InstanceMethods</string>
 	<key>name</key>
-	<string>module .. module_function .. end</string>
+	<string>module InstanceMethods</string>
 	<key>scope</key>
 	<string>source.ruby</string>
 	<key>tabTrigger</key>
 	<string>mod</string>
 	<key>uuid</key>
-	<string>7D50DB23-64AB-404D-A1C4-F9B26DF81E7C</string>
+	<string>3278D3E3-0AD2-42F6-ACAB-9A56362C9E9C</string>
 </dict>
 </plist>

@@ -9,7 +9,7 @@
 	end
 	
 	
-end</string>
+end #/class $1</string>
 	<key>name</key>
 	<string>class .. &lt; ParentClass .. initialize .. end</string>
 	<key>scope</key>

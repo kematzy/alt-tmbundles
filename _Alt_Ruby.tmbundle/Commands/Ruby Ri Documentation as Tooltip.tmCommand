@@ -5,29 +5,23 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>#!/usr/bin/env ruby
-s = STDIN.read
-case s
-when /^\w+$/
-  print "*#{s}*$0"
-when ""
-  print "*$1*$0"
+	<string># check if we have a selected word or just the cursor on a word.
+if [[ $TM_SELECTED_TEXT == '' ]]; then
+	ri -f plain -w 70 $TM_CURRENT_WORD
 else
-  print "&lt;b&gt;#{s}&lt;/b&gt;"
-end</string>
-	<key>fallbackInput</key>
-	<string>word</string>
+	ri -f plain -w 70 "$TM_SELECTED_TEXT"
+fi</string>
 	<key>input</key>
 	<string>selection</string>
 	<key>keyEquivalent</key>
-	<string>@b</string>
+	<string>^H</string>
 	<key>name</key>
-	<string>RDoc: Bold</string>
+	<string>Ruby Ri Documentation as Tooltip</string>
 	<key>output</key>
-	<string>insertAsSnippet</string>
+	<string>showAsTooltip</string>
 	<key>scope</key>
-	<string>source.ruby comment</string>
+	<string>source.ruby</string>
 	<key>uuid</key>
-	<string>121390D9-E69B-4C81-889B-5FA329F27982</string>
+	<string>2640E014-E2A5-44A3-8FFD-4FF14C120F77</string>
 </dict>
 </plist>

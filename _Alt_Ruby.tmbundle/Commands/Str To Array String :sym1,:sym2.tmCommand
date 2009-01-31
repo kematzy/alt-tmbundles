@@ -6,26 +6,29 @@
 	<string>nop</string>
 	<key>command</key>
 	<string>#!/usr/bin/env ruby
-s = STDIN.read
-puts "\#--"
-if s== ""
-  puts "\# $0","\#++"
-else
-  puts s, "\#++", "$0"
-end</string>
-	<key>fallbackInput</key>
-	<string>line</string>
+str = ENV['TM_SELECTED_TEXT'].chomp
+class Array
+  def to_sym_str
+    res =''
+    each {|v| res += ":#{v},"}
+    res.chomp(",")
+  end
+end
+words = str.split
+#puts "words=[#{words.inspect}]"
+#puts "words.to_sym_str = [#{words.to_sym_str}]"
+print words.to_sym_str</string>
 	<key>input</key>
 	<string>selection</string>
 	<key>keyEquivalent</key>
-	<string>^@O</string>
+	<string>~a</string>
 	<key>name</key>
-	<string>RDoc: Omit</string>
+	<string>Str To Array String :sym1,:sym2</string>
 	<key>output</key>
-	<string>insertAsSnippet</string>
+	<string>replaceSelectedText</string>
 	<key>scope</key>
 	<string>source.ruby</string>
 	<key>uuid</key>
-	<string>3962BDD5-7E4C-4B89-8F9F-B2D017E85E83</string>
+	<string>E10685CC-1A28-4BFB-A1D8-5CB98326C477</string>
 </dict>
 </plist>

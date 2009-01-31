@@ -3,18 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>module ${1:${TM_FILENAME/(?:\A|_)([A-Za-z0-9]+)(?:\.rb)?/(?2::\u$1)/g}}
-	module_function
-	
-	$0
-end #/module $1</string>
+	<string>$6${5:&lt;&lt;-${1:end_html}
+${2:${TM_SELECTED_TEXT:Content
+}}$1
+}</string>
 	<key>name</key>
-	<string>module .. module_function .. end</string>
+	<string>&lt;&lt; HereDoc</string>
 	<key>scope</key>
 	<string>source.ruby</string>
 	<key>tabTrigger</key>
-	<string>mod</string>
+	<string>&lt;&lt;</string>
 	<key>uuid</key>
-	<string>7D50DB23-64AB-404D-A1C4-F9B26DF81E7C</string>
+	<string>51908F5B-819E-49F1-A2CA-8A6E933B629E</string>
 </dict>
 </plist>
