@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>css</string>
+		<string>htm</string>
+		<string>rb</string>
+		<string>php</string>
+		<string>tmpl</string>
+		<string>txt</string>
+	</array>
+	<key>foldingStartMarker</key>
+	<string>/\*\*(?!\*)|\{\s*($|/\*(?!.*?\*/.*\S))</string>
+	<key>foldingStopMarker</key>
+	<string>(?&lt;!\*)\*\*/|^\s*\}</string>
+	<key>name</key>
+	<string> Nanoc CSS</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>begin</key>
+			<string>^(-){5}(-\s)*?</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>meta.yaml.marker.css.nanoc</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>invalid.illegal.bad-configs-declaration.css.nanoc</string>
+				</dict>
+			</dict>
+			<key>contentName</key>
+			<string>meta.configs.css.nanoc</string>
+			<key>end</key>
+			<string>^(-{5})(-\s)*?</string>
+			<key>name</key>
+			<string>source.yaml.embedded.css.nanoc</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.yaml</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>source.css</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.css.nanoc</string>
+	<key>uuid</key>
+	<string>5889D338-2017-4FAE-ACF4-DC5CB3EA6F1D</string>
+</dict>
+</plist>

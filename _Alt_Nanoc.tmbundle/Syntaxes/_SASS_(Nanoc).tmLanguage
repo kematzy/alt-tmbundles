@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>sass</string>
+	</array>
+	<key>foldingStartMarker</key>
+	<string>^\s*([-%#\:\.\w\=].*)\s$</string>
+	<key>foldingStopMarker</key>
+	<string>^\s*$</string>
+	<key>name</key>
+	<string> Nanoc SASS</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>begin</key>
+			<string>^(-){5}(-\s)*?</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>meta.yaml.marker.sass.nanoc</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>invalid.illegal.bad-configs-declaration.sass.nanoc</string>
+				</dict>
+			</dict>
+			<key>contentName</key>
+			<string>meta.configs.sass.nanoc</string>
+			<key>end</key>
+			<string>^(-{5})(-\s)*?</string>
+			<key>name</key>
+			<string>source.yaml.embedded.sass.nanoc</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.yaml</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>source.sass</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.sass.nanoc</string>
+	<key>uuid</key>
+	<string>3FC8C50C-CDC1-4816-A17D-EB8BE0699DF0</string>
+</dict>
+</plist>

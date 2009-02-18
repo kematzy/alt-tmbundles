@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string> Alt Nanoc</string>
+	<key>ordering</key>
+	<array>
+		<string>BE1C00B0-5597-4E46-8647-67652DA399AE</string>
+		<string>592499AE-F458-47E8-BCAC-A3336190FE23</string>
+		<string>8DB26D87-5E2F-493F-91F7-D5BF397915C3</string>
+		<string>44781099-98CA-4983-9B22-22FF03A23267</string>
+		<string>3FC8C50C-CDC1-4816-A17D-EB8BE0699DF0</string>
+		<string>5889D338-2017-4FAE-ACF4-DC5CB3EA6F1D</string>
+	</array>
+	<key>uuid</key>
+	<string>56DE079A-6EF0-4306-A086-D1CF19D487BD</string>
+</dict>
+</plist>

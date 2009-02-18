@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>-----
+# Built-in
+binary: false
+filters: ['sass']
+sass_options:
+  # style: :expanded
+  style: :compact
+
+# Custom 
+extension: 'css'
+
+-----
+$0</string>
+	<key>name</key>
+	<string>meta block (SASS)</string>
+	<key>scope</key>
+	<string>source.sass</string>
+	<key>tabTrigger</key>
+	<string>nmeta</string>
+	<key>uuid</key>
+	<string>592499AE-F458-47E8-BCAC-A3336190FE23</string>
+</dict>
+</plist>

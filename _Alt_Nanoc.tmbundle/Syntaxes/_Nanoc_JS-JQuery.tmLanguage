@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>foldingStartMarker</key>
+	<string>(^.*{[^}]*$|^.*\([^\)]*$|^.*/\*(?!.*\*/).*$)</string>
+	<key>foldingStopMarker</key>
+	<string>(^\s*\}|^\s*\)|^(?!.*/\*).*\*/)</string>
+	<key>name</key>
+	<string> Nanoc JS (JQuery)</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>begin</key>
+			<string>^(-){5}(-\s)*?</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>meta.yaml.marker.js.jquery.nanoc</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>invalid.illegal.bad-configs-declaration.js.jquery.nanoc</string>
+				</dict>
+			</dict>
+			<key>contentName</key>
+			<string>meta.configs.js.jquery.nanoc</string>
+			<key>end</key>
+			<string>^(-{5})(-\s)*?</string>
+			<key>name</key>
+			<string>source.yaml.embedded.js.jquery.nanoc</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.yaml</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>source.js.jquery</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.js.jquery.nanoc</string>
+	<key>uuid</key>
+	<string>44781099-98CA-4983-9B22-22FF03A23267</string>
+</dict>
+</plist>
