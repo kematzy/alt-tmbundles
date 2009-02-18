@@ -356,7 +356,7 @@
 			<key>match</key>
 			<string>(?:((')(.*?)('))|((")(.*?)(")))\s*:\s*\b(function)?\s*(\()(.*?)(\))</string>
 			<key>name</key>
-			<string>meta.function.json.js</string>
+			<string>meta.function.json2.js</string>
 		</dict>
 		<dict>
 			<key>captures</key>
