@@ -7,9 +7,9 @@
 	<key>keyEquivalent</key>
 	<string>~"</string>
 	<key>name</key>
-	<string>wrap variable in double quotes and [] "[#{var}]"</string>
+	<string>wrap variable: var =&gt; "[#{var}]"</string>
 	<key>scope</key>
-	<string>source.ruby</string>
+	<string>source.ruby -string.quoted.double</string>
 	<key>tabTrigger</key>
 	<string>Æ</string>
 	<key>uuid</key>
