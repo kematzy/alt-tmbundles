@@ -12,6 +12,8 @@
 	<dict>
 		<key>items</key>
 		<array>
+			<string>60810A87-A358-46FB-82D9-5DF079E5FBAC</string>
+			<string>------------------------------------</string>
 			<string>537B77DA-6661-43F8-9A9A-08D88F8DAFF5</string>
 			<string>EB330CBD-CF7B-47BC-9AB5-D39A4586E75A</string>
 			<string>6E924CEE-7FB3-4389-8098-A173C7B143B9</string>
@@ -24,6 +26,7 @@
 			<string>D0E680B0-CBAA-4750-96F5-8F68A674B810</string>
 			<string>------------------------------------</string>
 			<string>EB0394D1-5DE7-465A-8302-C7C26FD77468</string>
+			<string>0C4F383E-8CBB-4A63-8CED-9FB0D366E610</string>
 		</array>
 		<key>submenus</key>
 		<dict>
@@ -43,12 +46,13 @@
 			<dict>
 				<key>items</key>
 				<array>
-					<string>9745F09A-6A75-461B-84B3-129091EA43D7</string>
+					<string>7BE3A820-AC90-48D2-9771-7EC90A90E384</string>
 					<string>------------------------------------</string>
 					<string>4FD5555D-4499-4F46-88B0-E19B9717D44A</string>
 					<string>66D98E46-E3F6-473A-B9CF-5515185FE9F3</string>
 					<string>93018172-2206-4FAE-BE57-D111F746DC97</string>
 					<string>------------------------------------</string>
+					<string>9745F09A-6A75-461B-84B3-129091EA43D7</string>
 					<string>DDFB95AC-1336-40F5-A4E3-A32F743B5F05</string>
 					<string>866AFAC2-9B80-4A38-BE10-0D57DB4FBD82</string>
 					<string>------------------------------------</string>
@@ -151,7 +155,6 @@
 			<dict>
 				<key>items</key>
 				<array>
-					<string>7BE3A820-AC90-48D2-9771-7EC90A90E384</string>
 					<string>906ECD65-6166-4B34-B4E5-DFDD2D041E99</string>
 					<string>D05BE237-7843-410D-875B-7E1A5D18B773</string>
 					<string>97B3A574-7B10-46D5-93E8-B80D2F023706</string>
@@ -224,6 +227,7 @@
 	<string> Alt Ruby Sass</string>
 	<key>ordering</key>
 	<array>
+		<string>60810A87-A358-46FB-82D9-5DF079E5FBAC</string>
 		<string>09862ADB-1631-411B-A209-3F33C84D1E89</string>
 		<string>4FD5555D-4499-4F46-88B0-E19B9717D44A</string>
 		<string>66D98E46-E3F6-473A-B9CF-5515185FE9F3</string>
@@ -320,6 +324,7 @@
 		<string>3DCBD154-AF2D-43A9-8AE9-BEE075F0D37A</string>
 		<string>0CB61C46-A106-4B78-AA13-56A705AB1E36</string>
 		<string>94F13142-B1F9-43DD-9708-1DE4D703DC68</string>
+		<string>0C4F383E-8CBB-4A63-8CED-9FB0D366E610</string>
 	</array>
 	<key>uuid</key>
 	<string>169713E5-12A3-47DC-902D-13FD9419195E</string>

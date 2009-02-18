@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+
+css = ENV['TM_SELECTED_TEXT']
+
+def convert_css_to_sass(css)
+  return '' if css.nil? or css == ''
+  
+  # convert all the compacted CSS into expanded
+  css = css.gsub(/(?m)(\{|;)\s*([-\w]+:)\s*(?=\S)/,"\\1\n  \\2")  
+  css = css.gsub(/(?m)\s*\}[ \t]*\n?/,"\n}\n")
+  css = css.gsub(/(?m)\s\{[ \t]*/,"{")
+  
+  # replace all {}
+  css = css.gsub(/(\{|\})/,'')
+  # replace all close comments */
+  css = css.gsub(/\*\//,"")
+  # indent the comments divider bar
+  css = css.gsub(/^(-+|=+)+/, "  \\1")
+  # write back the comment on a single line ???
+  # css = css.gsub(/\/\*(.*)/m,"/* \\1")
+  # replace all the keyword: value; pairs
+  css = css.gsub(/([a-z-]+)(:)\s*(.*);/,"\\2\\1 \\3")
+  # replace all tabs in the the file with two spaces
+  css = css.gsub(/\t/,'  ')
+  # replace all the empty lines as well, to compact things more
+  css = css.gsub(/^\n$/,'')
+  css
+end
+
+puts convert_css_to_sass(css)
+</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>name</key>
+	<string>Convert CSS to Sass</string>
+	<key>output</key>
+	<string>replaceSelectedText</string>
+	<key>scope</key>
+	<string>source.css, source.sass</string>
+	<key>uuid</key>
+	<string>60810A87-A358-46FB-82D9-5DF079E5FBAC</string>
+</dict>
+</plist>
