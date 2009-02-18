@@ -3,16 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>"#{$TM_SELECTED_TEXT}"</string>
-	<key>keyEquivalent</key>
-	<string>~'</string>
+	<string>${1:object}.should.be.instance_of(${2:ClassName})$0</string>
 	<key>name</key>
-	<string>wrap variable in double quotes with "#{var}"</string>
+	<string>Bacon.should.be.instance_of</string>
 	<key>scope</key>
 	<string>source.ruby</string>
 	<key>tabTrigger</key>
-	<string>Æ</string>
+	<string>shbio</string>
 	<key>uuid</key>
-	<string>4A7995B3-ADA1-49E6-B26D-755F7987BD6F</string>
+	<string>594C0789-6974-4967-8317-F91B2F0256E1</string>
 </dict>
 </plist>

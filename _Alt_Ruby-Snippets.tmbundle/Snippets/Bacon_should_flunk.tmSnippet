@@ -3,16 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>"#{$TM_SELECTED_TEXT}"</string>
-	<key>keyEquivalent</key>
-	<string>~'</string>
+	<string>should.flunk "${1:reason}"$0</string>
 	<key>name</key>
-	<string>wrap variable in double quotes with "#{var}"</string>
+	<string>Bacon.should.flunk</string>
 	<key>scope</key>
 	<string>source.ruby</string>
 	<key>tabTrigger</key>
-	<string>Æ</string>
+	<string>shf</string>
 	<key>uuid</key>
-	<string>4A7995B3-ADA1-49E6-B26D-755F7987BD6F</string>
+	<string>08FF14C5-3D0A-4FD9-80F8-12E72257621C</string>
 </dict>
 </plist>

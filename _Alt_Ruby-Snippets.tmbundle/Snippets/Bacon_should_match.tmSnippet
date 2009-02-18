@@ -3,16 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>"#{$TM_SELECTED_TEXT}"</string>
-	<key>keyEquivalent</key>
-	<string>~'</string>
+	<string>${1:.}should.match(/${2:regex}/)$0</string>
 	<key>name</key>
-	<string>wrap variable in double quotes with "#{var}"</string>
+	<string>Bacon.should.match</string>
 	<key>scope</key>
 	<string>source.ruby</string>
 	<key>tabTrigger</key>
-	<string>Æ</string>
+	<string>shm</string>
 	<key>uuid</key>
-	<string>4A7995B3-ADA1-49E6-B26D-755F7987BD6F</string>
+	<string>242E008B-9B6B-4EDD-A6FE-7F1A47404908</string>
 </dict>
 </plist>

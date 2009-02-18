@@ -3,16 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>"#{$TM_SELECTED_TEXT}"</string>
-	<key>keyEquivalent</key>
-	<string>~'</string>
+	<string>describe "${1:description}" do 
+  
+  it "should ${3:description}" do 
+    $0
+  end
+  
+end ${2:#/$1}</string>
 	<key>name</key>
-	<string>wrap variable in double quotes with "#{var}"</string>
+	<string>Bacon.describe</string>
 	<key>scope</key>
 	<string>source.ruby</string>
 	<key>tabTrigger</key>
-	<string>Æ</string>
+	<string>des</string>
 	<key>uuid</key>
-	<string>4A7995B3-ADA1-49E6-B26D-755F7987BD6F</string>
+	<string>2BFB07FC-94F7-4F63-BCAD-E758F55A83DE</string>
 </dict>
 </plist>
