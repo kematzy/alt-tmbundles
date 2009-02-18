@@ -3,14 +3,15 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>count(:$0)</string>
+	<string># returns array with relationships as array
+${1:Model}.relationships</string>
 	<key>name</key>
-	<string>Model.count</string>
+	<string>Model.relationships</string>
 	<key>scope</key>
 	<string>source.ruby.datamapper</string>
 	<key>tabTrigger</key>
-	<string>count</string>
+	<string>rel</string>
 	<key>uuid</key>
-	<string>4A501F53-8B94-4F7A-9BA9-44FDF7922954</string>
+	<string>9FAC7CBD-9E5F-4ADE-99AC-AE2150FBECD1</string>
 </dict>
 </plist>

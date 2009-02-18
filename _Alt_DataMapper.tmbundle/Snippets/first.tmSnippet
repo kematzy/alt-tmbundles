@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>first(:$0)</string>
 	<key>name</key>
-	<string>first</string>
+	<string>Model.first</string>
 	<key>scope</key>
 	<string>source.ruby.datamapper</string>
 	<key>tabTrigger</key>

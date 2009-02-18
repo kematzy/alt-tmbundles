@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>count(:$0)</string>
+	<string>${1:Model}.properties.map { |p| [p.name, p.type, p.length] }</string>
 	<key>name</key>
-	<string>Model.count</string>
+	<string>Model.properties (block)</string>
 	<key>scope</key>
 	<string>source.ruby.datamapper</string>
 	<key>tabTrigger</key>
-	<string>count</string>
+	<string>prop</string>
 	<key>uuid</key>
-	<string>4A501F53-8B94-4F7A-9BA9-44FDF7922954</string>
+	<string>AB820AAB-1E92-4939-81D9-FF941B0F35C3</string>
 </dict>
 </plist>
