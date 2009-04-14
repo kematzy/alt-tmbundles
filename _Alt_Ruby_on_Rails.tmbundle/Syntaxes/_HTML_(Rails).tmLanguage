@@ -21,7 +21,7 @@
 		|(^|\s)\}
 		)</string>
 	<key>keyEquivalent</key>
-	<string>^~R</string>
+	<string>^~H</string>
 	<key>name</key>
 	<string> HTML (Rails)</string>
 	<key>patterns</key>
