@@ -9,9 +9,9 @@ property :publish_status,       Enum[:on, :off,:hidden], :default =&gt; "on"
 	<key>name</key>
 	<string>publish_status</string>
 	<key>scope</key>
-	<string>source.ruby.datamapper</string>
+	<string>source.ruby</string>
 	<key>tabTrigger</key>
-	<string>pubst</string>
+	<string>dm-pubst</string>
 	<key>uuid</key>
 	<string>B67404C9-E699-4863-BBC2-BB61B69B6C03</string>
 </dict>

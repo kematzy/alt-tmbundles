@@ -10,7 +10,7 @@ property :updated_at,           DateTime
 	<key>name</key>
 	<string>timestamps</string>
 	<key>scope</key>
-	<string>source.ruby.datamapper</string>
+	<string>source.ruby</string>
 	<key>tabTrigger</key>
 	<string>timestamps</string>
 	<key>uuid</key>

@@ -10,7 +10,7 @@ property :updated_by_id,        Integer
 	<key>name</key>
 	<string>userstamps</string>
 	<key>scope</key>
-	<string>source.ruby.datamapper</string>
+	<string>source.ruby</string>
 	<key>tabTrigger</key>
 	<string>userstamps</string>
 	<key>uuid</key>

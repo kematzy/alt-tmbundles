@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>Model.find(:all)</string>
 	<key>scope</key>
-	<string>meta.ruby.datamapper</string>
+	<string>source.ruby, meta.ruby.datamapper</string>
 	<key>tabTrigger</key>
 	<string>find</string>
 	<key>uuid</key>

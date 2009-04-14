@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>class Person
+  include DataMapper::Resource
+  
+  property :id,         Integer, :serial =&gt; true    # primary serial key
+  property :firstname,  String
+  property :lastname,  String
+  property :phone,  String
+  property :email,  String
+  property :address,  String
+  property :city,  String
+  property :state,  String
+  property :zip,  String
+  property :created_at, DateTime
+
+  ## ASSOCIATIONS
+  
+  # has n, :friends
+  
+  ## VALIDATIONS
+  
+  # validates_present [:firstname, lastname, email]
+    
+  ## CALLBACKS
+  
+  ## CLASS METHODS
+  
+  ## INSTANCE METHODS
+
+end</string>
+	<key>name</key>
+	<string>Model: Person</string>
+	<key>scope</key>
+	<string>source.ruby.datamapper</string>
+	<key>tabTrigger</key>
+	<string>dm-person</string>
+	<key>uuid</key>
+	<string>B39F8787-AEA9-4E6A-A3A1-F57AC3A2682B</string>
+</dict>
+</plist>

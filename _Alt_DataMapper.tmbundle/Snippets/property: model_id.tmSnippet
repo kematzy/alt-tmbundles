@@ -9,7 +9,7 @@ property :${1:model_name}_id,             Integer
 	<key>name</key>
 	<string>property: model_id</string>
 	<key>scope</key>
-	<string>source.ruby.datamapper</string>
+	<string>source.ruby</string>
 	<key>tabTrigger</key>
 	<string>dm-id</string>
 	<key>uuid</key>
