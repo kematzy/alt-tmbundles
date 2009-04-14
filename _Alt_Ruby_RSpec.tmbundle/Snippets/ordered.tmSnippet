@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>ordered</string>
 	<key>scope</key>
-	<string>source.ruby.rspec</string>
+	<string>source.ruby, source.ruby.rspec</string>
 	<key>tabTrigger</key>
 	<string>ord</string>
 	<key>uuid</key>

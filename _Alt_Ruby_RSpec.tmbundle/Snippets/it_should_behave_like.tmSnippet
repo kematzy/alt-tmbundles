@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>it_should_behave_like</string>
 	<key>scope</key>
-	<string>source.ruby.rspec</string>
+	<string>source.ruby, source.ruby.rspec</string>
 	<key>tabTrigger</key>
 	<string>itsbl</string>
 	<key>uuid</key>

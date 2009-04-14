@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>with args</string>
 	<key>scope</key>
-	<string>source.ruby.rspec</string>
+	<string>source.ruby, source.ruby.rspec</string>
 	<key>tabTrigger</key>
 	<string>wia</string>
 	<key>uuid</key>

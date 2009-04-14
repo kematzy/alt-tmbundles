@@ -3,15 +3,15 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:target}.should_not be_instance_of(${2:klass})
+	<string>${1:target}.should == false
 $0</string>
 	<key>name</key>
-	<string>should_not be_instance_of</string>
+	<string>should ==false</string>
 	<key>scope</key>
 	<string>source.ruby, source.ruby.rspec</string>
 	<key>tabTrigger</key>
-	<string>shbio</string>
+	<string>shf</string>
 	<key>uuid</key>
-	<string>F53DF187-BBCE-4ED4-B052-B0E93157095B</string>
+	<string>4E2EB027-9F26-4091-A6E8-175BD27BCD54</string>
 </dict>
 </plist>
