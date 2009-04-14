@@ -326,7 +326,7 @@
 						</dict>
 						<dict>
 							<key>match</key>
-							<string>(\b(?i:arial|century|comic|courier|garamond|georgia|helvetica|impact|lucida|symbol|system|tahoma|times|trebuchet|utopia|verdana|webdings|sans-serif|serif|monospace)\b)</string>
+							<string>(\b(?i:arial|century|comic|courier|garamond|georgia|helvetica|impact|lucida|monaco|symbol|system|tahoma|times|trebuchet|utopia|verdana|webdings|sans-serif|serif|monospace)\b)</string>
 							<key>name</key>
 							<string>support.constant.font-name.css</string>
 						</dict>
