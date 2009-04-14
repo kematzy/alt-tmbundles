@@ -37,13 +37,35 @@ htmlHeader "$title" '&lt;style type="text/css"&gt;
 		margin: 10px 20px;
 		padding: 5px 10px 10px 10px;
 	}
-	div.note h4 { padding: 0 0 0 0; margin: 0 0 0 0; }
+	div.note h4 { padding: 0 0 0 0; margin: 0 0 0 0; } 
 	div.note pre { margin-bottom: 5px; padding-bottom: 5px; }
 	div.note pre code { }
 	a, a:link, a:visited, a:active { color: #000; text-decoration: underline; }
-	a:hover { color: #284; }
+	a:hover { color: #284; } 
+    	.wikistyle h1{font-size:170%;border-top:4px solid #aaa;padding-top:.5em;margin-top:1.5em;}
+	.wikistyle h1:first-child{margin-top:0;padding-top:.25em;border-top:none;}
+	.wikistyle h2{font-size:150%;margin-top:1.5em;border-top:4px solid #e0e0e0;padding-top:.5em;}
+	.wikistyle h3{margin-top:1em;}
+	.wikistyle p{margin:1em 0;line-height:1.5em;}
+	.wikistyle ul{margin:1em 0 1em 1.3em;}
+	.wikistyle ul{margin-top:0;margin-bottom:0;}
+	.wikistyle ol{margin:1em 0 1em 1.5em;}
+	.wikistyle ol ol{margin-top:0;margin-bottom:0;}
+	.wikistyle blockquote{margin:1em 0;border-left:5px solid #ddd;padding-left:.6em;color:#555;}
+	.wikistyle dt{font-weight:bold;margin-left:1em;}
+	.wikistyle dd{margin-left:2em;margin-bottom:1em;}
+	.wikistyle table{margin:1em 0;}
+	.wikistyle table th{border-bottom:1px solid #bbb;padding:.2em 1em;}
+	.wikistyle table td{border-bottom:1px solid #ddd;padding:.2em 1em;}
+	.wikistyle pre{margin:1em 0;font-size:90%;background-color:#f8f8ff;border:1px solid #dedede;padding:.5em;line-height:1.5em;color:#444;overflow:auto;}
+	.wikistyle pre code{padding:0;font-size:100%;background-color:#f8f8ff;border:none;}
+	.wikistyle code{font-size:90%;background-color:#f8f8ff;color:#444;padding:0 .2em;border:1px solid #dedede;}
+	.wikistyle pre.console{margin:1em 0;font-size:90%;background-color:black;padding:.5em;line-height:1.5em;color:white;}
+	.wikistyle pre.console code{padding:0;font-size:100%;background-color:black;border:none;color:white;}
+	.wikistyle pre.console span{color:#888;}
+	.wikistyle pre.console span.command{color:yellow;}
 	&lt;/style&gt;'
-beginTag div 'contents'
+beginTag div 'contents wikistyle'
 	"$TM_BUNDLE_SUPPORT/bin/Textile.rb"
 endTag
 htmlFooter</string>
