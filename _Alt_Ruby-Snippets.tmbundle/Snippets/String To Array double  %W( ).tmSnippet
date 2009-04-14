@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>%W(${TM_SELECTED_TEXT:$TM_CURRENT_WORD})</string>
+	<string>%W(${TM_SELECTED_TEXT}$0)</string>
 	<key>keyEquivalent</key>
-	<string>~a</string>
+	<string>^A</string>
 	<key>name</key>
 	<string>String To Array double  %W( )</string>
 	<key>scope</key>

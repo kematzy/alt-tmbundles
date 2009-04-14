@@ -5,11 +5,11 @@
 	<key>content</key>
 	<string>${1:var}=[#{$1}]$0</string>
 	<key>keyEquivalent</key>
-	<string>@=</string>
+	<string>~=</string>
 	<key>name</key>
 	<string>Log - var=[{var}]</string>
 	<key>scope</key>
-	<string>source.ruby meta.group.braces.round.ruby  string.quoted.double.ruby</string>
+	<string>source.ruby string.quoted.double</string>
 	<key>uuid</key>
 	<string>F98F340E-15C9-478B-B7FB-6FD5FCE97D17</string>
 </dict>
