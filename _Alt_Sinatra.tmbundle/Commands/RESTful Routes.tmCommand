@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -wKU
+require 'rubygems'
+require 'activesupport'
+# str = 'Post'
+
+def rest_scaffold(model_class) 
+  rest_model, rest_model_singular, rest_model_plural = conjugate(model_class)
+  
+  out = &lt;&lt;-CODE
+  
+  ## INDEX GET /#{rest_model_plural}
+  get '/#{rest_model_plural}' do
+    @#{rest_model_plural} = #{rest_model}.all
+    erb( "#{rest_model_plural}/index".to_sym )
+  end  
+  
+  ## NEW GET /#{rest_model_plural}/new
+  get '/#{rest_model_plural}/new' do
+    @#{rest_model_singular} = #{rest_model}.new
+    erb( "#{rest_model_plural}/new".to_sym )
+  end
+  
+  ## CREATE POST /#{rest_model_plural}
+  post '/#{rest_model_plural}' do
+    @#{rest_model_singular} = #{rest_model}.new(params[:#{rest_model_singular}])
+    if @#{rest_model_singular}.save
+      flash(:info, "Successfully created a new #{model_class}")
+      redirect '/#{rest_model_plural}'
+    else
+      flash(:error, "ERROR: creating a new #{model_class}")
+      redirect '/#{rest_model_plural}/new'
+    end
+  end
+  
+  ## SHOW GET /#{rest_model_plural}/1
+  get '/#{rest_model_plural}/:id' do
+    begin
+      @#{rest_model_singular} = #{rest_model}.get!(params[:id])
+      if @#{rest_model_singular}.nil?
+        throw :halt, [404, erb( "errors/record_not_found".to_sym )]
+      else
+        erb( "#{rest_model_plural}/show".to_sym )
+      end
+    rescue DataMapper::ObjectNotFoundError =&gt; e
+      @error = e
+      throw :halt, [404, erb( "errors/record_not_found".to_sym )]
+    end
+    
+  end
+  
+  ## EDIT GET /#{rest_model_plural}/1/edit
+  get '/#{rest_model_plural}/:id/edit' do
+    @#{rest_model_singular} = #{rest_model}.get!(params[:id])
+    erb( "#{rest_model_plural}/edit".to_sym )
+  end
+  
+  ## UPDATE PUT /#{rest_model_plural}/1
+  put '/#{rest_model_plural}/:id' do
+    @#{rest_model_singular} = #{rest_model}.get!(params[:id])
+    @#{rest_model_singular}.update_attributes(params[:post])
+    
+    redirect "/#{rest_model_plural}/#\{@#{rest_model_singular}\}"
+  end
+  
+  ## DESTROY DELETE /#{rest_model_plural}/1
+  delete '/#{rest_model_plural}/:id' do
+    #{rest_model_singular} = #{rest_model}.get!(params[:id])
+    if #{rest_model_singular}.destroy
+      flash(:info, "Successfully deleted the #{model_class} [#\{#{rest_model_singular}.title\}]")
+      redirect '/#{rest_model_plural}'
+    else
+      flash(:error, "ERROR: unable to delete the #{model_class} [#\{#{rest_model_singular}.title\}]")
+      redirect "/#{rest_model_plural}/#\{params[:id]\}"
+    end
+    # redirect #{rest_model_singular}.destroy ? '/#{rest_model_plural}' : "/#{rest_model_plural}/#\{params[:id]\}"
+  end
+  
+  
+  CODE
+  
+  out
+end
+
+def conjugate(model_class) 
+  model = model_class.to_s.match(/(\w+)$/)[0]
+  singular = model.gsub(/([a-z])([A-Z])/, '\1_\2').downcase
+  return model, singular, singular.pluralize
+end
+
+str = ENV['TM_SELECTED_TEXT'] ||= 'Undefined'
+puts rest_scaffold(str.capitalize)</string>
+	<key>fallbackInput</key>
+	<string>word</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>name</key>
+	<string>RESTful Routes</string>
+	<key>output</key>
+	<string>replaceSelectedText</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>uuid</key>
+	<string>16D95EFF-85B0-41E4-AC58-8E17FE262DCB</string>
+</dict>
+</plist>

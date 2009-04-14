@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>require 'sinatra/base'
+
+module Sinatra
+
+  # Sinatra $1 module
+  # 
+  #  TODO:: Need to write documentation here 
+  # 
+  module ${1:ModuleName}
+    
+    VERSION = 'Sinatra::$1 v0.1.0'
+    def self.version; VERSION; end
+    
+    
+    module Helpers
+        
+      # add your public helper methods here
+      def do_something
+        ## here
+      end
+      
+      ## PRIVATE METHODS
+      private
+        
+        def private_method
+          
+        end
+      
+    end #/ Helpers
+    
+    # add your general methods here
+    
+    
+    def self.registered(app)
+      app.helpers $1::Helpers
+      
+      ## CONFIGURATIONS::
+      # the configuration options here
+      app.set :foo, 'bar'
+      
+      ## HANDLERS
+      # add your URI Handlers here like this...
+      # app.get '/login' do
+      #   "&lt;form method='POST' action='/login'&gt;" +
+      #   "&lt;input type='text' name='user'&gt;" +
+      #   "&lt;input type='text' name='pass'&gt;" +
+      #   "&lt;/form&gt;"
+      # end
+      
+    end #/ self.registered
+    
+  end #/ $1
+  
+  register(Sinatra::$1)
+  
+end #/ Sinatra</string>
+	<key>name</key>
+	<string>Sinatra: Extension (options)</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>tabTrigger</key>
+	<string>sext</string>
+	<key>uuid</key>
+	<string>8A983486-833D-42BD-8B7B-DBC6BFD3A3C4</string>
+</dict>
+</plist>
