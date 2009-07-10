@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>behaves_like '${1:name of shared test}'$0</string>
+	<key>name</key>
+	<string>Bacon.behaves_like.shared</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>tabTrigger</key>
+	<string>bhl</string>
+	<key>uuid</key>
+	<string>B77D7A8F-8C34-40D6-9FA7-8F5B8897C708</string>
+</dict>
+</plist>

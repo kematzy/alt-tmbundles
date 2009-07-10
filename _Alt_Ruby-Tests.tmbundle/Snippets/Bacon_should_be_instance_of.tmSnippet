@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1:object}.should.be.instance_of(${2:ClassName})$0</string>
+	<key>name</key>
+	<string>Bacon.should.be.instance_of</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>tabTrigger</key>
+	<string>shbio</string>
+	<key>uuid</key>
+	<string>594C0789-6974-4967-8317-F91B2F0256E1</string>
+</dict>
+</plist>

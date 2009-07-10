@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>assert_equal`snippet_paren.rb`false, ${1:actual}`snippet_paren.rb end`$0</string>
+	<key>name</key>
+	<string>assert_equal(false,..)</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>tabTrigger</key>
+	<string>asf</string>
+	<key>uuid</key>
+	<string>A5CEB33B-EFEE-4EF7-86BB-67393B10A688</string>
+</dict>
+</plist>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>describe_shared "${1:description}" do 
+  
+  it "should ${3:description}" do 
+    $0
+  end
+  
+end ${2:#/$1}</string>
+	<key>name</key>
+	<string>Bacon.describe_shared</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>tabTrigger</key>
+	<string>dess</string>
+	<key>uuid</key>
+	<string>B63DBF5D-8E5D-4DEA-AB7F-FF77E61C0434</string>
+</dict>
+</plist>

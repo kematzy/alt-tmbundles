@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>after(:each) do
+  $0
+end</string>
+	<key>name</key>
+	<string>Bacon.after</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>tabTrigger</key>
+	<string>after</string>
+	<key>uuid</key>
+	<string>47C5EB35-F397-40E0-9150-8A2977AC57F5</string>
+</dict>
+</plist>

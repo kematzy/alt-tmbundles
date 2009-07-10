@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1:lambda { $2 \}}${3:.}should.throw(:${4:symbol})</string>
+	<key>name</key>
+	<string>Bacon.should.throw</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>tabTrigger</key>
+	<string>sht</string>
+	<key>uuid</key>
+	<string>EA04C00C-5178-462F-B4A4-B8E4CC9FD36B</string>
+</dict>
+</plist>

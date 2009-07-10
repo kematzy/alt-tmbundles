@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1:.}should.not.respond_to(:${2:symbol})</string>
+	<key>name</key>
+	<string>Bacon.should.not.respond_to</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>tabTrigger</key>
+	<string>shnrt</string>
+	<key>uuid</key>
+	<string>E9EC2EAB-EAFC-4655-8400-FD7E967C89B1</string>
+</dict>
+</plist>
