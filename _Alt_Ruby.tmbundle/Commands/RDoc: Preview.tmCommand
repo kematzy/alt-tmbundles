@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -w
+
+input_string = ENV['TM_SELECTED_TEXT']
+
+require 'rdoc/markup/simple_markup'
+require 'rdoc/markup/simple_markup/to_html'
+
+p = SM::SimpleMarkup.new
+h = SM::ToHtml.new
+
+puts p.convert(input_string, h)
+
+
+# just to remind you of some useful environment variables
+# see Help / Environment Variables for the full list
+# echo File: "$TM_FILEPATH"
+# echo Word: "$TM_CURRENT_WORD"
+# echo Selection: "$TM_SELECTED_TEXT"</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>name</key>
+	<string>RDoc: Preview</string>
+	<key>output</key>
+	<string>showAsHTML</string>
+	<key>uuid</key>
+	<string>454D6950-74E8-41D6-AA0D-599B970E909A</string>
+</dict>
+</plist>
