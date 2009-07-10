@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>@hdoc = Hpricot(last_response.body)</string>
+	<key>name</key>
+	<string>@hdoc = Hpricot(...)</string>
+	<key>scope</key>
+	<string>source.ruby, source.ruby.sinatra</string>
+	<key>tabTrigger</key>
+	<string>hdoc</string>
+	<key>uuid</key>
+	<string>9666041F-5BC8-454C-AE7E-9EBC4842A8FF</string>
+</dict>
+</plist>

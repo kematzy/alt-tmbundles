@@ -15,7 +15,7 @@ module Sinatra
     
     VERSION = '0.1.0' unless const_defined?(:VERSION)
     def self.version; "Sinatra::$1 v#{VERSION}"; end
-
+    
     
     module Helpers
         
@@ -46,26 +46,65 @@ module Sinatra
       ## HANDLERS
       # add your URI Handlers here like this...
       # app.get '/login' do
-      #   "&lt;form method='POST' action='/login'&gt;" +
-      #   "&lt;input type='text' name='user'&gt;" +
-      #   "&lt;input type='text' name='pass'&gt;" +
-      #   "&lt;/form&gt;"
+      #   "login"
       # end
       
     end #/ self.registered
     
+    
+    module Admin 
+      
+      def self.version; Sinatra::$1.version.sub(/\sv/,'::Admin v'); end
+      
+      
+      module Helpers
+        
+        # add your public helper methods here
+        def do_something
+          ## here
+        end
+        
+        ## PRIVATE METHODS
+        private
+          
+          def private_method
+            
+          end
+          
+      end #/ Helpers
+      
+      
+      def self.registered(app)
+        app.helpers $1::Helpers
+        app.helpers $1::Admin::Helpers
+        
+        ## CONFIGURATIONS::
+        # the configuration options here
+        # app.set :foo, 'bar'
+        
+        ## HANDLERS
+        # add your URI Handlers here like this...
+        # app.get '/login' do
+        #   "login"
+        # end
+        
+      end #/ self.registered
+      
+    end #/module Admin 
+    
   end #/ $1
   
-  register(Sinatra::$1)
+  # register(Sinatra::$1)
   
-end #/ Sinatra</string>
+end #/ Sinatra
+</string>
 	<key>name</key>
-	<string>Sinatra: Extension (options)</string>
+	<string>Sinatra: Extension Admin (options)</string>
 	<key>scope</key>
 	<string>source.ruby</string>
 	<key>tabTrigger</key>
 	<string>sext</string>
 	<key>uuid</key>
-	<string>8A983486-833D-42BD-8B7B-DBC6BFD3A3C4</string>
+	<string>0C782EC3-256F-4B8F-9737-9DF261D2C8DB</string>
 </dict>
 </plist>

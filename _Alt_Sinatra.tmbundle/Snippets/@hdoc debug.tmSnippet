@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>it "should output the whole html" do
+  @hdoc.should == ''
+end
+</string>
+	<key>name</key>
+	<string>@hdoc debug</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>tabTrigger</key>
+	<string>tdebug</string>
+	<key>uuid</key>
+	<string>61FBDA96-42DF-469A-87F2-783423CD39DC</string>
+</dict>
+</plist>
