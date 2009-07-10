@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>
+
+class Album
+  include DataMapper::Resource
+  property :id,                   Integer, :serial =&gt; true
+  # the parent Album
+  property :parent_id,                  Integer,  :nullable =&gt; false, :default =&gt; 0
+  # the human name of this Album
+  property :name,                       String,   :nullable =&gt; false, :unique =&gt; true
+  # the description of this Album
+  property :description,                Text,     :default =&gt; "", :lazy =&gt; false 
+  # the url reference for this Album
+  property :url_slug,                   String,   :nullable =&gt; false, :unique =&gt; true, :format =&gt; /^[a-z0-9\-\/_]+$/,
+                                        :messages =&gt; {
+                                          :presence =&gt; "We need a URL slug to identify the Album.",
+                                          :is_unique =&gt; "That URL slug has already been added.",
+                                          :format =&gt; "Hmm, that doesn't look like a URL slug to me. Only these characters are allowed: a-z 0-9 - /_"
+                                        }
+   
+  # the filename of the thumbnail that identifies the Album 
+  property :thumbnail_ref,              String
+  # keywords associated with this album, used for search and &lt;meta keywords&gt; stuff
+  property :keywords,                   Text, :lazy =&gt; true 
+  # notes about the Album used internally to provide information about the Album
+  property :notes,                      Text, :lazy =&gt; true 
+  # the position of the Album within a group of Albums with the same Parent
+  property :position,                   Integer
+  # is the collection available or suspended
+  property :publish_status,             String, :length =&gt; 5, :default =&gt; 'on'
+  #  FIXME:: disabled for now, since the ParanoidDateTime functionality is buggered 
+  # # keep deleted items still in the DB
+  # property :deleted_at,                 ParanoidDateTime
+  # when was this record created and updated
+  property :created_at,                 DateTime
+  property :updated_at,                 DateTime
+  # track who created/updated this record
+  property :created_by_id,              Integer, :default =&gt; 1
+  property :updated_by_id,              Integer, :default =&gt; 1
+  
+  
+  ## ASSOCIATIONS
+  
+  has n, :album_photos, :order =&gt; [:album_id, :position]
+  has n, :photos, :through =&gt; :album_photos
+  
+  
+  is :list, :scope =&gt; [:parent_id], :order =&gt; [:position]
+  is :tree, :order =&gt; [:parent_id, :position]
+  
+  ## VALIDATIONS
+  
+  ## CALLBACKS
+  
+  # prevent saving album as child of self
+  before :update do 
+    if self.children.collect {|c| c.id }.include?(self.parent_id)
+      @resource.errors.add(:parent_id, "An Album cannot be made a child of it self")
+    end
+  end
+  
+  # delete album_photos and unlink child albums
+  before :destroy do 
+    # if we have album_photos then destroy them, since they only belong to a particular album
+    album_photos.destroy! if has_photos?
+    # if we have child albums, then unlink them from this album
+    children.each { |c| c.unlink_from_parent! } if has_children?
+  end
+  
+  before :valid?, :set_default_values_if_missing
+  
+  
+  ## CLASS METHODS
+  
+  def self.available 
+    all(:publish_status =&gt; 'on', :order =&gt; [:position])
+  end
+  
+  def self.parents 
+    all(:parent_id =&gt; 0, :order =&gt; [:position])
+  end
+  
+  def self.available_parents 
+    all(:parent_id =&gt; 0, :publish_status =&gt; 'on', :order =&gt; [:position])
+  end
+  
+  # 
+  def self.items_for_select_menu(options={}) 
+    options = {
+      :default_text =&gt; "Select Parent Album...",
+      :divider =&gt; true,
+      :show_root =&gt; true,
+    }.merge(options)
+    
+    mi = all(:parent_id =&gt; 0, :order =&gt; [:parent_id, :position])
+    res = []
+    res &lt;&lt; [options[:default_text],nil]
+    res &lt;&lt; ["---------------",'nil'] if options[:divider]
+    res &lt;&lt; ["Top Level (1st Parent)",0] if options[:show_root]
+    res &lt;&lt; ["---------------",'nil'] if options[:divider]
+    mi.each do |x|
+      res &lt;&lt; [x.name, x.id]
+      if x.has_children?
+        x.children.each do |child|
+          res &lt;&lt; ["-- #{child.name}", child.id]
+          child.children.each {|grand_child| res &lt;&lt; ["-- -- #{grand_child.name}", grand_child.id] } if child.has_children?
+        end
+      end
+    end
+    res
+  end
+  
+  
+  ## INSTANCE METHODS
+  
+  # 
+  def available_children 
+    self.children.all(:publish_status =&gt; 'on', :order =&gt; [:position])
+  end
+  
+  def has_parent? 
+    !(self.parent_id == 0)
+  end
+  
+  def  parent_name 
+    (self.parent.blank?) ? '- none -' : self.parent.name
+  end
+  
+  def has_children? 
+    !self.children.blank? 
+  end
+  
+  def is_on? 
+    (self.publish_status == 'on') 
+  end
+  
+  def is_off? 
+    (self.publish_status == 'off') 
+  end
+  
+  # get / set the Album Thumbnail
+  def thumbnail
+    # check for an empty ref, otherwise collect the first image in album
+    if self.thumbnail_ref.blank? 
+      "/images/missing_image.th.jpg"
+    else
+       "/photos/th/#{self.thumbnail_ref.gsub(/-/,'_')}.jpg"
+    end
+  end
+  
+  def thumbnail=(ref) 
+    self.thumbnail_ref = ref
+  end
+  
+  
+  protected
+    
+    # set parent_id to 0 and save
+    def unlink_from_parent! 
+      self.parent_id = 0
+      self.save
+    end
+    
+    def set_default_values_if_missing
+      self.parent_id = 0 if self.parent_id.blank?
+    end
+    
+  
+end #/ Album
+</string>
+	<key>name</key>
+	<string>Model: Album</string>
+	<key>uuid</key>
+	<string>568CCD36-7B6E-49CB-AF3D-713210EAEA22</string>
+</dict>
+</plist>
