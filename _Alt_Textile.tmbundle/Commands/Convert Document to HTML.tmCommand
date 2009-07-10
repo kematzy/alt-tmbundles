@@ -15,7 +15,7 @@
 	<key>name</key>
 	<string>Convert Document / Selection to HTML</string>
 	<key>output</key>
-	<string>replaceSelectedText</string>
+	<string>openAsNewDocument</string>
 	<key>scope</key>
 	<string>text.html.textile</string>
 	<key>uuid</key>

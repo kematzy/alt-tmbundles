@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>%{color:${1:green}}$TM_SELECTED_TEXT%</string>
+	<string>&lt;tt&gt;$TM_SELECTED_TEXT$1&lt;/tt&gt;$0</string>
 	<key>keyEquivalent</key>
-	<string>^c</string>
+	<string>@k</string>
 	<key>name</key>
-	<string>Color Selection</string>
+	<string>Terminal Type</string>
 	<key>scope</key>
 	<string>text.html.textile</string>
 	<key>uuid</key>
-	<string>A1E11064-676A-4FC6-B1CA-2127816E1458</string>
+	<string>97BB19EB-062F-4081-9800-0E17296C475C</string>
 </dict>
 </plist>

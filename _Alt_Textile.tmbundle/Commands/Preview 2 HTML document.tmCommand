@@ -78,12 +78,12 @@ htmlFooter</string>
 	<key>keyEquivalent</key>
 	<string>^~@p</string>
 	<key>name</key>
-	<string>Preview</string>
+	<string>Preview 2 HTML document</string>
 	<key>output</key>
-	<string>showAsHTML</string>
+	<string>openAsNewDocument</string>
 	<key>scope</key>
 	<string>text.html.textile</string>
 	<key>uuid</key>
-	<string>DCEB033F-FC71-4B03-8C3A-EB08CCFE2C03</string>
+	<string>A79F36C9-994B-49DB-BD07-376EEB46C9E6</string>
 </dict>
 </plist>
