@@ -3,11 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>describe ${1:Type} do
+	<string>describe ${1:Type} do 
+  
   it "should ${2:description}" do
     $0
   end
-end</string>
+  
+end ${2:#/ $1}</string>
 	<key>name</key>
 	<string>describe (type)</string>
 	<key>scope</key>

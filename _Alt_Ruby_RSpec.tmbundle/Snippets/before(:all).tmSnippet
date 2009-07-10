@@ -3,14 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>it_should_behave_like ${2:"$1"}$0</string>
+	<string>before(:all) do 
+  $0
+end</string>
 	<key>name</key>
-	<string>it_should_behave_like</string>
+	<string>before(:all)</string>
 	<key>scope</key>
 	<string>source.ruby, source.ruby.rspec</string>
 	<key>tabTrigger</key>
-	<string>bhl</string>
+	<string>b4a</string>
 	<key>uuid</key>
-	<string>F4846E27-A9B0-4C12-A149-3B3BF6059307</string>
+	<string>457EF9F8-E2D9-4884-9D8A-31FBC15D226A</string>
 </dict>
 </plist>

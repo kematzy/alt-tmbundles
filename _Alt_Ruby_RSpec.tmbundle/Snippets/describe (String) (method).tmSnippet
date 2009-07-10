@@ -3,14 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>it_should_behave_like ${2:"$1"}$0</string>
+	<string>describe "#${1:description}" do 
+  
+  it "should ${3:description}" do 
+    $0
+  end
+  
+end ${2:#/ #$1}</string>
 	<key>name</key>
-	<string>it_should_behave_like</string>
+	<string>describe (String) (method)</string>
 	<key>scope</key>
-	<string>source.ruby, source.ruby.rspec</string>
+	<string>source.ruby.rspec</string>
 	<key>tabTrigger</key>
-	<string>bhl</string>
+	<string>des</string>
 	<key>uuid</key>
-	<string>F4846E27-A9B0-4C12-A149-3B3BF6059307</string>
+	<string>669E1C02-64D6-4A14-86FA-E63E761E8A18</string>
 </dict>
 </plist>

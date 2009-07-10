@@ -3,15 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>describe "${1:description}" do
-  it "should ${2:description}" do
+	<string>describe "${1:description}" do 
+  
+  it "should ${3:description}" do 
     $0
   end
-end</string>
+  
+end ${2:#/ $1}</string>
 	<key>name</key>
 	<string>describe (String)</string>
 	<key>scope</key>
-	<string>source.ruby, source.ruby.rspec</string>
+	<string>source.ruby.rspec</string>
 	<key>tabTrigger</key>
 	<string>des</string>
 	<key>uuid</key>

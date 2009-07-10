@@ -3,14 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>it_should_behave_like ${2:"$1"}$0</string>
+	<string>describe "${1:description}" do 
+  
+  des$0
+  
+end ${2:#/ $1}</string>
 	<key>name</key>
-	<string>it_should_behave_like</string>
+	<string>describe (String) (block)</string>
 	<key>scope</key>
-	<string>source.ruby, source.ruby.rspec</string>
+	<string>source.ruby.rspec</string>
 	<key>tabTrigger</key>
-	<string>bhl</string>
+	<string>desb</string>
 	<key>uuid</key>
-	<string>F4846E27-A9B0-4C12-A149-3B3BF6059307</string>
+	<string>60701DDE-427C-41C9-B2EE-C7E9C6498F00</string>
 </dict>
 </plist>
