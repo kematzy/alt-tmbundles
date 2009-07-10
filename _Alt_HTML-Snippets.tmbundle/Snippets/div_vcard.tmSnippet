@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;div class="vcard"&gt;
+  &lt;div class="fn"&gt;${1:&lt;%= Settings.name %&gt;}&lt;/div&gt;
+  &lt;div class="adr"&gt;
+    &lt;span class="type"&gt;work&lt;/span&gt;
+    &lt;div class="street-address"&gt;${2:&lt;%= Settings.street_address].gsub(/;/,'&lt;br&gt;')  %&gt;}&lt;/div&gt;
+    &lt;div&gt;
+      &lt;span class="locality"&gt;${3:&lt;%= Settings.city %&gt;}&lt;/span&gt; 
+      &lt;span class="postal-code"&gt;${4:&lt;%= Settings.post_code %&gt;}&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="country-name"&gt;${5:&lt;%= Settings.country %&gt;}&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div&gt;Tel: &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;span class="tel"&gt;&lt;span class="type"&gt;work&lt;/span&gt;${6:&lt;%= Settings.tel %&gt;}&lt;/span&gt;&lt;/div&gt;
+  &lt;div&gt;Fax:&amp;nbsp;&amp;nbsp;&lt;span class="fax"&gt;&lt;span class="type"&gt;fax&lt;/span&gt;${7:&lt;%= Settings.fax %&gt;}&lt;/span&gt;&lt;/div&gt;
+  &lt;div&gt;Mobile:&amp;nbsp;&amp;nbsp;&lt;span class="mob"&gt;&lt;span class="type"&gt;mobile&lt;/span&gt;${7:&lt;%= Settings.mobile %&gt;}&lt;/span&gt;&lt;/div&gt;
+  &lt;div&gt;E-mail:&lt;span class="email"&gt;&lt;span class="type"&gt;work&lt;/span&gt;${8:&lt;%= enkode_mail(Settings.email,Settings.email,"send an e-mail") %&gt;}&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+</string>
+	<key>name</key>
+	<string>div.vcard</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>div.vcard</string>
+	<key>uuid</key>
+	<string>085FECE3-7435-4454-8466-7B712982155B</string>
+</dict>
+</plist>
