@@ -314,7 +314,7 @@
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>source.js.embedded.html</string>
+			<string>source.js.jquery.embedded.html</string>
 			<key>patterns</key>
 			<array>
 				<dict>
