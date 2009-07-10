@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>## OS STUFF
+.DS_Store
+
+## TM SPECIFIC
+*.tmproj
+tmtags
+
+## PROJECT::GENERAL
+*.sw?
+coverage
+rdoc
+pkg
+
+## PROJECT::SPECIFIC
+
+</string>
+	<key>name</key>
+	<string>gitignore sample</string>
+	<key>tabTrigger</key>
+	<string>gitignore</string>
+	<key>uuid</key>
+	<string>F888CE63-409B-4D68-A615-A027A76B409D</string>
+</dict>
+</plist>
