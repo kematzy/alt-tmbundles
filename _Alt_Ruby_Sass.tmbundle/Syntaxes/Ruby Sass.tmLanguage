@@ -437,7 +437,7 @@
 		<key>property-value</key>
 		<dict>
 			<key>begin</key>
-			<string>(:)?\s+</string>
+			<string>(;)?\s+</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
