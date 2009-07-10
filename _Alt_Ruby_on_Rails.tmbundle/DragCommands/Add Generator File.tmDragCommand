@@ -26,13 +26,14 @@ end</string>
 		<string>gif</string>
 		<string>yml</string>
 		<string>erb</string>
+		<string>sass</string>
 	</array>
 	<key>name</key>
 	<string>Add Generator File</string>
 	<key>output</key>
 	<string>insertAsSnippet</string>
 	<key>scope</key>
-	<string>source.ruby.rails</string>
+	<string>source.ruby.rails, source.ruby</string>
 	<key>uuid</key>
 	<string>33CFE0C7-7546-493B-BA06-27DE96C13A31</string>
 </dict>
