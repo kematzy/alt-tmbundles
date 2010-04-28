@@ -1,3 +1,7 @@
 ## FILES & THINGS WE WISH TO IGNORE
 .DS_Store
 Bundle Development.tmbundle
+_Core_Rails.tmbundle
+ Alt Ruby (Core).tmbundle
+ Alt HTML (Core).tmbundle
+RDoc.tmbundle
