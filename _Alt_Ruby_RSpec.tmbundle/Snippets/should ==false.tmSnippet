@@ -3,8 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:target}.should == false
-$0</string>
+	<string>${1:target}.should == false$0</string>
 	<key>name</key>
 	<string>should ==false</string>
 	<key>scope</key>

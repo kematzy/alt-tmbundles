@@ -21,7 +21,7 @@ SpecMate.new.run_focussed STDOUT
 	<key>output</key>
 	<string>showAsHTML</string>
 	<key>scope</key>
-	<string>source.ruby, source.ruby.rspec</string>
+	<string>source.ruby.rspec</string>
 	<key>uuid</key>
 	<string>EEF1F826-044A-467F-A3E0-F8B0A52C57D4</string>
 </dict>

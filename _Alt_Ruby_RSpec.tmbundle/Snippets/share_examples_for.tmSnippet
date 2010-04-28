@@ -13,7 +13,7 @@ end </string>
 	<key>name</key>
 	<string>share_examples_for</string>
 	<key>scope</key>
-	<string>source.ruby.rspec</string>
+	<string>source.ruby.rspec, source.ruby</string>
 	<key>tabTrigger</key>
 	<string>dess</string>
 	<key>uuid</key>
