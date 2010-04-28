@@ -4,6 +4,10 @@
 <dict>
 	<key>comment</key>
 	<string>jQuery Javascript Framework. By Jonathan Chaffer &amp; Karl Swedberg.</string>
+	<key>fileTypes</key>
+	<array>
+		<string>rjs</string>
+	</array>
 	<key>foldingStartMarker</key>
 	<string>(^.*{[^}]*$|^.*\([^\)]*$|^.*/\*(?!.*\*/).*$)</string>
 	<key>foldingStopMarker</key>
@@ -14,6 +18,10 @@
 	<string> JQuery (JavaScript)</string>
 	<key>patterns</key>
 	<array>
+		<dict>
+			<key>include</key>
+			<string>#erb</string>
+		</dict>
 		<dict>
 			<key>begin</key>
 			<string>(\$)(\()</string>
@@ -402,6 +410,44 @@
 					<string>(:)\b(active|after|before|first-letter|first-line|hover|link|visited)\b</string>
 					<key>name</key>
 					<string>entity.other.attribute-name.pseudo-class.css</string>
+				</dict>
+			</array>
+		</dict>
+		<key>erb</key>
+		<dict>
+			<key>begin</key>
+			<string>&lt;%+(?!&gt;)=?</string>
+			<key>captures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.embedded.js.ruby</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>%&gt;</string>
+			<key>name</key>
+			<string>source.ruby.embedded.js.ruby</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.comment.js.ruby</string>
+						</dict>
+					</dict>
+					<key>match</key>
+					<string>(#).*?(?=%&gt;)</string>
+					<key>name</key>
+					<string>comment.line.number-sign.js.ruby</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>source.ruby</string>
 				</dict>
 			</array>
 		</dict>
