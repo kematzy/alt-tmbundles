@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;p&gt;&lt;?= @image(@page_var('image_url'), array('size' =&gt; @page_var('image_size'), 'alt' =&gt; @page_var('image_alt'), 'class' =&gt; @page_var('image_css_class')) ); ?&gt;&lt;/p&gt;</string>
+	<key>name</key>
+	<string>image(page_vars());</string>
+	<key>scope</key>
+	<string>text.html.basic</string>
+	<key>tabTrigger</key>
+	<string>img</string>
+	<key>uuid</key>
+	<string>2CF41847-33CC-4FA3-B96A-EFD9BEDDE7F2</string>
+</dict>
+</plist>

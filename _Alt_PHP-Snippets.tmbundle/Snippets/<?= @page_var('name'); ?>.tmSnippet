@@ -3,26 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>switch (${1:variable}) 
-{ 
-	case '${2:value}':
-		
-	  	${3:# code...}
-	  	break;
-	
-	$0
-	default:
-	
-		${4:# code...}
-		break;
-}</string>
+	<string>&lt;?= @page_var('${1:variablename}'); ?&gt;$0</string>
 	<key>name</key>
-	<string>switch …</string>
+	<string>&lt;?= @page_var('name'); ?&gt;</string>
 	<key>scope</key>
-	<string>source.php</string>
+	<string>text.html.basic</string>
 	<key>tabTrigger</key>
-	<string>switch</string>
+	<string>pv</string>
 	<key>uuid</key>
-	<string>87CC8544-F1FD-4C62-B738-62ED3EBE06F6</string>
+	<string>7E0C821C-1580-4B13-B936-09C059F97D22</string>
 </dict>
 </plist>

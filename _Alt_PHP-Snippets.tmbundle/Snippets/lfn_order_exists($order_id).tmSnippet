@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>##
+#
+#
+function order_exists($order_id)
+{ 
+  # $order_file = APP_ROOT. '/content/orders/downloads/'. $order_id . ".txt";
+  $order_file = option('orders_dir') . '/downloads/'. $order_id . ".txt";
+  if ( file_exists($order_file) )
+  { 
+    # find out which books are bought
+    $GLOBALS['paid_books'] = spyc_load_file($order_file);
+    return true;
+  }
+  else
+  {
+    return false;
+  }
+}
+</string>
+	<key>name</key>
+	<string>lfn.order_exists($order_id)</string>
+	<key>scope</key>
+	<string>source.php</string>
+	<key>tabTrigger</key>
+	<string>lfn</string>
+	<key>uuid</key>
+	<string>5E6D7A3C-59F3-4F51-AA72-E56643213AA9</string>
+</dict>
+</plist>

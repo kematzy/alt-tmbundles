@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>##
+# 
+# 
+# 
+function programs_load_all()
+{ 
+  $retVal = '';
+  foreach (glob(option('programs_dir') ."/*.txt") as $file) 
+  { 
+    $tmp = Spyc::YAMLLoad($file);
+    $retVal[] = array('url' =&gt; $tmp['url'], 'title' =&gt; $tmp['title'], 'strapline' =&gt; $tmp['strapline'] );
+  }
+  return $retVal;
+}
+</string>
+	<key>name</key>
+	<string>lfn.programs_load_all()</string>
+	<key>scope</key>
+	<string>source.php</string>
+	<key>tabTrigger</key>
+	<string>lfn</string>
+	<key>uuid</key>
+	<string>AFAD2799-7106-4CB1-9B26-7BBBF5B11B68</string>
+</dict>
+</plist>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>##
+# 
+# 
+# 
+function program_load($yaml_file_path='')
+{ 
+  # 1. IF no path is set, just bail out quickly
+  if (empty($yaml_file_path)) { die("No YAML file path provided. [" . $yaml_file_path ."]"); }
+  # 2. 
+  $program_file_path = option('programs_dir') ."/$yaml_file_path.txt";
+  return (file_exists($program_file_path)) ? Spyc::YAMLLoad($program_file_path) : false;
+}
+</string>
+	<key>name</key>
+	<string>lfn.program_load($yaml_file_path)</string>
+	<key>scope</key>
+	<string>source.php</string>
+	<key>tabTrigger</key>
+	<string>lfn</string>
+	<key>uuid</key>
+	<string>DB5644CD-A130-4514-80D5-70A100685119</string>
+</dict>
+</plist>

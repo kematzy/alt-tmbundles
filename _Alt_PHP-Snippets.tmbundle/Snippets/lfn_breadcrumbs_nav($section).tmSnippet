@@ -3,25 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>/**
-* $1
-*/
-class ${2:ClassName}${3: extends ${4:AnotherClass}}
-{  
-	$5
-	function ${6:__construct}(${7:argument})
-	{  
-		${0:# code...}
-	}
+	<string>function breadcrumbs_nav($section){
+  $parts = explode('/', $_SERVER['REQUEST_URI']);
+  $html = "&lt;h3&gt;". ucfirst($parts[2]) . " / " .  $section . "&lt;/h3&gt;";
+  return $html;
 }
 </string>
 	<key>name</key>
-	<string>class …</string>
+	<string>lfn.breadcrumbs_nav($section)</string>
 	<key>scope</key>
 	<string>source.php</string>
 	<key>tabTrigger</key>
-	<string>class</string>
+	<string>lfn</string>
 	<key>uuid</key>
-	<string>757F3B5E-296F-4988-932D-C7F38862AFCC</string>
+	<string>8E58C03D-FEBE-4A09-8C91-627746D2F8F8</string>
 </dict>
 </plist>

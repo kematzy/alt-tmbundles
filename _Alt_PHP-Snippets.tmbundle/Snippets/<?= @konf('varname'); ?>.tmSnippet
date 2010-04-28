@@ -3,26 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>switch (${1:variable}) 
-{ 
-	case '${2:value}':
-		
-	  	${3:# code...}
-	  	break;
-	
-	$0
-	default:
-	
-		${4:# code...}
-		break;
-}</string>
+	<string>&lt;?= @konf('${1:variablename}'); ?&gt;$0</string>
 	<key>name</key>
-	<string>switch …</string>
+	<string>&lt;?= @konf('varname'); ?&gt;</string>
 	<key>scope</key>
-	<string>source.php</string>
+	<string>text.html.basic</string>
 	<key>tabTrigger</key>
-	<string>switch</string>
+	<string>konf</string>
 	<key>uuid</key>
-	<string>87CC8544-F1FD-4C62-B738-62ED3EBE06F6</string>
+	<string>A7DB2374-D35E-45E3-B4B4-2571DF62F285</string>
 </dict>
 </plist>

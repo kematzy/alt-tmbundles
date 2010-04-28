@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>##
+# 
+# 
+# 
+function projects_load_all()
+{ 
+  $retVal = '';
+  foreach (glob(option('projects_dir') . "/*") as $dir) 
+  { 
+    # echo("Dir=[$dir]");
+    $dirname = str_replace(option('projects_dir'). '/','',$dir);
+    # echo("DirName: [$dirname]");
+    $retVal[$dirname] = array();
+    foreach (glob($dir . "/*.txt") as $file) 
+    { 
+      $tmp = Spyc::YAMLLoad($file);
+      array_push($retVal[$dirname], array('url' =&gt; str_replace('.txt', '', str_replace(option('projects_dir') .'/','', $file)) , 'title' =&gt; $tmp['h3'] ) );
+    }
+  }
+  return $retVal;
+}
+</string>
+	<key>name</key>
+	<string>lfn.projects_load_all()</string>
+	<key>scope</key>
+	<string>source.php</string>
+	<key>tabTrigger</key>
+	<string>lfn</string>
+	<key>uuid</key>
+	<string>36F2AC7C-2EA1-4879-9930-728A363D12A1</string>
+</dict>
+</plist>

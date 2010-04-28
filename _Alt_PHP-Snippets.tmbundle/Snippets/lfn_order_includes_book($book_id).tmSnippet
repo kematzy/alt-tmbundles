@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>##
+# 
+# 
+function order_includes_book($book_id)
+{ 
+  # # find out which books are bought
+  # $paid_books = spyc_load_file($order_file);
+  # 
+  # load the availble books
+  $pv = load_page_vars('books', 'return_values');
+  $books =  $pv['books']; #page_var('books');
+  #
+  ## Does book_id exist in both paid_books and books array ??
+  if ( array_search($book_id, $GLOBALS['paid_books']) !== false) 
+  {
+    if (array_key_exists($book_id, $books)) 
+    { 
+      $book_name = 'ebook-' . $books[$book_id]['dom_id'] .'.pdf';
+      # $book_path = APP_ROOT . '/ebooks/' . $book_name ;
+      $book_path = option('ebooks_dir') . '/' . $book_name ;
+      return array($book_path, $book_name );
+    }
+    else
+    {
+      return false;
+    }
+  }
+  else
+  {
+    return false;
+  }
+}
+</string>
+	<key>name</key>
+	<string>lfn.order_includes_book($book_id)</string>
+	<key>scope</key>
+	<string>source.php</string>
+	<key>tabTrigger</key>
+	<string>lfn</string>
+	<key>uuid</key>
+	<string>C6D17A37-9FEB-4AF6-B4B3-73FF4B3601F8</string>
+</dict>
+</plist>

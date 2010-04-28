@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>##
+# 
+# 
+function download_book($book_path, $book_name)
+{ 
+  # $file = 'ebook-' . $books[params('book_id')]['dom_id'] .'.pdf';
+  # $file_name = APP_ROOT . '/ebooks/' . $file ;
+  # render_file( APP_ROOT . '/ebooks/ebook-'. $books[params('book_id')]['dom_id'] .'.pdf');
+  header("Cache-Control: must-revalidate, post-check=0, pre-check=0"); 
+  header("Pragma: public");
+  header("Content-Type: application/save");
+  header("Content-Length: ".filesize($book_path));
+  header("Content-Disposition: attachment; filename=\"$book_name\"");
+  header("Content-Transfer-Encoding: binary");
+  readfile($book_path);
+  exit;
+  
+}
+</string>
+	<key>name</key>
+	<string>lfn.download_book($path, $name)</string>
+	<key>scope</key>
+	<string>source.php</string>
+	<key>tabTrigger</key>
+	<string>lfn</string>
+	<key>uuid</key>
+	<string>DA5DAD41-4172-41A2-B25C-95AE508D3D96</string>
+</dict>
+</plist>

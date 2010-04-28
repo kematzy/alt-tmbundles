@@ -3,17 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>for (\$${1:i}=${2:0}; \$${1:i} &lt; $3; \$${1:i}++) 
-{	 
-	${0:# code...}
-}</string>
+	<string>&lt;? ${0:$TM_SELECTED_TEXT} ?&gt;</string>
+	<key>keyEquivalent</key>
+	<string>^x</string>
 	<key>name</key>
-	<string>for …</string>
+	<string>&lt;?  ?&gt;</string>
 	<key>scope</key>
-	<string>source.php</string>
-	<key>tabTrigger</key>
-	<string>for</string>
+	<string>text.html</string>
 	<key>uuid</key>
-	<string>97CA48E9-C462-4E06-9B77-AEFB6EC634B9</string>
+	<string>1D322EFE-B16E-4A21-BFA9-FF81C64EE19B</string>
 </dict>
 </plist>

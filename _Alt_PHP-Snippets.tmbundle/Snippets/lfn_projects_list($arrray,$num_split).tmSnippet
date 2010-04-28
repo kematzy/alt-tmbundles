@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>##
+# 
+# 
+# 
+# 
+function projects_list($category, $num_split = 4) { 
+  if ( !is_array($category)) { return "&lt;!-- ERROR: category is NOT an array"; }
+  
+  # init HTML, links array &amp; odd
+  $html = "&lt;p&gt;\n"; $links = array(); $odd = true;
+  
+  # loop through each of the items in the category array
+  foreach ($category as $key =&gt; $item):
+    # build the  link
+    $link = "&lt;a href=\"/projects/" . @$item['url'] ."\" title=\"". @$item['title'] . "\"&gt;" .@$item['title'] ."&lt;/a&gt;";
+    # add spans if odd 
+    if ($odd == true){  $link = "&lt;span&gt;". $link ."&lt;/span&gt;"; }
+    # add to links array
+    array_push($links, $link);
+    # set odd before next loop
+    $odd = ($odd == true ) ? false : true;
+  endforeach;
+  
+  # split links array in chunks of X
+  $i = 0;
+  while ($i &lt;= count($links)) {
+    $html  .= implode(" &amp;bull; \n", array_slice($links, $i, $num_split));
+    $html .= "\n&lt;br&gt;";
+    # increment $i with the split number
+    $i = $i + $num_split;
+  }
+  $html .= "\n&lt;/p&gt;\n";
+  return $html;
+}
+</string>
+	<key>name</key>
+	<string>lfn.projects_list($arrray,$num_split)</string>
+	<key>scope</key>
+	<string>source.php</string>
+	<key>tabTrigger</key>
+	<string>lfn</string>
+	<key>uuid</key>
+	<string>FD1128EC-F925-464F-B731-A30E4586668A</string>
+</dict>
+</plist>
