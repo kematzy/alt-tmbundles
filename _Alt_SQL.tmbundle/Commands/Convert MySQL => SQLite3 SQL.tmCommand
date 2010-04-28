@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -wKU
+
+mysql = ENV['TM_SELECTED_TEXT']
+
+# remove MySQL encoding comments
+mysql = mysql.gsub(/^\/\*\!\d+(.*)\*\/;/,'')
+# remove DROP TABLE IF EXISTS ....
+mysql = mysql.gsub(/^DROP TABLE IF EXISTS `(.*)`;$/,'')
+# remove LOCK TABLES ....
+mysql = mysql.gsub(/^LOCK TABLES `(.*)` WRITE;$/,'')
+mysql = mysql.gsub(/^UNLOCK TABLES;$/,'')
+
+# remove PRIMARY KEY, KEY &amp; UNIQUE KEY....
+mysql = mysql.gsub(/^\s*PRIMARY KEY\s*\((.*)$/,'')
+mysql = mysql.gsub(/^\s*KEY (.*),?$/,'')
+mysql = mysql.gsub(/^\s*UNIQUE KEY (.*),?$/,'')
+
+
+# change the CREATE TABLE SEQUENCE
+mysql = mysql.gsub(/CREATE TABLE (`(\w+)`)\s*\(/,"CREATE TABLE \"\\2\" (")
+# change the closing stuff 
+mysql = mysql.gsub(/\)\s*ENGINE=(.*);$/,");")
+# change the last , in the section where we have removed KEYS stuff 
+mysql = mysql.gsub(/,\s*\);?$/m,"\n);")
+
+# change the auto_increment 
+mysql = mysql.gsub(/auto_increment/,"PRIMARY KEY AUTOINCREMENT")
+# change the int()
+mysql = mysql.gsub(/(small|tiny)?int\(\d+\)/,"INTEGER")
+# change the varchar()
+mysql = mysql.gsub(/varchar\((\d+)\)/,"VARCHAR(\\1)")
+# change the enum()
+mysql = mysql.gsub(/enum([^)]*)/,"VARCHAR(255)")
+# change the datetime
+mysql = mysql.gsub(/datetime/,"TIMESTAMP")
+# change the text
+mysql = mysql.gsub(/text/,"TEXT")
+
+mysql = mysql.gsub(/\r\n/,"\n")
+mysql = mysql.gsub(/\n\n/,"\n")
+
+# replace any \' inside the text
+mysql = mysql.gsub(/\\'/,"''")
+
+puts mysql</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>name</key>
+	<string>Convert MySQL =&gt; SQLite3 SQL</string>
+	<key>output</key>
+	<string>openAsNewDocument</string>
+	<key>uuid</key>
+	<string>8CA98A96-FD04-446E-8DE9-0734E5D45B5F</string>
+</dict>
+</plist>
