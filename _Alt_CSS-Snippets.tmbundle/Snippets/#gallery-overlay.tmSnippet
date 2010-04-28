@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>/* GALLERY OVERLAY */
+/* the overlayed element, initially it must be hidden  and placed on top of other elements */
+#programs #gallery-overlay { display:none; z-index:10000; /* styling */ background-color:#333; width:675px; min-height:200px; border:1px solid #666; /* CSS3 styling for latest browsers */ -moz-box-shadow:0 0 90px 5px #000; -webkit-box-shadow: 0 0 90px #000; }
+/* close button positioned on upper right corner */
+#programs #gallery-overlay .close { background-image:url('/images/overlay/close.png'); position:absolute; right:-15px; top:-15px; cursor:pointer; height:35px; width:35px; }
+#programs #img { border:1px solid #666; } 
+/* "next image" and "prev image" links */
+#programs #gallery-overlay .next, .prev { /* absolute positioning relative to the overlay */ position:absolute; top:40%; border:1px solid #666; cursor:pointer; display:block; padding:10px 20px; color:#fff; font-size:11px; /* upcoming CSS3 features */ -moz-border-radius:5px; -webkit-border-radius:5px; }
+#programs #gallery-overlay .prev { left:0;  border-left:0; -moz-border-radius-topleft:0;  -moz-border-radius-bottomleft:0; -webkit-border-bottom-left-radius:0; -webkit-border-top-left-radius:0; }
+#programs #gallery-overlay .next { right:0; border-right:0; -moz-border-radius-topright:0; -moz-border-radius-bottomright:0; -webkit-border-bottom-right-radius:0; -webkit-border-top-right-radius:0; }
+#programs #gallery-overlay .next:hover, .prev:hover { text-decoration:underline;  background-color:#000; } 
+/* when there is no next or previous link available this class is added */
+#programs #gallery-overlay .disabled { visibility:hidden; }
+/* the "information box" */
+#programs #gallery-overlay .info { position:absolute; bottom: 0; left:0; padding:10px 15px; color:#fff; font-size:11px; border-top:1px solid #666; }
+#programs #gallery-overlay .info strong { display:block; }
+/* progress indicator (animated gif). should be initially hidden */
+#programs #gallery-overlay .progress { position:absolute; top:45%; left:50%; display:none; }
+/* everybody should know about RGBA colors. */
+#programs #gallery-overlay .next, #programs #gallery-overlay .prev, #programs #gallery-overlay .info { background:#333 !important; background:rgba(0, 0, 0, 0.6) url('/images/overlay/h80.png') repeat-x; }
+</string>
+	<key>name</key>
+	<string>#gallery-overlay</string>
+	<key>scope</key>
+	<string>source.css</string>
+	<key>tabTrigger</key>
+	<string>#gallery-overlay</string>
+	<key>uuid</key>
+	<string>8FF92D42-8533-4166-9B46-45DE5E864A18</string>
+</dict>
+</plist>

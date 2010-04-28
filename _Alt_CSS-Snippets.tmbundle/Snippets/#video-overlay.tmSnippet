@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>/* VIDEO OVERLAY */
+#programs #video-overlay { display:none; padding: 0px; width:480px; background-color:#333; /* CSS3 styling for latest browsers */ -moz-box-shadow:0 0 90px 5px #000; -webkit-box-shadow: 0 0 90px #000; }
+#programs #video-overlay div.close { background:url('/images/overlay/close.png') no-repeat; position:absolute; top:-15px; right:-15px; width:35px; height:35px; cursor:pointer; }
+#programs #video-overlay a { width:480px; height: 300px; display:block; border: 1px solid #999; }
+</string>
+	<key>name</key>
+	<string>#video-overlay</string>
+	<key>scope</key>
+	<string>source.css</string>
+	<key>tabTrigger</key>
+	<string>#video-overlay</string>
+	<key>uuid</key>
+	<string>A83317E9-7270-427F-9263-37026FC2F39C</string>
+</dict>
+</plist>

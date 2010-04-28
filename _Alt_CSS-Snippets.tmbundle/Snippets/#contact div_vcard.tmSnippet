@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>#contact div.vcard { padding: 2em; margin: 0em 0em 0em 0em; border: 1px solid #ededed; background: none; }
+#contact div.vcard span.fn  { font-weight: bold; font-size: 110%; }
+#contact div.vcard div.adr { margin: 0em 0 1em 0; }
+#contact div.vcard span { padding: 2px 0; }
+#contact div.vcard span.type { visibility: hidden; }
+#contact div.vcard div span.tel { font-weight: bold; }
+#contact div.vcard span a.email { font-weight: bold; text-decoration: none; }
+#contact div.vcard span.hcard_ref a { font-size: 60%; font-weight: normal; text-decoration: none; }
+#contact div.vcard span.myp { display: block; margin: 0.5em 0; }
+#contact div.vcard div.org { margin-bottom: 10px; font-weight: bold; }
+#contact div.vcard div.contact-name { font-weight: bold; }
+#contact div.vcard div.contact-name span { margin-left: 5px; font-weight: normal; }
+#contact p.vcard-dl { color: #ccc; text-align: right; margin: -40px 0 0 0; clear: both; }
+#contact p.vcard-dl a:link { color: #ccc; font-weight: normal; }
+</string>
+	<key>name</key>
+	<string>#contact div.vcard</string>
+	<key>scope</key>
+	<string>source.css</string>
+	<key>tabTrigger</key>
+	<string>contact.vcard</string>
+	<key>uuid</key>
+	<string>EDE79A2D-1B4B-41F3-8180-C984369AF861</string>
+</dict>
+</plist>

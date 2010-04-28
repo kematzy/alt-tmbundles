@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>/* @group site.shopping-cart */
+.item_thumb { display:none; }
+.cartHeaders{ display:none; }
+#cartTotal{ clear:both; text-align: right; }
+#shopping-cart { background: #fff; border: 1px solid #ddd; -moz-border-radius-bottomright: 8px; -webkit-border-bottom-right-radius: 8px; -moz-border-radius-bottomleft: 8px; -webkit-border-bottom-left-radius: 8px; }
+#books #main-content #sidebar #shopping-cart h3 { padding: 8px 10px 4px 10px; text-align: center; /*color: #bababa;*/ }
+#books #shopping-cart .itemContainer { border-top: 1px solid #ddd; margin: 0px 0; padding: 5px 0 10px; background-color: #D9EEFF; }
+#books #shopping-cart .itemContainer div.itemName { font-weight: normal; padding: 2px 0px 4px 6px; text-transform:uppercase; }
+#books #shopping-cart .itemContainer div.itemQuantity { float: left; clear: both; margin-top: 5px; display: inline; margin: 4px; }
+#books #shopping-cart .itemContainer div.itemQuantity input { width: 15px; height: 15px; text-align: center; color: #000; vertical-align: top; padding: 0 4px; margin: 0 5px 0 0; }
+#books #shopping-cart .itemContainer div.itemQuantity input:focus { outline: none; }
+#books #shopping-cart .itemContainer .itemincrement a { display: block; background: url("/images/cart/arrows.png") 0px -4px; width: 7px; height: 5px; text-indent: -9999px; overflow: hidden; margin: 6px 0 0 0px; }
+#books #shopping-cart .itemContainer .itemdecrement a { display: block; background: url("/images/cart/arrows.png") 0px 10px; width: 7px; height: 5px; text-indent: -9999px; overflow: hidden; margin: 4px 0 0 0px; }
+#books #shopping-cart .itemContainer .itemincrement a:hover,
+#books #shopping-cart .itemContainer .itemdecrement a:hover { border-bottom: none; }
+#books #shopping-cart .itemContainer .itemPrice { clear: both; float: right; display: inline; margin-top: -18px; padding-right: 80px; color:#000; font-weight: normal;}
+#books #shopping-cart .itemContainer .itemTotal{ clear: both; float: right; display: inline; margin-top: -18px; padding-right: 10px; color:#000; font-weight: bold;  }
+#books #shopping-cart p { margin-bottom: 0.5em; padding: 2px 6px; }
+#books #shopping-cart .simpleCart_total    { font-weight: bold; clear: both; float: right; }
+#books #shopping-cart .simpleCart_taxCost  { font-weight: bold; clear: both; float: right; }
+#books #shopping-cart p.total-sub,
+#books #shopping-cart p.total-final { font-weight: bold; border-top: 1px solid #ddd; padding-top: 5px; }
+#books #shopping-cart p.total-final { border-bottom: 1px solid #ddd; padding-bottom: 5px; }
+#books #shopping-cart .simpleCart_finalTotal  { font-weight: bold; clear: both; float: right; }
+#books #shopping-cart p.intro { color: #ccc; text-align: left; }
+#books #shopping-cart p.paypal { border-top: 1px solid #ddd; color: #ccc; margin: 5px 0; text-align: center; padding: 4px 0; }
+#books #shopping-cart p.paypal img { padding: 0 0 0 3px; vertical-align: text-bottom; }
+/* enable sliding shopping cart functionality */
+#books #sidebar { position: relative; }
+#books #shopping-cart { position: relative; }
+#books #shopping-cart.fixed { position: fixed; top: 0; margin-top: 20px; }
+/* @end site.shopping-cart */</string>
+	<key>name</key>
+	<string>#shopping-cart</string>
+	<key>scope</key>
+	<string>source.css</string>
+	<key>tabTrigger</key>
+	<string>#shopping-cart</string>
+	<key>uuid</key>
+	<string>DEF3294F-141E-439C-AAED-98088B85B96D</string>
+</dict>
+</plist>

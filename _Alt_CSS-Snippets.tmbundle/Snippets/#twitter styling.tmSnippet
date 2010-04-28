@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>/* @group home.twitter */
+/* the tweets */
+#home #main-content #twitter ul#tweets { list-style-type: none; margin-left: 0;}
+#home #main-content #twitter ul#tweets li { padding: 5px 0; }
+#home #main-content #twitter ul#tweets li.first-tweet { padding-top: 0px; }
+#home #main-content #twitter ul#tweets li span a { color: #ccc; padding: 6px 0 2px 4px; }
+#home #main-content #twitter ul#tweets li span,
+#home #main-content #twitter p,
+#home #main-content #twitter p a#profile-link { color: #ccc; }
+#home #main-content #twitter p a#profile-link { margin: 0; font-weight: bold; }
+/* @end home.twitter */</string>
+	<key>name</key>
+	<string>#twitter styling</string>
+	<key>scope</key>
+	<string>source.css</string>
+	<key>tabTrigger</key>
+	<string>#twitter</string>
+	<key>uuid</key>
+	<string>AC7929B0-B5A6-4A2B-BE25-651DEE1CFFD5</string>
+</dict>
+</plist>

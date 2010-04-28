@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>/* @group site.quotes */
+#quotes { height: 180px; width: 280px; border: 1px solid #ededed; background: #fefefe url('/images/box-bkgr.png') repeat-x scroll center bottom; }
+#quotes span.by { color: #ccc; float: right; font-size: 80%; margin: 10px 0; font-style: italic; }
+#quotes p { color: #728c93; font: 150% Cambria, "Times New Roman", Times, serif; padding: 30px 15px 10px 15px; text-align: center;}
+/* @end site.quotes */
+</string>
+	<key>name</key>
+	<string>#quotes</string>
+	<key>scope</key>
+	<string>source.css</string>
+	<key>tabTrigger</key>
+	<string>#quotes</string>
+	<key>uuid</key>
+	<string>403D1114-493D-44F7-94E0-89514DFFD350</string>
+</dict>
+</plist>

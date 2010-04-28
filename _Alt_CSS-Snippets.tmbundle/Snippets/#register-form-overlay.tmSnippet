@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>/* @group site.reg-form-overlay */
+#register-form-overlay { margin: 10px; }
+/* the overlayed element */
+.ui-overlay { display: none; background-image: url("/images/overlay/white.png"); width: 500px; padding: 0px; }
+.ui-overlay div.close { background-image: url("/images/overlay/apple-close.png"); position: absolute; right: 0px; top: 0px; cursor: pointer; height: 25px; width:  25px; }
+.ui-overlay .overlay-content { margin: 30px; }
+.ui-overlay .overlay-content p { margin: 0; }
+.ui-overlay .overlay-content p.no-spam { font-size: 80%; color: #ccc; }
+.ui-overlay .overlay-content table { margin-bottom: 0; }
+.ui-overlay .overlay-content ul li { margin: 0; padding: 0; }
+/* Error messages shown in this div */
+.ui-overlay .overlay-content div#error-message { position: absolute; top: 30px; left: 30px; z-index: 1001; width: 430px; height: 130px; background-color: #fff; border: 1px dashed #ccc; }
+.ui-overlay .overlay-content div#error-message h2 { padding: 10px 0 0 10px; margin-bottom: 0px; }
+.ui-overlay .overlay-content div#error-message p { padding: 4px 10px; }
+.ui-overlay .overlay-content div#error-message h2,
+.ui-overlay .overlay-content div#error-message p.error { color: red; }
+.ui-overlay .overlay-content div#error-message { display: none; }
+/* @end site.reg-form-overlay */
+</string>
+	<key>name</key>
+	<string>#register-form-overlay</string>
+	<key>scope</key>
+	<string>source.css</string>
+	<key>tabTrigger</key>
+	<string>#register-form-overlay</string>
+	<key>uuid</key>
+	<string>2BD1DA5F-D4CF-4B8A-94B7-CEDEEB7F9014</string>
+</dict>
+</plist>
