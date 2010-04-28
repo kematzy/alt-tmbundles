@@ -3,19 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>&lt;div class="${1:prepend-1 }span-${2:10}${3: append-1}"&gt;
-  $0
-&lt;/div&gt;
-&lt;div class="${4:prepend-1 }span-${5:10}${6: append-1} last"&gt;
-  
-&lt;/div&gt;</string>
+	<string>&amp;mdash;$0</string>
 	<key>name</key>
-	<string>div.2col</string>
+	<string>&amp;mdash;</string>
 	<key>scope</key>
 	<string>text.html</string>
 	<key>tabTrigger</key>
-	<string>div.2col</string>
+	<string>mdash</string>
 	<key>uuid</key>
-	<string>6412BC10-1A4F-4F0C-9D2F-3BDAC064DC3A</string>
+	<string>89182582-EAE9-4A96-A0E4-59C5BC33E94B</string>
 </dict>
 </plist>

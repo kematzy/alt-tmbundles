@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;div id="quotes" class="rounded"&gt;
+  &lt;p&gt;&amp;nbsp;&lt;/p&gt;
+  &lt;span class="cl-b"&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;script type="text/javascript" charset="utf-8"&gt;
+  $("#quotes &gt; p").quotator({ url : "/js/quotes.contact.json"});
+&lt;/script&gt;
+</string>
+	<key>name</key>
+	<string>div.js.quotes</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>div.js.quotes</string>
+	<key>uuid</key>
+	<string>8B607A6A-ABF1-4FE9-84CF-CA0C2C7A8DFF</string>
+</dict>
+</plist>

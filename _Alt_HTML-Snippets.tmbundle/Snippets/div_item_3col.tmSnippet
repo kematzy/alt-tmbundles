@@ -15,7 +15,7 @@
 &lt;/div&gt;
 &lt;!-- /div.item_3col --&gt;</string>
 	<key>name</key>
-	<string>div.item_3col</string>
+	<string>div.3col</string>
 	<key>scope</key>
 	<string>text.html</string>
 	<key>tabTrigger</key>

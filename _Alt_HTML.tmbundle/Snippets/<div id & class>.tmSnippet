@@ -3,19 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>&lt;div class="${1:prepend-1 }span-${2:10}${3: append-1}"&gt;
-  $0
-&lt;/div&gt;
-&lt;div class="${4:prepend-1 }span-${5:10}${6: append-1} last"&gt;
-  
-&lt;/div&gt;</string>
+	<string>&lt;div id="$1" class="$2"&gt;
+	${3:${4:`echo $TM_SELECTED_TEXT`}$0
+&lt;/div&gt;}</string>
 	<key>name</key>
-	<string>div.2col</string>
+	<string>&lt;div id &amp; class&gt;</string>
 	<key>scope</key>
 	<string>text.html</string>
 	<key>tabTrigger</key>
-	<string>div.2col</string>
+	<string>div</string>
 	<key>uuid</key>
-	<string>6412BC10-1A4F-4F0C-9D2F-3BDAC064DC3A</string>
+	<string>1C851A2D-625C-4716-8A9E-917F396CCED0</string>
 </dict>
 </plist>

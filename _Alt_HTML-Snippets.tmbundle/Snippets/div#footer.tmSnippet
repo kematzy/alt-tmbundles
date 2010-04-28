@@ -3,18 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>&lt;!-- div#footer --&gt;
-&lt;div id="footer"&gt;
+	<string>&lt;div id="footer"&gt;
   &lt;p&gt;&amp;copy; `date +%Y` ${1:CLIENT_NAME}&lt;/p&gt;
 &lt;/div&gt;
-&lt;!-- /div#footer --&gt;
 $0</string>
 	<key>name</key>
 	<string>div#footer</string>
 	<key>scope</key>
 	<string>text.html</string>
 	<key>tabTrigger</key>
-	<string>footer</string>
+	<string>div.footer</string>
 	<key>uuid</key>
 	<string>97D80739-8884-421C-BC3E-AC6DFD5F5ACC</string>
 </dict>

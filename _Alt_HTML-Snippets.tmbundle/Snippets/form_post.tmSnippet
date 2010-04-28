@@ -3,19 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>&lt;div class="${1:prepend-1 }span-${2:10}${3: append-1}"&gt;
+	<string>&lt;form action="${1:/action_url}" name="${2:form_name}" method="post" &gt;
   $0
-&lt;/div&gt;
-&lt;div class="${4:prepend-1 }span-${5:10}${6: append-1} last"&gt;
-  
-&lt;/div&gt;</string>
+&lt;/form&gt;
+</string>
 	<key>name</key>
-	<string>div.2col</string>
+	<string>form.post</string>
 	<key>scope</key>
 	<string>text.html</string>
 	<key>tabTrigger</key>
-	<string>div.2col</string>
+	<string>form.post</string>
 	<key>uuid</key>
-	<string>6412BC10-1A4F-4F0C-9D2F-3BDAC064DC3A</string>
+	<string>3782D655-D17B-4DD5-9084-FC04AC42809B</string>
 </dict>
 </plist>

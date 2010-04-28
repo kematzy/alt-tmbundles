@@ -3,8 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>&lt;!-- div.item_header --&gt;
-&lt;div class="span-${1:24} last item_header"&gt;
+	<string>&lt;div id="header" class="span-${1:24 last}"&gt;
   &lt;div class="span-1"&gt;
     item_image$0
   &lt;/div&gt;
@@ -15,13 +14,13 @@
     actions
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;!-- div.item_header --&gt;</string>
+</string>
 	<key>name</key>
 	<string>div.item_header</string>
 	<key>scope</key>
 	<string>text.html</string>
 	<key>tabTrigger</key>
-	<string>item_header</string>
+	<string>div.header</string>
 	<key>uuid</key>
 	<string>6A55EEE6-6927-48EE-BDA5-368614508CD4</string>
 </dict>

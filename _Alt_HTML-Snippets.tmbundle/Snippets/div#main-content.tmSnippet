@@ -3,22 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>&lt;!-- div#main-content --&gt;
-&lt;div id="main-content"&gt;
+	<string>&lt;div id="main-content"&gt;
     
   &lt;h2&gt;${1:__PAGE_HEADER__}&lt;/h2&gt;
 
   &lt;p&gt;lorem$2&lt;/p&gt;
   
 &lt;/div&gt;
-&lt;!-- /div#main-content --&gt;
 $0</string>
 	<key>name</key>
 	<string>div#main-content</string>
 	<key>scope</key>
 	<string>text.html</string>
 	<key>tabTrigger</key>
-	<string>main-content</string>
+	<string>div.main-content</string>
 	<key>uuid</key>
 	<string>98B0E209-2889-40A8-820B-2BE7ABD4E171</string>
 </dict>
