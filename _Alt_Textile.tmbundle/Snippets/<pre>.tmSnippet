@@ -3,16 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>&lt;pre&gt;&lt;code&gt;
+	<string>&lt;pre&gt;
 ${1:$TM_SELECTED_TEXT}
-&lt;/code&gt;&lt;/pre&gt;</string>
+&lt;/pre&gt;</string>
 	<key>keyEquivalent</key>
-	<string>^P</string>
+	<string>^p</string>
 	<key>name</key>
-	<string>&lt;pre&gt;&lt;code&gt;</string>
+	<string>&lt;pre&gt;</string>
 	<key>scope</key>
 	<string>text.html.textile</string>
 	<key>uuid</key>
-	<string>3C1B4760-5FBC-452A-9B6E-0893BFD1184D</string>
+	<string>AB14246E-A109-46F2-8F74-947D1E056F7F</string>
 </dict>
 </plist>
