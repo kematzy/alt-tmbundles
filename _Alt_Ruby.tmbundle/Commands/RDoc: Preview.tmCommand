@@ -15,14 +15,23 @@ require 'rdoc/markup/simple_markup/to_html'
 p = SM::SimpleMarkup.new
 h = SM::ToHtml.new
 
-puts p.convert(input_string, h)
+out = p.convert(input_string, h)
+
+# out = out.sub('&lt;head&gt;','&lt;head&gt;\n&lt;style&gt;&lt;/style&gt;\n&lt;!-- YES it can be intercepted --&gt;\n&lt;/head&gt;')
+
+html_out =
 
 
-# just to remind you of some useful environment variables
-# see Help / Environment Variables for the full list
-# echo File: "$TM_FILEPATH"
-# echo Word: "$TM_CURRENT_WORD"
-# echo Selection: "$TM_SELECTED_TEXT"</string>
+
+
+
+
+# out = out.sub('&lt;h1&gt;','&lt;h1&gt;&lt;!-- YES it can be intercepted --&gt;')
+
+
+puts out
+
+</string>
 	<key>input</key>
 	<string>selection</string>
 	<key>name</key>

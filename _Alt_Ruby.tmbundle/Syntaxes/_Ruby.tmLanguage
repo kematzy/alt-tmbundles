@@ -51,7 +51,6 @@
 	<array>
 		<string>rb</string>
 		<string>rbx</string>
-		<string>rjs</string>
 		<string>Rakefile</string>
 		<string>rake</string>
 		<string>cgi</string>
@@ -59,6 +58,8 @@
 		<string>gemspec</string>
 		<string>irbrc</string>
 		<string>capfile</string>
+		<string>tt</string>
+		<string>rb.tt</string>
 	</array>
 	<key>firstLineMatch</key>
 	<string>^#!/.*\bruby\b</string>
@@ -101,7 +102,7 @@
 	<key>keyEquivalent</key>
 	<string>^~R</string>
 	<key>name</key>
-	<string> Ruby</string>
+	<string> Ruby </string>
 	<key>patterns</key>
 	<array>
 		<dict>
