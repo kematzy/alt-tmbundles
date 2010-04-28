@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>FIXME:: (inside comment block)</string>
 	<key>scope</key>
-	<string>comment.block</string>
+	<string>comment.block, comment.line</string>
 	<key>tabTrigger</key>
 	<string>fixme</string>
 	<key>uuid</key>
