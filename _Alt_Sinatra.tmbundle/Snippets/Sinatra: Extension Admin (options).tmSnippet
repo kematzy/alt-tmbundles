@@ -3,13 +3,80 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>require 'sinatra/base'
+	<string>
+#--
+# DEPENDENCIES
+#++
+%w(${2: 
+sinatra/base
+alt/rext/all
+}).each {|lib| require lib }
+
+#--
+## SINATRA EXTENSIONS
+#++
+%w(${3:
+sinatra/basics
+}).each {|ext| require ext }
+
+
+#--
+# DATABASE DEPENDENCIES
+#++
+%w(${4: 
+dm-core 
+dm-serializer 
+dm-validations 
+dm-timestamps 
+dm-types 
+dm-is-versioned 
+dm-is-published
+}).each { |dblib| require dblib }
+
 
 module Sinatra
 
-  # Sinatra $1 module
+  # == Sinatra::$1 
   # 
-  #  TODO:: Need to write documentation here 
+  # TODO:: Need to write documentation here
+  # 
+  # === Usage:
+  # 
+  # Just add the extension as a helper in your sub-classed Sinatra application.
+  # 
+  #   class YourApp &lt; Sinatra::Base
+  #     
+  #     register( Sinatra::$1 )
+  #     &lt;snip...&gt;
+  #   end
+  # 
+  # See the method definitions for further information.
+  # 
+  # === Dependencies:
+  # 
+  # This extension depends on the following:
+  # 
+  # ==== Ruby Gems:
+  # 
+  # * ????
+  #   * Methods used:
+  #     * 
+  # 
+  # ==== Extensions: 
+  # 
+  # None
+  # 
+  # === Configurations:
+  # 
+  # None
+  # 
+  # === Routes: 
+  # 
+  # None
+  # 
+  # === Code Inspirations:
+  # 
+  # * 
   # 
   module ${1:ModuleName}
     
@@ -41,21 +108,34 @@ module Sinatra
       
       ## CONFIGURATIONS::
       # the configuration options here
-      app.set :foo, 'bar'
+      app.set :${1/(\w*).*/\L$1/}_foo, 'bar'
       
-      ## HANDLERS
+      
+      ## add the extension specific options to those inspectable by :settings_inspect method
+      #  provided by the Sinatra::Settings extension
+      if app.respond_to?(:sinatra_settings_for_inspection)
+        %w(${1/(\w*).*/\L$1/}_foo).each do |m|
+          app.sinatra_settings_for_inspection &lt;&lt; m
+        end
+      end
+      
+      ### ROUTES
+      
       # add your URI Handlers here like this...
       # app.get '/login' do
-      #   "login"
+      #   "&lt;form method='POST' action='/login'&gt;" +
+      #   "&lt;input type='text' name='user'&gt;" +
+      #   "&lt;input type='text' name='pass'&gt;" +
+      #   "&lt;/form&gt;"
       # end
       
     end #/ self.registered
     
     
-    module Admin 
+    module Admin
       
+      VERSION = Sinatra::$1::VERSION
       def self.version; Sinatra::$1.version.sub(/\sv/,'::Admin v'); end
-      
       
       module Helpers
         
@@ -76,25 +156,44 @@ module Sinatra
       
       def self.registered(app)
         app.helpers $1::Helpers
+        app.register(Sinatra::Admin)
         app.helpers $1::Admin::Helpers
         
         ## CONFIGURATIONS::
         # the configuration options here
-        # app.set :foo, 'bar'
+        app.set :${1/(\w*).*/\L$1/}_admin_foo, 'bar'
         
-        ## HANDLERS
-        # add your URI Handlers here like this...
-        # app.get '/login' do
-        #   "login"
-        # end
+        
+        ## add the extension specific options to those inspectable by :settings_inspect method
+        #  provided by the Sinatra::Settings extension
+        if app.respond_to?(:sinatra_settings_for_inspection)
+          %w(${1/(\w*).*/\L$1/}_admin_foo).each do |m|
+            app.sinatra_settings_for_inspection &lt;&lt; m
+          end
+        end
+        
+        ### ROUTES
+        
+        
+        ## HELP SECTION
+        if app.admin_help_enabled 
+          # register the section
+          app.admin_help_central &lt;&lt; '${1/(\w*).*/\L$1/}'
+          
+          app.get "#{app.admin_path_prefix}/help/${1/(\w*).*/\L$1/}" do
+            admin_erb(admin_view_path('help/${1/(\w*).*/\L$1/}'), :layout =&gt; 'admin/help_layout'.to_sym)
+          end
+        end
         
       end #/ self.registered
       
-    end #/module Admin 
+    end #/module Admin
+    
     
   end #/ $1
   
   # register(Sinatra::$1)
+  # register(Sinatra::$1::Admin)
   
 end #/ Sinatra
 </string>
