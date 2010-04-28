@@ -23,7 +23,7 @@
 	<key>keyEquivalent</key>
 	<string>^~H</string>
 	<key>name</key>
-	<string> HTML (Rails)</string>
+	<string> HTML (Ruby / Rails)</string>
 	<key>patterns</key>
 	<array>
 		<dict>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>erb_app "&lt;%= ${1:method_name} %&gt;"
+# body.should have_tag('debug')</string>
+	<key>name</key>
+	<string>erb_app</string>
+	<key>scope</key>
+	<string>source.ruby.rspec</string>
+	<key>tabTrigger</key>
+	<string>erb_app</string>
+	<key>uuid</key>
+	<string>6AA47D28-A4CE-42CD-BA73-F5EB5593B4BA</string>
+</dict>
+</plist>

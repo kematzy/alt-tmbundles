@@ -27,6 +27,7 @@ end</string>
 		<string>yml</string>
 		<string>erb</string>
 		<string>sass</string>
+		<string>php</string>
 	</array>
 	<key>name</key>
 	<string>Add Generator File</string>
