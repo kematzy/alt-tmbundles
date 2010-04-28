@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>class ${1:ModelName}
   include DataMapper::Resource
-  property :id,                   Integer, :serial =&gt; true
+  property :id,                   Serial
   $0
   ## ASSOCIATIONS
   

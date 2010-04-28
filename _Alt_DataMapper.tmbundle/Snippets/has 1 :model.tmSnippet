@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>has 1, :${:model_name_singular}</string>
+	<string>has 1, :${1:model_name_singular}</string>
 	<key>name</key>
 	<string>has 1 :model (HasOne)</string>
 	<key>scope</key>

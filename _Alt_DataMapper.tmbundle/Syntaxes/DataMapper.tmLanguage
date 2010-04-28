@@ -2,10 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>fileTypes</key>
-	<array>
-		<string>rb</string>
-	</array>
 	<key>foldingStartMarker</key>
 	<string>(?x)^
 	    (\s*+
@@ -42,7 +38,7 @@
 	<key>keyEquivalent</key>
 	<string>^~D</string>
 	<key>name</key>
-	<string> DataMapper</string>
+	<string> Ruby (DataMapper)</string>
 	<key>patterns</key>
 	<array>
 		<dict>
