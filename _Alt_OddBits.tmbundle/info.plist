@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string> Alt OddBits</string>
+	<key>ordering</key>
+	<array>
+		<string>73359724-5B6F-4FE3-8DD6-B1286E426C09</string>
+		<string>C141A159-86AD-4EB0-BD63-DF83D8128540</string>
+		<string>5301A0C0-B03E-462A-A2BD-01E6EFCE764A</string>
+		<string>558319CF-A9A6-431C-BD3F-0D9A39AB1742</string>
+	</array>
+	<key>uuid</key>
+	<string>0601D9F1-B9C0-4175-9B67-E7D29C3A33DA</string>
+</dict>
+</plist>

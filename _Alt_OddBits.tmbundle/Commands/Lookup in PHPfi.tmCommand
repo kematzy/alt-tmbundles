@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>bundleUUID</key>
+	<string>467A1966-6227-11D9-BFB1-000D93589AF6</string>
+	<key>command</key>
+	<string>#
+# Originally from here:
+# http://www.akatombo.com/en/comments/using_phpfi_with_textmate/
+#
+if grep &lt;&lt;&lt;${TM_CURRENT_WORD:-!} -Esq '[a-zA-Z0-9_]+' 
+then osascript -e 'on run argv' -e 'set theSelection to item 1 of argv ' -e 'tell application "PHP Function Index"' -e 'activate' -e 'set the searchString to theSelection' -e 'end tell' -e 'end run' $TM_CURRENT_WORD 
+fi
+</string>
+	<key>fallbackInput</key>
+	<string>word</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string>^~h</string>
+	<key>name</key>
+	<string>Lookup in PHPfi</string>
+	<key>output</key>
+	<string>showAsTooltip</string>
+	<key>scope</key>
+	<string>source.php</string>
+	<key>uuid</key>
+	<string>558319CF-A9A6-431C-BD3F-0D9A39AB1742</string>
+</dict>
+</plist>

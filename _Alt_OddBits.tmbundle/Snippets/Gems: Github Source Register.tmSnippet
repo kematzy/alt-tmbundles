@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>#  Add GitHub to your RubyGems sources
+$  gem sources -a http://gems.github.com
+</string>
+	<key>name</key>
+	<string>Gems: Github Source Register</string>
+	<key>tabTrigger</key>
+	<string>gh.source</string>
+	<key>uuid</key>
+	<string>C141A159-86AD-4EB0-BD63-DF83D8128540</string>
+</dict>
+</plist>
