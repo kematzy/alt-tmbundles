@@ -11,6 +11,7 @@
 			<string>62A0AD16-3D39-435E-8E3C-F67DE33AA0AA</string>
 			<string>66EE0962-3533-434A-B8EA-335F4FD2FF13</string>
 			<string>FCBE71C4-E0F5-44DE-8E5D-03B8381DEE05</string>
+			<string>641E6EF3-E9EF-4F0A-8461-9B7032135FCD</string>
 			<string>------------------------------------</string>
 			<string>6A30D9BB-4526-4E05-ACA0-1216578F4F73</string>
 			<string>D8EC4749-0065-4B41-9889-63E6923349CE</string>
@@ -18,6 +19,7 @@
 			<string>4798B21C-7387-421B-AB6B-0377AF5C9963</string>
 			<string>88CDBB25-59FC-4189-9CB4-B854FBC1F435</string>
 			<string>3D23D5CD-1F6D-43E9-9A64-B848C3BEA1CA</string>
+			<string>41D3CEBB-2C14-450A-91C1-471BECB47E1E</string>
 		</array>
 		<key>submenus</key>
 		<dict>
@@ -42,11 +44,23 @@
 			<dict>
 				<key>items</key>
 				<array>
-					<string>3BEB34A5-D9BF-494C-A0B0-8289E034E49E</string>
 					<string>C2CE6A11-6204-4A07-8ADD-90A7F291D7ED</string>
 				</array>
 				<key>name</key>
 				<string>TestSuites</string>
+			</dict>
+			<key>641E6EF3-E9EF-4F0A-8461-9B7032135FCD</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>D41237E3-0417-4A35-8277-0495E49B0FFE</string>
+					<string>------------------------------------</string>
+					<string>D0E6F3B2-6465-4571-83A7-E9E93BC6C554</string>
+					<string>F5C269A5-606E-45B6-9A6C-5DA39F079CBF</string>
+					<string>CF0E275C-1CA2-4AA5-93CD-EC931786C9FD</string>
+				</array>
+				<key>name</key>
+				<string>Rake</string>
 			</dict>
 			<key>6A30D9BB-4526-4E05-ACA0-1216578F4F73</key>
 			<dict>
@@ -69,35 +83,7 @@
 			<dict>
 				<key>items</key>
 				<array>
-					<string>2BFB07FC-94F7-4F63-BCAD-E758F55A83DE</string>
-					<string>27C7DAF5-754D-44C4-BDD0-7B1BD0986289</string>
-					<string>CE707591-22F9-4347-9DE3-45D8993FF62B</string>
-					<string>47C5EB35-F397-40E0-9150-8A2977AC57F5</string>
-					<string>A60A0528-7B86-4EA2-AA2A-3330A4AFDE95</string>
 					<string>------------------------------------</string>
-					<string>5701B67E-A36A-4FA0-A27D-DF0D155825A8</string>
-					<string>F5614229-E965-492D-8C0B-6A0B718CFFDD</string>
-					<string>B77D7A8F-8C34-40D6-9FA7-8F5B8897C708</string>
-					<string>1439F110-6CF7-4F70-BF19-15B8F3CBBB55</string>
-					<string>3967548D-A2AD-42AC-9DCE-99A9A635A152</string>
-					<string>837C2C8E-4817-422B-B874-68EB36C24FF0</string>
-					<string>B47A3132-5472-46A2-A1D6-F990DC5C6CC0</string>
-					<string>7CACDC43-A1E4-446C-9D75-1AA099C2947C</string>
-					<string>4DEE5DEF-B53F-45E1-971E-E3FAA4242D72</string>
-					<string>6D0750FC-892D-40F2-B0CD-E560ECC0F0FA</string>
-					<string>08FF14C5-3D0A-4FD9-80F8-12E72257621C</string>
-					<string>594C0789-6974-4967-8317-F91B2F0256E1</string>
-					<string>4C29EF9D-67F9-409B-9558-6986BAE40221</string>
-					<string>CB34E20C-EA6F-4EA3-B461-1ED544BEFA7F</string>
-					<string>5243D551-AA1A-4286-9A56-B1C96A2300C9</string>
-					<string>603773EF-2F87-47F1-81D9-31AE6066D2F6</string>
-					<string>8FA99E47-4CEA-488B-92CE-0C9284609F0B</string>
-					<string>242E008B-9B6B-4EDD-A6FE-7F1A47404908</string>
-					<string>25DB9D29-FC70-4D8E-B3D8-FA1C0A696E1F</string>
-					<string>EA04C00C-5178-462F-B4A4-B8E4CC9FD36B</string>
-					<string>7FFC477D-E1AB-4BDE-B5BD-97D12C4ADD54</string>
-					<string>A01CB07B-4A65-4B92-825B-26C1622A7B8A</string>
-					<string>E9EC2EAB-EAFC-4655-8400-FD7E967C89B1</string>
 				</array>
 				<key>name</key>
 				<string>Bacon</string>
@@ -154,6 +140,10 @@
 		<string>C1837C0F-12E5-4C41-A8D1-A8844BE0C6DD</string>
 		<string>3F2AB036-53C2-4C90-B6F5-24C17EDF943B</string>
 		<string>EB376A88-43AA-4C9D-AB7C-98EFA71E600D</string>
+		<string>D0E6F3B2-6465-4571-83A7-E9E93BC6C554</string>
+		<string>F5C269A5-606E-45B6-9A6C-5DA39F079CBF</string>
+		<string>CF0E275C-1CA2-4AA5-93CD-EC931786C9FD</string>
+		<string>D41237E3-0417-4A35-8277-0495E49B0FFE</string>
 		<string>0E51BF11-21DE-4E72-9958-1D9303847116</string>
 		<string>1B6F873C-E730-450C-BD49-2DFDD16BA9CC</string>
 		<string>D799245F-1887-49D6-B128-81C7910D8562</string>
@@ -163,6 +153,7 @@
 		<string>26627BF9-DD52-40E1-BFBD-A5D8E0C2DFC3</string>
 		<string>96571AA9-70D0-44BA-93CE-AE60DDC11AEB</string>
 		<string>E1138391-4B20-480B-84BC-2DC4B69D3666</string>
+		<string>41D3CEBB-2C14-450A-91C1-471BECB47E1E</string>
 		<string>75422EE5-CE93-4C55-88A7-01B513F2D964</string>
 		<string>F98F340E-15C9-478B-B7FB-6FD5FCE97D17</string>
 		<string>4A7995B3-ADA1-49E6-B26D-755F7987BD6F</string>

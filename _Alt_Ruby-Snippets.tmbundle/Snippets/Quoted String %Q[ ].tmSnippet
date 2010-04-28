@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>+${TM_SELECTED_TEXT:$TM_CURRENT_WORD}+ $0</string>
+	<string>%Q[${TM_SELECTED_TEXT}$0]</string>
 	<key>keyEquivalent</key>
-	<string>^+</string>
+	<string>^q</string>
 	<key>name</key>
-	<string>RDoc: +typewriter+</string>
+	<string>Quoted String %Q[ ]</string>
 	<key>scope</key>
-	<string>source.ruby comment.documentation, text</string>
+	<string>source.ruby</string>
 	<key>uuid</key>
-	<string>BF36A568-6F6E-4C88-A051-5C9D2A64CC18</string>
+	<string>41D3CEBB-2C14-450A-91C1-471BECB47E1E</string>
 </dict>
 </plist>

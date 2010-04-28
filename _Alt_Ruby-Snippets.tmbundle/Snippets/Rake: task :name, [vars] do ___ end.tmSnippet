@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>desc "${1:Description}"
+task :${2:name}, [:${3:vars}] do |t, args|
+  unless args.$3
+    msg = %Q[\nERROR:\n\n  You must define the :$3 variable like this:\n]
+    msg &lt;&lt; %Q[  rake $2 $3=something \n\n]
+    puts msg
+  else
+    # do task here
+  end
+end
+</string>
+	<key>name</key>
+	<string>Rake: task :name, [vars] do ... end</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>tabTrigger</key>
+	<string>task</string>
+	<key>uuid</key>
+	<string>D0E6F3B2-6465-4571-83A7-E9E93BC6C554</string>
+</dict>
+</plist>
