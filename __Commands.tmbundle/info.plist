@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>   Commands</string>
+	<key>ordering</key>
+	<array>
+		<string>1569FC27-20D3-47C3-86C6-74E332A3F21A</string>
+		<string>9D54E8A5-5E4A-45BC-A347-7BB71093492E</string>
+		<string>7C143526-D838-4409-A41C-1621187F7F57</string>
+		<string>44A46708-93CF-402C-9803-1A3EC2E748DC</string>
+	</array>
+	<key>uuid</key>
+	<string>82A393C2-7229-4187-8018-6F4C32AE8CD2</string>
+</dict>
+</plist>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>beforeRunningCommand</key>
@@ -54,7 +54,7 @@ print ERB.new(ENV['TM_LINK_FORMAT']).result
 	<key>output</key>
 	<string>insertAsSnippet</string>
 	<key>scope</key>
-	<string>text.html, text.html.markdown, text.html.textile, text.bbcode, text.moinmoin, text.restructuredtext</string>
+	<string>text.html, text.html.ruby, text.html.markdown, text.html.textile, text.bbcode, text.moinmoin, text.restructuredtext</string>
 	<key>uuid</key>
 	<string>4C511AB3-8966-40F0-A8DD-43FB840724B5</string>
 </dict>
