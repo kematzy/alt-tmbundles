@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string> Alt Sinatra Tests</string>
+	<key>ordering</key>
+	<array>
+		<string>1FF4EEAB-176C-434E-A12A-8E4A3FA7EE5A</string>
+		<string>8D062E8C-FE65-4FA2-9C90-271A30CEED78</string>
+	</array>
+	<key>uuid</key>
+	<string>51C53DFC-0ABC-4169-806A-1532FE79914E</string>
+</dict>
+</plist>
