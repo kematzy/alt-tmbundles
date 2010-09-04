@@ -4,6 +4,7 @@
 <dict>
 	<key>fileTypes</key>
 	<array>
+		<string>yml.txt</string>
 		<string>yaml</string>
 		<string>yml</string>
 	</array>
