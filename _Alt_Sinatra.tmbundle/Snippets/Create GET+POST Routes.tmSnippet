@@ -3,20 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>__END__
+	<string>get '/${1:path}' do
+	${2}
+end
 
-@@ ${1:layout}
-	${2:= yield}
-
-@@ ${3:index}
+post '/${1}' do
+	${3}
+end
 $0</string>
 	<key>name</key>
-	<string>__END__ ... @@ layout .. @@ index</string>
+	<string>Create GET+POST Routes</string>
 	<key>scope</key>
-	<string>source.ruby.sinatra, source.ruby</string>
+	<string>source.ruby.sinatra</string>
 	<key>tabTrigger</key>
-	<string>lay</string>
+	<string>gp</string>
 	<key>uuid</key>
-	<string>4537676D-1708-476D-85ED-80DCEE01C1EB</string>
+	<string>7F2DC4CF-B7AE-4CB0-AB56-A215E46A55AD</string>
 </dict>
 </plist>

@@ -3,20 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>__END__
-
-@@ ${1:layout}
-	${2:= yield}
-
-@@ ${3:index}
-$0</string>
+	<string>mime_type :${1:foo}, '${2:text/foo'}$0</string>
 	<key>name</key>
-	<string>__END__ ... @@ layout .. @@ index</string>
+	<string>mime_type</string>
 	<key>scope</key>
-	<string>source.ruby.sinatra, source.ruby</string>
+	<string>source.ruby.sinatra</string>
 	<key>tabTrigger</key>
-	<string>lay</string>
+	<string>mime</string>
 	<key>uuid</key>
-	<string>4537676D-1708-476D-85ED-80DCEE01C1EB</string>
+	<string>2116D5B8-3284-4C27-98EE-91A8F1087424</string>
 </dict>
 </plist>

@@ -46,9 +46,15 @@
 	<array>
 		<dict>
 			<key>match</key>
-			<string>\b(get|put|post|delete|head|error|configure|before|helpers|use_in_file_templates!|use|haml|erb|sass|set|enable|disable)\b</string>
+			<string>\b(get|post|put|delete|head|template|helpers|before|after|configure|not_found|error|use_in_file_templates!)\b</string>
 			<key>name</key>
-			<string>keyword</string>
+			<string>keyword.sinatra</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(set|enable|disable|haml|erb|erubis|builder|sass|less|params|session|redirect|send_file|halt|pass|mime_type)\b</string>
+			<key>name</key>
+			<string>support.function.sinatra</string>
 		</dict>
 		<dict>
 			<key>include</key>

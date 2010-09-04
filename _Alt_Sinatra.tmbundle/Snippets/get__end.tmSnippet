@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>get '/${1:path}'${2:, options} do
+	<string>get '/${1:path}'${2:, ${3:options}} do 
 	$0
 end</string>
 	<key>name</key>

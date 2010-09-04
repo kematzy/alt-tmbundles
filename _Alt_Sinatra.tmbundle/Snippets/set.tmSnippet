@@ -3,20 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>__END__
-
-@@ ${1:layout}
-	${2:= yield}
-
-@@ ${3:index}
-$0</string>
+	<string>set :${1:option}, ${2:value}$0</string>
 	<key>name</key>
-	<string>__END__ ... @@ layout .. @@ index</string>
+	<string>set</string>
 	<key>scope</key>
-	<string>source.ruby.sinatra, source.ruby</string>
+	<string>source.ruby.sinatra</string>
 	<key>tabTrigger</key>
-	<string>lay</string>
+	<string>set</string>
 	<key>uuid</key>
-	<string>4537676D-1708-476D-85ED-80DCEE01C1EB</string>
+	<string>FA0CA50B-26F7-437F-BF07-0EB1BEEB1033</string>
 </dict>
 </plist>

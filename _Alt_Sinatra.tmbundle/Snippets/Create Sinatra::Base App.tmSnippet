@@ -3,16 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>delete '/${1:path}'${2:, ${3:options}} do
-	$0
+	<string>require "rubygems"
+require "sinatra/base"
+
+class ${1:MyApp} &lt; Sinatra::Base
+	get '${2:/}' do
+		${3:"Hello World!"}$0
+	end
 end</string>
 	<key>name</key>
-	<string>delete...end</string>
+	<string>Create Sinatra::Base App</string>
 	<key>scope</key>
 	<string>source.ruby.sinatra</string>
 	<key>tabTrigger</key>
-	<string>del</string>
+	<string>sinb</string>
 	<key>uuid</key>
-	<string>9A86D415-BF62-45C1-B718-00451F2D555D</string>
+	<string>5A6738AF-FA06-4BF7-8C8C-27129D2B58D7</string>
 </dict>
 </plist>

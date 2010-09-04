@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>@@ ${1:page}</string>
+	<string>@@ ${1:page}$0</string>
 	<key>name</key>
 	<string>@@ page</string>
 	<key>scope</key>

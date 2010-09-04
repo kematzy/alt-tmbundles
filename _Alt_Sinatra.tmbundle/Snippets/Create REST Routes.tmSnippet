@@ -3,20 +3,29 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>__END__
+	<string>get '/${1:path}' do
+	${2}
+end
 
-@@ ${1:layout}
-	${2:= yield}
+post '/${1}' do
+	${3}
+end
 
-@@ ${3:index}
+put '/${1}' do
+	${4}
+end
+
+delete '/${1}' do
+	${5}
+end
 $0</string>
 	<key>name</key>
-	<string>__END__ ... @@ layout .. @@ index</string>
+	<string>Create REST Routes</string>
 	<key>scope</key>
-	<string>source.ruby.sinatra, source.ruby</string>
+	<string>source.ruby.sinatra</string>
 	<key>tabTrigger</key>
-	<string>lay</string>
+	<string>rest</string>
 	<key>uuid</key>
-	<string>4537676D-1708-476D-85ED-80DCEE01C1EB</string>
+	<string>D9F4D1BA-D84C-41E9-8627-6BC4CF556EA1</string>
 </dict>
 </plist>

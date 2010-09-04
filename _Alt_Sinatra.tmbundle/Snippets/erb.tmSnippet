@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>erb :${0:name_of_view}</string>
+	<string>erb ${2::${1:template}}$0</string>
 	<key>name</key>
 	<string>erb :view</string>
 	<key>scope</key>

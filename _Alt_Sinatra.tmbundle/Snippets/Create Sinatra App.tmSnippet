@@ -3,20 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>__END__
+	<string>require "rubygems"
+require "sinatra"
 
-@@ ${1:layout}
-	${2:= yield}
-
-@@ ${3:index}
-$0</string>
+get '${1:/}' do
+	${2:"Hello World!"}$0
+end</string>
 	<key>name</key>
-	<string>__END__ ... @@ layout .. @@ index</string>
+	<string>Create Sinatra App</string>
 	<key>scope</key>
-	<string>source.ruby.sinatra, source.ruby</string>
+	<string>source.ruby.sinatra</string>
 	<key>tabTrigger</key>
-	<string>lay</string>
+	<string>sin</string>
 	<key>uuid</key>
-	<string>4537676D-1708-476D-85ED-80DCEE01C1EB</string>
+	<string>B0134B8F-DFA6-423E-8191-A714FDBE937A</string>
 </dict>
 </plist>

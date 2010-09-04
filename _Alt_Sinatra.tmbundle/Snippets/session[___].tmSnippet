@@ -3,16 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>delete '/${1:path}'${2:, ${3:options}} do
-	$0
-end</string>
+	<string>session[:${1:user}]$0</string>
+	<key>keyEquivalent</key>
+	<string>^j</string>
 	<key>name</key>
-	<string>delete...end</string>
+	<string>session[...]</string>
 	<key>scope</key>
 	<string>source.ruby.sinatra</string>
-	<key>tabTrigger</key>
-	<string>del</string>
 	<key>uuid</key>
-	<string>9A86D415-BF62-45C1-B718-00451F2D555D</string>
+	<string>BC845028-86C3-4DE4-B22F-5D9902D06C10</string>
 </dict>
 </plist>

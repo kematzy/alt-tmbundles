@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>configure :${1:stage} do
+	<string>configure :${1:environment} do
 	$0
 end</string>
 	<key>name</key>
