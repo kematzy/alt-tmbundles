@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>var a = new Array();
+\$.each(${1:array_name}, function(key, value) { a.push(key) });
+</string>
+	<key>name</key>
+	<string>JQuery.each()  extract values from ass array keys</string>
+	<key>uuid</key>
+	<string>CD2670F9-4117-464F-8451-4785C5552AC2</string>
+</dict>
+</plist>

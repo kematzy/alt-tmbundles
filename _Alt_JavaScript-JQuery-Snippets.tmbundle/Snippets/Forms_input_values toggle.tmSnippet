@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>swapValue = [];
+$("input.text").each(function(i){
+  swapValue[i] = $(this).val();
+  $(this).focus(function(){if($(this).val()==swapValue[i]){$(this).val("");}$(this).addClass("focus");
+  }).blur(function(){if($.trim($(this).val())==""){$(this).val(swapValue[i]);$(this).removeClass("focus");}});
+});</string>
+	<key>name</key>
+	<string>Forms.input.values toggle</string>
+	<key>scope</key>
+	<string>source.js.jquery</string>
+	<key>tabTrigger</key>
+	<string>form.values.toggle</string>
+	<key>uuid</key>
+	<string>14645AE3-5230-4DE9-BEBC-D29730AE2E00</string>
+</dict>
+</plist>

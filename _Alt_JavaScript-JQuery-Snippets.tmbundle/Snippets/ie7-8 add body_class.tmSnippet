@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;!--[if IE 8]&gt;&lt;script type="text/javascript" charset="utf-8"&gt; $(document.body).addClass("ie8") &lt;/script&gt;&lt;![endif]--&gt;
+&lt;!--[if IE 7]&gt;&lt;script type="text/javascript" charset="utf-8"&gt;$(document.body).addClass("ie7")&lt;/script&gt;&lt;![endif]--&gt;</string>
+	<key>name</key>
+	<string>ie7-8 add body.class</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>ie7</string>
+	<key>uuid</key>
+	<string>216A9903-9BA1-4CF0-BEAD-D87A42BD8576</string>
+</dict>
+</plist>

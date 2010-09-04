@@ -77,7 +77,7 @@
 		</dict>
 	</dict>
 	<key>name</key>
-	<string>_Alt_JavaScript-JQuery-Snippets-Core</string>
+	<string> Alt JavaScript-JQuery-Snippets-Core</string>
 	<key>ordering</key>
 	<array>
 		<string>3AB86478-AAE6-4139-BCB5-A17F247E60FB</string>
@@ -93,6 +93,7 @@
 		<string>61EDC93F-E76B-403E-9885-BA4B8E95A81D</string>
 		<string>DAC4EA24-D346-422E-B580-59ACD17A6C63</string>
 		<string>253D46AC-F773-4D1B-A0B5-7BD69A0CD782</string>
+		<string>14645AE3-5230-4DE9-BEBC-D29730AE2E00</string>
 	</array>
 	<key>uuid</key>
 	<string>37424D9F-F473-456D-8C57-2A3475E07AEF</string>
