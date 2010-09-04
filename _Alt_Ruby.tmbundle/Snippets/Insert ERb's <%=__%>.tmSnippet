@@ -9,7 +9,7 @@
 	<key>name</key>
 	<string>Insert ERb's &lt;%=..%&gt;</string>
 	<key>scope</key>
-	<string>text.html.ruby, source.yaml, meta.erb, string.quoted.other, source.css, source.js</string>
+	<string>text.html.ruby, text.html.embedded.ruby, source.yaml, meta.erb, string.quoted.other, source.css, source.js, source.ruby.sinatra</string>
 	<key>uuid</key>
 	<string>D99343DC-5681-48F8-AEAB-1D2D772271E6</string>
 </dict>
