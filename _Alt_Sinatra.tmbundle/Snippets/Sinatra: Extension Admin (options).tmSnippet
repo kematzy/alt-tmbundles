@@ -8,29 +8,20 @@
 # DEPENDENCIES
 #++
 %w(${2: 
-sinatra/base
 alt/rext/all
 }).each {|lib| require lib }
+# 
 
 #--
 ## SINATRA EXTENSIONS
 #++
-%w(${3:
-sinatra/basics
-}).each {|ext| require ext }
-
+%w(${3:}).each {|ext| require ext }
 
 #--
 # DATABASE DEPENDENCIES
 #++
 %w(${4: 
-dm-core 
-dm-serializer 
-dm-validations 
-dm-timestamps 
-dm-types 
-dm-is-versioned 
-dm-is-published
+custom_dm_things_only
 }).each { |dblib| require dblib }
 
 
@@ -42,11 +33,15 @@ module Sinatra
   # 
   # === Usage:
   # 
-  # Just add the extension as a helper in your sub-classed Sinatra application.
+  # Just require the extension like usual...
+  # 
+  #   require 'sinatra/${1/(\w*).*/\L$1/}s'
+  # 
+  # then register the extension as in your sub-classed Sinatra application.
   # 
   #   class YourApp &lt; Sinatra::Base
   #     
-  #     register( Sinatra::$1 )
+  #     register( Sinatra::$1s )
   #     &lt;snip...&gt;
   #   end
   # 
@@ -107,14 +102,14 @@ module Sinatra
       app.helpers $1::Helpers
       
       ## CONFIGURATIONS::
-      # the configuration options here
-      app.set :${1/(\w*).*/\L$1/}_foo, 'bar'
+      # enable custom URL path for this Extension
+      app.set :${1/(\w*).*/\L$1/}s_path_prefix, '/${1/(\w*).*/\L$1/}s'
       
       
       ## add the extension specific options to those inspectable by :settings_inspect method
       #  provided by the Sinatra::Settings extension
       if app.respond_to?(:sinatra_settings_for_inspection)
-        %w(${1/(\w*).*/\L$1/}_foo).each do |m|
+        %w(${1/(\w*).*/\L$1/}s_path_prefix).each do |m|
           app.sinatra_settings_for_inspection &lt;&lt; m
         end
       end
@@ -122,12 +117,11 @@ module Sinatra
       ### ROUTES
       
       # add your URI Handlers here like this...
-      # app.get '/login' do
-      #   "&lt;form method='POST' action='/login'&gt;" +
-      #   "&lt;input type='text' name='user'&gt;" +
-      #   "&lt;input type='text' name='pass'&gt;" +
-      #   "&lt;/form&gt;"
-      # end
+      ## INDEX
+      app.get "#{app.${1/(\w*).*/\L$1/}s_path_prefix}/?" do 
+        @${1/(\w*).*/\L$1/}s = $1.all # (:order =&gt; [:name])
+        erb('${1/(\w*).*/\L$1/}s/index'.to_sym)
+      end
       
     end #/ self.registered
     
@@ -173,6 +167,15 @@ module Sinatra
         end
         
         ### ROUTES
+        
+        ## INDEX
+        # app.get "#{app.admin_path_prefix}/${1/(\w*).*/\L$1/}/?" do 
+        #  # add your code here
+        #  
+        #  admin_erb(admin_view_path('${1/(\w*).*/\L$1/}/index'))
+        # end
+        
+        
         
         
         ## HELP SECTION

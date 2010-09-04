@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>
+#--
+# DEPENDENCIES
+#++
+%w(${2: 
+alt/rext/all
+}).each {|lib| require lib }
+# 
+
+#--
+## SINATRA EXTENSIONS
+#++
+%w(${3:}).each {|ext| require ext }
+
+#--
+# DATABASE DEPENDENCIES
+#++
+%w(${4: 
+custom_dm_things_only
+}).each { |dblib| require dblib }
+
+
+module Sinatra
+
+  # == Sinatra::$1s 
+  # 
+  # TODO:: Need to write documentation here
+  # 
+  # === Usage:
+  # 
+  # Just require the extension like usual...
+  # 
+  #   require 'sinatra/${1/(\w*).*/\L$1/}s'
+  # 
+  # then register the extension as in your sub-classed Sinatra application.
+  # 
+  #   class YourApp &lt; Sinatra::Base
+  #     
+  #     register( Sinatra::$1s )
+  #     &lt;snip...&gt;
+  #   end
+  # 
+  # See the method definitions for further information.
+  # 
+  # === Dependencies:
+  # 
+  # This extension depends on the following:
+  # 
+  # ==== Ruby Gems:
+  # 
+  # * ????
+  #   * Methods used:
+  #     * 
+  # 
+  # ==== Extensions: 
+  # 
+  # None
+  # 
+  # === Configurations:
+  # 
+  # None
+  # 
+  # === Routes: 
+  # 
+  # None
+  # 
+  # === Code Inspirations:
+  # 
+  # * 
+  # 
+  module ${1:ModuleNameSingular}s
+    
+    VERSION = '0.1.0' unless const_defined?(:VERSION)
+    def self.version; "Sinatra::$1s v#{VERSION}"; end
+    
+    
+    module Helpers
+        
+      # add your public helper methods here
+      
+      ## PRIVATE METHODS
+      private
+        
+        
+    end #/ Helpers
+    
+    # add your general methods here
+    
+    
+    def self.registered(app)
+      app.helpers $1s::Helpers
+      
+      ## CONFIGURATIONS::
+      # the configuration options here
+      # enable custom URL path for this Extension
+      app.set :${1/(\w*).*/\L$1/}s_path_prefix, '/${1/(\w*).*/\L$1/}s'
+      
+      
+      ## add the extension specific options to those inspectable by :settings_inspect method
+      #  provided by the Sinatra::Settings extension
+      if app.respond_to?(:sinatra_settings_for_inspection)
+        %w(${1/(\w*).*/\L$1/}s_path_prefix).each do |m|
+          app.sinatra_settings_for_inspection &lt;&lt; m
+        end
+      end
+      
+      ### ROUTES
+      
+      ## INDEX
+      app.get "#{app.${1/(\w*).*/\L$1/}s_path_prefix}/?" do 
+        @${1/(\w*).*/\L$1/}s = $1.all # (:order =&gt; [:name])
+        erb('${1/(\w*).*/\L$1/}s/index'.to_sym)
+      end
+      
+    end #/ self.registered
+    
+    
+    module Admin
+      
+      VERSION = Sinatra::$1s::VERSION
+      def self.version; Sinatra::$1s.version.sub(/\sv/,'::Admin v'); end
+      
+      module Helpers
+        
+        # add your public helper methods here
+        
+        
+        ## PRIVATE METHODS
+        private
+          
+          
+      end #/ Helpers
+      
+      
+      def self.registered(app)
+        # app.register(Sinatra::Admin)
+        app.helpers $1s::Helpers
+        app.helpers $1s::Admin::Helpers
+        
+        ## CONFIGURATIONS::
+        # the configuration options here
+        app.set :${1/(\w*).*/\L$1/}s_admin_foo, 'bar'
+        
+        
+        ## add the extension specific options to those inspectable by :settings_inspect method
+        #  provided by the Sinatra::Settings extension
+        if app.respond_to?(:sinatra_settings_for_inspection)
+          %w(${1/(\w*).*/\L$1/}s_admin_foo).each do |m|
+            app.sinatra_settings_for_inspection &lt;&lt; m
+          end
+        end
+        
+        ### ROUTES
+        
+        ## INDEX
+        app.get "#{app.admin_path_prefix}/${1/(\w*).*/\L$1/}s/?" do 
+          # login_required
+          @${1/(\w*).*/\L$1/}s = $1.all #(:order =&gt; [:name])
+          admin_erb(admin_load_view('${1/(\w*).*/\L$1/}s/index'))
+        end 
+        
+        ## NEW 
+        app.get "#{app.admin_path_prefix}/${1/(\w*).*/\L$1/}s/new/?" do 
+          # retrieve from Sessions or create new one
+          @${1/(\w*).*/\L$1/} = session.delete(:${1/(\w*).*/\L$1/}) || $1.new
+          @review.name = params[:name] unless params[:name].nil?
+          if request.xhr?
+            # "XHR params.inspect = [#{params.inspect}]"
+            admin_erb(admin_load_view('${1/(\w*).*/\L$1/}s/new'), :layout =&gt; false )
+          else
+            # "NOT XHR params.inspect = [#{params.inspect}]"
+            admin_erb(admin_load_view('${1/(\w*).*/\L$1/}s/new') )
+          end
+        end
+        
+        ## CREATE
+        app.post "#{app.admin_path_prefix}/${1/(\w*).*/\L$1/}/?" do 
+          @${1/(\w*).*/\L$1/} = Review.new(params[:${1/(\w*).*/\L$1/}])
+          if request.xhr?
+            content_type 'text/json' #, :charset =&gt; 'utf-8'
+            @${1/(\w*).*/\L$1/}.save ? {:success =&gt; true, :html =&gt; "Successfully created the $1 [#{@${1/(\w*).*/\L$1/}.name}]" }.to_json : {:success =&gt; false, :html =&gt; "&lt;ul&gt;#{@${1/(\w*).*/\L$1/}.errors.map{ |e| "&lt;li&gt;#{e}&lt;/li&gt;" }}&lt;/ul&gt;" }.to_json
+          else
+            # params.inspect
+            if @${1/(\w*).*/\L$1/}.save
+              flash[:success] = "Successfully created a new $1"
+              redirect admin_url_for("${1/(\w*).*/\L$1/}s")
+            else
+              # store the params in the session
+              flash_msg = "Unable to create a new $1 [ #{@${1/(\w*).*/\L$1/}.name} ] due to these errors:"
+              @${1/(\w*).*/\L$1/}.errors.each { |e| flash_msg &lt;&lt; "&lt;br&gt;\n -- #{e[0]}" }
+              flash[:error] = flash_msg
+              redirect admin_url_for("${1/(\w*).*/\L$1/}s/new")
+            end
+          end
+        end
+        
+        ## SHOW 
+        app.get "#{app.admin_path_prefix}/${1/(\w*).*/\L$1/}s/:id/?" do 
+          @${1/(\w*).*/\L$1/} = $1.get!(params[:id])
+          begin
+            if @${1/(\w*).*/\L$1/}.nil?
+              throw :halt, [404, admin_erb( "errors/record_not_found".to_sym )]
+            else
+              admin_erb(admin_load_view('${1/(\w*).*/\L$1/}s/show'), :layout =&gt; request.xhr? )
+            end
+          rescue DataMapper::ObjectNotFoundError =&gt; e
+            @error = e
+            throw :halt, [404, admin_erb( "errors/record_not_found".to_sym, :layout =&gt; request.xhr? )]
+          end
+        end
+        
+        ## EDIT
+        app.get "#{app.admin_path_prefix}/${1/(\w*).*/\L$1/}s/:id/edit/?" do 
+          @${1/(\w*).*/\L$1/} = $1.get!(params[:id])
+          if request.xhr?
+            # "XHR params.inspect = [#{params.inspect}]"
+            admin_erb(admin_load_view('${1/(\w*).*/\L$1/}s/edit'), :layout =&gt; false )
+          else
+            # "NOT XHR params.inspect = [#{params.inspect}]"
+            admin_erb(admin_load_view('${1/(\w*).*/\L$1/}s/edit') )
+          end
+        end
+        
+        ## UPDATE
+        app.put "#{app.admin_path_prefix}/${1/(\w*).*/\L$1/}s/:id/?" do 
+          # p "params=[#{params.inspect}]"
+          ${1/(\w*).*/\L$1/} = $1.get!(params[:id])
+          if request.xhr?
+            content_type 'text/json' #, :charset =&gt; 'utf-8'
+            # "params=[#{params.inspect}] and review=[#{h ${1/(\w*).*/\L$1/}.inspect}]"
+            ${1/(\w*).*/\L$1/}.update(params[:${1/(\w*).*/\L$1/}]) ? {:success =&gt; true, :html =&gt; 'Successfully updated the $1' }.to_json : {:success =&gt; false, :html =&gt; "&lt;ul&gt;#{${1/(\w*).*/\L$1/}.errors.map{ |e| "&lt;li&gt;#{e}&lt;/li&gt;" }}&lt;/ul&gt;" }.to_json
+          else
+            if ${1/(\w*).*/\L$1/}.update(params[:${1/(\w*).*/\L$1/}])
+              flash[:success] = "Successfully updated the $1 [#{${1/(\w*).*/\L$1/}.name}]"
+              redirect admin_url_for("${1/(\w*).*/\L$1/}s")
+            else
+              flash_msg = "Error: Updating the $1 [ #{${1/(\w*).*/\L$1/}.name} ]"
+              ${1/(\w*).*/\L$1/}.errors.each { |e| flash_msg &lt;&lt; "&lt;br&gt;\n -- #{e[0]}" }
+              flash[:error] = flash_msg
+              redirect admin_url_for("${1/(\w*).*/\L$1/}s/#{params[:id]}/edit")
+            end
+          end
+        end
+        
+        ## DESTROY
+        app.delete "#{app.admin_path_prefix}/${1/(\w*).*/\L$1/}s/:id/?" do 
+          ${1/(\w*).*/\L$1/} = $1.get!(params[:id])
+          if request.xhr?
+            ${1/(\w*).*/\L$1/}.destroy ? "1" : ${1/(\w*).*/\L$1/}.errors.inspect
+          else
+            if ${1/(\w*).*/\L$1/}.destroy
+              flash[:success] = "Successfully deleted the $1 [#{${1/(\w*).*/\L$1/}.name}]"
+              redirect admin_url_for("/${1/(\w*).*/\L$1/}s")
+            else
+              flash[:error] = "ERROR: unable to delete the $1 [#{${1/(\w*).*/\L$1/}.name}]"
+              redirect admin_url_for("${1/(\w*).*/\L$1/}s/#{params[:id]}")
+            end
+          end
+        end
+        
+        
+        ## HELP SECTION
+        if app.admin_help_enabled 
+          # register the section
+          app.admin_help_central &lt;&lt; '${1/(\w*).*/\L$1/}s'
+        end
+        
+      end #/ self.registered
+      
+    end #/module Admin
+    
+    
+  end #/ $1s
+  
+  # register(Sinatra::$1s)
+  # register(Sinatra::$1s::Admin)
+  
+end #/ Sinatra
+</string>
+	<key>name</key>
+	<string>Sinatra: Extension Admin REST (options) </string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>tabTrigger</key>
+	<string>sext</string>
+	<key>uuid</key>
+	<string>DAE8BD37-4C86-4B3B-A502-309204453DED</string>
+</dict>
+</plist>
