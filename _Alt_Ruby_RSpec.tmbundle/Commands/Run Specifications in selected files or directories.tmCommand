@@ -5,10 +5,18 @@
 	<key>beforeRunningCommand</key>
 	<string>saveModifiedFiles</string>
 	<key>command</key>
-	<string>#!/usr/bin/env ruby
+	<string>#!/usr/bin/env bash
 
-require ENV['TM_BUNDLE_SUPPORT'] + "/lib/spec_mate"
-SpecMate.new.run_files STDOUT
+. "$TM_BUNDLE_SUPPORT/lib/rvm_textmate"
+
+cat &lt;&lt;'RUBYEOF' &gt; /tmp/textmate-command-$$.rb
+
+require ENV['TM_BUNDLE_SUPPORT'] + "/lib/spec/mate"
+Spec::Mate::Runner.new.run_files STDOUT
+
+RUBYEOF
+
+${TM_RUBY:-ruby} /tmp/textmate-command-$$.rb; exit_status=$?; rm /tmp/textmate-command-$$.rb; exit $exit_status
 </string>
 	<key>input</key>
 	<string>none</string>

@@ -5,10 +5,18 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>#!/usr/bin/env ruby
+	<string>#!/usr/bin/env bash
+
+. "$TM_BUNDLE_SUPPORT/lib/rvm_textmate"
+
+cat &lt;&lt;'RUBYEOF' &gt; /tmp/textmate-command-$$.rb
 
 require ENV['TM_BUNDLE_SUPPORT'] + "/lib/spec/mate/switch_command"
-Spec::Mate::SwitchCommand.new.go_to_twin(ENV['TM_PROJECT_DIRECTORY'], ENV['TM_FILEPATH'])</string>
+Spec::Mate::SwitchCommand.new.go_to_twin(ENV['TM_PROJECT_DIRECTORY'], ENV['TM_FILEPATH'])
+
+RUBYEOF
+
+${TM_RUBY:-ruby} /tmp/textmate-command-$$.rb; exit_status=$?; rm /tmp/textmate-command-$$.rb; exit $exit_status</string>
 	<key>input</key>
 	<string>none</string>
 	<key>keyEquivalent</key>
@@ -18,7 +26,7 @@ Spec::Mate::SwitchCommand.new.go_to_twin(ENV['TM_PROJECT_DIRECTORY'], ENV['TM_FI
 	<key>output</key>
 	<string>showAsTooltip</string>
 	<key>scope</key>
-	<string>source.ruby, source.ruby, text.html.ruby</string>
+	<string>source.ruby, text.html.ruby</string>
 	<key>uuid</key>
 	<string>88091E4D-5795-4002-BACF-E725A69BA5B4</string>
 </dict>

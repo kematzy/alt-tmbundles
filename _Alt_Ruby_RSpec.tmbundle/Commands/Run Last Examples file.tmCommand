@@ -12,7 +12,7 @@
 cat &lt;&lt;'RUBYEOF' &gt; /tmp/textmate-command-$$.rb
 
 require ENV['TM_BUNDLE_SUPPORT'] + "/lib/spec/mate"
-Spec::Mate::Runner.new.run_file STDOUT
+Spec::Mate::Runner.new.run_last_remembered_file STDOUT
 
 RUBYEOF
 
@@ -20,16 +20,16 @@ ${TM_RUBY:-ruby} /tmp/textmate-command-$$.rb; exit_status=$?; rm /tmp/textmate-c
 	<key>fallbackInput</key>
 	<string>document</string>
 	<key>input</key>
-	<string>document</string>
+	<string>none</string>
 	<key>keyEquivalent</key>
-	<string>@r</string>
+	<string>~@r</string>
 	<key>name</key>
-	<string>Run Behaviour Description</string>
+	<string>Run Last Examples file</string>
 	<key>output</key>
 	<string>showAsHTML</string>
 	<key>scope</key>
-	<string>source.ruby.rspec</string>
+	<string>source.ruby</string>
 	<key>uuid</key>
-	<string>01B9C746-4C0D-4D3C-94BF-2ACD25C2E52C</string>
+	<string>1C172C2C-8785-40FC-B03E-7FF56AC0B265</string>
 </dict>
 </plist>

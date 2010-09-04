@@ -1,8 +1,5 @@
 module Spec
   module Mate
-    require ENV['TM_SUPPORT_PATH'] + '/lib/textmate.rb'
-    require ENV['TM_SUPPORT_PATH'] + '/lib/ui.rb'
-
     # This is based on Ruy Asan's initial code:
     # http://ruy.ca/posts/6-A-simple-switch-between-source-and-spec-file-command-for-textmate-with-auto-creation-
     class SwitchCommand
@@ -20,21 +17,48 @@ module Spec
         end
       end
       
+      module Framework
+        def rails?
+          File.exist?(File.join(self, 'config', 'boot.rb'))
+        end
+
+        def merb?
+          File.exist?(File.join(self, 'config', 'init.rb'))
+        end
+      end
+      
       def twin(path)
         if path =~ /^(.*?)\/(lib|app|spec)\/(.*?)$/
-          prefix, parent, rest = $1, $2, $3
+          framework, parent, rest = $1, $2, $3
+          framework.extend Framework
           
           case parent
             when 'lib', 'app' then
-              path = path.gsub(/\/app\//, "/spec/")
-              path = path.gsub(/\/lib\//, "/spec/")
+              if framework.rails? || framework.merb?
+                path = path.gsub(/\/app\//, "/spec/")
+                path = path.gsub(/\/lib\//, "/spec/lib/")
+                path = path.gsub(/application\.rb/, 'application_controller.rb')
+              else
+                path = path.gsub(/\/lib\//, "/spec/")
+              end
               path = path.gsub(/\.rb$/, "_spec.rb")
               path = path.gsub(/\.erb$/, ".erb_spec.rb")
+              path = path.gsub(/\.haml$/, ".haml_spec.rb")
+              path = path.gsub(/\.rhtml$/, ".rhtml_spec.rb")
+              path = path.gsub(/\.rjs$/, ".rjs_spec.rb")
             when 'spec' then
-              new_parent = rails?(prefix) ? "app" : "lib"
+              path = path.gsub(/\.rjs_spec\.rb$/, ".rjs")
+              path = path.gsub(/\.rhtml_spec\.rb$/, ".rhtml")
               path = path.gsub(/\.erb_spec\.rb$/, ".erb")
+              path = path.gsub(/\.haml_spec\.rb$/, ".haml")
               path = path.gsub(/_spec\.rb$/, ".rb")
-              path = path.gsub(/\/spec\//, "/#{new_parent}/")
+              if framework.rails? || framework.merb?
+                path = path.gsub(/\/spec\/lib\//, "/lib/")
+                path = path.gsub(/\/spec\//, "/app/")
+                path = path.gsub(/application_controller\.rb/, 'application.rb')
+              else
+                path = path.gsub(/\/spec\//, "/lib/")
+              end
           end
           return path
         end
@@ -53,49 +77,64 @@ module Spec
         "file"
       end
       
-      def rails?(prefix)
-        File.exist?(File.join(prefix, 'config', 'boot.rb'))
-      end
-      
       def create?(relative_twin, file_type)
-        TextMate::UI.request_confirmation(
-          :button1 => "Create",
-          :button2 => "Cancel",
-          :title => "Create missing #{file_type}?",
-          :prompt => "#{relative_twin}"
-        )
+        answer = `'#{ ENV['TM_SUPPORT_PATH'] }/bin/CocoaDialog.app/Contents/MacOS/CocoaDialog' yesno-msgbox --no-cancel --icon document --informative-text "#{relative_twin}" --text "Create missing #{file_type}?"`
+        answer.to_s.chomp == "1"
       end
 
       def content_for(file_type, relative_path)
         case file_type
-          when 'spec' then
+          when /spec$/ then
             spec(relative_path)
+          when "controller"
+            <<-CONTROLLER
+class #{class_from_path(relative_path)} < ApplicationController
+end
+CONTROLLER
+          when "model"
+            <<-MODEL
+class #{class_from_path(relative_path)} < ActiveRecord::Base
+end
+MODEL
+          when "helper"
+            <<-HELPER
+module #{class_from_path(relative_path)}
+end
+HELPER
+          when "view"
+            ""
           else
             klass(relative_path)
         end
       end
       
+      def class_from_path(path)
+        underscored = path.split('/').last.split('.rb').first
+        parts = underscored.split('_')
+        parts.inject("") do |word, part|
+          word << part.capitalize
+          word
+        end
+      end
+      
       # Extracts the snippet text
       def snippet(snippet_name)
-        snippet_file = File.dirname(__FILE__) + "/../../../../Snippets/#{snippet_name}"
+        snippet_file = File.expand_path(File.dirname(__FILE__) + "/../../../../Snippets/#{snippet_name}")
         xml = File.open(snippet_file).read
         xml.match(/<key>content<\/key>\s*<string>([^<]*)<\/string>/m)[1]
       end
       
       def spec(path)
-        depth = "/.." * (path.split('/').length - 2)
-        header = "require File.dirname(__FILE__) + '#{depth}/spec_helper'"
-        snippet_name = "Describe_type.tmSnippet"
         content = <<-SPEC
-#{header}
+require 'spec_helper'
 
-#{snippet(snippet_name)}
+#{snippet("Describe_type.tmSnippet")}
 SPEC
       end
 
-      def klass(relative_path)
+      def klass(relative_path, content=nil)
         parts = relative_path.split('/')
-        lib_index = parts.index('lib')
+        lib_index = parts.index('lib') || 0
         parts = parts[lib_index+1..-1]
         lines = Array.new(parts.length*2)
         parts.each_with_index do |part, n|
@@ -116,8 +155,8 @@ SPEC
       def write_and_open(path, content)
         `mkdir -p "#{File.dirname(path)}"`
         `touch "#{path}"`
-        TextMate.rescan_project
         `"$TM_SUPPORT_PATH/bin/mate" "#{path}"`
+        `osascript &>/dev/null -e 'tell app "SystemUIServer" to activate' -e 'tell app "TextMate" to activate'`
         escaped_content = content.gsub("\n","\\n").gsub('$','\\$').gsub('"','\\\\\\\\\\\\"')
         `osascript &>/dev/null -e "tell app \\"TextMate\\" to insert \\"#{escaped_content}\\" as snippet true"`      
       end
