@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string># display no errs to user
+php_flag display_startup_errors off
+php_flag display_errors off
+php_flag html_errors off
+# log to file
+php_flag log_errors on
+php_value error_log /location/to/php_error.log</string>
+	<key>name</key>
+	<string>PHP-.htaccess Error Logging</string>
+	<key>uuid</key>
+	<string>1A16875E-7F70-40CE-B2BA-B128040D1BE7</string>
+</dict>
+</plist>

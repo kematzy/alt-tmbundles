@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>Change Date from dd/mm/yyyy to yyyy-dd-mm
+
+CONVERSION
+
+\$date_array = explode("/",\$date); // split the array
+\$var_day = \$date_array[0]; //day seqment
+\$var_month = \$date_array[1]; //month segment
+\$var_year = \$date_array[2]; //year segment
+\$new_date_format = "\$var_year-\$var_day-\$var_month"; // join them together</string>
+	<key>name</key>
+	<string>PHP-Change Date format</string>
+	<key>uuid</key>
+	<string>6AE3BC45-9601-42D2-835E-9744D7D2DB53</string>
+</dict>
+</plist>
