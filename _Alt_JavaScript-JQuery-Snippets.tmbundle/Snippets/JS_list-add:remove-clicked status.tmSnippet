@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>$("a").click(function(){
+  $(".targetLinkList a.clicked").removeClass("clicked");   // remove previous class if there is any
+  $(this).addClass("clicked");                             // add class to the clicked link
+  return false;                                            // this prevents browser from following clicked link
+});</string>
+	<key>name</key>
+	<string>JS.list-add/remove-clicked status</string>
+	<key>uuid</key>
+	<string>A9D8BAF9-788D-435C-928F-1648F18394BE</string>
+</dict>
+</plist>
