@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>font-effect:${TM_CSS_SPACE}engrave;$0</string>
+	<key>name</key>
+	<string>font-effect:engrave</string>
+	<key>scope</key>
+	<string>source.scss</string>
+	<key>tabTrigger</key>
+	<string>fef:eg</string>
+	<key>uuid</key>
+	<string>F8F83D63-39DD-4A84-9C4A-D7E976D21886</string>
+</dict>
+</plist>
