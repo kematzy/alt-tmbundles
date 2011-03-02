@@ -8,7 +8,8 @@
 	<string>export RUBYLIB="$TM_BUNDLE_SUPPORT/vendor/rcodetools/lib${RUBYLIB:+:$RUBYLIB}"
 export TM_RUBY=$(which "${TM_RUBY:-ruby}")
 
-"${TM_RUBY}" -- "$TM_BUNDLE_SUPPORT/vendor/rcodetools/bin/xmpfilter"
+
+"${TM_RUBY}" -r "${TM_SUPPORT_PATH}/lib/ruby1.9/add_1.8_features.rb" -- "$TM_BUNDLE_SUPPORT/vendor/rcodetools/bin/xmpfilter"
 </string>
 	<key>fallbackInput</key>
 	<string>document</string>
