@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;?php
+
+# = LEXT:${1:LextNameSingular}s
+# 
+# ${2:TODO:: Need to write documentation here}
+# 
+# == Installation:
+# 
+# Add this file to the &lt;tt&gt;app/lib/lexts/&lt;/tt&gt; directory in your app.
+# 
+#   app
+#    |-&gt; lib
+#    |    |-&gt; lexts
+#    |    |     |-&gt; ${1/(\w*).*/\L$1/}s.lext.php
+# 
+# == Usage:
+# 
+# Just require the Limonade extension in your &lt;tt&gt;app/lib/lexts.php&lt;/tt&gt; file...
+# 
+#   require_once(APP_ROOT . '/app/lib/lexts/${1/(\w*).*/\L$1/}s.lext.php');
+# 
+# Then set any custom configurations in the &lt;tt&gt;app/conf/configurations.php&lt;/tt&gt; file...
+# 
+#   define('${1/(\w*).*/\U$1/}S_CUSTOM_CONFIGURATION', 'custom value');
+# 
+#   &lt;snip...&gt;
+# 
+# See the function definitions for further information.
+# 
+# == Contents:
+# 
+# This extension contains the following...
+# 
+# === Configuration Options:
+# 
+# None
+# 
+# === Routes: 
+# 
+# None
+# 
+# === Helper Functions:
+# 
+# None
+# 
+# 
+# == Copyright
+# 
+# Copyright (c) 2010 kematzy. Released under the MIT License.
+# 
+# See LICENSE for details.
+# 
+# === Code Inspirations &amp; Credits:
+# 
+# * 
+# 
+
+
+### CORE DEPENDENCIES #########################################################
+
+# require_once(APP_ROOT. '/path/2/file.php');
+
+### EXTENSION DEPENDENCIES ####################################################
+
+# require_once(APP_ROOT. '/app/lib/lexts/file.lext.php');
+
+
+
+### CONFIGURATION OPTIONS #####################################################
+
+$0
+# the $1s Lext version
+if ( !defined('${1/(\w*).*/\U$1/}S_LEXT_VERSION') )                       { define('${1/(\w*).*/\U$1/}S_LEXT_VERSION', '0.0.1'); }
+if ( !defined('${1/(\w*).*/\U$1/}S_LEXT_VERSION_STRING') )                { define('${1/(\w*).*/\U$1/}S_LEXT_VERSION_STRING', 'Kematzy::${1/(\w*).*/\u$1/}s v' . ${1/(\w*).*/\U$1/}S_LEXT_VERSION ); }
+
+### APP PATHS ###
+
+# the default path to the $1s Section
+if ( !defined('${1/(\w*).*/\U$1/}S_PATH_PREFIX') )                        { define('${1/(\w*).*/\U$1/}S_PATH_PREFIX', '/${1/(\w*).*/\L$1/}s'); }
+
+
+if ( defined('ADMIN_LEXT_VERSION') ) 
+{ 
+  ### ADMIN PATHS ###
+  
+  # the default path to the $1s Admin Section
+  if ( !defined('${1/(\w*).*/\U$1/}S_ADMIN_PATH_PREFIX') )                { define('${1/(\w*).*/\U$1/}S_ADMIN_PATH_PREFIX', ADMIN_PATH_PREFIX . '/${1/(\w*).*/\L$1/}s'); }
+  # the default redirect path after an Admin action
+  if ( !defined('${1/(\w*).*/\U$1/}S_ADMIN_DEFAULT_REDIRECT_TO_PATH') )   { define('${1/(\w*).*/\U$1/}S_ADMIN_DEFAULT_REDIRECT_TO_PATH', ${1/(\w*).*/\U$1/}S_ADMIN_PATH_PREFIX ); }
+  
+}
+
+
+
+### DB SETUP ##################################################################
+
+
+
+# CREATE TABLE "${1/(\w*).*/\L$1/}s" (
+# "id" INTEGER PRIMARY KEY AUTOINCREMENT DEFAULT NULL,
+# 
+# 
+# "created_at" DATETIME DEFAULT NULL,
+# "updated_at" DATETIME DEFAULT NULL
+# )
+
+class ${1/(\w*).*/\u$1/} extends CRUD
+{ 
+  public static \$name;
+  public static \$publish_status;
+  
+  private static \$created_at;
+  private static \$updated_at;
+  
+  ##
+  # Retrieves all ${1/(\w*).*/\u$1/}s from the database.
+  # 
+  # === Examples
+  # 
+  #   ${1/(\w*).*/\u$1/}::all()
+  # 
+  # @api: public
+  function all(\$available = null)
+  { 
+    \$sql = "SELECT * FROM " . self::tableName('${1/(\w*).*/\u$1/}s');
+    if ( !empty(\$available) ) { \$sql .= " WHERE publish_status = :publish_status"; } 
+    # \$sql .= " ORDER BY name ASC";
+    \$params = ( !is_null(\$available) ) ? array(':publish_status' =&gt; \$available ) : array();
+    return self::findObjectsBySQL(\$sql, \$params);
+  }
+  
+  ##
+  # Retrieves a ${1/(\w*).*/\u$1/} from the database.
+  # 
+  # === Examples
+  # 
+  #   ${1/(\w*).*/\u$1/}::get(\$id)
+  # 
+  # @api: public
+  function get(\$id)
+  { 
+    try { 
+      \$sql = "SELECT * FROM " . self::tableName('${1/(\w*).*/\u$1/}s')." WHERE id = :id";
+      \$res_as_object = self::findObjectBySQL(\$sql, array(':id' =&gt; \$id));
+      # return (empty(\$res_as_object)) ? false : \$res_as_object;
+      if (empty(\$res_as_object)) 
+      { 
+        return false;
+      }
+      else
+      { 
+        return \$res_as_object;
+      }
+    }
+    catch(Exception \$e)
+    { 
+      log_msg('error', "${1/(\w*).*/\u$1/}::get(\$id) =&gt; msg[". \$e-&gt;getMessage()."]");
+      return false;
+    }
+  }
+  
+  ##
+  # Adds a new ${1/(\w*).*/\u$1/} to the database.
+  # 
+  # === Examples
+  # 
+  #   ${1/(\w*).*/\u$1/}::add_${1/(\w*).*/\L$1/}(\$${1/(\w*).*/\L$1/})
+  # 
+  # @api: public
+  function add_${1/(\w*).*/\L$1/}(\$object_or_array)
+  { 
+    if (is_array(\$object_or_array)) { \$object = self::convertToObject(\$object_or_array); }else{ $object = $object_or_array; }
+    self::_beforeInsert(\$object);
+    
+    # if ( self::exists_urlslug(\$object-&gt;urlslug) ) 
+    # { 
+    #   self::addValidationError('urlslug', "That URL is already taken");
+    #   return false;
+    # }
+    return self::insertObject(\$object,'${1/(\w*).*/\L$1/}s');
+  }
+  
+  ##
+  # Updates exsisting ${1/(\w*).*/\u$1/} in the database.
+  # 
+  # === Examples
+  # 
+  #   ${1/(\w*).*/\u$1/}::update_${1/(\w*).*/\L$1/}(\$${1/(\w*).*/\L$1/})
+  # 
+  # @api: public
+  function update_${1/(\w*).*/\L$1/}(\$object_or_array)
+  { 
+    if (is_array(\$object_or_array)) { \$object = self::convertToObject(\$object_or_array); }else{ $object = $object_or_array; }
+    self::_beforeUpdate(\$object);
+    # if ( self::exists_urlslug(\$object-&gt;urlslug) ) 
+    # { 
+    #   self::addValidationError('urlslug', "That URL is already taken");
+    #   return false;
+    # }
+    
+    \$update_fields = array(
+      'name', 'publish_status'
+     );
+    return self::updateObject(\$object, '${1/(\w*).*/\L$1/}s', \$update_fields );
+  }
+  
+  
+  ##
+  # Destroys exsisting ${1/(\w*).*/\u$1/} in the database.
+  # 
+  # === Examples
+  # 
+  #   ${1/(\w*).*/\u$1/}::destroy(\$id)
+  # 
+  # @api: public
+  function destroy(\$id)
+  { 
+    return self::Delete(self::tableName('${1/(\w*).*/\u$1/}s'), array( 'id' =&gt; (int) \$id ) );
+  }
+  
+  ##
+  # 
+  # 
+  protected function _beforeInsert(\$object)
+  { 
+    # \$object-&gt;created_by_id = @current_user()-&gt;id;
+    # \$object-&gt;updated_by_id = @current_user()-&gt;id;
+    \$object-&gt;created_at = date('Y-m-d H:i:s');
+    \$object-&gt;updated_at = date('Y-m-d H:i:s');
+  }
+  
+  ##
+  # 
+  # 
+  protected function _beforeUpdate(\$object)
+  { 
+    # \$object-&gt;updated_by_id = @current_user()-&gt;id;
+    \$object-&gt;updated_at = date('Y-m-d H:i:s');
+  }
+  
+  ##
+  # 
+  # 
+  public function new_with_default_values()
+  { 
+    return array(
+      'name' =&gt; @LGET('name'),
+      'publish_status' =&gt; 'on'
+    );
+  }
+  
+} #/ class ${1/(\w*).*/\u$1/} CRUD
+
+
+
+### ROUTES =&gt; PUBLIC ##########################################################
+
+
+## /${1/(\w*).*/\U$1/}S/
+dispatch_get( ${1/(\w*).*/\U$1/}S_PATH_PREFIX, 'route_get_${1/(\w*).*/\L$1/}s_index');
+function route_get_${1/(\w*).*/\L$1/}s_index() { 
+  load_page_vars('${1/(\w*).*/\L$1/}s');
+  return html('${1/(\w*).*/\L$1/}s/index.html.php');
+}
+
+
+### ROUTES =&gt; ADMIN ###########################################################
+
+
+## GET ADMIN/${1/(\w*).*/\U$1/}S/INDEX
+dispatch( ${1/(\w*).*/\U$1/}S_ADMIN_PATH_PREFIX , 'route_get_${1/(\w*).*/\L$1/}s_admin_index');
+function route_get_${1/(\w*).*/\L$1/}s_admin_index(){ 
+  set('${1/(\w*).*/\L$1/}s',  ${1/(\w*).*/\u$1/}::all() );
+  
+  load_page_vars('admin|${1/(\w*).*/\L$1/}s');
+  return admin_html('${1/(\w*).*/\L$1/}s/index.html.php');
+}
+
+## GET ADMIN/${1/(\w*).*/\U$1/}S/NEW
+dispatch( ${1/(\w*).*/\U$1/}S_ADMIN_PATH_PREFIX . '/new', 'route_get_${1/(\w*).*/\L$1/}s_admin_new');
+function route_get_${1/(\w*).*/\L$1/}s_admin_new(){ 
+  load_page_vars('admin|${1/(\w*).*/\L$1/}s|new');
+  # retrieve from session or create new one.
+  \$${1/(\w*).*/\L$1/} = set_from_session_or_new_object('${1/(\w*).*/\L$1/}', ${1/(\w*).*/\u$1/}::new_with_default_values() );
+  set('${1/(\w*).*/\L$1/}',  \$${1/(\w*).*/\L$1/} );
+  if ( is_xhr() ) 
+  {  
+    return admin_html('${1/(\w*).*/\L$1/}s/index.html.php', null);
+  }
+  else
+  { 
+    return admin_html('${1/(\w*).*/\L$1/}s/index.html.php');
+  }
+}
+
+## POST ADMIN/${1/(\w*).*/\U$1/}S/
+dispatch_post( ${1/(\w*).*/\U$1/}S_ADMIN_PATH_PREFIX, 'route_post_${1/(\w*).*/\L$1/}s_admin_create' );
+function route_post_${1/(\w*).*/\L$1/}s_admin_create(){ 
+  \$${1/(\w*).*/\L$1/} = get_data_from_form('${1/(\w*).*/\L$1/}');
+  \$res = ${1/(\w*).*/\u$1/}::add_${1/(\w*).*/\L$1/}( \$${1/(\w*).*/\L$1/} );
+  if ( is_xhr() ) 
+  { 
+    if (\$res == true) 
+    { 
+      return json( array('success' =&gt; true, 'html'=&gt; "Successfully created ${1/(\w*).*/\u$1/} [".\$${1/(\w*).*/\L$1/}-&gt;name."]") );
+    }
+    else
+    { 
+      return json( array('success' =&gt; false, 'html'=&gt; "ERRORS creating ${1/(\w*).*/\u$1/} [".\$${1/(\w*).*/\L$1/}-&gt;name."]") );
+    }
+  }
+  else
+  { 
+    if ( \$res == true ) 
+    { 
+      flash('success', "Successfully created a new ${1/(\w*).*/\u$1/}");
+      redirect_to( ${1/(\w*).*/\U$1/}S_ADMIN_PATH_PREFIX );
+    }
+    else
+    { 
+      \$_SESSION['${1/(\w*).*/\L$1/}'] = \$${1/(\w*).*/\L$1/};
+      flash('error', "Unable to create a new ${1/(\w*).*/\u$1/} due to these errors:&lt;br&gt;\n " . \$_SESSION['validation_errors'] );
+      redirect_to( ${1/(\w*).*/\U$1/}S_ADMIN_PATH_PREFIX . '/new' );
+    }
+  }
+}
+
+## GET ADMIN/${1/(\w*).*/\U$1/}S/LOAD
+## LOAD (something via AJAX most likely JEditable)
+dispatch_get( ${1/(\w*).*/\U$1/}S_ADMIN_PATH_PREFIX .'/load', 'route_get_${1/(\w*).*/\L$1/}s_admin_ajax_load' );
+function route_get_${1/(\w*).*/\L$1/}s_admin_ajax_load(){ 
+  if ( is_xhr() ) 
+  { 
+    list(\$model, \$field, \$id) = explode('-', @LGET('id'));
+    \$model = ${1/(\w*).*/\u$1/}::get( (int) \$id);
+    return ( \$model === false ) ? "ERROR: " . @LGET('id') . " and ${1/(\w*).*/\L$1/} [". var_export(\$model, true)."]"  :  \$model-&gt;\$field;
+  }
+  else
+  {
+    halt(NOT_FOUND);
+  }
+}
+
+## GET ADMIN/${1/(\w*).*/\U$1/}S/:ID/EDIT
+dispatch_get( ${1/(\w*).*/\U$1/}S_ADMIN_PATH_PREFIX .'/:${1/(\w*).*/\L$1/}/edit', 'route_get_${1/(\w*).*/\L$1/}s_admin_edit' );
+function route_get_${1/(\w*).*/\L$1/}s_admin_edit(){ 
+  load_page_vars('admin|${1/(\w*).*/\L$1/}s|edit');
+  
+  set('${1/(\w*).*/\L$1/}', ${1/(\w*).*/\u$1/}::get(params('${1/(\w*).*/\L$1/}') ) );
+  if ( is_xhr() ) 
+  {  
+    return admin_html('${1/(\w*).*/\L$1/}s/edit.html.php', null);
+  }
+  else
+  {
+    return admin_html('${1/(\w*).*/\L$1/}s/edit.html.php');
+  }
+}
+
+
+## PUT ADMIN/${1/(\w*).*/\U$1/}S/:ID
+dispatch_put( ${1/(\w*).*/\U$1/}S_ADMIN_PATH_PREFIX . '/:id', 'route_put_${1/(\w*).*/\L$1/}s_admin_update');
+function route_put_${1/(\w*).*/\L$1/}s_admin_update() { 
+  \$${1/(\w*).*/\L$1/} = get_data_from_form('${1/(\w*).*/\L$1/}');
+  \$res = ${1/(\w*).*/\u$1/}::update_${1/(\w*).*/\L$1/}( \$${1/(\w*).*/\L$1/} );
+  if ( is_xhr() ) 
+  { 
+    if (\$res == true) 
+    { 
+      return json( array('success' =&gt; true, 'html'=&gt; "Successfully updated the ${1/(\w*).*/\u$1/} [".\$${1/(\w*).*/\L$1/}-&gt;name."]") );
+    }
+    else
+    { 
+      return json( array('success' =&gt; false, 'html'=&gt; "ERRORS updating the ${1/(\w*).*/\u$1/} [".\$${1/(\w*).*/\L$1/}-&gt;name."]") );
+    }
+  }
+  else
+  { 
+    if ( \$res == true ) 
+    { 
+      flash('success', "Successfully updated the ${1/(\w*).*/\u$1/}");
+      redirect_to( ${1/(\w*).*/\U$1/}S_ADMIN_PATH_PREFIX );
+    }
+    else
+    { 
+       \$_SESSION['${1/(\w*).*/\L$1/}'] = \$${1/(\w*).*/\L$1/};
+       flash('error', "Unable to update ${1/(\w*).*/\u$1/} due to these errors:&lt;br&gt;\n " . \$_SESSION['validation_errors'] );
+       redirect_to( ${1/(\w*).*/\U$1/}S_ADMIN_PATH_PREFIX . params('id') . '/edit' );
+    }
+  }
+  
+}
+
+## GET ADMIN/${1/(\w*).*/\U$1/}S/:ID SHOW
+dispatch_get( ${1/(\w*).*/\U$1/}S_ADMIN_PATH_PREFIX .'/:id', 'route_get_${1/(\w*).*/\L$1/}s_admin_show' );
+function route_get_${1/(\w*).*/\L$1/}s_admin_show(){ 
+  try 
+  { 
+    \$${1/(\w*).*/\L$1/} =  ${1/(\w*).*/\u$1/}::get( params('id') );
+    if ( \$${1/(\w*).*/\L$1/} == false ){ 
+      halt(NOT_FOUND, "No such ${1/(\w*).*/\u$1/} found");
+    }else{ 
+      set('${1/(\w*).*/\L$1/}', \$${1/(\w*).*/\L$1/} );
+      //${1/(\w*).*/\L$1/}s_set_page_vars(\$${1/(\w*).*/\L$1/});
+      
+      if ( is_xhr() ) {  
+        return admin_html('${1/(\w*).*/\L$1/}s/show.html.php', null);
+      }else{
+        return admin_html('${1/(\w*).*/\L$1/}s/show.html.php');
+      }
+    }
+  } 
+  catch (Exception \$e) 
+  { 
+    halt(NOT_FOUND, "No such ${1/(\w*).*/\u$1/} found.  Exception[". \$e-&gt;getMessage() ."]");
+  }
+}
+
+## DELETE ADMIN/${1/(\w*).*/\U$1/}S/:ID
+dispatch_delete( ${1/(\w*).*/\U$1/}S_ADMIN_PATH_PREFIX . '/:id', 'route_delete_${1/(\w*).*/\L$1/}s_admin_destroy');
+function route_delete_${1/(\w*).*/\L$1/}s_admin_destroy() { 
+  \$res = ${1/(\w*).*/\u$1/}::destroy( params('id') );
+  if ( is_xhr() ) 
+  { 
+    return ( \$res === true ) ? 1 : false;
+  }
+  else
+  { 
+    if ( \$res == true ) 
+    { 
+      flash('success', "Successfully deleted the ${1/(\w*).*/\u$1/}");
+      redirect_to( ${1/(\w*).*/\U$1/}S_ADMIN_PATH_PREFIX );
+    }
+    else
+    { 
+       flash('error', "Unable to deleted ${1/(\w*).*/\u$1/} due to these errors:&lt;br&gt;\n " . \$_SESSION['validation_errors'] );
+       redirect_to( ${1/(\w*).*/\U$1/}S_ADMIN_PATH_PREFIX );
+    }
+  }
+}
+
+
+
+### HELPER FUNCTIONS ##########################################################
+
+
+##
+# Custom functions related to this LEXT added here...
+# 
+# @api: public/private
+# function ${1/(\w*).*/\L$1/}s_function(\$value = '')
+# { 
+#   return \$value;
+# }
+
+
+
+
+### EMBEDDED VIEWS ############################################################
+
+
+##
+# 
+# 
+# function _${1/(\w*).*/\L$1/}s_views_name_of_view_format()
+# { 
+#   ? &gt;&lt;p&gt;HTML code goes here.&lt;/p&gt;&lt; ? php
+# }
+
+
+
+
+#/EOF ${1/(\w*).*/\U$1/}S.LEXT
+?&gt;</string>
+	<key>name</key>
+	<string>Limonade Extension - Admin REST</string>
+	<key>tabTrigger</key>
+	<string>.lext</string>
+	<key>uuid</key>
+	<string>E3ABB804-E38D-4ABB-9AAB-A9A72C1DB48F</string>
+</dict>
+</plist>

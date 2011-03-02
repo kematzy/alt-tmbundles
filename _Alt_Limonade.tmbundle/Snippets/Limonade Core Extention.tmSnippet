@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;?php
+
+# = CORE:${1:CoreNameSingular}s
+# 
+# ${2:TODO:: Need to write documentation here}
+# 
+# == Installation:
+# 
+# Add this file to the &lt;tt&gt;app/lib/core/&lt;/tt&gt; directory in your app.
+# 
+#   app
+#    |-&gt; lib
+#    |    |-&gt; core
+#    |    |     |-&gt; ${1/(\w*).*/\L$1/}s.core.php
+# 
+# == Usage:
+# 
+# Just require the Limonade Core extension in your &lt;tt&gt;app/routes.php&lt;/tt&gt; file...
+# 
+#   require_once(APP_ROOT . '/app/lib/core/${1/(\w*).*/\L$1/}s.core.php');
+# 
+# Then set any custom configurations in the &lt;tt&gt;app/conf/configurations.php&lt;/tt&gt; file...
+# 
+#   define('CORE_${1/(\w*).*/\U$1/}S_CUSTOM_CONFIGURATION', 'custom value');
+# 
+#   &lt;snip...&gt;
+# 
+# See the function definitions for further information.
+# 
+# == Contents:
+# 
+# This extension contains the following...
+# 
+# === Configuration Options:
+# 
+# None
+# 
+# === Routes: 
+# 
+# None
+# 
+# === Helper Functions:
+# 
+# None
+# 
+# 
+# == Copyright
+# 
+# Copyright (c) 2010 kematzy. Released under the MIT License.
+# 
+# See LICENSE for details.
+# 
+# === Code Inspirations &amp; Credits:
+# 
+# * 
+# 
+
+
+### CORE DEPENDENCIES #########################################################
+
+# require_once(APP_ROOT. '/path/2/file.php');
+
+
+
+### CONFIGURATION OPTIONS #####################################################
+
+$0
+# the $1s Core version
+if ( !defined('CORE_${1/(\w*).*/\U$1/}S_VERSION') )                       { define('CORE_${1/(\w*).*/\U$1/}S_VERSION', '0.0.1'); }
+if ( !defined('CORE_${1/(\w*).*/\U$1/}S_VERSION_STRING') )                { define('CORE_${1/(\w*).*/\U$1/}S_VERSION_STRING', 'Kematzy::Core::${1/(\w*).*/\u$1/}s v' . CORE_${1/(\w*).*/\U$1/}S_VERSION ); }
+
+
+
+### HELPER FUNCTIONS ##########################################################
+
+
+
+
+
+#/EOF ${1/(\w*).*/\U$1/}S.CORE
+?&gt;</string>
+	<key>name</key>
+	<string>Limonade Core Extention</string>
+	<key>tabTrigger</key>
+	<string>.core</string>
+	<key>uuid</key>
+	<string>B96C7509-BE4A-4F74-AFA0-AEEDA54A5FD5</string>
+</dict>
+</plist>

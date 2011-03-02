@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string> Alt Limonade</string>
+	<key>ordering</key>
+	<array>
+		<string>A5F10760-3748-4CA3-B58D-AE2E391F1C1D</string>
+		<string>B96C7509-BE4A-4F74-AFA0-AEEDA54A5FD5</string>
+		<string>E3ABB804-E38D-4ABB-9AAB-A9A72C1DB48F</string>
+	</array>
+	<key>uuid</key>
+	<string>85429493-6562-49E8-8E35-D178DB60FEB6</string>
+</dict>
+</plist>

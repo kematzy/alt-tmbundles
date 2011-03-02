@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>ruby &lt;&lt;-'RUBY'
+# Stores all the possible paths to the dropped file
+paths = []
+
+# Include the relative path as given by TM as a default
+# Possibly this should be disabled to favour absolute paths?
+paths &lt;&lt; ENV['TM_DROPPED_FILE']
+if ENV['PHP_INCLUDE_PATH']
+  ENV['PHP_INCLUDE_PATH'].split(':').each do |dir|
+    dir &lt;&lt; '/'
+    # Check each directory in the include path to see if it prefixes the requested file
+    if ENV['TM_DROPPED_FILEPATH'][0, dir.size] == dir
+      # If it matches, store the path to the file from this include directory 
+      paths &lt;&lt; ENV['TM_DROPPED_FILEPATH'][dir.size..-1]
+    end
+  end
+end
+
+include_method = ENV['TM_MODIFIER_FLAGS'].include?('CONTROL') ? 'include_once' : 'require_once'
+
+include_method.sub('_once','') if ENV['TM_MODIFIER_FLAGS'].include?('OPTION')
+
+# Find the shortest path
+path = paths.sort_by{|path| path.size}.reverse.pop
+# Grab the file name only
+path = File.basename(path)
+# Type of file
+file_dir = File.basename(path,'.php').split('.').last
+file_dir = ( file_dir =~ /(lext|helper)/ ) ? "#{file_dir}s" : file_dir
+
+puts "#{include_method} APP_ROOT . '/app/lib/#{file_dir}/#{path}';"
+
+RUBY</string>
+	<key>draggedFileExtensions</key>
+	<array>
+		<string>php</string>
+	</array>
+	<key>input</key>
+	<string>selection</string>
+	<key>name</key>
+	<string>require_once dropped .ext.php file</string>
+	<key>output</key>
+	<string>insertAsSnippet</string>
+	<key>scope</key>
+	<string>source.php</string>
+	<key>uuid</key>
+	<string>A5F10760-3748-4CA3-B58D-AE2E391F1C1D</string>
+</dict>
+</plist>
