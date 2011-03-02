@@ -179,8 +179,8 @@ module Sinatra
         end
         
         ## CREATE
-        app.post "#{app.admin_path_prefix}/${1/(\w*).*/\L$1/}/?" do 
-          @${1/(\w*).*/\L$1/} = Review.new(params[:${1/(\w*).*/\L$1/}])
+        app.post "#{app.admin_path_prefix}/${1/(\w*).*/\L$1/}s/?" do 
+          @${1/(\w*).*/\L$1/} = $1.new(params[:${1/(\w*).*/\L$1/}])
           if request.xhr?
             content_type 'text/json' #, :charset =&gt; 'utf-8'
             @${1/(\w*).*/\L$1/}.save ? {:success =&gt; true, :html =&gt; "Successfully created the $1 [#{@${1/(\w*).*/\L$1/}.name}]" }.to_json : {:success =&gt; false, :html =&gt; "&lt;ul&gt;#{@${1/(\w*).*/\L$1/}.errors.map{ |e| "&lt;li&gt;#{e}&lt;/li&gt;" }}&lt;/ul&gt;" }.to_json
