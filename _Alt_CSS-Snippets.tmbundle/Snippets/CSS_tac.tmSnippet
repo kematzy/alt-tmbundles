@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>text-align: ${1:center};$0</string>
 	<key>name</key>
-	<string>CSS.tac</string>
+	<string>CSS.tac (text-align: center;)</string>
 	<key>scope</key>
 	<string>source.css meta.property-list.css</string>
 	<key>tabTrigger</key>

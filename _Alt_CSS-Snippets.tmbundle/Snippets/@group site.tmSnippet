@@ -3,14 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>text-align: ${1:left};$0</string>
+	<string>/* @group site.${1:section_name} */
+$0
+/* @end site.$1 */
+</string>
 	<key>name</key>
-	<string>CSS.tal (text-align: left;)</string>
+	<string>@group site</string>
 	<key>scope</key>
-	<string>source.css meta.property-list.css</string>
+	<string>source.css</string>
 	<key>tabTrigger</key>
-	<string>.tal</string>
+	<string>group</string>
 	<key>uuid</key>
-	<string>26742AF1-4941-407F-A2DC-697A9100F192</string>
+	<string>CA5F5D7C-D85F-475E-BB27-D80356667A44</string>
 </dict>
 </plist>
