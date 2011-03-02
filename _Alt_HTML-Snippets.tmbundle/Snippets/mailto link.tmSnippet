@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;a href="mailto:${1:info@kematzy.com}?subject=[Website Query] " title="click to send email"&gt;$1&lt;/a&gt;$0</string>
+	<key>name</key>
+	<string>mailto link</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>mailto</string>
+	<key>uuid</key>
+	<string>157F6EC4-E747-427A-A041-02B4A2A720FA</string>
+</dict>
+</plist>
