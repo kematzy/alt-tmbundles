@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>/**
+ * @expectedException ${1:ExceptionClassName}
+*/
+public function test${2:TestName}() 
+{
+    $0
+}</string>
+	<key>name</key>
+	<string>test (expected exception)</string>
+	<key>scope</key>
+	<string>source.php</string>
+	<key>tabTrigger</key>
+	<string>extest</string>
+	<key>uuid</key>
+	<string>87754C58-78F6-4BD3-9FD4-BC6B49180863</string>
+</dict>
+</plist>

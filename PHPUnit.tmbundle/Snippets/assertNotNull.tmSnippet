@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>\$this-&gt;assertNotNull( {1:\$variable}{2:, '{3:message}'} );$0</string>
+	<key>name</key>
+	<string>assertNotNull</string>
+	<key>scope</key>
+	<string>source.php</string>
+	<key>tabTrigger</key>
+	<string>assert</string>
+	<key>uuid</key>
+	<string>1ED04BCC-BE4D-44C1-873A-6ECCC75FD057</string>
+</dict>
+</plist>

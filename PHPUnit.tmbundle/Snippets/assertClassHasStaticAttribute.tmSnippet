@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>\$this-&gt;assertClassHasStaticAttribute( '${1:attributeName}', '${2:ClassName}'${3:, '${4:message}'} );$0</string>
+	<key>name</key>
+	<string>assertClassHasStaticAttribute</string>
+	<key>scope</key>
+	<string>source.php</string>
+	<key>tabTrigger</key>
+	<string>assert</string>
+	<key>uuid</key>
+	<string>3D422E2D-BD57-49FE-9145-BE728D6DB36C</string>
+</dict>
+</plist>

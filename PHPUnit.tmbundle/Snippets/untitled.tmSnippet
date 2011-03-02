@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>/**
+ * ${1:It should}
+ * @author ${PHPDOC_AUTHOR:$TM_FULLNAME}
+ * @test
+ */
+public function ${1/\W/_/g}()
+{
+	$0
+} // $1
+</string>
+	<key>name</key>
+	<string>test</string>
+	<key>scope</key>
+	<string>source.php</string>
+	<key>tabTrigger</key>
+	<string>test</string>
+	<key>uuid</key>
+	<string>8B95FE77-8E5B-4E41-BF27-69B179CD690C</string>
+</dict>
+</plist>

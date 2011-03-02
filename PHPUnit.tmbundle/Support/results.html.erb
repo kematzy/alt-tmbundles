@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <title>
+            PHPUnit Results
+        </title>
+        <style type="text/css" media="screen">
+            /* yui - reset */
+            html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}del,ins{text-decoration:none;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:baseline;}sub{vertical-align:baseline;}legend{color:#000;}input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}input,button,textarea,select{*font-size:100%;}
+            .head{padding:1em;background:#000;color:#FFF;}
+            .head h1 .filename{font-weight:bold;}
+            .summary{font-size:.9em;float:right;}
+            .summary li{display:inline;padding:0 .3em;}
+            .body{padding:1em; font-size: 110%;}
+            .results .time{float:right;}
+            .results li{padding:4px;margin:0 0 4px 0;font-size:.9em;}
+            .results li h3{font-weight:bold;}
+            .results li h3 > span{font-weight:normal;}
+            .results .message{padding:1em;margin:4px 0 0 0;background:#333;color:#FFF;font-size:.88em;white-space:pre;font-family:monospace;}
+            .results .message a:link,
+            .results .message a:visited,
+            .results .message a:active{color:#FF0;font-family:monospace;}
+            .total{background:#999;color:#FFF;}
+            .head.pass{background:#090;color:#FFF;}
+            li.pass{background:#9f6;color:#090;border-left:1em solid #090;}
+            .head.fail,li.fail{background:#C00;color:#FFF;}
+            .head.error,li.error{background:#E37200;color:#FFF;}
+            #parent{padding:2em;}
+            #parent .body{padding:0;}
+            #parent .head{padding:4px;margin:0 0 4px 0;}
+        </style>
+    </head>
+    <body>
+        <% if results[:parent] %>
+        <div class="head <%= results[:parent][:status] %>">
+            <div class="summary">
+                <ul>
+                    <% if results[:parent][:counts][:fail] > 0 %><li><%= results[:parent][:counts][:fail] %> Fail</li><% end %>
+                    <% if results[:parent][:counts][:error] > 0 %><li><%= results[:parent][:counts][:error] %> Error</li><% end %>
+                    <% if results[:parent][:counts][:pass] > 0 %><li><%= results[:parent][:counts][:pass] %> Pass</li><% end %>
+                    <% if results[:parent][:counts][:assertions] > 0 %><li><%= results[:parent][:counts][:assertions] %> Assertions</li><% end %>
+                    <li>Total time: <%= results[:parent][:total_time] %> sec</li>
+                </ul>
+            </div>
+            <h1 class="phpunit_results"><span class="filename"><%= results[:parent][:name] %></span></h1>
+        </div>
+        <div id="parent">
+        <% end %>
+        <% for testsuite in results[:suites] %>
+        <div class="head <%= testsuite[:status] %>">
+            <% if testsuite[:counts] %>
+            <div class="summary">
+                <ul>
+                    <% if testsuite[:counts][:fail] > 0 %><li><%= testsuite[:counts][:fail] %> Fail</li><% end %>
+                    <% if testsuite[:counts][:error] > 0 %><li><%= testsuite[:counts][:error] %> Error</li><% end %>
+                    <% if testsuite[:counts][:pass] > 0 %><li><%= testsuite[:counts][:pass] %> Pass</li><% end %>
+                    <% if testsuite[:counts][:assertions] > 0 %><li><%= testsuite[:counts][:assertions] %> Assertions</li><% end %>
+                </ul>
+            </div>
+            <% end %>
+            <h1 class="phpunit_results"><span class="filename"><%= testsuite[:name] %></span></h1>
+        </div>
+        <div class="body">
+            <div class="results">
+                <ul>
+                    <% for r in testsuite[:cases] do %>
+                    <li class="<%= r[:status]%>">
+                        <span class="time"><%= "%01.8f" % r[:time] %> sec</span>
+                        <h3><%= r[:test].gsub(/_/," ").gsub(/\([^\)]+\)/,'') %></h3>
+                        <% if %w{ fail error}.include? r[:status]  %>
+<div class="message"><%= r[:message] %></div>
+                        <% end %>
+                    </li>
+                    <% end %>
+                    <% if testsuite[:total_time] %>
+                    <li class="total">
+                        <span class="time"><%= "%01.8f" % testsuite[:total_time] %> sec</span>
+                        <h3>Total time:</h3>
+                    </li>
+                    <% end %>
+                </ul>
+            </div>
+        </div>
+        <% end %>
+        <% if results[:parent] %>
+        </div>
+        <% end %>
+    </body>
+</html>

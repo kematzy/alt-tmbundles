@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>\$this-&gt;assertClassHasAttribute( '${1:attributeName}', ${2:object}${3:, '${4:message}'} );$0</string>
+	<key>name</key>
+	<string>assertObjectHasAttribute</string>
+	<key>scope</key>
+	<string>source.php</string>
+	<key>tabTrigger</key>
+	<string>assert</string>
+	<key>uuid</key>
+	<string>A8D81D1A-4F3D-402C-AA7D-A9F3AF51552E</string>
+</dict>
+</plist>
