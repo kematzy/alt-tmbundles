@@ -7,6 +7,7 @@
 	<key>fileTypes</key>
 	<array>
 		<string>rjs</string>
+		<string>js.php</string>
 	</array>
 	<key>foldingStartMarker</key>
 	<string>(^.*{[^}]*$|^.*\([^\)]*$|^.*/\*(?!.*\*/).*$)</string>
@@ -21,6 +22,10 @@
 		<dict>
 			<key>include</key>
 			<string>#erb</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#php</string>
 		</dict>
 		<dict>
 			<key>begin</key>
@@ -474,6 +479,22 @@
 				<dict>
 					<key>include</key>
 					<string>source.js</string>
+				</dict>
+			</array>
+		</dict>
+		<key>php</key>
+		<dict>
+			<key>begin</key>
+			<string>(?=(^\s*)?&lt;\?)</string>
+			<key>end</key>
+			<string>(?!(^\s*)?&lt;\?)</string>
+			<key>name</key>
+			<string>source.php.embedded.js.php</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.php</string>
 				</dict>
 			</array>
 		</dict>
