@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>&amp;${1:amp; }$0</string>
+	<string>&amp;${1:amp;}$0</string>
 	<key>keyEquivalent</key>
 	<string>&amp;</string>
 	<key>name</key>

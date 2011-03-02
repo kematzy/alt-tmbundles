@@ -10,13 +10,13 @@
 	</array>
 	<key>foldingStartMarker</key>
 	<string>(?x)
-		(&lt;(?i:head|body|table|thead|tbody|tfoot|tr|div|select|fieldset|style|script|ul|ol|form|dl)\b.*?&gt;
+		(&lt;(?i:head|body|article|header|footer|table|thead|tbody|tfoot|tr|div|nav|time|select|section|fieldset|style|script|ul|ol|li|form|dl)\b.*?&gt;
 		|&lt;!--(?!.*--&gt;)
 		|\{\s*($|\?&gt;\s*$|//|/\*(.*\*/\s*$|(?!.*?\*/)))
 		)</string>
 	<key>foldingStopMarker</key>
 	<string>(?x)
-		(&lt;/(?i:head|body|table|thead|tbody|tfoot|tr|div|select|fieldset|style|script|ul|ol|form|dl)&gt;
+				(&lt;/(?i:head|body|article|header|footer|table|thead|tbody|tfoot|tr|div|nav|time|select|section|fieldset|style|script|ul|ol|li|form|dl)&gt;
 		|^\s*--&gt;
 		|(^|\s)\}
 		)</string>
