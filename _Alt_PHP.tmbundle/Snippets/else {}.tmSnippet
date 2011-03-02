@@ -4,8 +4,8 @@
 <dict>
 	<key>content</key>
 	<string>else 
-{  
-	${0:# code...}
+{ 
+  ${0:# code...}
 }</string>
 	<key>name</key>
 	<string>else …</string>

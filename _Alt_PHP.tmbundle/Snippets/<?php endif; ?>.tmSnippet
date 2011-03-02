@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>&lt;?${TM_PHP_TAG} echo ${1:\$var} ?&gt;$0</string>
+	<string>&lt;?${TM_PHP_TAG} endif; ?&gt;</string>
 	<key>name</key>
-	<string>&lt;?php echo … ?&gt;</string>
+	<string>&lt;?php endif; ?&gt;</string>
 	<key>scope</key>
 	<string>text.html</string>
 	<key>tabTrigger</key>
-	<string>echo</string>
+	<string>endif</string>
 	<key>uuid</key>
-	<string>E34F3923-64C0-4785-90C2-D489B171C23B</string>
+	<string>0930C833-16C4-4F82-8586-F834B46FF24B</string>
 </dict>
 </plist>
