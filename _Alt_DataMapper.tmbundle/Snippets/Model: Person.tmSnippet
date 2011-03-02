@@ -6,16 +6,17 @@
 	<string>class Person
   include DataMapper::Resource
   
-  property :id,         Integer, :serial =&gt; true    # primary serial key
+  property :id,         Serial
   property :firstname,  String
-  property :lastname,  String
-  property :phone,  String
-  property :email,  String
-  property :address,  String
-  property :city,  String
-  property :state,  String
-  property :zip,  String
+  property :lastname,   String
+  property :phone,      String
+  property :email,      String
+  property :address,    String
+  property :city,       String
+  property :state,      String
+  property :zip,        String
   property :created_at, DateTime
+  property :updated_at, DateTime
 
   ## ASSOCIATIONS
   

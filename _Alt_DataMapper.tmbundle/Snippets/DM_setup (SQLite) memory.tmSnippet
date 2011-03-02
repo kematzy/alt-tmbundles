@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>%w(dm-sqlite-adapter dm-core dm-migrations dm-validations dm-types dm-timestamps $1).each {|lib| require lib }$0</string>
+	<string>DataMapper.setup( :default, "sqlite3::memory:")$0</string>
 	<key>name</key>
-	<string>Require (All Common)</string>
+	<string>DM.setup (SQLite) memory</string>
 	<key>scope</key>
 	<string>source.ruby</string>
 	<key>tabTrigger</key>
-	<string>req</string>
+	<string>dm-setup</string>
 	<key>uuid</key>
-	<string>E17096F5-BAD1-43FC-B217-52326D915239</string>
+	<string>B1647FED-3D44-4D3C-AB26-E05A6AC8FA1D</string>
 </dict>
 </plist>

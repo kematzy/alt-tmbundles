@@ -14,13 +14,13 @@
   IMAGES_UPLOAD_PATH  = "#{root_dir}/public#{IMAGES_UPLOAD_URL_PATH}"
   
   include DataMapper::Resource
-  property :id,                   Integer, :serial =&gt; true
+  property :id,                   Serial
   # store the filename in the db
-  property :filename,             String,   :nullable =&gt; false, :unique_index =&gt; :filename
+  property :filename,             String,   :required =&gt; true, :unique_index =&gt; :filename
   # in case we rename files, let's store the original name as well
-  property :filename_original,    String,   :nullable =&gt; false
+  property :filename_original,    String,   :required =&gt; true
   # where is the file stored
-  property :path,                 FilePath, :nullable =&gt; false
+  property :path,                 FilePath, :required =&gt; true
   # each image has a default caption
   property :caption,              String
   # when was this record created and updated
