@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Symbol List: Mixin</string>
+	<key>scope</key>
+	<string>source.scss meta.variable-declaration.scss.mixin variable.other.scss</string>
+	<key>settings</key>
+	<dict>
+		<key>showInSymbolList</key>
+		<integer>1</integer>
+		<key>symbolTransformation</key>
+		<string>s/^/= /</string>
+	</dict>
+	<key>uuid</key>
+	<string>351C267B-0BA5-4E39-A2D7-D9BE8D9E9445</string>
+</dict>
+</plist>
