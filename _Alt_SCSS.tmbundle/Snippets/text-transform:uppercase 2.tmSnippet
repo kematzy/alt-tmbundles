@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>text-align:${TM_CSS_SPACE}right;$0</string>
+	<string>text-transform:${TM_CSS_SPACE}uppercase;$0</string>
 	<key>name</key>
-	<string>text-align:right</string>
+	<string>text-transform:uppercase</string>
 	<key>scope</key>
 	<string>source.scss</string>
 	<key>tabTrigger</key>
-	<string>ta.r</string>
+	<string>uppercase</string>
 	<key>uuid</key>
-	<string>4305D952-FFB2-4677-8051-51EEBFB5F0CD</string>
+	<string>151DA873-D126-4285-9762-6EFE2E364540</string>
 </dict>
 </plist>

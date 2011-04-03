@@ -9,8 +9,8 @@
 	<key>scope</key>
 	<string>source.scss</string>
 	<key>tabTrigger</key>
-	<string>h:a</string>
+	<string>h.a</string>
 	<key>uuid</key>
-	<string>300DF9EE-8CA2-4976-8413-F8B831660015</string>
+	<string>CAD751B8-469D-4660-A9E5-D20F0598FABF</string>
 </dict>
 </plist>

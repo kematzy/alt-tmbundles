@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>text-decoration:${TM_CSS_SPACE}$1;$0</string>
+	<string>text-decoration:${TM_CSS_SPACE}${1:none};$0</string>
 	<key>name</key>
 	<string>text-decoration</string>
 	<key>scope</key>
@@ -11,6 +11,6 @@
 	<key>tabTrigger</key>
 	<string>td</string>
 	<key>uuid</key>
-	<string>D3DF72F6-7304-4E62-93E9-2B4ADF7C6E51</string>
+	<string>B8D51156-B1E0-4014-9D4E-3094F815CDEA</string>
 </dict>
 </plist>

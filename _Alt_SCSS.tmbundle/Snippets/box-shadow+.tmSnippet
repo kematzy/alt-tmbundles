@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>box-shadow:${TM_CSS_SPACE}${1:0} ${2:0} ${3:0} #${4:000};$0</string>
+	<string>@include -box-shadow(${1:0}, ${2:0}, ${3:0}, #${4:000});$0</string>
 	<key>name</key>
 	<string>box-shadow+</string>
 	<key>scope</key>
@@ -11,6 +11,6 @@
 	<key>tabTrigger</key>
 	<string>bxsh+</string>
 	<key>uuid</key>
-	<string>5CA15D70-FB39-47B4-9BA0-0437BFB169A4</string>
+	<string>EE06A1BD-A2E8-44F8-97E9-C908476852DB</string>
 </dict>
 </plist>
