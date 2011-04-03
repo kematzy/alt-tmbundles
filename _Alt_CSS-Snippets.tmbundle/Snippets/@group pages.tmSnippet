@@ -10,7 +10,7 @@ $0
 	<key>name</key>
 	<string>@group pages</string>
 	<key>scope</key>
-	<string>source.css</string>
+	<string>source.css, source.scss</string>
 	<key>tabTrigger</key>
 	<string>group</string>
 	<key>uuid</key>

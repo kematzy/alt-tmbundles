@@ -185,7 +185,7 @@ end
 	<key>output</key>
 	<string>replaceSelectedText</string>
 	<key>scope</key>
-	<string>source.css, source.sass, source.yaml string.quoted, meta.tag string.quoted -source</string>
+	<string>source.css, source.sass, source.scss, source.yaml string.quoted, meta.tag string.quoted -source</string>
 	<key>uuid</key>
 	<string>6C0599AF-5D24-4C73-8062-173426F4DA1D</string>
 </dict>

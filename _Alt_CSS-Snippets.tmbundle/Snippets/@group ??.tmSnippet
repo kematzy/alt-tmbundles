@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>/* @group site.${1:section_name} */
+	<string>/* @group ${1:page_name} */
 $0
-/* @end site.$1 */
+/* @end $1 */
 </string>
 	<key>name</key>
-	<string>@group site</string>
+	<string>@group ??</string>
 	<key>scope</key>
 	<string>source.css, source.scss</string>
 	<key>tabTrigger</key>
 	<string>group</string>
 	<key>uuid</key>
-	<string>CA5F5D7C-D85F-475E-BB27-D80356667A44</string>
+	<string>E60AA0EE-C085-4126-9F8F-70BBC985142E</string>
 </dict>
 </plist>
