@@ -7,6 +7,7 @@ module PHPUnit
             :name => 'Error running tests!',
             :status => 'fail',
             :cases => [],
+            :output => output,
           }]
         return results
       end

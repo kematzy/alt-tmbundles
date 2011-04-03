@@ -18,7 +18,7 @@
             .results li{padding:4px;margin:0 0 4px 0;font-size:.9em;}
             .results li h3{font-weight:bold;}
             .results li h3 > span{font-weight:normal;}
-            .results .message{padding:1em;margin:4px 0 0 0;background:#333;color:#FFF;font-size:.88em;white-space:pre;font-family:monospace;}
+            .results .message{padding:1em;margin:4px 0 0 0;background:#333;color:#FFF;font-size:.88em;font-family:monospace; white-space:pre-wrap; }
             .results .message a:link,
             .results .message a:visited,
             .results .message a:active{color:#FF0;font-family:monospace;}
@@ -60,17 +60,19 @@
                 </ul>
             </div>
             <% end %>
-            <h1 class="phpunit_results"><span class="filename"><%= testsuite[:name] %></span></h1>
+            <h1 class="phpunit_results">PHPUNIT: <span class="filename"><%= testsuite[:name] %></span></h1>
         </div>
         <div class="body">
             <div class="results">
+                <!-- <h2>RESULTS SHOWN BELOW: </h2> -->
+                <!-- <pre><%#= testsuite.inspect %></pre> -->
                 <ul>
                     <% for r in testsuite[:cases] do %>
                     <li class="<%= r[:status]%>">
                         <span class="time"><%= "%01.8f" % r[:time] %> sec</span>
                         <h3><%= r[:test].gsub(/_/," ").gsub(/\([^\)]+\)/,'') %></h3>
                         <% if %w{ fail error}.include? r[:status]  %>
-<div class="message"><%= r[:message] %></div>
+                        <div class="message"><%= r[:message] %></div>
                         <% end %>
                     </li>
                     <% end %>
