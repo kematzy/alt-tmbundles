@@ -26,7 +26,7 @@ if input =~ /\n/
   stop  &lt;&lt; "\n"
 end
 
-STDOUT &lt;&lt; e_sn(start) &lt;&lt; (input.empty? ? "\n\t$0\n" : e_sn(input)) &lt;&lt; e_sn(stop)
+STDOUT &lt;&lt; e_sn(start) &lt;&lt; (input.empty? ? "\n\t$0\n" : " #{e_sn(input)} ") &lt;&lt; e_sn(stop)
 </string>
 	<key>fallbackInput</key>
 	<string>none</string>
