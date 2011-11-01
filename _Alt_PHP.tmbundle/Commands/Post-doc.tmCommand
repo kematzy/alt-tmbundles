@@ -13,7 +13,7 @@ puts '/**'
 
 @tags = []
 type = ''
-author = true
+author = false
 
 def tag(tag, default, trailing = nil)
   @tags &lt;&lt; {:tag =&gt; tag, :default =&gt; default, :trailing =&gt; trailing}
