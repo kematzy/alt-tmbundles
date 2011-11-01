@@ -6,28 +6,28 @@
 	<string>&lt;?php
 
 /**
-* ### CORE:${1:CoreName}
+* ### Helper:${1:HelperName}
 * 
 * ${2:TODO:: Need to write documentation here}
 * 
 * ### Installation:
 * 
-* Add this file to the &lt;tt&gt;app/lib/core/&lt;/tt&gt; directory in your app.
+* Add this file to the &lt;tt&gt;app/lib/helpers/&lt;/tt&gt; directory in your app.
 * 
 *     app
 *     |-&gt; lib
-*     |    |-&gt; core
-*     |    |     |-&gt; ${1/(\w*).*/\L$1/}.core.php
+*     |    |-&gt; helpers
+*     |    |     |-&gt; ${1/(\w*).*/\L$1/}.helper.php
 * 
 * ### Usage:
 * 
-* Just require the Limonade Core extension in your &lt;tt&gt;app/routes.php&lt;/tt&gt; file...
+* Just require the Limonade Helper extension in your &lt;tt&gt;app/routes.php&lt;/tt&gt; file...
 * 
-*     require_once(APP_ROOT . '/app/lib/core/${1/(\w*).*/\L$1/}.core.php');
+*     require_once(APP_ROOT . '/app/lib/helpers/${1/(\w*).*/\L$1/}.helper.php');
 * 
 * Then set any custom configurations in the &lt;tt&gt;app/conf/configurations.php&lt;/tt&gt; file...
 * 
-*     define('CORE_${1/(\w*).*/\U$1/}_CUSTOM_CONFIGURATION', 'custom value');
+*     define('HELPER_${1/(\w*).*/\U$1/}_CUSTOM_CONFIGURATION', 'custom value');
 *     
 *     &lt;snip...&gt;
 * 
@@ -52,7 +52,7 @@
 * 
 * ### Copyright
 * 
-* Copyright (c) 2010 kematzy. Released under the MIT License.
+* Copyright (c) 2011 kematzy. Released under the MIT License.
 * 
 * See LICENSE for details.
 * 
@@ -70,13 +70,9 @@
 // -----
 // ### CONFIGURATION OPTIONS 
 
-// the $1 Core version $0
-if ( !defined('CORE_${1/(\w*).*/\U$1/}_VERSION') )                       { define('CORE_${1/(\w*).*/\U$1/}_VERSION', '0.0.1'); }
-if ( !defined('CORE_${1/(\w*).*/\U$1/}_VERSION_STRING') )                { define('CORE_${1/(\w*).*/\U$1/}_VERSION_STRING', 'Kematzy::Core::${1/(\w*).*/\u$1/}s v' . CORE_${1/(\w*).*/\U$1/}_VERSION ); }
-
-
-// -----
-// ### HELPER CLASSES
+// the $1 Helper version $0
+if ( !defined('HELPER_${1/(\w*).*/\U$1/}_VERSION') )                       { define('HELPER_${1/(\w*).*/\U$1/}_VERSION', '0.0.1'); }
+if ( !defined('HELPER_${1/(\w*).*/\U$1/}_VERSION_STRING') )                { define('HELPER_${1/(\w*).*/\U$1/}_VERSION_STRING', 'Kematzy::Helper::${1/(\w*).*/\u$1/}s v' . CORE_${1/(\w*).*/\U$1/}_VERSION ); }
 
 
 // -----
@@ -92,7 +88,7 @@ if ( !defined('CORE_${1/(\w*).*/\U$1/}_VERSION_STRING') )                { defin
 * 
 * @return (boolean) =&gt; TRUE on success or FALSE on failure
 * 
-* &lt;strong&gt;Examples&lt;/strong&gt;
+* &lt;b&gt;Examples&lt;/b&gt;
 * 
 *     some_function('new/path/name.ext');   =&gt; 
 * 
@@ -106,13 +102,13 @@ function some_function($param)
 
 
 
-# /EOF ${1/(\w*).*/\U$1/}.CORE
+# /EOF ${1/(\w*).*/\U$1/}.HELPER
 ?&gt;</string>
 	<key>name</key>
-	<string>Limonade Core Extention</string>
+	<string>Limonade Helper Extention</string>
 	<key>tabTrigger</key>
-	<string>.core</string>
+	<string>.helper</string>
 	<key>uuid</key>
-	<string>B96C7509-BE4A-4F74-AFA0-AEEDA54A5FD5</string>
+	<string>0F1F4827-74E3-4C14-B2E2-82235720D730</string>
 </dict>
 </plist>
