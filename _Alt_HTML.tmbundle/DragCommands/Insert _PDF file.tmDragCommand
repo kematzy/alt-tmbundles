@@ -8,7 +8,7 @@ file_name = ENV['TM_DROPPED_FILE'].gsub(/^(.*\/)?(.*\.(pdf))$/, '\2')
 print "&lt;a href=\"#{ENV['TM_DROPPED_FILE']}\" title=\"right click to download this PDF document\" &gt;#{file_name}&lt;/a&gt;"</string>
 	<key>draggedFileExtensions</key>
 	<array>
-		<string>zip</string>
+		<string>pdf</string>
 	</array>
 	<key>name</key>
 	<string>Insert .PDF file</string>
