@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;?php
+
+/**
+* ### Helper:${1:HelperName}
+* 
+* ${2:TODO:: Need to write documentation here}
+* 
+* ### Installation:
+* 
+* Add this file to the &lt;tt&gt;app/lib/helpers/&lt;/tt&gt; directory in your app.
+* 
+*     app
+*     |-&gt; lib
+*     |    |-&gt; helpers
+*     |    |     |-&gt; ${1/(\w*).*/\L$1/}.helper.php
+* 
+* ### Usage:
+* 
+* Just require the Limonade Helper extension in your &lt;tt&gt;app/routes.php&lt;/tt&gt; file...
+* 
+*     require_once(APP_ROOT . '/app/lib/helpers/${1/(\w*).*/\L$1/}.helper.php');
+* 
+* Then set any custom configurations in the &lt;tt&gt;app/conf/configurations.php&lt;/tt&gt; file...
+* 
+*     define('HELPER_${1/(\w*).*/\U$1/}_CUSTOM_CONFIGURATION', 'custom value');
+*     
+*     &lt;snip...&gt;
+* 
+* See the function definitions for further information.
+* 
+* ### Contents:
+* 
+* This extension contains the following...
+* 
+* ### Configuration Options:
+* 
+* None
+* 
+* ### Routes: 
+* 
+* None
+* 
+* ### Helper Functions:
+* 
+* None
+* 
+* 
+* ### Copyright
+* 
+* Copyright (c) 2011 kematzy. Released under the MIT License.
+* 
+* See LICENSE for details.
+* 
+* ### Code Inspirations &amp; Credits:
+* 
+* 
+*/ 
+
+// -----
+// ### CORE DEPENDENCIES
+
+# require_once(APP_ROOT. '/path/2/file.php');
+
+
+// -----
+// ### CONFIGURATION OPTIONS 
+
+// the $1 Helper version $0
+if ( !defined('HELPER_${1/(\w*).*/\U$1/}_VERSION') )                       { define('HELPER_${1/(\w*).*/\U$1/}_VERSION', '0.0.1'); }
+if ( !defined('HELPER_${1/(\w*).*/\U$1/}_VERSION_STRING') )                { define('HELPER_${1/(\w*).*/\U$1/}_VERSION_STRING', 'Kematzy::Helper::${1/(\w*).*/\u$1/}s v' . CORE_${1/(\w*).*/\U$1/}_VERSION ); }
+
+
+// -----
+// ### HELPER FUNCTIONS
+
+
+/**
+* Short function description.
+* 
+* &lt;strong&gt;Params&lt;/strong&gt;
+* 
+* @param (string) $param  =&gt; some parameter. 
+* 
+* @return (boolean) =&gt; TRUE on success or FALSE on failure
+* 
+* &lt;b&gt;Examples&lt;/b&gt;
+* 
+*     some_function('new/path/name.ext');   =&gt; 
+* 
+* @api public/private
+*/
+function some_function($param)
+{ 
+  # code goes here
+}
+
+
+
+
+# /EOF ${1/(\w*).*/\U$1/}.HELPER
+?&gt;</string>
+	<key>name</key>
+	<string>Limonade Helper Extention</string>
+	<key>tabTrigger</key>
+	<string>.helper</string>
+	<key>uuid</key>
+	<string>0F1F4827-74E3-4C14-B2E2-82235720D730</string>
+</dict>
+</plist>
