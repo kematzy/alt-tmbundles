@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>\$this-&gt;assertClassHasAttribute( '${1:attributeName}', ${2:object}${3:, '${4:message}'} );$0</string>
+	<string>\$this-&gt;assertObjectHasAttribute( '${1:attributeName}', ${2:object}${3:, '${4:message}'} );$0</string>
 	<key>name</key>
 	<string>assertObjectHasAttribute</string>
 	<key>scope</key>
