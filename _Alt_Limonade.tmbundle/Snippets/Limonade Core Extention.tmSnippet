@@ -23,11 +23,11 @@
 * 
 * Just require the Limonade Core extension in your &lt;tt&gt;app/routes.php&lt;/tt&gt; file...
 * 
-*     require_once(APP_ROOT . '/app/lib/core/${1/(\w*).*/\L$1/}.core.php');
+*     require_once(APP_DIR_ROOT . '/lib/core/${1/(\w*).*/\L$1/}.core.php');
 * 
 * Then set any custom configurations in the &lt;tt&gt;app/conf/configurations.php&lt;/tt&gt; file...
 * 
-*     define('CORE_${1/(\w*).*/\U$1/}_CUSTOM_CONFIGURATION', 'custom value');
+*     option('${1/(\w*).*/\L$1/}.core.custom_configuration', 'custom value');
 *     
 *     &lt;snip...&gt;
 * 
@@ -52,7 +52,7 @@
 * 
 * ### Copyright
 * 
-* Copyright (c) 2010 kematzy. Released under the MIT License.
+* Copyright (c) `date +%Y` Kematzy. Released under the MIT License.
 * 
 * See LICENSE for details.
 * 
@@ -64,15 +64,18 @@
 // -----
 // ### CORE DEPENDENCIES
 
-# require_once(APP_ROOT. '/path/2/file.php');
+# require_once(APP_DIR_ROOT. '/path/2/file.php');
 
 
 // -----
 // ### CONFIGURATION OPTIONS 
 
 // the $1 Core version $0
-if ( !defined('CORE_${1/(\w*).*/\U$1/}_VERSION') )                       { define('CORE_${1/(\w*).*/\U$1/}_VERSION', '0.0.1'); }
-if ( !defined('CORE_${1/(\w*).*/\U$1/}_VERSION_STRING') )                { define('CORE_${1/(\w*).*/\U$1/}_VERSION_STRING', 'Kematzy::Core::${1/(\w*).*/\u$1/}s v' . CORE_${1/(\w*).*/\U$1/}_VERSION ); }
+option('${1/(\w*).*/\L$1/}.core.version', '0.0.1');
+option('${1/(\w*).*/\L$1/}.core.version.string', 'Kematzy::Core::${1/(\w*).*/\u$1/} v' . option('${1/(\w*).*/\L$1/}.core.version') );
+
+# //
+# if ( option_undefined('${1/(\w*).*/\L$1/}.core.????') )                { option('${1/(\w*).*/\L$1/}.core.????', '????'); }
 
 
 // -----

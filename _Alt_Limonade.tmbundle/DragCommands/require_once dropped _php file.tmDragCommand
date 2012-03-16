@@ -29,15 +29,18 @@ include_method.sub('_once','') if ENV['TM_MODIFIER_FLAGS'].include?('OPTION')
 
 # Find the shortest path
 path = paths.sort_by{|path| path.size}.reverse.pop
-# Grab the file name only
-path = File.basename(path)
-# Type of file
-file_dir = File.basename(path,'.php').split('.').last
-file_dir = ( file_dir =~ /(lext|helper)/ ) ? "#{file_dir}s" : file_dir
+## Grab the file name only
+#path = File.basename(path)
+## Type of file
+#file_dir = File.basename(path,'.php').split('.').last
+#file_dir = ( file_dir =~ /(lext|helper)/ ) ? #"#{file_dir}s" : file_dir
 
-puts "#{include_method} APP_DIR_ROOT . '/lib/#{file_dir}/#{path}';"
+# puts "#{include_method} '#{path}';"
+puts "#{include_method} '#{File.expand_path(path)}';"
 
-RUBY</string>
+RUBY
+
+</string>
 	<key>draggedFileExtensions</key>
 	<array>
 		<string>php</string>
@@ -45,12 +48,12 @@ RUBY</string>
 	<key>input</key>
 	<string>selection</string>
 	<key>name</key>
-	<string>require_once dropped .ext.php file</string>
+	<string>require_once dropped .php file</string>
 	<key>output</key>
 	<string>insertAsSnippet</string>
 	<key>scope</key>
 	<string>source.php</string>
 	<key>uuid</key>
-	<string>A5F10760-3748-4CA3-B58D-AE2E391F1C1D</string>
+	<string>4A6D0A28-A935-416E-B2B8-0BB6A1A10209</string>
 </dict>
 </plist>

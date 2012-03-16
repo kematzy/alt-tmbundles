@@ -2,14 +2,30 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>mainMenu</key>
+	<dict>
+		<key>items</key>
+		<array>
+			<string>B96C7509-BE4A-4F74-AFA0-AEEDA54A5FD5</string>
+			<string>0F1F4827-74E3-4C14-B2E2-82235720D730</string>
+			<string>D3B4AFE7-4887-4762-AA7F-D2FE3980AD2F</string>
+			<string>E3ABB804-E38D-4ABB-9AAB-A9A72C1DB48F</string>
+			<string>A3625C60-D867-4E1B-A5D8-9BF4A6D14254</string>
+		</array>
+		<key>submenus</key>
+		<dict/>
+	</dict>
 	<key>name</key>
 	<string> Alt Limonade</string>
 	<key>ordering</key>
 	<array>
 		<string>A5F10760-3748-4CA3-B58D-AE2E391F1C1D</string>
+		<string>4A6D0A28-A935-416E-B2B8-0BB6A1A10209</string>
 		<string>B96C7509-BE4A-4F74-AFA0-AEEDA54A5FD5</string>
 		<string>0F1F4827-74E3-4C14-B2E2-82235720D730</string>
 		<string>E3ABB804-E38D-4ABB-9AAB-A9A72C1DB48F</string>
+		<string>D3B4AFE7-4887-4762-AA7F-D2FE3980AD2F</string>
+		<string>A3625C60-D867-4E1B-A5D8-9BF4A6D14254</string>
 	</array>
 	<key>uuid</key>
 	<string>85429493-6562-49E8-8E35-D178DB60FEB6</string>

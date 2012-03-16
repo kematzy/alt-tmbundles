@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>// $3
+if ( option_undefined('${1:name}') )           { option('$1', $2 ); }
+</string>
+	<key>name</key>
+	<string>if( option_defined() ) { }</string>
+	<key>scope</key>
+	<string>source.php</string>
+	<key>tabTrigger</key>
+	<string>option?</string>
+	<key>uuid</key>
+	<string>A3625C60-D867-4E1B-A5D8-9BF4A6D14254</string>
+</dict>
+</plist>

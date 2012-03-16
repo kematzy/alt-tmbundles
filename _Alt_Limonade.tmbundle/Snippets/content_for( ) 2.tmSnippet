@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;? content_for('${1:_buffered_content}'); ?&gt;
+$0
+&lt;? end_content_for(); ?&gt;</string>
+	<key>name</key>
+	<string>content_for( )</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>content_for</string>
+	<key>uuid</key>
+	<string>CED1C356-CDB1-4CD7-95B0-2789F62FCEBA</string>
+</dict>
+</plist>

@@ -23,11 +23,15 @@
 * 
 * Just require the Limonade extension in your &lt;tt&gt;app/lib/lexts.php&lt;/tt&gt; file...
 * 
-*     require_once(APP_ROOT . '/app/lib/lexts/${1/(\w*).*/\L$1/}s.lext.php');
+*     load_lext('${1/(\w*).*/\L$1/}s');
+*     
+*     # or
+*     
+*     require_once(APP_DIR_ROOT . '/lib/lexts/${1/(\w*).*/\L$1/}s.lext.php');
 * 
 * Then set any custom configurations in the &lt;tt&gt;app/conf/configurations.php&lt;/tt&gt; file...
 * 
-*     define('${1/(\w*).*/\U$1/}S_CUSTOM_CONFIGURATION', 'custom value');
+*     option('${1/(\w*).*/\L$1/}s.lext.custom_configuration', 'custom value');
 *     
 *     &lt;snip...&gt;
 * 
@@ -51,7 +55,7 @@
 * 
 * ### Copyright
 * 
-* Copyright (c) 2011 kematzy. Released under the MIT License.
+* Copyright (c) `date +%Y` Kematzy. Released under the MIT License.
 * 
 * See LICENSE for details.
 * 
@@ -63,37 +67,45 @@
 // -----
 // ### CORE DEPENDENCIES
 
-# require_once(APP_ROOT. '/path/2/file.php');
+load_core('input', 'validations');
+
+# require_once(APP_DIR_ROOT. '/path/2/file.php');
 
 
 // -----
 // ### EXTENSION DEPENDENCIES
 
-# require_once(APP_ROOT. '/app/lib/lexts/file.lext.php');
+# load_lext();
+# require_once(APP_DIR_ROOT. '/lib/lexts/file.lext.php');
 
 // -----
 // ### CONFIGURATION OPTIONS 
-# -----
 
-// the $1s Lext version
-if ( !defined('${1/(\w*).*/\U$1/}S_LEXT_VERSION') )                       { define('${1/(\w*).*/\U$1/}S_LEXT_VERSION', '0.0.1'); }
-if ( !defined('${1/(\w*).*/\U$1/}S_LEXT_VERSION_STRING') )                { define('${1/(\w*).*/\U$1/}S_LEXT_VERSION_STRING', 'Kematzy::${1/(\w*).*/\u$1/}s v' . ${1/(\w*).*/\U$1/}S_LEXT_VERSION ); }
+// the $1 Lext version $0
+option('${1/(\w*).*/\L$1/}s.lext.version', '0.0.1');
+option('${1/(\w*).*/\L$1/}s.lext.version.string', 'Kematzy::Lext::${1/(\w*).*/\u$1/} v' . option('${1/(\w*).*/\L$1/}s.lext.version') );
 
-# APP PATHS
-
-// the default path to the $1s Section
-if ( !defined('${1/(\w*).*/\U$1/}S_PATH_PREFIX') )                        { define('${1/(\w*).*/\U$1/}S_PATH_PREFIX', '/${1/(\w*).*/\L$1/}s'); }
+# //
+# if ( option_undefined('${1/(\w*).*/\L$1/}s.lext.????') )                         { option('${1/(\w*).*/\L$1/}s.lext.????', '????'); }
 
 
-if ( defined('ADMIN_LEXT_VERSION') ) 
+// -----
+// #### APP PATHS
+
+// the default path to the $1 Section
+if ( option_undefined('${1/(\w*).*/\L$1/}s.path.prefix') )                       { option('${1/(\w*).*/\L$1/}s.path.prefix', '/${1/(\w*).*/\L$1/}s'); }
+
+
+if ( option_defined('admin.enabled') )
 { 
-  # ADMIN PATHS
+  // -----
+  // #### ADMIN PATHS
   
-  // the default path to the $1s Admin Section
-  if ( !defined('${1/(\w*).*/\U$1/}S_ADMIN_PATH_PREFIX') )                { define('${1/(\w*).*/\U$1/}S_ADMIN_PATH_PREFIX', ADMIN_PATH_PREFIX . '/${1/(\w*).*/\L$1/}s'); }
+  // the default path to the $1 Admin Section
+  if ( option_undefined('${1/(\w*).*/\L$1/}s.admin.path.prefix') )               { option('${1/(\w*).*/\L$1/}s.admin.path.prefix', option('admin.path.prefix') . '/${1/(\w*).*/\L$1/}s'); }
   // the default redirect path after an Admin action
-  if ( !defined('${1/(\w*).*/\U$1/}S_ADMIN_DEFAULT_REDIRECT_TO_PATH') )   { define('${1/(\w*).*/\U$1/}S_ADMIN_DEFAULT_REDIRECT_TO_PATH', ${1/(\w*).*/\U$1/}S_ADMIN_PATH_PREFIX ); }
-  
+  if ( option_undefined('${1/(\w*).*/\L$1/}s.path.redirect_to') )                { option('${1/(\w*).*/\L$1/}s.path.redirect_to', option('${1/(\w*).*/\L$1/}s.admin.path.prefix') ); }
+    
 }
 
 
@@ -121,6 +133,20 @@ if ( defined('ADMIN_LEXT_VERSION') )
 */
 class ${1/(\w*).*/\u$1/} extends DBModel
 { 
+  public static \$__timestamps = true;
+  
+  # public function model_singular()  { return \$this-&gt;has_one('ModelSingular'); }
+  # public function model_plural()    { return \$this-&gt;has_many('ModelSingular'); }
+  # public function author()          { return \$this-&gt;belongs_to('${1/(\w*).*/\u$1/}', '${1/(\w*).*/\L$1/}_id'); }
+  # public function parent()          { return \$this-&gt;belongs_to('${1/(\w*).*/\u$1/}', 'parent_id'); }
+  # public function children()        { return \$this-&gt;has_many('${1/(\w*).*/\u$1/}', 'parent_id'); }
+  # public function roles()           { return \$this-&gt;has_and_belongs_to_many('Role', 'user_roles'); }
+  
+  
+  static function init(\$vars = array())
+  {
+    return new ${1/(\w*).*/\u$1/}( \$vars );
+  }
   
 } #/ class ${1/(\w*).*/\u$1/} DBModel
 
@@ -130,58 +156,57 @@ class ${1/(\w*).*/\u$1/} extends DBModel
 
 
 # GET &lt;strong&gt;/${1/(\w*).*/\U$1/}S/&lt;/strong&gt;
-dispatch_get( ${1/(\w*).*/\U$1/}S_PATH_PREFIX, 'route_get_${1/(\w*).*/\L$1/}s_index');
+dispatch_get( option('${1/(\w*).*/\L$1/}s.path.prefix'), 'route_get_${1/(\w*).*/\L$1/}s_index');
 function route_get_${1/(\w*).*/\L$1/}s_index() { 
-  load_page_vars('${1/(\w*).*/\L$1/}s');
-  return html('${1/(\w*).*/\L$1/}s/index.html.php');
+  page_load_vars('${1/(\w*).*/\L$1/}s');
+  return html('${1/(\w*).*/\L$1/}s/index.html');
 }
 
 
-if ( defined('ADMIN_LEXT_VERSION') ) 
+if ( option('admin.enabled') ) 
 { 
-
   // -----
   // #### ROUTES =&gt; ADMIN
   
   # &lt;strong&gt;GET ADMIN/${1/(\w*).*/\U$1/}S/INDEX&lt;/strong&gt;
-  dispatch( ${1/(\w*).*/\U$1/}S_ADMIN_PATH_PREFIX , 'route_get_${1/(\w*).*/\L$1/}s_admin_index');
+  dispatch( option('${1/(\w*).*/\L$1/}s.admin.path.prefix') , 'route_get_${1/(\w*).*/\L$1/}s_admin_index', admin_route_options() );
   function route_get_${1/(\w*).*/\L$1/}s_admin_index(){ 
     set('${1/(\w*).*/\L$1/}s',  ${1/(\w*).*/\u$1/}::all() );
-    load_page_vars('admin|${1/(\w*).*/\L$1/}s');
-    return admin_html('${1/(\w*).*/\L$1/}s/index.html.php');
+    page_load_vars('admin|${1/(\w*).*/\L$1/}s');
+    return admin_html('${1/(\w*).*/\L$1/}s/index.html');
   }
   
   # &lt;strong&gt;GET ADMIN/${1/(\w*).*/\U$1/}S/NEW&lt;/strong&gt;
-  dispatch( ${1/(\w*).*/\U$1/}S_ADMIN_PATH_PREFIX . '/new', 'route_get_${1/(\w*).*/\L$1/}s_admin_new');
+  dispatch( option('${1/(\w*).*/\L$1/}s.admin.path.prefix') . '/new', 'route_get_${1/(\w*).*/\L$1/}s_admin_new', admin_route_options() );
   function route_get_${1/(\w*).*/\L$1/}s_admin_new(){ 
-    load_page_vars('admin|${1/(\w*).*/\L$1/}s|new');
+    page_load_vars('admin|${1/(\w*).*/\L$1/}s|new');
     # retrieve from session or create new one.
-    \$${1/(\w*).*/\L$1/} = set_from_session_or_new_object('${1/(\w*).*/\L$1/}', ${1/(\w*).*/\u$1/}::new_with_default_values() );
-    set('${1/(\w*).*/\L$1/}',  \$${1/(\w*).*/\L$1/} );
-    if ( is_xhr() ) 
+    \$${1/(\w*).*/\L$1/} = input_session_or_default('${1/(\w*).*/\L$1/}', ${1/(\w*).*/\u$1/}::init() );
+    set('${1/(\w*).*/\L$1/}',  \$${1/(\w*).*/\L$1/});
+    if ( request_is_xhr() ) 
     {  
-      return admin_html('${1/(\w*).*/\L$1/}s/index.html.php', null);
+      return admin_html('${1/(\w*).*/\L$1/}s/new.html', null);
     }
     else
     { 
-      return admin_html('${1/(\w*).*/\L$1/}s/index.html.php');
+      return admin_html('${1/(\w*).*/\L$1/}s/new.html');
     }
   }
 
   # &lt;strong&gt;POST ADMIN/${1/(\w*).*/\U$1/}S/&lt;/strong&gt;
-  dispatch_post( ${1/(\w*).*/\U$1/}S_ADMIN_PATH_PREFIX, 'route_post_${1/(\w*).*/\L$1/}s_admin_create' );
+  dispatch_post( option('${1/(\w*).*/\L$1/}s.admin.path.prefix'), 'route_post_${1/(\w*).*/\L$1/}s_admin_create', admin_route_options() );
   function route_post_${1/(\w*).*/\L$1/}s_admin_create(){ 
-    \$${1/(\w*).*/\L$1/} = get_data_from_form('${1/(\w*).*/\L$1/}');
-    \$res = ${1/(\w*).*/\u$1/}::add_${1/(\w*).*/\L$1/}( \$${1/(\w*).*/\L$1/} );
-    if ( is_xhr() ) 
+    \$${1/(\w*).*/\L$1/} = input_post('${1/(\w*).*/\L$1/}');
+    \$res = ${1/(\w*).*/\L$1/}s_add_${1/(\w*).*/\L$1/}( \$${1/(\w*).*/\L$1/} );
+    if ( request_is_xhr() ) 
     { 
       if (\$res == true) 
       { 
-        return json( array('success' =&gt; true, 'html'=&gt; "Successfully created ${1/(\w*).*/\u$1/} [".\$${1/(\w*).*/\L$1/}-&gt;name."]") );
+        return json( array('success' =&gt; true, 'html'=&gt; "Successfully created ${1/(\w*).*/\u$1/} [".\$${1/(\w*).*/\L$1/}['name']."]") );
       }
       else
       { 
-        return json( array('success' =&gt; false, 'html'=&gt; "ERRORS creating ${1/(\w*).*/\u$1/} [".\$${1/(\w*).*/\L$1/}-&gt;name."]") );
+        return json( array('success' =&gt; false, 'html'=&gt; "Error creating ${1/(\w*).*/\u$1/} [".\$${1/(\w*).*/\L$1/}['name']."]") );
       }
     }
     else
@@ -189,26 +214,26 @@ if ( defined('ADMIN_LEXT_VERSION') )
       if ( \$res == true ) 
       { 
         flash('success', "Successfully created a new ${1/(\w*).*/\u$1/}");
-        redirect_to( ${1/(\w*).*/\U$1/}S_ADMIN_PATH_PREFIX );
+        redirect_to( option('${1/(\w*).*/\L$1/}s.admin.path.prefix') );
       }
       else
       { 
         \$_SESSION['${1/(\w*).*/\L$1/}'] = \$${1/(\w*).*/\L$1/};
-        flash('error', "Unable to create a new ${1/(\w*).*/\u$1/} due to these errors:&lt;br&gt;\n " . \$_SESSION['validation_errors'] );
-        redirect_to( ${1/(\w*).*/\U$1/}S_ADMIN_PATH_PREFIX . '/new' );
+        flash('error', "Unable to create a new ${1/(\w*).*/\u$1/} due to these errors:&lt;br&gt;\n " . \$res['validation_errors'] );
+        redirect_to( option('${1/(\w*).*/\L$1/}s.admin.path.prefix') . '/new' );
       }
     }
   }
 
   # &lt;strong&gt;GET ADMIN/${1/(\w*).*/\U$1/}S/LOAD&lt;/strong&gt;
   # LOAD (something via AJAX most likely JEditable)
-  dispatch_get( ${1/(\w*).*/\U$1/}S_ADMIN_PATH_PREFIX .'/load', 'route_get_${1/(\w*).*/\L$1/}s_admin_ajax_load' );
+  dispatch_get( option('${1/(\w*).*/\L$1/}s.admin.path.prefix') .'/load', 'route_get_${1/(\w*).*/\L$1/}s_admin_ajax_load', admin_route_options() );
   function route_get_${1/(\w*).*/\L$1/}s_admin_ajax_load(){ 
-    if ( is_xhr() ) 
+    if ( request_is_xhr() ) 
     { 
       list(\$model, \$field, \$id) = explode('-', @LGET('id'));
-      \$model = ${1/(\w*).*/\u$1/}::get( (int) \$id);
-      return ( \$model === false ) ? "ERROR: " . @LGET('id') . " and ${1/(\w*).*/\L$1/} [". var_export(\$model, true)."]"  :  \$model-&gt;\$field;
+      \$model = ${1/(\w*).*/\u$1/}::find( (int) \$id);
+      return ( \$model === false ) ? "ERROR: " . @LGET('id') . " and ${1/(\w*).*/\L$1/} [". _dump(\$model)."]"  :  \$model-&gt;\$field;
     }
     else
     {
@@ -217,35 +242,34 @@ if ( defined('ADMIN_LEXT_VERSION') )
   }
 
   # &lt;strong&gt;GET ADMIN/${1/(\w*).*/\U$1/}S/:ID/EDIT&lt;/strong&gt;
-  dispatch_get( ${1/(\w*).*/\U$1/}S_ADMIN_PATH_PREFIX .'/:${1/(\w*).*/\L$1/}/edit', 'route_get_${1/(\w*).*/\L$1/}s_admin_edit' );
+  dispatch_get( option('${1/(\w*).*/\L$1/}s.admin.path.prefix') .'/:${1/(\w*).*/\L$1/}/edit', 'route_get_${1/(\w*).*/\L$1/}s_admin_edit', admin_route_options() );
   function route_get_${1/(\w*).*/\L$1/}s_admin_edit(){ 
-    load_page_vars('admin|${1/(\w*).*/\L$1/}s|edit');
-  
-    set('${1/(\w*).*/\L$1/}', ${1/(\w*).*/\u$1/}::get(params('${1/(\w*).*/\L$1/}') ) );
-    if ( is_xhr() ) 
+    page_load_vars('admin|${1/(\w*).*/\L$1/}|edit');
+    set('${1/(\w*).*/\L$1/}', ${1/(\w*).*/\u$1/}::where_${1/(\w*).*/\L$1/}( params('${1/(\w*).*/\L$1/}') )-&gt;first() );
+    if ( request_is_xhr() ) 
     {  
-      return admin_html('${1/(\w*).*/\L$1/}s/edit.html.php', null);
+      return admin_html('${1/(\w*).*/\L$1/}s/edit.html', null);
     }
     else
     {
-      return admin_html('${1/(\w*).*/\L$1/}s/edit.html.php');
+      return admin_html('${1/(\w*).*/\L$1/}s/edit.html');
     }
   }
   
   # &lt;strong&gt;PUT ADMIN/${1/(\w*).*/\U$1/}S/:ID&lt;/strong&gt;
-  dispatch_put( ${1/(\w*).*/\U$1/}S_ADMIN_PATH_PREFIX . '/:id', 'route_put_${1/(\w*).*/\L$1/}s_admin_update');
+  dispatch_put( option('${1/(\w*).*/\L$1/}s.admin.path.prefix') . '/:id', 'route_put_${1/(\w*).*/\L$1/}s_admin_update', admin_route_options() );
   function route_put_${1/(\w*).*/\L$1/}s_admin_update() { 
-    \$${1/(\w*).*/\L$1/} = get_data_from_form('${1/(\w*).*/\L$1/}');
-    \$res = ${1/(\w*).*/\u$1/}::update_${1/(\w*).*/\L$1/}( \$${1/(\w*).*/\L$1/} );
-    if ( is_xhr() ) 
+    \$${1/(\w*).*/\L$1/} = input_post('${1/(\w*).*/\L$1/}');
+    \$res = ${1/(\w*).*/\L$1/}s_update_${1/(\w*).*/\L$1/}( params('id'), \$${1/(\w*).*/\L$1/} );
+    if ( request_is_xhr() ) 
     { 
       if (\$res == true) 
       { 
-        return json( array('success' =&gt; true, 'html'=&gt; "Successfully updated the ${1/(\w*).*/\u$1/} [".\$${1/(\w*).*/\L$1/}-&gt;name."]") );
+        return json( array('success' =&gt; true, 'html'=&gt; "Successfully updated the ${1/(\w*).*/\u$1/} [".\$${1/(\w*).*/\L$1/}['name'] ."]") );
       }
       else
       { 
-        return json( array('success' =&gt; false, 'html'=&gt; "ERRORS updating the ${1/(\w*).*/\u$1/} [".\$${1/(\w*).*/\L$1/}-&gt;name."]") );
+        return json( array('success' =&gt; false, 'html'=&gt; "ERRORS updating the ${1/(\w*).*/\u$1/} [".\$${1/(\w*).*/\L$1/}['name']."]") );
       }
     }
     else
@@ -253,48 +277,49 @@ if ( defined('ADMIN_LEXT_VERSION') )
       if ( \$res == true ) 
       { 
         flash('success', "Successfully updated the ${1/(\w*).*/\u$1/}");
-        redirect_to( ${1/(\w*).*/\U$1/}S_ADMIN_PATH_PREFIX );
+        redirect_to( option('${1/(\w*).*/\L$1/}s.admin.path.prefix') );
       }
       else
       { 
          \$_SESSION['${1/(\w*).*/\L$1/}'] = \$${1/(\w*).*/\L$1/};
-         flash('error', "Unable to update ${1/(\w*).*/\u$1/} due to these errors:&lt;br&gt;\n " . \$_SESSION['validation_errors'] );
-         redirect_to( ${1/(\w*).*/\U$1/}S_ADMIN_PATH_PREFIX . params('id') . '/edit' );
+         flash('error', "Unable to update ${1/(\w*).*/\u$1/} due to these errors:&lt;br&gt;\n " . \$res-&gt;validation_errors );
+         redirect_to( option('${1/(\w*).*/\L$1/}s.admin.path.prefix') . params('id') . '/edit' );
       }
     }
   
   }
 
   # &lt;strong&gt;GET ADMIN/${1/(\w*).*/\U$1/}S/:ID SHOW&lt;/strong&gt;
-  dispatch_get( ${1/(\w*).*/\U$1/}S_ADMIN_PATH_PREFIX .'/:id', 'route_get_${1/(\w*).*/\L$1/}s_admin_show' );
+  dispatch_get( option('${1/(\w*).*/\L$1/}s.admin.path.prefix') .'/:id', 'route_get_${1/(\w*).*/\L$1/}s_admin_show', admin_route_options() );
   function route_get_${1/(\w*).*/\L$1/}s_admin_show(){ 
     try 
     { 
-      \$${1/(\w*).*/\L$1/} =  ${1/(\w*).*/\u$1/}::get( params('id') );
-      if ( \$${1/(\w*).*/\L$1/} == false ){ 
-        halt(NOT_FOUND, "No such ${1/(\w*).*/\u$1/} found");
-      }else{ 
-        set('${1/(\w*).*/\L$1/}', \$${1/(\w*).*/\L$1/} );
-        //${1/(\w*).*/\L$1/}s_set_page_vars(\$${1/(\w*).*/\L$1/});
+      \$${1/(\w*).*/\L$1/} =  ${1/(\w*).*/\u$1/}::find( params('id') );
+      if ( \$${1/(\w*).*/\L$1/} == false ) { halt(NOT_FOUND, "No such ${1/(\w*).*/\u$1/} found"); }
       
-        if ( is_xhr() ) {  
-          return admin_html('${1/(\w*).*/\L$1/}s/show.html.php', null);
-        }else{
-          return admin_html('${1/(\w*).*/\L$1/}s/show.html.php');
-        }
+      set('${1/(\w*).*/\L$1/}', \$${1/(\w*).*/\L$1/} );
+      # //${1/(\w*).*/\L$1/}s_set_page_vars(\$${1/(\w*).*/\L$1/});
+    
+      if ( request_is_xhr() ) 
+      {   
+        return admin_html('${1/(\w*).*/\L$1/}s/show.html', null);
+      }
+      else
+      { 
+        return admin_html('${1/(\w*).*/\L$1/}s/show.html');
       }
     } 
     catch (Exception \$e) 
     { 
-      halt(NOT_FOUND, "No such ${1/(\w*).*/\u$1/} found.  Exception[". \$e-&gt;getMessage() ."]");
+      halt(NOT_FOUND, "No such ${1/(\w*).*/\u$1/} found. ||  Exception[". \$e-&gt;getMessage() ."]");
     }
   }
 
   # &lt;strong&gt;DELETE ADMIN/${1/(\w*).*/\U$1/}S/:ID&lt;/strong&gt;
-  dispatch_delete( ${1/(\w*).*/\U$1/}S_ADMIN_PATH_PREFIX . '/:id', 'route_delete_${1/(\w*).*/\L$1/}s_admin_destroy');
+  dispatch_delete( option('${1/(\w*).*/\L$1/}s.admin.path.prefix') . '/:id', 'route_delete_${1/(\w*).*/\L$1/}s_admin_destroy', admin_route_options() );
   function route_delete_${1/(\w*).*/\L$1/}s_admin_destroy() { 
     \$res = ${1/(\w*).*/\u$1/}::destroy( params('id') );
-    if ( is_xhr() ) 
+    if ( request_is_xhr() ) 
     { 
       return ( \$res === true ) ? 1 : false;
     }
@@ -303,12 +328,12 @@ if ( defined('ADMIN_LEXT_VERSION') )
       if ( \$res == true ) 
       { 
         flash('success', "Successfully deleted the ${1/(\w*).*/\u$1/}");
-        redirect_to( ${1/(\w*).*/\U$1/}S_ADMIN_PATH_PREFIX );
+        redirect_to( option('${1/(\w*).*/\L$1/}s.admin.path.prefix') );
       }
       else
       { 
-         flash('error', "Unable to deleted ${1/(\w*).*/\u$1/} due to these errors:&lt;br&gt;\n " . \$_SESSION['validation_errors'] );
-         redirect_to( ${1/(\w*).*/\U$1/}S_ADMIN_PATH_PREFIX );
+         flash('error', "Unable to deleted ${1/(\w*).*/\u$1/} due to these errors:&lt;br&gt;\n " . \$res['validation_errors'] );
+         redirect_to( option('${1/(\w*).*/\L$1/}s.admin.path.prefix') );
       }
     }
   }
@@ -334,11 +359,89 @@ if ( defined('ADMIN_LEXT_VERSION') )
 * 
 * @api public/private
 */
-# function ${1/(\w*).*/\L$1/}s_function(\$value = '')
+# function ${1/(\w*).*/\L$1/}_function(\$value = '')
 # { 
 #   return \$value;
 # }
 
+/**
+* 
+* 
+* &lt;strong&gt;Params&lt;/strong&gt;
+* 
+* 
+* @return (mixed) =&gt; 
+* 
+* &lt;strong&gt;Examples&lt;/strong&gt;
+* 
+*   
+* 
+* @api public
+*/
+function ${1/(\w*).*/\L$1/}s_add_${1/(\w*).*/\L$1/}(\$values) 
+{ 
+  # Validate the hell out of the Model here...
+  \$validation_rules = array(
+      # 'name'  =&gt; 'required|max:50',
+      # 'username'  =&gt; 'required|max:50|min:4',
+      # 'email' =&gt; 'required|email|max:255',
+      # # 'email' =&gt; 'required|email|unique:users',
+  );
+  \$validator = Validator::make(\$values, \$validation_rules);
+  if ( ! \$validator-&gt;valid() ) 
+  { 
+    return array('validation_errors' =&gt; \$validator-&gt;errors ); 
+  }
+  else
+  {
+    try { 
+      \$${1/(\w*).*/\L$1/} = new ${1/(\w*).*/\u$1/}(\$values);
+      \$${1/(\w*).*/\L$1/}-&gt;save();
+      return ${1/(\w*).*/\u$1/}::find(\$${1/(\w*).*/\L$1/}-&gt;id);
+    } catch (Exception \$e) { 
+      halt(SERVER_ERROR, "Database Error: " . \$e-&gt;getMessage() );
+    }
+  }
+}
+
+/**
+* 
+* 
+* &lt;strong&gt;Params&lt;/strong&gt;
+* 
+* 
+* @return (mixed) =&gt; 
+* 
+* &lt;strong&gt;Examples&lt;/strong&gt;
+* 
+*   
+* 
+* @api public
+*/
+function ${1/(\w*).*/\L$1/}s_update_${1/(\w*).*/\L$1/}(\$id, \$values) 
+{ 
+  # Validate the hell out of the Model here...
+  \$validation_rules = array(
+      # 'name'  =&gt; 'required|max:50',
+      # 'username'  =&gt; 'required|max:50|min:4',
+      # 'email' =&gt; 'required|email|max:255',
+      # # 'email' =&gt; 'required|email|unique:users',
+  );
+  \$validator = Validator::make(\$values, \$validation_rules);
+  if ( ! \$validator-&gt;valid() ) 
+  { 
+    return array('validation_errors' =&gt; \$validator-&gt;errors ); 
+  }
+  else
+  { 
+    try { 
+      return ${1/(\w*).*/\u$1/}::find(\$id)-&gt;update(\$values);
+    } catch (Exception \$e) { 
+      halt(SERVER_ERROR, "Database Error: " . \$e-&gt;getMessage() );
+    }
+    
+  }
+}
 
 
 // -----
@@ -349,7 +452,7 @@ if ( defined('ADMIN_LEXT_VERSION') )
 * TODO:: Need to write documentation here
 * 
 */
-# function _${1/(\w*).*/\L$1/}s_views_name_of_view_format()
+# function _${1/(\w*).*/\L$1/}_views_name_of_view_format()
 # { 
 #   ? &gt;&lt;p&gt;HTML code goes here.&lt;/p&gt;&lt; ? php
 # }
@@ -357,7 +460,7 @@ if ( defined('ADMIN_LEXT_VERSION') )
 
 
 
-# /EOF ${1/(\w*).*/\U$1/}S.LEXT
+# /EOF ${1/(\w*).*/\U$1/}.LEXT
 ?&gt;</string>
 	<key>name</key>
 	<string>Limonade Extension - Admin REST</string>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;?php
+
+/**
+* ### LEXT:${1:LextNameSingular}s
+* 
+* ${2:TODO:: Need to write documentation here}
+* 
+* ### Installation:
+* 
+* Add this file to the &lt;tt&gt;app/lib/lexts/&lt;/tt&gt; directory in your app.
+* 
+*     app
+*     |-&gt; lib
+*     |    |-&gt; lexts
+*     |    |     |-&gt; ${1/(\w*).*/\L$1/}s.lext.php
+* 
+* ### Usage:
+* 
+* Just require the Limonade extension in your &lt;tt&gt;app/lib/lexts.php&lt;/tt&gt; file...
+* 
+*     load_lext('${1/(\w*).*/\L$1/}s');
+*     
+*     # or
+*     
+*     require_once(APP_DIR_ROOT . '/lib/lexts/${1/(\w*).*/\L$1/}s.lext.php');
+* 
+* Then set any custom configurations in the &lt;tt&gt;app/conf/configurations.php&lt;/tt&gt; file...
+* 
+*     option('${1/(\w*).*/\L$1/}s.lext.custom_configuration', 'custom value');
+*     
+*     &lt;snip...&gt;
+* 
+* See the function definitions for further information.
+* 
+* ### Contents:
+* 
+* This extension contains the following...
+* 
+* #### Configuration Options:
+* 
+* None
+* 
+* ### Routes: 
+* 
+* None
+* 
+* ### Helper Functions:
+* 
+* None
+* 
+* ### Copyright
+* 
+* Copyright (c) `date +%Y` Kematzy. Released under the MIT License.
+* 
+* See LICENSE for details.
+* 
+* ### Code Inspirations &amp; Credits:
+* 
+* 
+*/
+
+// -----
+// ### CORE DEPENDENCIES
+
+load_core();
+
+# require_once(APP_DIR_ROOT. '/path/2/file.php');
+
+
+// -----
+// ### EXTENSION DEPENDENCIES
+
+# load_lext();
+# require_once(APP_DIR_ROOT. '/lib/lexts/file.lext.php');
+
+// -----
+// ### CONFIGURATION OPTIONS 
+
+// the $1 Lext version $0
+option('${1/(\w*).*/\L$1/}s.lext.version', '0.0.1');
+option('${1/(\w*).*/\L$1/}s.lext.version.string', 'Kematzy::Lext::${1/(\w*).*/\u$1/} v' . option('${1/(\w*).*/\L$1/}s.lext.version') );
+
+# //
+# if ( option_undefined('${1/(\w*).*/\L$1/}s.lext.????') )                         { option('${1/(\w*).*/\L$1/}s.lext.????', '????'); }
+
+
+// -----
+// #### APP PATHS
+
+// the default path to the $1 Section
+if ( option_undefined('${1/(\w*).*/\L$1/}s.path.prefix') )                       { option('${1/(\w*).*/\L$1/}s.path.prefix', '/${1/(\w*).*/\L$1/}s'); }
+
+
+// -----
+// ### ROUTES =&gt; PUBLIC
+
+
+# GET &lt;strong&gt;/${1/(\w*).*/\U$1/}S/&lt;/strong&gt;
+dispatch_get( option('${1/(\w*).*/\L$1/}s.path.prefix'), 'route_get_${1/(\w*).*/\L$1/}s_index');
+function route_get_${1/(\w*).*/\L$1/}s_index() { 
+  page_load_vars('${1/(\w*).*/\L$1/}s');
+  return html('${1/(\w*).*/\L$1/}s/index.html');
+}
+
+
+
+// -----
+// ### HELPER FUNCTIONS 
+
+// Custom functions related to this LEXT added here...
+
+/**
+* 
+* 
+* &lt;strong&gt;Params&lt;/strong&gt;
+* 
+* 
+* @return (mixed) =&gt; 
+* 
+* &lt;strong&gt;Examples&lt;/strong&gt;
+* 
+*   
+* 
+* @api public/private
+*/
+# function ${1/(\w*).*/\L$1/}_function(\$value = '')
+# { 
+#   return \$value;
+# }
+
+
+// -----
+// ### EMBEDDED VIEWS
+
+
+/**
+* TODO:: Need to write documentation here
+* 
+*/
+# function _${1/(\w*).*/\L$1/}_views_name_of_view_format()
+# { 
+#   ? &gt;&lt;p&gt;HTML code goes here.&lt;/p&gt;&lt; ? php
+# }
+
+
+
+
+# /EOF ${1/(\w*).*/\U$1/}.LEXT
+?&gt;</string>
+	<key>name</key>
+	<string>Limonade Extension</string>
+	<key>tabTrigger</key>
+	<string>.lext</string>
+	<key>uuid</key>
+	<string>D3B4AFE7-4887-4762-AA7F-D2FE3980AD2F</string>
+</dict>
+</plist>
