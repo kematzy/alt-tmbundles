@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>background-break:${TM_CSS_SPACE}each-box;$0</string>
+	<key>name</key>
+	<string>background-break:each-box</string>
+	<key>scope</key>
+	<string>source.css, source.scss</string>
+	<key>tabTrigger</key>
+	<string>bgbk:eb</string>
+	<key>uuid</key>
+	<string>A6B4B44E-49BC-4869-85FB-E90AF2BE9698</string>
+</dict>
+</plist>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>cursor:${TM_CSS_SPACE}crosshair;$0</string>
+	<key>name</key>
+	<string>cursor:crosshair</string>
+	<key>scope</key>
+	<string>source.css, source.scss</string>
+	<key>tabTrigger</key>
+	<string>cur:c</string>
+	<key>uuid</key>
+	<string>1354CB1F-996E-4E58-A005-E20F9EC304AF</string>
+</dict>
+</plist>
