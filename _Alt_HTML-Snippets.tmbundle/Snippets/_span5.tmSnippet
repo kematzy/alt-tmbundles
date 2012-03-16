@@ -3,18 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>&lt;ul class="ui-tabs"&gt;
-  &lt;li&gt;${1:Tab One}&lt;/li&gt;
-  li$0
-&lt;/ul&gt;
-</string>
+	<string>&lt;div ${1:id="${2:name}" }class="span5"&gt;
+  $0
+&lt;/div&gt;</string>
 	<key>name</key>
-	<string>ul.tabs</string>
+	<string>.span5</string>
 	<key>scope</key>
 	<string>text.html</string>
 	<key>tabTrigger</key>
-	<string>ul.tabs</string>
+	<string>.span5</string>
 	<key>uuid</key>
-	<string>82F56113-19EC-46BC-ADEC-80993766260D</string>
+	<string>75B7FE8F-D3F2-4112-86ED-DBDAD77AC3EA</string>
 </dict>
 </plist>
