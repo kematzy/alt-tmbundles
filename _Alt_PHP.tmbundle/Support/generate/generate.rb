@@ -9,7 +9,7 @@
 # 
 
 require 'rubygems'
-require 'builder'
+require ENV['TM_BUNDLE_SUPPORT'] + '/lib/Builder'
 require '/Applications/TextMate.app/Contents/SharedSupport/Support/lib/osx/plist'
 
 path = ARGV.join('')
@@ -25,26 +25,68 @@ end
 # =======================
 
 # "\n\n/* {{{ proto string zend_version(void)\n   Get the version of the Zend Engine */"
-proto_regex  = /^\s*?    # Start of the line
-                 \/\*    # Start of the comment
-                 \s+?   
-                 \{{3}   # 3 Braces
+#
+# Example line with trailing garbage (php-5.3.1/ext/standard/array.c:3264)
+# "/* {{{ proto array array_uintersect_assoc(array arr1, array arr2 [, array ...], callback data_compare_func) U"
+proto_regex  = /^\s*?              # Start of the line
+                 \/\*              # Start of the comment
+                 \s+?              
+                 \{{3}             # 3 Braces
                  \s+?
                  proto
                  \s+?
-                 (\S+?)? # Type
+                 (\S+?)?           # Type
                  \s+?
-                 (.+?)   # Function name
-                 $       # End of the prototype line
-                 (.+?)   # Function description
-                \*\/     # End of the comment
+                 (.+?[)]?)         # Function name
+                 (?:[\w ]*(?!\Z))? # Ignore junk at the end of the line
+                 $                 # End of the prototype line
+                 (.+?)             # Function description
+                \*\/               # End of the comment
               /msx
 # alias_regex  = /PHP_FALIAS\((\w+),\s*(\w+)/
 
+# Some basic functions aren't documented in the same way as the rest, so we
+# have to specify them here
 functions = {}
+functions_base_text = <<end_of_functions_base
+exit%void exit([mixed status])%Output a message and terminate the current script
+die%void die([mixed status])%Output a message and terminate the current script
+print%int print(string arg)%Output a string
+echo%void echo(string arg1 [, string ...])%Output one or more strings
+isset%bool isset(mixed var [, mixed var])%Determine whether a variable is set
+unset%void unset (mixed var [, mixed var])%Unset a given variable
+empty%bool empty( mixed var )%Determine whether a variable is empty
+include%bool include(string path)%Includes and evaluates the specified file
+include_once%bool include_once(string path)%Includes and evaluates the specified file
+require%bool require(string path)%Includes and evaluates the specified file, erroring if the file cannot be included
+require_once%bool require_once(string path)%Includes and evaluates the specified file, erroring if the file cannot be included
+end_of_functions_base
+
+functions_base_text.split("\n").each do |line|
+  name, proto, desc = line.split("%")
+  # Not assigning :type or :return since they don't seem to be used anymore
+  functions[name] = {:description => desc, :prototype => proto}
+end
+
 # aliases = {}
 sections = {}
-classes = %w[stdClass]
+
+classes = [
+  'stdClass',
+  'LogicException',
+  'BadFunctionCallException',
+  'BadMethodCallException',
+  'DomainException',
+  'InvalidArgumentException',
+  'LengthException',
+  'OutOfRangeException',
+  'RuntimeException',
+  'OutOfBoundsException',
+  'OverflowException',
+  'RangeException',
+  'UnderflowException',
+  'UnexpectedValueException'  
+]
 
 # prototype blocks
 parsefiles.sort.each_with_index do |file, key|
@@ -74,6 +116,14 @@ parsefiles.sort.each_with_index do |file, key|
   #   end
   # end
 end
+
+# Workaround for bad docs.
+functions['lcfirst'] = {
+  :type => 'string',
+  :description => "Make a string's first character lowercase",
+  :prototype => 'string lcfirst(string str)'
+}
+sections['string'] << 'lcfirst'
 
 # aliases.each_pair do |func_alias, func|
 #   next unless functions[func]
@@ -156,11 +206,11 @@ def process_list(list)
   end
 end
 
-def pattern_for(name, list)
+def pattern_for(name, list, constructors = false)
   return unless list = process_list(list)
   {
     'name'  => name,
-    'match' => "(?i)\\b#{ list }(?=\\s*\\()"
+    'match' => "(?i)\\b#{ list }(?=\\s*" + (constructors && "[\\(|;]" || "\\(") + ")"
   }
 end
 
@@ -170,28 +220,11 @@ grammar = OSX::PropertyList.load(File.read(GrammarPath))
 
 patterns = []
 
-patterns << {
-  'name' => 'meta.array.php',
-  'begin' => '(array)(\\()',
-  'end' => '\\)',
-  'beginCaptures' => {
-    '1' => { 'name' => 'support.function.construct.php' },
-    '2' => { 'name' => 'punctuation.definition.array.begin.php' },
-  },
-  'endCaptures' => { '0' => { 'name' => 'punctuation.definition.array.end.php' } },
-  'patterns' => [{ 'include' => '#language' } ],
-}
-
 sections.sort.each do |(section, funcs)|
   patterns << pattern_for('support.function.' + section + '.php', funcs)
 end
 patterns << pattern_for('support.function.alias.php', %w{is_int is_integer})
-patterns << pattern_for('support.class.builtin.php', classes)
-
-patterns << {
-  'name' => 'support.function.construct.php',
-  'match' => '(?i)\\b((print|echo)\\b|(isset|unset|e(val|mpty)|list)(?=\\s*\\())'
-}
+patterns << pattern_for('support.class.builtin.php', classes, true)
 
 grammar['repository']['support'] = { 'patterns' => patterns }
 File.open(GrammarPath, 'w') do |file|
