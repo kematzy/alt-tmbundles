@@ -30,6 +30,8 @@
 			<string>findWithOptions:</string>
 		</dict>
 	</array>
+	<key>keyEquivalent</key>
+	<string>^m</string>
 	<key>name</key>
 	<string>Replace spaces with '-' dashes</string>
 	<key>uuid</key>
