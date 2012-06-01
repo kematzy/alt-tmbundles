@@ -1,58 +1,0 @@
-8
-
-dir
-10740
-http://macromates.com/svn/Bundles/trunk/Bundles/Textile.tmbundle
-http://macromates.com/svn/Bundles
-
-
-
-2008-05-30T20:33:32.495052Z
-9808
-msheets
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-dfb7d73b-c2ec-0310-8fea-fb051d288c6d
-
-Commands
-dir
-
-Preferences
-dir
-
-Macros
-dir
-
-Snippets
-dir
-
-info.plist
-file
-
-
-
-
-2008-11-01T05:07:34.000000Z
-93827d36b350561ac5849bee6acfed12
-2007-07-03T10:46:03.994521Z
-7662
-antonio
-
-Support
-dir
-
-Syntaxes
-dir
-

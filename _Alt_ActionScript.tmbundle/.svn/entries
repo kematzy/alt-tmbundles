@@ -1,58 +1,0 @@
-8
-
-dir
-10740
-http://macromates.com/svn/Bundles/trunk/Bundles/ActionScript.tmbundle
-http://macromates.com/svn/Bundles
-
-
-
-2008-06-23T17:29:43.449069Z
-10030
-simon
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-dfb7d73b-c2ec-0310-8fea-fb051d288c6d
-
-Commands
-dir
-
-Preferences
-dir
-
-Snippets
-dir
-
-info.plist
-file
-
-
-
-
-2008-11-01T05:03:28.000000Z
-93a19a9623fa6ebbc1d7962d1112eac4
-2007-09-11T08:22:13.165796Z
-8150
-ale
-
-Support
-dir
-
-Syntaxes
-dir
-
-Templates
-dir
-

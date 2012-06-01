@@ -1,64 +1,0 @@
-8
-
-dir
-10740
-http://macromates.com/svn/Bundles/trunk/Bundles/HTML.tmbundle
-http://macromates.com/svn/Bundles
-
-
-
-2008-05-25T10:33:19.226584Z
-9708
-msheets
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-dfb7d73b-c2ec-0310-8fea-fb051d288c6d
-
-DragCommands
-dir
-
-Commands
-dir
-
-Preferences
-dir
-
-Macros
-dir
-
-Snippets
-dir
-
-info.plist
-file
-
-
-
-
-2008-11-01T05:16:21.000000Z
-c406e2b935f6c98b441588054bebd4e8
-2007-12-24T06:46:38.932928Z
-8715
-msheets
-
-Support
-dir
-
-Syntaxes
-dir
-
-Templates
-dir
-

@@ -1,34 +1,0 @@
-8
-
-dir
-10740
-http://macromates.com/svn/Bundles/trunk/Bundles/Ruby%20RSpec.tmbundle/Support
-http://macromates.com/svn/Bundles
-
-
-
-2008-05-26T07:54:23.528542Z
-9743
-msheets
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-dfb7d73b-c2ec-0310-8fea-fb051d288c6d
-
-lib
-dir
-
-spec
-dir
-

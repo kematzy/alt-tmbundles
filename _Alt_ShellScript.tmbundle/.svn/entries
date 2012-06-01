@@ -1,55 +1,0 @@
-8
-
-dir
-10740
-http://macromates.com/svn/Bundles/trunk/Bundles/ShellScript.tmbundle
-http://macromates.com/svn/Bundles
-
-
-
-2008-08-16T22:18:28.891645Z
-10453
-duff
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-dfb7d73b-c2ec-0310-8fea-fb051d288c6d
-
-Commands
-dir
-
-Preferences
-dir
-
-Snippets
-dir
-
-info.plist
-file
-
-
-
-
-2008-11-01T05:26:07.000000Z
-0026782f6e3df21517edf716de16b7ad
-2007-11-04T00:58:40.574909Z
-8398
-duff
-
-Support
-dir
-
-Syntaxes
-dir
-
