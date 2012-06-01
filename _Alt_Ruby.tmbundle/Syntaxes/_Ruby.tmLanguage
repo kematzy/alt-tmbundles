@@ -60,6 +60,7 @@
 		<string>capfile</string>
 		<string>tt</string>
 		<string>rb.tt</string>
+		<string>rb.php</string>
 	</array>
 	<key>firstLineMatch</key>
 	<string>^#!/.*\bruby\b</string>
