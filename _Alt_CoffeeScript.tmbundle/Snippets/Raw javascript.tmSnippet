@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>\`${1:`pbpaste`}\`</string>
+	<key>keyEquivalent</key>
+	<string>^j</string>
+	<key>name</key>
+	<string>Raw javascript</string>
+	<key>scope</key>
+	<string>source.coffee</string>
+	<key>uuid</key>
+	<string>9A23AC5E-19D5-4BB8-84E7-04DFE9BB8940</string>
+</dict>
+</plist>

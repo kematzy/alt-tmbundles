@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string># will return false unless $1 matches the RegExp
+validates_format_of	         :${1:attribute}, :with =&gt; ${2:/^\d+\$/}, 
+                       	         :message =&gt; "${3:$1 must be...}"
+</string>
+	<key>name</key>
+	<string>validates_format_of :fields, :with</string>
+	<key>scope</key>
+	<string>source.ruby.datamapper</string>
+	<key>tabTrigger</key>
+	<string>val</string>
+	<key>uuid</key>
+	<string>0CF5475E-44C8-4C41-95E5-DA788B7A4CAE</string>
+</dict>
+</plist>

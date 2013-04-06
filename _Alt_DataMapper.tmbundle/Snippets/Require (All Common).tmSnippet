@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>%w(dm-sqlite-adapter dm-core dm-migrations dm-validations dm-types dm-timestamps $1).each {|lib| require lib }$0</string>
+	<string>%w(data_mapper dm-sqlite-adapter dm-mysql-adapter $1).each {|lib| require lib }$0</string>
 	<key>name</key>
 	<string>Require (All Common)</string>
 	<key>scope</key>

@@ -12,7 +12,7 @@ property :updated_by_id,        Integer
 	<key>scope</key>
 	<string>source.ruby</string>
 	<key>tabTrigger</key>
-	<string>userstamps</string>
+	<string>dm.userstamps</string>
 	<key>uuid</key>
 	<string>1ED44F2D-222C-4858-B3DF-6CEB39C89114</string>
 </dict>

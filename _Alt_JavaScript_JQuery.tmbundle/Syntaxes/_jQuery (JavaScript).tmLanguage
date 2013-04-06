@@ -8,6 +8,7 @@
 	<array>
 		<string>rjs</string>
 		<string>js.php</string>
+		<string>js.erb</string>
 	</array>
 	<key>foldingStartMarker</key>
 	<string>(^.*{[^}]*$|^.*\([^\)]*$|^.*/\*(?!.*\*/).*$)</string>

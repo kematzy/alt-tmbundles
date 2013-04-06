@@ -3,9 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>validates_is_confirmed :${1:password}</string>
+	<string># validates that attributes `:$1` and `:$1_confirmation` are *equal*.
+validates_confirmation_of :${1:password}</string>
 	<key>name</key>
-	<string>validates_is_confirmed :field</string>
+	<string>validates_confirmation_of :field</string>
 	<key>scope</key>
 	<string>source.ruby.datamapper</string>
 	<key>tabTrigger</key>

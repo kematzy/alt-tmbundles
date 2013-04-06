@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>Time.now.strftime("${1:%Y-%d-%m}")$0</string>
+	<string>Time.now.strftime("${1:%Y-%m-%d}")$0</string>
 	<key>name</key>
 	<string>Time.now.strftime(YYYY-MM-DD)</string>
 	<key>scope</key>

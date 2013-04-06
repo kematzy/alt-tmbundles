@@ -11,7 +11,7 @@ property :${1:model_name}_id,             Integer
 	<key>scope</key>
 	<string>source.ruby</string>
 	<key>tabTrigger</key>
-	<string>dm-id</string>
+	<string>dm.id</string>
 	<key>uuid</key>
 	<string>7A05C8B7-8A6A-4A38-B807-49748C25C789</string>
 </dict>

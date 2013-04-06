@@ -67,7 +67,7 @@ end
 	<key>scope</key>
 	<string>source.ruby.datamapper</string>
 	<key>tabTrigger</key>
-	<string>dm-image</string>
+	<string>dm.image</string>
 	<key>uuid</key>
 	<string>29499A6C-6C13-43BE-93A4-D93F834C2B5E</string>
 </dict>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string># validates that attributes `:$1` and `:$2` are *equal*.
+validates_confirmation_of :${1:password}, :confirm =&gt; :${2:$1_repeated}</string>
+	<key>name</key>
+	<string>validates_confirmation_of :field, :confirm</string>
+	<key>scope</key>
+	<string>source.ruby.datamapper</string>
+	<key>tabTrigger</key>
+	<string>val</string>
+	<key>uuid</key>
+	<string>3672048B-8C32-4CA2-8956-3DA2B6925F1A</string>
+</dict>
+</plist>

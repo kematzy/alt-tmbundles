@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>before :save, :${1:do_something}</string>
+	<string>before :save, :${1:method_name}</string>
 	<key>name</key>
-	<string>before :save</string>
+	<string>before :save, :method_name</string>
 	<key>scope</key>
 	<string>source.ruby.datamapper</string>
 	<key>tabTrigger</key>

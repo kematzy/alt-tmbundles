@@ -3,11 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>validates_is_unique 	:${1:field_name},
-					:scope =&gt; :${2:section_id},
-    					:message =&gt; "${3:There's already a $1 with that value in this $2}"</string>
+	<string># Ensures that each record's `:$1` attribute is unique, within a group of records.
+# Allows multiple `:$1`'s to have the same name, but only one within a particular group of records.
+validates_uniqueness_of 	:${1:field_name},
+						:scope =&gt; [:${2:group_id}],
+    						:message =&gt; "${3:There's already a $1 with that value in this $2}"</string>
 	<key>name</key>
-	<string>validates_is_unique :field, :scope</string>
+	<string>validates_uniqueness_of :field, :scope</string>
 	<key>scope</key>
 	<string>source.ruby.datamapper</string>
 	<key>tabTrigger</key>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string># $1 must be greater than or equal to $2
+validates_length_of :${1:age}, :min =&gt; ${2:10}</string>
+	<key>name</key>
+	<string>validates_length_of :field, :min</string>
+	<key>scope</key>
+	<string>source.ruby.datamapper</string>
+	<key>tabTrigger</key>
+	<string>val</string>
+	<key>uuid</key>
+	<string>8BFA0DC4-3CD7-4168-B3BC-162E51DFBB64</string>
+</dict>
+</plist>

@@ -7,35 +7,10 @@
 #--
 # DEPENDENCIES
 #++
-%w(${2: 
-sinatra/base 
-alt/rext/all 
-}).each {|lib| require lib }
-
-#--
-## SINATRA EXTENSIONS
-#++
-%w(${3:
-sinatra/basics
-}).each {|ext| require ext }
-
-
-#--
-# DATABASE DEPENDENCIES
-#++
-%w(${4: 
-dm-core 
-dm-serializer 
-dm-validations 
-dm-timestamps 
-dm-types 
-dm-is-versioned 
-dm-is-published
-}).each { |dblib| require dblib }
-
+${2: # require 'sinatra/base' }
 
 module Sinatra
-
+  
   # == Sinatra::$1 
   # 
   # TODO:: Need to write documentation here
@@ -58,9 +33,7 @@ module Sinatra
   # 
   # ==== Ruby Gems:
   # 
-  # * ????
-  #   * Methods used:
-  #     * 
+  # None
   # 
   # ==== Extensions: 
   # 
@@ -111,31 +84,26 @@ module Sinatra
       app.set :${1/(\w*).*/\L$1/}_foo, 'bar'
       
       
-      ## add the extension specific options to those inspectable by :settings_inspect method
-      #  provided by the Sinatra::Settings extension
-      if app.respond_to?(:sinatra_settings_for_inspection)
-        %w(${1/(\w*).*/\L$1/}_foo).each do |m|
-          app.sinatra_settings_for_inspection &lt;&lt; m
-        end
+      # register the extension specific settings for later inspection
+      # provided by the Sinatra::AppDebug extension
+      if app.respond_to?(:app_debug_register_settings)
+        app.app_debug_register_settings :${1/(\w*).*/\L$1/}_foo
       end
       
       ### ROUTES
       
       # add your URI Handlers here like this...
-      # app.get '/login' do
-      #   "&lt;form method='POST' action='/login'&gt;" +
-      #   "&lt;input type='text' name='user'&gt;" +
-      #   "&lt;input type='text' name='pass'&gt;" +
-      #   "&lt;/form&gt;"
+      # app.get '/route' do
+      #   # code
       # end
       
     end #/ self.registered
     
-  end #/ $1
+  end #/module $1
   
   register(Sinatra::$1)
   
-end #/ Sinatra
+end #/module Sinatra
 </string>
 	<key>name</key>
 	<string>Sinatra: Extension (options)</string>

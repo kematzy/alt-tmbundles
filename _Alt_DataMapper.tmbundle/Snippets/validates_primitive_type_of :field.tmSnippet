@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string># will return false unless `:$1` attribute can be properly cast into the given object type.
+validates_primitive_type_of :${1:birth_date}</string>
+	<key>name</key>
+	<string>validates_primitive_type_of :field</string>
+	<key>scope</key>
+	<string>source.ruby.datamapper</string>
+	<key>tabTrigger</key>
+	<string>val</string>
+	<key>uuid</key>
+	<string>5C90D478-0E8E-4C0D-95CC-CA55042B1D7B</string>
+</dict>
+</plist>

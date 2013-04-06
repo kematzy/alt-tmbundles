@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string># $1 must be of equal length to $2
+validates_length_of :${1:age}, :equals =&gt; ${2:10}</string>
+	<key>name</key>
+	<string>validates_length_of :field, :equals</string>
+	<key>scope</key>
+	<string>source.ruby.datamapper</string>
+	<key>tabTrigger</key>
+	<string>val</string>
+	<key>uuid</key>
+	<string>078426DB-41C6-4B63-8079-5F8E4AC57E6F</string>
+</dict>
+</plist>

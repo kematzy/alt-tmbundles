@@ -38,7 +38,7 @@ end</string>
 	<key>scope</key>
 	<string>source.ruby.datamapper</string>
 	<key>tabTrigger</key>
-	<string>dm-person</string>
+	<string>dm.person</string>
 	<key>uuid</key>
 	<string>B39F8787-AEA9-4E6A-A3A1-F57AC3A2682B</string>
 </dict>

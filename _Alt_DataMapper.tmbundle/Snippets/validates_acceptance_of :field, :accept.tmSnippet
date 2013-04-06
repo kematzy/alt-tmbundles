@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string># terms_accepted is one of ["1", 1, "true", true, "t"]
+validates_acceptance_of :${1:license_agreement}, :accept =&gt; $(2:1}</string>
+	<key>name</key>
+	<string>validates_acceptance_of :field, :accept</string>
+	<key>scope</key>
+	<string>source.ruby.datamapper</string>
+	<key>tabTrigger</key>
+	<string>val</string>
+	<key>uuid</key>
+	<string>D0ED1A93-BC47-4477-8D73-96B0C88771E8</string>
+</dict>
+</plist>

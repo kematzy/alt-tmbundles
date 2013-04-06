@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>
+#--
+# DEPENDENCIES
+#++
+${2: # require 'sinatra/base' }
+
+module Sinatra
+
+  # == Sinatra::$1 
+  # 
+  # TODO:: Need to write documentation here
+  # 
+  # === Usage:
+  # 
+  # Just add the extension as a helper in your sub-classed Sinatra application.
+  # 
+  #   class YourApp &lt; Sinatra::Base
+  #     
+  #     register( Sinatra::$1 )
+  #     &lt;snip...&gt;
+  #   end
+  # 
+  # See the method definitions for further information.
+  # 
+  # === Dependencies:
+  # 
+  # This extension depends on the following:
+  # 
+  # ==== Ruby Gems:
+  # 
+  # None
+  # 
+  # ==== Extensions: 
+  # 
+  # None
+  # 
+  # === Configurations:
+  # 
+  # None
+  # 
+  # === Routes: 
+  # 
+  # None
+  # 
+  # === Code Inspirations:
+  # 
+  # * 
+  # 
+  module ${1:ModuleName}
+    
+    VERSION = '0.1.0' unless const_defined?(:VERSION)
+    def self.version; "Sinatra::$1 v#{VERSION}"; end
+    
+    module DSLHelpers 
+      
+      # add your DSL helper methods here
+      def do_some_DSL_thing
+        ## code here
+      end
+      
+    end #/module DSLHelpers
+    
+    module Helpers
+        
+      # add your public helper methods here
+      def do_something
+        ## here
+      end
+      
+      ## PRIVATE METHODS
+      private
+        
+        def private_method
+          
+        end
+      
+    end #/ Helpers
+    
+    
+    # add your general methods here
+    
+    
+    def self.registered(app)
+      app.register $1::DSLHelpers
+      app.helpers $1::Helpers
+      
+      ## CONFIGURATIONS::
+      # the configuration options here
+      app.set :${1/(\w*).*/\L$1/}_foo, 'bar'
+      
+      
+      # register the extension specific settings for later inspection
+      # provided by the Sinatra::AppDebug extension
+      if app.respond_to?(:app_debug_register_settings)
+        app.app_debug_register_settings :${1/(\w*).*/\L$1/}_foo
+      end
+      
+      ### ROUTES
+      
+      # add your URI Handlers here like this...
+      # app.get '/route' do
+      #   # code
+      # end
+      
+    end #/ self.registered
+    
+  end #/module $1
+  
+  register(Sinatra::$1)
+  
+end #/module Sinatra
+</string>
+	<key>name</key>
+	<string>Sinatra: DSL Extension (options)</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>tabTrigger</key>
+	<string>sext</string>
+	<key>uuid</key>
+	<string>3EB216CF-0905-458A-9F63-C16C61A3B9FD</string>
+</dict>
+</plist>

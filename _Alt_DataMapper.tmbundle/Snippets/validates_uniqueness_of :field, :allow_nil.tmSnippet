@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string># Ensures that each record's `:$1` attribute is unique, but allows the value to be nil if :allow_nil =&gt; true.
+validates_uniqueness_of 	:${1:field_name},
+						:allow_nil =&gt; :${2:true},
+    						:message =&gt; "${3:There's already a $1 with that value in this $2}"</string>
+	<key>name</key>
+	<string>validates_uniqueness_of :field, :allow_nil</string>
+	<key>scope</key>
+	<string>source.ruby.datamapper</string>
+	<key>tabTrigger</key>
+	<string>val</string>
+	<key>uuid</key>
+	<string>14FC6D37-A0E2-4EC0-84D6-DB42DAD90E06</string>
+</dict>
+</plist>

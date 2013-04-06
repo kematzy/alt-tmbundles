@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>validates_within ${1:status}, :set =&gt; ${2:PUBLISH_STATUS}, :allow_nil =&gt; ${3:true}</string>
+	<key>name</key>
+	<string>validates_within :field, :set, :allow_nil</string>
+	<key>scope</key>
+	<string>source.ruby.datamapper</string>
+	<key>tabTrigger</key>
+	<string>val</string>
+	<key>uuid</key>
+	<string>490CED81-6FF7-4AB7-892B-70AFB40BC4C4</string>
+</dict>
+</plist>

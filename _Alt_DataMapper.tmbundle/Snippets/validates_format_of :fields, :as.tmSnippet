@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string># pre-defined format `:$1`, will return false unless `$1` is formatted like an $2
+validates_format_of	        :${1:attribute}, :as =&gt; :${2:email_address}, :message =&gt; "${3:$1 must be a valid format}"}
+</string>
+	<key>name</key>
+	<string>validates_format_of :fields, :as</string>
+	<key>scope</key>
+	<string>source.ruby.datamapper</string>
+	<key>tabTrigger</key>
+	<string>val</string>
+	<key>uuid</key>
+	<string>025F0873-97E1-41A3-89E5-FD7998A61AAE</string>
+</dict>
+</plist>

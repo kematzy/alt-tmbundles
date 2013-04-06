@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>before :update, :${1:method_name}</string>
+	<key>name</key>
+	<string>before :update, :method_name</string>
+	<key>scope</key>
+	<string>source.ruby.datamapper</string>
+	<key>tabTrigger</key>
+	<string>b4</string>
+	<key>uuid</key>
+	<string>72BABC98-7B2A-4E63-848F-BC856BE223B9</string>
+</dict>
+</plist>

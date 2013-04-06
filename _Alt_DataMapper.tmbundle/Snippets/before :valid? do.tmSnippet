@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>before :valid? do 
+  ${1:self.ref = "#{self.block.upcase\}-#{self.floor.upcase\}-#{self.unit\}" if self.ref.blank?}
+end
+</string>
+	<key>name</key>
+	<string>before :valid? do</string>
+	<key>scope</key>
+	<string>source.ruby.datamapper</string>
+	<key>tabTrigger</key>
+	<string>b4</string>
+	<key>uuid</key>
+	<string>B8C16EAE-AF2A-4E14-8135-2F205735DE84</string>
+</dict>
+</plist>

@@ -9,7 +9,7 @@
 	<key>scope</key>
 	<string>source.ruby</string>
 	<key>tabTrigger</key>
-	<string>dm-prop</string>
+	<string>dm.prop</string>
 	<key>uuid</key>
 	<string>ED09B5F0-31F9-41E8-828F-91DD483C1559</string>
 </dict>

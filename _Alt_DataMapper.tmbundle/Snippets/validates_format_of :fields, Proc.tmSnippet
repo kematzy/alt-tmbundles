@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string># with a Proc that must return a Boolean value
+validates_format_of 	:${1:attribute}, :with =&gt; lambda { |code| ${2:code =~ /\AA\d{4}\z/ || code =~ /\A[B-Z]\d{6}X12\z/ } },
+                       	:message =&gt; "${3:$1 must be a valid format}"
+
+</string>
+	<key>name</key>
+	<string>validates_format_of :fields, Proc</string>
+	<key>scope</key>
+	<string>source.ruby.datamapper</string>
+	<key>tabTrigger</key>
+	<string>val</string>
+	<key>uuid</key>
+	<string>BDB562EB-63C7-45D4-B28A-43289D0C1355</string>
+</dict>
+</plist>

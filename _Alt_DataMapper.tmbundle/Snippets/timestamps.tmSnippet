@@ -12,7 +12,7 @@ property :updated_at,           DateTime
 	<key>scope</key>
 	<string>source.ruby</string>
 	<key>tabTrigger</key>
-	<string>timestamps</string>
+	<string>dm.timestamps</string>
 	<key>uuid</key>
 	<string>CD7E6145-74EC-4082-BE48-C51584DF9FC9</string>
 </dict>

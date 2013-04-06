@@ -101,12 +101,10 @@ module Sinatra
       app.set :${1/(\w*).*/\L$1/}s_path_prefix, '/${1/(\w*).*/\L$1/}s'
       
       
-      ## add the extension specific options to those inspectable by :settings_inspect method
-      #  provided by the Sinatra::Settings extension
-      if app.respond_to?(:sinatra_settings_for_inspection)
-        %w(${1/(\w*).*/\L$1/}s_path_prefix).each do |m|
-          app.sinatra_settings_for_inspection &lt;&lt; m
-        end
+      # register the extension specific settings for later inspection
+      # provided by the Sinatra::AppDebug extension
+      if app.respond_to?(:app_debug_register_settings)
+        app.app_debug_register_settings :${1/(\w*).*/\L$1/}_foo
       end
       
       ### ROUTES
@@ -145,14 +143,11 @@ module Sinatra
         ## CONFIGURATIONS::
         # the configuration options here
         app.set :${1/(\w*).*/\L$1/}s_admin_foo, 'bar'
-        
-        
-        ## add the extension specific options to those inspectable by :settings_inspect method
-        #  provided by the Sinatra::Settings extension
-        if app.respond_to?(:sinatra_settings_for_inspection)
-          %w(${1/(\w*).*/\L$1/}s_admin_foo).each do |m|
-            app.sinatra_settings_for_inspection &lt;&lt; m
-          end
+
+        # register the extension specific settings for later inspection
+        # provided by the Sinatra::AppDebug extension
+        if app.respond_to?(:app_debug_register_settings)
+          app.app_debug_register_settings :${1/(\w*).*/\L$1/}_foo
         end
         
         ### ROUTES

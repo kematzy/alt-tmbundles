@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>validates_numericality_of :${1:age}, :scale =&gt; 2$0</string>
+	<key>name</key>
+	<string>validates_numericality_of :field, :scale</string>
+	<key>scope</key>
+	<string>source.ruby.datamapper</string>
+	<key>tabTrigger</key>
+	<string>val</string>
+	<key>uuid</key>
+	<string>ACA0E272-8DE3-437F-AE8E-D737B52569C4</string>
+</dict>
+</plist>

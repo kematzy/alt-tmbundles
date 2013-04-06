@@ -11,7 +11,7 @@ property :path,                 FilePath, :nullable =&gt; false
 	<key>scope</key>
 	<string>source.ruby</string>
 	<key>tabTrigger</key>
-	<string>dm-prop</string>
+	<string>dm.prop</string>
 	<key>uuid</key>
 	<string>FFB689E7-D500-4849-836F-62A25F2FB393</string>
 </dict>

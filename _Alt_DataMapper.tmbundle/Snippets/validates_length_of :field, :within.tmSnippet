@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string># $1 must be between the Range of $2
+validates_length_of :${1:age}, :within =&gt; ${2:1..10}</string>
+	<key>name</key>
+	<string>validates_length_of :field, :within</string>
+	<key>scope</key>
+	<string>source.ruby.datamapper</string>
+	<key>tabTrigger</key>
+	<string>val</string>
+	<key>uuid</key>
+	<string>C08813F3-C862-425E-9DE3-DB784F375122</string>
+</dict>
+</plist>

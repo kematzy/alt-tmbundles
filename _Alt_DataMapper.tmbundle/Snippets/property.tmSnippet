@@ -11,7 +11,7 @@ dm-prop$0</string>
 	<key>scope</key>
 	<string>source.ruby</string>
 	<key>tabTrigger</key>
-	<string>dm-prop</string>
+	<string>dm.prop</string>
 	<key>uuid</key>
 	<string>209C0ABB-4782-4D16-BD93-A316A18BBA15</string>
 </dict>

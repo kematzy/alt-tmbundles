@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>
+namespace "#{settings.${1:rest_model_path_singular}_path}" do 
+  
+  ## INDEX GET /
+  get '/?' do
+    @$1s = ${2:rest_model}.all
+    erb( "$1s/index".to_sym )
+  end
+  
+  ## NEW GET /new
+  get '/new' do
+    @$1 = $2.new
+    erb( "$1s/new".to_sym )
+  end
+  
+  ## CREATE POST /
+  post '/' do
+    @$1 = $2.new(params[:${3:rest_model_singular}])
+    if @$1.save
+      flash(:info, "Successfully created a new $2")
+      redirect "#{settings.admin_path}/#{settings.$1_path}/"
+    else
+      flash(:error, "ERROR: creating a new $2")
+      redirect "#{settings.admin_path}/#{settings.$1_path}/new"
+    end
+  end
+  
+  ## SHOW GET /1
+  get '/:id' do
+    begin
+      @$1 = $2.get!(params[:id])
+      if @$1.nil?
+        throw :halt, [404, erb( "errors/record_not_found".to_sym )]
+      else
+        erb( "$1s/show".to_sym )
+      end
+    rescue DataMapper::ObjectNotFoundError =&gt; e
+      @error = e
+      throw :halt, [404, erb( "errors/record_not_found".to_sym )]
+    end
+  end
+  
+  ## EDIT GET /1/edit
+  get '/:id/edit' do
+    @$1 = $2.get!(params[:id])
+    erb( "$1s/edit".to_sym )
+  end
+  
+  ## UPDATE PUT /1
+  put '/:id' do
+    @$1 = $2.get!(params[:id])
+    @$1.update_attributes(params[:post])
+    redirect "#{settings.admin_path}/#{settings.$1_path}/"
+  end
+  
+  ## DESTROY DELETE /1
+  delete '/:id' do
+    $1 = $2.get!(params[:id])
+    if $1.destroy
+      flash(:info, "Successfully deleted the $2 [#{$1.title}]")
+      redirect "#{settings.admin_path}/#{settings.$1_path}/"
+    else
+      flash(:error, "ERROR: unable to delete the $2 [#{$1}.title}]")
+      redirect "#{settings.admin_path}/#{settings.$1_path}/#{params[:id]}"
+    end
+    # redirect #{rest_model_singular}.destroy ? "#{settings.admin_path}/#{settings.$1_path}/" : "#{settings.admin_path}/#{settings.$1_path}/#{params[:id]}"
+  end
+
+end #/namespace $1
+</string>
+	<key>name</key>
+	<string>admin REST routes</string>
+	<key>scope</key>
+	<string>source.ruby.sinatra</string>
+	<key>tabTrigger</key>
+	<string>admin.rest</string>
+	<key>uuid</key>
+	<string>3EC3B7DF-82D0-46A8-83AA-43BA17C9EE42</string>
+</dict>
+</plist>

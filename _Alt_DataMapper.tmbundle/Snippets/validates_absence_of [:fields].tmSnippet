@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string># tests for the $1 to NOT be present
+validates_absence_of	[:${1:attribute}]${2:, 
+                       	:message =&gt; "${3:$1 must not be present and submitted.}"}
+</string>
+	<key>name</key>
+	<string>validates_absence_of [:fields]</string>
+	<key>scope</key>
+	<string>source.ruby.datamapper</string>
+	<key>tabTrigger</key>
+	<string>val</string>
+	<key>uuid</key>
+	<string>D3D7C842-751E-4845-A3AE-BF8E83C3BBD6</string>
+</dict>
+</plist>

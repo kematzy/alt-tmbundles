@@ -24,7 +24,7 @@ end #/ $1
 	<key>scope</key>
 	<string>source.ruby</string>
 	<key>tabTrigger</key>
-	<string>dm-model</string>
+	<string>dm.model</string>
 	<key>uuid</key>
 	<string>429DED6E-24A6-462F-ACDF-AA0DEE2C8D1B</string>
 </dict>
